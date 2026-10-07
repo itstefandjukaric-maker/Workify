@@ -1,0 +1,92 @@
+/* Workify design preview: the bar with the tour links, the short notes, and the viewer's light/dark switch. */
+.pv-bar { flex-wrap: wrap; gap: 6px 14px; padding-top: calc(6px + env(safe-area-inset-top, 0px)); }
+.pv-text { display: inline-flex; align-items: center; gap: 6px; }
+.pv-links { display: flex; gap: 6px; max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+.pv-links::-webkit-scrollbar { display: none; }
+.pv-links a { flex-shrink: 0; padding: 2px 10px; border-radius: 99px; background: color-mix(in srgb, var(--amber-strong) 12%, transparent); color: inherit; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.pv-links a:hover { background: color-mix(in srgb, var(--amber-strong) 22%, transparent); }
+.pv-links a[aria-current="page"] { background: var(--amber-strong); color: var(--amber-soft); }
+.pv-links .pv-lang { border: 1px solid color-mix(in srgb, var(--amber-strong) 40%, transparent); background: transparent; }
+@media (max-width: 600px) { .pv-bar { flex-direction: column; gap: 6px; } .pv-links { flex-wrap: wrap; justify-content: center; overflow: visible; } }
+.pv-toast {
+  position: fixed; z-index: 120; left: 50%; bottom: calc(100px + env(safe-area-inset-bottom, 0px)); width: max-content; max-width: calc(100vw - 32px);
+  padding: 12px 16px; border-radius: 14px; transform: translateX(-50%); background: #0b1735; color: #f2f6ff;
+  border: 1px solid rgba(120, 165, 255, 0.28); box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45); font-size: 14.5px; line-height: 1.45; text-align: center;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .pv-toast { animation: pv-in .2s ease-out; }
+  @keyframes pv-in { from { opacity: 0; transform: translate(-50%, 8px); } }
+}
+
+/* The viewer's explicit theme wins over the system setting (the console stays dark). */
+:root[data-theme="light"]:not(.theme-dark), :root[data-theme="light"] .daylight {
+  --paper: #f3f6fc;
+  --surface: #ffffff;
+  --surface-2: #f6f8fd;
+  --ink: #0a1633;
+  --ink-2: #33415f;
+  --muted: #5d6b88;
+  --line: #e1e7f2;
+  --line-strong: #c8d2e5;
+  --navy: #050b1a;
+  --navy-2: #0b1735;
+  --night-ink: #eaf1ff;
+  --night-muted: #93a6cc;
+  --night-line: rgba(120, 165, 255, 0.16);
+  --board: #081329;
+  --flap-top: #13274f;
+  --flap-bottom: #0d1d3f;
+  --blue: #1f5fff;
+  --blue-strong: #1646cc;
+  --blue-soft: #e9f0ff;
+  --glow: #4c9bff;
+  --cyan: #5cc8ff;
+  --btn: #1f5fff;
+  --btn-hover: #2f6dff;
+  --link: #1a55f0;
+  --amber: #f5b301;
+  --amber-hi: #ffd166;
+  --amber-strong: #8a5a00;
+  --amber-soft: #fff4d6;
+  --lamp: #2ee59d;
+  --green: #0e8a5f;
+  --green-soft: #e1f5ec;
+  --red: #d6342b;
+  --red-soft: #fdecea;
+  --grey-soft: #edf1f8;
+  --topbar: rgba(255, 255, 255, 0.84);
+  --shadow-pop: 0 18px 50px rgba(10, 22, 51, 0.16);
+  --shadow-card: 0 1px 2px rgba(10, 22, 51, 0.04), 0 10px 30px rgba(10, 22, 51, 0.06);
+  color-scheme: light;
+}
+:root[data-theme="dark"]:not(.theme-dark), :root[data-theme="dark"] .daylight {
+  --paper: #050b18;
+  --surface: #0c1630;
+  --surface-2: #101d3c;
+  --ink: #eaf1ff;
+  --ink-2: #c2cee8;
+  --muted: #8b9cc2;
+  --line: #1a2a50;
+  --line-strong: #2a3d6c;
+  --navy: #03070f;
+  --navy-2: #0a1530;
+  --board: #060f22;
+  --blue: #5b95ff;
+  --blue-strong: #9dbcff;
+  --blue-soft: #10224d;
+  --btn: #2563ff;
+  --btn-hover: #3b74ff;
+  --link: #86b2ff;
+  --amber: #f7c53f;
+  --amber-strong: #ffd877;
+  --amber-soft: #33270a;
+  --green: #3fd49b;
+  --green-soft: #0b2c22;
+  --red: #ff7a70;
+  --red-soft: #3a1513;
+  --grey-soft: #142247;
+  --topbar: rgba(7, 14, 32, 0.8);
+  --shadow-pop: 0 18px 50px rgba(0, 0, 0, 0.55);
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.25);
+  color-scheme: dark;
+}
