@@ -24,7 +24,8 @@
   <link rel="apple-touch-icon" href="static/img/icon-180.png">
   <link rel="stylesheet" href="static/css/app.css">
   <link rel="stylesheet" href="static/css/preview.css">
-  <script src="static/js/preview.js" defer></script></head>
+  <script src="static/js/preview.js" defer></script>
+  <script src="static/js/app.js" defer></script></head>
 <body class="" data-locale="bs">
   <a class="skip-link" href="#main">Preskoči na sadržaj</a>
 <div class="demo-banner pv-bar" role="note"><span class="pv-text">Pregled dizajna. Sve firme, osobe i oglasi su izmišljeni.</span><nav class="pv-links" aria-label="Pregled"><a href="index.html">Sajt</a><a href="w-home.html">Aplikacija za radnike</a><a href="a-dashboard.html">Konzola za agencije</a><a class="pv-lang" href="en-job-15.html" lang="en">English</a></nav></div><header class="topbar">
@@ -87,13 +88,31 @@
   <div class="wrap">
     <a class="back-link" href="jobs.html" data-back><svg class="icon icon-dir" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m14.5 6-6 6 6 6"/></svg>Svi oglasi</a>
     <header class="detail-head">
-      <p class="detail-dest"><span class="flaps flaps-sm" aria-hidden="true"><span class="flap">S</span><span class="flap">T</span><span class="flap">R</span></span><span>Stuttgart, Njemačka</span><a class="detail-region" href="jobs.html">Evropa</a></p>
+      <p class="detail-dest"><span class="flaps flaps-sm" aria-hidden="true"><span class="flap">S</span><span class="flap">T</span><span class="flap">R</span></span><span class="detail-place"><img class="flag" src="static/img/flags/de.png" width="22" height="16" alt="" loading="lazy" decoding="async"><span><strong>Stuttgart</strong>, Njemačka</span></span><a class="detail-region" href="jobs.html">Evropa</a></p>
       <h1 class="page-hero-title">Njegovatelj/ica u domu za starije osobe</h1>
       <p class="detail-agency">
         <a href="agency-5.html">Sava Personal GmbH</a>
         <span class="verified" title="Workify je provjerio upis u registar i licencu"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12.1 2.2 2.2 4.3-4.5"/></svg><span>Verifikovano</span></span>
       </p>
     </header>
+  </div>
+</section>
+<section class="gallery-band night" aria-label="Slike mjesta rada i smještaja">
+  <div class="wrap">
+    <div class="gallery" data-carousel tabindex="0">
+        <figure class="gallery-item">
+          <a href="media/158e59db1c3bba48deaf448486b0426d.jpg" target="_blank" rel="noopener"><img src="media/158e59db1c3bba48deaf448486b0426d.jpg" alt="Mjesto rada: Njegovatelj/ica u domu za starije osobe" width="1600" height="1000" decoding="async"></a>
+          <figcaption><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8.5 7V5.5a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2V7"/><path d="M3 12.5h18"/></svg>Mjesto rada</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <a href="media/b7c39923affda2fbf08904a6b9179c72.jpg" target="_blank" rel="noopener"><img src="media/b7c39923affda2fbf08904a6b9179c72.jpg" alt="Smještaj: Njegovatelj/ica u domu za starije osobe" width="1600" height="1000" loading="lazy" decoding="async"></a>
+          <figcaption><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19V6.5"/><path d="M3 15h18v4"/><path d="M21 15v-2.5a3 3 0 0 0-3-3h-7.5V15"/><circle cx="6.8" cy="11.5" r="1.8"/></svg>Smještaj</figcaption>
+        </figure>
+    </div>
+    <div class="gallery-controls">
+      <button class="icon-btn icon-btn-night" type="button" data-carousel-prev aria-label="Prethodna slika" hidden><svg class="icon icon-dir icon-dir" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m14.5 6-6 6 6 6"/></svg></button>
+      <button class="icon-btn icon-btn-night" type="button" data-carousel-next aria-label="Sljedeća slika" hidden><svg class="icon icon-dir icon-dir" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9.5 6 6 6-6 6"/></svg></button>
+    </div>
   </div>
 </section>
 <div class="wrap page">
@@ -108,9 +127,13 @@
         </div>
 
       <dl class="facts">
-        <div class="fact fact-pay"><dt><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v.01M18 14.5v.01"/></svg>Plata</dt><dd>2.600–2.950 €<span class="fact-sub">bruto mjesečno</span></dd></div>
+        <div class="fact fact-pay">
+          <dt><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v.01M18 14.5v.01"/></svg>Plata</dt>
+          <dd>2.600–2.950 €<span class="fact-sub">bruto mjesečno</span>
+<span class="fact-net">Oko 1.950–2.200 € neto (procjena agencije)</span>          </dd>
+        </div>
         <div class="fact"><dt><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8.5 7V5.5a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2V7"/><path d="M3 12.5h18"/></svg>Vrsta posla</dt><dd>Puno radno vrijeme<span class="fact-sub">Njega i zdravstvo</span></dd></div>
-        <div class="fact"><dt><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Početak</dt><dd>21.12.2026.</dd></div>
+        <div class="fact"><dt><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Početak</dt><dd>22.12.2026.</dd></div>
         <div class="fact"><dt><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8.5" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M15.5 5a3.5 3.5 0 0 1 0 7"/><path d="M18 14.2a6.5 6.5 0 0 1 3.5 5.8"/></svg>Broj radnih mjesta</dt><dd>6</dd></div>
         <div class="fact"><dt><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3.5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-10z"/><path d="M14 3.5v5h5"/><path d="M9 13h6M9 16.5h4"/></svg>Trajanje ugovora (mjeseci)</dt><dd>Na neodređeno vrijeme</dd></div>
         <div class="fact"><dt><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>Sati sedmično</dt><dd>38</dd></div>
@@ -125,20 +148,92 @@
         <p class="perks-note">Ovo agencija obećava u oglasu. Provjeri da u tvom ugovoru piše isto.</p>
       </section>
 
+        <section class="card tl-card" aria-labelledby="tl-title">
+          <h2 class="card-title" id="tl-title"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></svg>Od prijave do prve plate</h2>
+          <p class="small muted">Ako se prijaviš danas, ovo su procjene agencije za svaki korak.</p>
+            <ol class="tl">
+      <li class="tl-step">
+        <span class="tl-dot" aria-hidden="true"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10.5 5-3v9l-5-3"/></svg></span>
+        <span class="tl-body">
+          <span class="tl-title">Prvi intervju</span>
+          <span class="tl-when">za oko 14 dana · <time datetime="2026-10-22">≈ 22.10.2026.</time></span>
+        </span>
+      </li>
+      <li class="tl-step">
+        <span class="tl-dot" aria-hidden="true"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 10h6M12 7c-1 .9-1.5 1.9-1.5 3s.5 2.1 1.5 3c1-.9 1.5-1.9 1.5-3s-.5-2.1-1.5-3z"/><path d="M9 17h6"/></svg></span>
+        <span class="tl-body">
+          <span class="tl-title">Poziv u ambasadu i viza</span>
+          <span class="tl-when">za oko 120 dana · <time datetime="2027-02-05">≈ 05.02.2027.</time></span>
+        </span>
+      </li>
+      <li class="tl-step">
+        <span class="tl-dot" aria-hidden="true"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12c0-.8-.7-1.5-1.5-1.5H15L10 3.5H8l2.5 7H6L4.5 8.5H3l1 3.5-1 3.5h1.5L6 13.5h4.5L8 20.5h2l5-7h4.5c.8 0 1.5-.7 1.5-1.5z"/></svg></span>
+        <span class="tl-body">
+          <span class="tl-title">Putovanje</span>
+          <span class="tl-when">za oko 140 dana · <time datetime="2027-02-25">≈ 25.02.2027.</time></span>
+        </span>
+      </li>
+      <li class="tl-step">
+        <span class="tl-dot" aria-hidden="true"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8.5 7V5.5a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2V7"/><path d="M3 12.5h18"/></svg></span>
+        <span class="tl-body">
+          <span class="tl-title">Prvi radni dan</span>
+          <span class="tl-when">za oko 145 dana · <time datetime="2027-03-02">≈ 02.03.2027.</time></span>
+        </span>
+      </li>
+      <li class="tl-step">
+        <span class="tl-dot" aria-hidden="true"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v.01M18 14.5v.01"/></svg></span>
+        <span class="tl-body">
+          <span class="tl-title">Prva plata</span>
+          <span class="tl-when">za oko 175 dana · <time datetime="2027-04-01">≈ 01.04.2027.</time></span>
+        </span>
+      </li>
+  </ol>
+
+          <p class="tl-note"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8v.01"/></svg>Ovo su procjene. Ambasade i dokumenti mogu pomjeriti datume; agencija ti javlja u poruci.</p>
+        </section>
+
+        <section class="card housing-card" aria-labelledby="housing-title">
+          <h2 class="card-title" id="housing-title"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19V6.5"/><path d="M3 15h18v4"/><path d="M21 15v-2.5a3 3 0 0 0-3-3h-7.5V15"/><circle cx="6.8" cy="11.5" r="1.8"/></svg>Smještaj</h2>
+          <dl class="housing-facts">
+            <div><dt>Ko ga obezbjeđuje</dt><dd>Pomoć oko smještaja</dd></div>
+<div><dt>Soba</dt><dd>Vlastita soba · Osoba po sobi: 1</dd></div><div><dt>Trošak za radnika</dt><dd>380 € mjesečno</dd></div>          </dl>
+<p class="housing-note"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4.5" y="3.5" width="15" height="14" rx="2.5"/><path d="M4.5 11h15M8 17.5v2.5M16 17.5v2.5"/><path d="M7.8 14.3h.01M16.2 14.3h.01"/></svg>Staff apartment next to the home, 2 minutes on foot.</p>            <ul class="housing-pics">
+<li><a href="media/b7c39923affda2fbf08904a6b9179c72.jpg" target="_blank" rel="noopener"><img src="media/b7c39923affda2fbf08904a6b9179c72-sm.jpg" alt="Smještaj: Njegovatelj/ica u domu za starije osobe" width="320" height="200" loading="lazy" decoding="async"></a></li>            </ul>
+        </section>
+
         <dl class="need-list">
 <div><dt><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3.5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-10z"/><path d="M14 3.5v5h5"/><path d="M9 13h6M9 16.5h4"/></svg>Potrebni dokumenti</dt><dd>Pasoš, CV, Diploma ili certifikat, Certifikat o jeziku</dd></div>        </dl>
 
-      <section class="prose">
-        <h2>O poslu</h2>
+      <section class="prose" id="job-text">
+        <div class="prose-head">
+          <h2>O poslu</h2>
+          <button class="btn btn-ghost btn-sm speak-btn" type="button" data-speak="#job-text" data-label-stop="Zaustavi" hidden><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 9.5h3l4.5-4v13l-4.5-4h-3z"/><path d="M15.5 9a4 4 0 0 1 0 6"/><path d="M18 6.5a7.5 7.5 0 0 1 0 11"/></svg><span>Pročitaj naglas</span></button>
+        </div>
         <p class="pre">Rad u modernom domu za starije osobe, u timu od 30 ljudi. Pomažeš stanarima doma oko njege, obroka i aktivnosti.
 
 Dok traje priznavanje tvoje kvalifikacije, plata je 2.600 €, a nakon toga 2.950 € bruto mjesečno. Poslodavac plaća avionsku kartu do Njemačke i troškove vize.</p>
-      </section>
-        <section class="prose">
           <h2>Uslovi</h2>
           <ul class="checklist">
 <li><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Završeno školovanje za medicinsku sestru/tehničara ili obuka za njegovatelja</span></li><li><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Iskustvo u njezi je prednost</span></li>          </ul>
-        </section>
+      </section>
+
+      <section class="card city-card" aria-labelledby="city-title">
+        <div class="city-map">
+            <svg class="route-map " viewBox="461.6 371.2 480.0 320.0" role="img" aria-label="Mapa: gdje je Stuttgart" preserveAspectRatio="xMidYMid slice">
+    <image href="static/img/map-base.svg" x="0" y="0" width="2400.0" height="2030.0"/>
+    <circle class="rm-dest-glow" cx="701.6" cy="531.2" r="16.32"/>
+    <circle class="rm-dest" cx="701.6" cy="531.2" r="6.72"/>
+    <text class="rm-label" x="701.6" y="516.8000000000001" font-size="17.28" text-anchor="middle">Stuttgart</text>
+  </svg>
+
+        </div>
+        <div class="city-body">
+          <h2 class="card-title" id="city-title"><img class="flag" src="static/img/flags/de.png" width="22" height="16" alt="" loading="lazy" decoding="async">O gradu Stuttgart</h2>
+<p class="city-text">Štutgart je centar njemačke automobilske industrije (Mercedes-Benz, Porsche, Bosch) i ima mnogo domova za njegu i bolnica koje traže osoblje. Grad leži u dolini s vinogradima. Smještaj je skup; regija je dobro povezana S-Bahn vozovima.</p>          <ul class="city-facts">
+<li><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg><span>Ljeto: danju oko 25 °C</span></li><li><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9"/><path d="m9.5 4.5 2.5 2 2.5-2M9.5 19.5l2.5-2 2.5 2"/></svg><span>Zima: danju oko 4 °C</span></li><li><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v.01M18 14.5v.01"/></svg><span>Novac: EUR</span></li>          </ul>
+          <a class="link-strong small" href="dest-de.html">Rad u zemlji Njemačka: pravila i službeni izvori</a>
+        </div>
+      </section>
 
       <section class="share-box" aria-labelledby="share-title">
         <h2 id="share-title" class="h4"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="18" cy="5.5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="18.5" r="2.5"/><path d="m8.2 10.8 7.6-4M8.2 13.2l7.6 4"/></svg>Podijeli ovaj oglas</h2>
@@ -154,10 +249,10 @@ Dok traje priznavanje tvoje kvalifikacije, plata je 2.600 €, a nakon toga 2.95
       <div class="card apply-card">
         <p class="apply-pay">2.600–2.950 €</p>
         <p class="muted small">bruto mjesečno</p>
-          <div class="apply-row">
+<p class="apply-net">Oko 1.950–2.200 € neto (procjena agencije)</p>          <div class="apply-row">
             <a class="btn btn-primary btn-lg btn-block" href="#" data-pv-off>Prijavi se na oglas</a>
           </div>
-<p class="small muted center">Za prijavu ti treba besplatan nalog.</p>        <p class="small muted">Objavljeno 13.09.2026.</p>
+<p class="small muted center">Za prijavu ti treba besplatan nalog.</p>        <p class="small muted">Objavljeno 14.09.2026.</p>
       </div>
 
 
@@ -172,7 +267,8 @@ Dok traje priznavanje tvoje kvalifikacije, plata je 2.600 €, a nakon toga 2.95
       <div class="card agency-card">
         <p class="agency-card-name">Sava Personal GmbH</p>
         <p class="small muted">Agencija za zapošljavanje, Njemačka</p>
-<p class="small">Broj licence za posredovanje: <strong>AÜG-ERL 0417/21</strong></p>        <a class="link-strong small" href="agency-5.html">Svi oglasi ove firme (2)</a>
+<p class="small">Broj licence za posredovanje: <strong>AÜG-ERL 0417/21</strong></p>          <p class="small employer-line"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4.5" y="3" width="15" height="18" rx="1.5"/><path d="M9.5 21v-3.5h5V21"/><path d="M8.5 7h1.5M14 7h1.5M8.5 10.5h1.5M14 10.5h1.5M8.5 14h1.5M14 14h1.5"/></svg>Ime poslodavca vidiš kad dođeš do intervjua.</p>
+        <a class="link-strong small" href="agency-5.html">Svi oglasi ove firme (2)</a>
       </div>
 
     </aside>
@@ -180,23 +276,27 @@ Dok traje priznavanje tvoje kvalifikacije, plata je 2.600 €, a nakon toga 2.95
 
     <section class="similar">
       <h2 class="section-title">Slični oglasi</h2>
-      <ul class="job-list">  <li class="job-row">
-    <a class="job-link" href="job-14.html">
-      <span class="job-code"><span class="flaps flaps-sm" aria-hidden="true"><span class="flap">M</span><span class="flap">U</span><span class="flap">C</span></span></span>
-      <span class="job-main">
-        <span class="job-title">TIG zavarivač (nehrđajući čelik)</span>
-        <span class="job-meta">
-          <span class="job-agency">Sava Personal GmbH<span class="verified-dot" title="Workify je provjerio upis u registar i licencu"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12.1 2.2 2.2 4.3-4.5"/></svg></span></span>
-          <span class="job-place"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-5.8-6.5-11a6.5 6.5 0 0 1 13 0c0 5.2-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>München, Njemačka</span>
-        </span>
-        <span class="job-tags">
-          <span class="tag">Puno radno vrijeme</span>
-<span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19V6.5"/><path d="M3 15h18v4"/><path d="M21 15v-2.5a3 3 0 0 0-3-3h-7.5V15"/><circle cx="6.8" cy="11.5" r="1.8"/></svg>Pomoć oko smještaja</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 10h6M12 7c-1 .9-1.5 1.9-1.5 3s.5 2.1 1.5 3c1-.9 1.5-1.9 1.5-3s-.5-2.1-1.5-3z"/><path d="M9 17h6"/></svg>Pomoć oko vize</span><span class="tag tag-ghost"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 5.5h9M8 3.5v2M5.5 5.5c.8 3.6 3.4 6.4 6.5 7.5M10.5 5.5c-.8 3.6-3.4 6.4-6.5 7.5"/><path d="m12.5 20.5 4-9 4 9M14 17h5"/></svg>Prevedeno</span>        </span>
-      </span>
-      <span class="job-side">
-        <span class="job-pay">3.200–3.700 €</span>
-        <span class="job-period">bruto mjesečno</span>
-      </span>
+      <ul class="job-list">  <li class="job-card">
+    <div class="jc-media">
+        <div class="jc-track" data-carousel tabindex="-1">
+            <a class="jc-slide" href="job-14.html" tabindex="-1"><img src="media/922a5f774760fd6eccc0ef66a4941b6a-sm.jpg" alt="Mjesto rada: TIG zavarivač (nehrđajući čelik)" width="640" height="400" loading="lazy" decoding="async"></a>
+            <a class="jc-slide" href="job-14.html" tabindex="-1" aria-hidden="true"><img src="media/c21c4f4c77af4afec765e0d57fc74c30-sm.jpg" alt="" width="640" height="400" loading="lazy" decoding="async"></a>
+            <a class="jc-slide" href="job-14.html" tabindex="-1" aria-hidden="true"><img src="media/7f602d76f7a26387b1d08856c9e19b2c-sm.jpg" alt="" width="640" height="400" loading="lazy" decoding="async"></a>
+            <a class="jc-slide" href="job-14.html" tabindex="-1" aria-hidden="true"><img src="media/a36995403c7f836047a319ebdaf87e1b-sm.jpg" alt="" width="640" height="400" loading="lazy" decoding="async"></a>
+        </div>
+          <button class="jc-nav jc-prev" type="button" data-carousel-prev aria-label="Prethodna slika" hidden><svg class="icon icon-dir icon-dir" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m14.5 6-6 6 6 6"/></svg></button>
+          <button class="jc-nav jc-next" type="button" data-carousel-next aria-label="Sljedeća slika" hidden><svg class="icon icon-dir icon-dir" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9.5 6 6 6-6 6"/></svg></button>
+          <span class="jc-dots" aria-hidden="true"><i class="is-on"></i><i></i><i></i><i></i></span>
+      <span class="jc-badges">
+<span class="jc-badge"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10.5 5-3v9l-5-3"/></svg>Video</span><span class="jc-badge"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8.5a2 2 0 0 1 2-2h2l1.5-2h5L16 6.5h2a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg>4</span>      </span>
+    </div>
+    <a class="jc-body" href="job-14.html">
+      <span class="jc-pay">3.200–3.700 €<small>bruto mjesečno</small></span>
+      <span class="jc-title">TIG zavarivač (nehrđajući čelik)</span>
+      <span class="jc-place"><img class="flag" src="static/img/flags/de.png" width="18" height="14" alt="" loading="lazy" decoding="async"><span><strong>München</strong>, Njemačka</span></span>
+      <span class="jc-agency">Sava Personal GmbH<span class="verified-dot" title="Workify je provjerio upis u registar i licencu"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12.1 2.2 2.2 4.3-4.5"/></svg></span></span>
+      <span class="jc-tags">
+<span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19V6.5"/><path d="M3 15h18v4"/><path d="M21 15v-2.5a3 3 0 0 0-3-3h-7.5V15"/><circle cx="6.8" cy="11.5" r="1.8"/></svg>Pomoć oko smještaja</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 10h6M12 7c-1 .9-1.5 1.9-1.5 3s.5 2.1 1.5 3c1-.9 1.5-1.9 1.5-3s-.5-2.1-1.5-3z"/><path d="M9 17h6"/></svg>Pomoć oko vize</span><span class="tag tag-ghost"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 5.5h9M8 3.5v2M5.5 5.5c.8 3.6 3.4 6.4 6.5 7.5M10.5 5.5c-.8 3.6-3.4 6.4-6.5 7.5"/><path d="m12.5 20.5 4-9 4 9M14 17h5"/></svg>Prevedeno</span>      </span>
     </a>
   </li>
 </ul>
@@ -218,19 +318,25 @@ Dok traje priznavanje tvoje kvalifikacije, plata je 2.600 €, a nakon toga 2.95
         <a href="jobs.html">Evropa</a>
         <a href="jobs.html">Zapadni Balkan</a>
         <a href="destinations.html">Destinacije</a>
+        <a href="jobs-map.html">Gdje su poslovi</a>
+        <a href="waitlist.html">Lista čekanja</a>
       </nav>
       <nav class="footer-col" aria-label="Pomoć">
         <h2>Pomoć</h2>
+        <a href="how-it-works.html">Kako radi (video)</a>
         <a href="guides.html">Vodiči</a>
         <a href="guide-fake-job-offers.html">Kako prepoznati lažnu ponudu za posao</a>
         <a href="index.html#faq">Česta pitanja radnika</a>
+        <a href="stories.html">Priče radnika</a>
         <a href="#" data-pv-off>Kontakt</a>
       </nav>
       <nav class="footer-col" aria-label="Workify">
         <h2>Workify</h2>
         <a href="employers.html">Za poslodavce</a>
+        <a href="pricing.html">Cijene za firme</a>
         <a href="privacy.html">Privatnost</a>
         <a href="terms.html">Uslovi korištenja</a>
+        <a href="terms-business.html">Uslovi za firme</a>
         <a href="imprint.html">Impressum</a>
       </nav>
     </div>
@@ -239,5 +345,32 @@ Dok traje priznavanje tvoje kvalifikacije, plata je 2.600 €, a nakon toga 2.95
       <p class="footer-copy">© 2026 Workify</p>
     </div>
   </div>
-</footer></body>
+</footer><div class="assist" data-assistant data-faq-url="assistant-faq.json" data-ask-url="#" data-ai="0" data-job-id="15" data-csrf="gE_sUhD0PTzFsXyX5XLRiTr4my2d3YxX0ZNfh_IAs9k" data-speech-lang="bs" data-label-wait="Tražim odgovor…" data-label-read="Pročitaj naglas" data-error="Odgovor se nije mogao učitati. Provjeri internet i pokušaj ponovo." data-ai-note="Odgovor AI-ja može biti pogrešan. Za svoj slučaj pitaj agenciju u chatu.">
+  <button class="assist-fab" type="button" data-assist-open aria-expanded="false" aria-controls="assist-panel">
+    <span class="assist-fab-icon"><svg class="icon " width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/><path d="m12 7.8 1 2.3 2.3 1-2.3 1-1 2.3-1-2.3-2.3-1 2.3-1z"/></svg></span><span class="assist-fab-label">Pitaj</span>
+  </button>
+  <section class="assist-panel daylight" id="assist-panel" role="dialog" aria-labelledby="assist-title" hidden>
+    <header class="assist-head">
+      <span class="assist-avatar" aria-hidden="true"><svg class="logo-mark" width="24" height="14.1" viewBox="0 0 170.3 100" aria-hidden="true"><defs><linearGradient id="asa" x1="0" y1="0" x2="0.55" y2="1"><stop offset="0" stop-color="#2F6BFF"/><stop offset="1" stop-color="#1A4FE0"/></linearGradient><linearGradient id="asb" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#4D9BFF"/><stop offset="0.55" stop-color="#2F78FF"/><stop offset="1" stop-color="#2463F2"/></linearGradient><filter id="ass" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="-1.6" dy="0.4" stdDeviation="1.1" flood-color="#0a1f66" flood-opacity="0.5"/></filter><clipPath id="asc"><rect x="0" y="0" width="170.3" height="120.0"/></clipPath></defs><g fill="none" stroke="url(#asa)" stroke-width="27.0" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#asc)"><path d="M8.45 -14.00L54.45 86.50L72.45 60.00"/></g><g fill="none" stroke="url(#asb)" stroke-width="27.0" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#asc)" filter="url(#ass)"><path d="M89.45 13.50L108.45 86.50L162.45 -14.00"/></g></svg></span>
+      <div class="assist-head-text">
+        <h2 id="assist-title">Workify pomoć</h2>
+        <p>Odgovori iz pitanja koja radnici postavljaju</p>
+      </div>
+      <button class="icon-btn" type="button" data-assist-close aria-label="Zatvori"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></button>
+    </header>
+    <div class="assist-log" data-assist-log aria-live="polite">
+      <div class="assist-msg bot"><p>Zdravo! Pitaj o poslovima, plati, troškovima, vizi ili dokumentima. Možeš i dodirnuti mikrofon i govoriti.</p></div>
+    </div>
+    <div class="assist-chips" data-assist-chips>
+<button type="button" class="assist-chip" data-assist-ask>Moram li išta platiti da ovdje nađem posao?</button><button type="button" class="assist-chip" data-assist-ask>U kojim državama mogu raditi?</button><button type="button" class="assist-chip" data-assist-ask>Kako to funkcioniše, korak po korak?</button><button type="button" class="assist-chip" data-assist-ask>Još nema posla za mene. Šta mogu uraditi?</button>    </div>
+    <form class="assist-form" data-assist-form>
+      <label class="sr-only" for="assist-input">Napiši pitanje…</label>
+      <input id="assist-input" type="text" maxlength="800" autocomplete="off" enterkeyhint="send" placeholder="Napiši pitanje…" data-assist-input>
+      <button class="icon-btn assist-mic" type="button" data-assist-mic hidden aria-label="Izgovori pitanje"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3.5" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0"/><path d="M12 18v2.5"/></svg></button>
+      <button class="assist-send" type="submit" aria-label="Pošalji"><svg class="icon icon-dir" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 3.5 10 14"/><path d="M20.5 3.5 14 20.5l-4-6.5-6.5-4z"/></svg></button>
+    </form>
+    <p class="assist-foot">Odgovori iz Workify čestih pitanja. Workify od tebe nikad ne traži novac.</p>
+    <span hidden data-assist-volume><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 9.5h3l4.5-4v13l-4.5-4h-3z"/><path d="M15.5 9a4 4 0 0 1 0 6"/><path d="M18 6.5a7.5 7.5 0 0 1 0 11"/></svg></span>
+  </section>
+</div></body>
 </html>

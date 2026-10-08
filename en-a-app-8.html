@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="static/css/app.css">
   <link rel="stylesheet" href="static/css/preview.css">
   <script src="static/js/preview.js" defer></script>
+  <script src="static/js/app.js" defer></script>
 </head>
 <body class="console-body" data-locale="en">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -37,9 +38,11 @@
         <a href="en-a-jobs.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8.5 7V5.5a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2V7"/><path d="M3 12.5h18"/></svg><span>Job posts</span></a>
         <a href="en-a-candidates.html" aria-current="page"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8.5" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M15.5 5a3.5 3.5 0 0 1 0 7"/><path d="M18 14.2a6.5 6.5 0 0 1 3.5 5.8"/></svg><span>Candidates</span></a>
         <a href="en-a-talent.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><span>Find workers</span></a>
+        <a href="en-a-shortlist.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5h17l-1.6 9a2 2 0 0 1-2 1.6H7.1a2 2 0 0 1-2-1.6z"/><path d="m8 9.5 3-5.5M16 9.5l-3-5.5"/><path d="M9 13.5v3M12 13.5v3M15 13.5v3"/></svg><span>Shortlist</span></a>
         <a href="en-a-inbox.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/></svg><span>Messages</span></a>
         <a href="en-a-team.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="3"/><path d="M6.5 20a5.5 5.5 0 0 1 11 0"/><circle cx="5" cy="10" r="2.2"/><path d="M1.8 18a3.6 3.6 0 0 1 5-3.3"/><circle cx="19" cy="10" r="2.2"/><path d="M22.2 18a3.6 3.6 0 0 0-5-3.3"/></svg><span>Team</span></a>
         <a href="en-a-profile.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4.5" y="3" width="15" height="18" rx="1.5"/><path d="M9.5 21v-3.5h5V21"/><path d="M8.5 7h1.5M14 7h1.5M8.5 10.5h1.5M14 10.5h1.5M8.5 14h1.5M14 14h1.5"/></svg><span>Company profile</span></a>
+        <a href="en-a-billing.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3.5h12v17l-2-1.3-2 1.3-2-1.3-2 1.3-2-1.3-2 1.3z"/><path d="M9 8h6M9 11.5h6M9 15h3.5"/></svg><span>Billing</span></a>
       </nav>
     <nav class="side-nav side-nav-bottom">
       <a href="en-jobs.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><span>Public job board</span></a>
@@ -110,7 +113,7 @@
         <div><dt>Years of experience</dt><dd>8 yrs</dd></div>
         <div><dt>Lives in</dt><dd>Lucknow, India</dd></div>
         <div><dt>Nationality</dt><dd>India</dd></div>
-        <div><dt>Available from</dt><dd>6 Nov 2026</dd></div>
+        <div><dt>Available from</dt><dd>7 Nov 2026</dd></div>
         <div><dt>Expected monthly pay</dt><dd>AED 3,500</dd></div>
         <div><dt>Languages</dt><dd>Hindi (native), English B2</dd></div>
         <div class="span-2"><dt>Skills</dt><dd>Chillers, VRF, split units, refrigerant handling</dd></div>
@@ -224,13 +227,50 @@
       <span class="doc-title">Passport</span>
       <span class="doc-meta">
         <span>1 KB</span>
-<span class="doc-exp">Valid until 25 Mar 2029</span>      </span>
+<span class="doc-exp">Valid until 26 Mar 2029</span>      </span>
     </span>
     <span class="doc-actions">
 <a class="btn btn-ghost btn-sm" href="#" data-pv-off target="_blank" rel="noopener"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/></svg><span>Open</span></a>    </span>
   </li>
 </ul>
         <p class="small muted">Every time a document is opened, it is recorded in the audit log.</p>
+    </section>
+
+    <section class="card contract-card" id="contract">
+      <header class="card-head">
+        <h2 class="card-title"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h8l3.5 3.5v13.5h-11.5z"/><path d="M14.5 3.5V7H18"/><path d="M9 10.5h6M9 13.5h4"/><path d="M8.8 17.6c.9-1.3 1.6-1.4 2.1-.3s1.2 1.1 2-.1c.5-.7 1-.8 1.6-.3"/></svg>Contract</h2>
+<span class="muted small">Files: 1</span>      </header>
+        <ul class="doc-list compact">
+            <li class="doc-row">
+              <span class="doc-icon"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h8l3.5 3.5v13.5h-11.5z"/><path d="M14.5 3.5V7H18"/><path d="M9 10.5h6M9 13.5h4"/><path d="M8.8 17.6c.9-1.3 1.6-1.4 2.1-.3s1.2 1.1 2-.1c.5-.7 1-.8 1.6-.3"/></svg></span>
+              <span class="doc-main">
+                <a class="doc-name" href="#" data-pv-off target="_blank" rel="noopener">Employment contract</a>
+                <span class="doc-meta">Employment_contract_Rahul_Verma.pdf · 3 Oct 2026</span>
+              </span>
+              <form method="post" action="#" data-confirm="Delete this file? The worker will no longer see it.">
+                <input type="hidden" name="csrf_token" value="">
+                <button class="icon-btn" type="submit" aria-label="Delete"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 7h15"/><path d="M10 11v5.5M14 11v5.5"/><path d="M6.5 7l.8 11.6a2 2 0 0 0 2 1.9h5.4a2 2 0 0 0 2-1.9L17.5 7"/><path d="M9.5 7V4.5h5V7"/></svg></button>
+              </form>
+            </li>
+        </ul>
+        <form method="post" action="#" enctype="multipart/form-data" class="stack contract-upload">
+          <input type="hidden" name="csrf_token" value="">
+          <div class="seg-choice" role="radiogroup" aria-label="Type of document">
+<label><input type="radio" name="kind" value="contract" checked><span>Employment contract</span></label><label><input type="radio" name="kind" value="offer"><span>Job offer</span></label><label><input type="radio" name="kind" value="other"><span>Other document</span></label>          </div>
+            <div class="field">
+    <span class="label">File</span>
+    <input class="file-input" id="f-file" name="file" type="file" accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" required>
+    <label class="file-drop" for="f-file">
+      <svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 15V4.5"/><path d="m7.5 9 4.5-4.5L16.5 9"/><path d="M4.5 15v3.5a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V15"/></svg>
+      <span class="file-drop-text" data-file-label>Choose a file</span>
+      <span class="file-drop-hint">PDF, JPG or PNG, up to 10 MB</span>
+    </label>
+    
+  </div>
+
+          <button class="btn btn-primary" type="submit"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 15V4.5"/><path d="m7.5 9 4.5-4.5L16.5 9"/><path d="M4.5 15v3.5a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V15"/></svg>Add for the worker</button>
+        </form>
+        <p class="small muted">The worker sees the file in the application, can compare it with the ad and can have it explained in their language.</p>
     </section>
 
       <section class="card chat" id="chat" data-chat
@@ -295,6 +335,15 @@
       <p class="small muted">The responsible person gets the notifications for this candidate. Without one, the whole team does.</p>
     </section>
 
+      <section class="card guarantee-card" id="guarantee">
+        <h2 class="card-title"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3.5h12v17l-2-1.3-2 1.3-2-1.3-2 1.3-2-1.3-2 1.3z"/><path d="M9 8h6M9 11.5h6M9 15h3.5"/></svg>Placement fee</h2>
+        <dl class="kv">
+          <div><dt>To pay</dt><dd><strong>AED 3,200</strong></dd></div>
+          <div><dt>Status</dt><dd><span class="badge bill-open">Open</span></dd></div>
+        </dl>
+        <p class="small"><a href="en-a-billing.html">All fees</a></p>
+      </section>
+
   <section class="card match-card" id="match">
     <h2 class="card-title"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1 5.8-5.2-2.8-5.2 2.8 1-5.8-4.3-4.1 5.9-.8z"/></svg>Match</h2>
     <div class="match-head">
@@ -318,14 +367,6 @@
         <div class="stop-body">
           <div class="stop-head">
             <p class="stop-title">Applied</p>
-<p class="stop-date">20 Sep 2026</p>          </div>
-        </div>
-      </li>
-      <li class="stop is-done">
-        <span class="stop-dot" aria-hidden="true"><svg class="icon " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>
-        <div class="stop-body">
-          <div class="stop-head">
-            <p class="stop-title">In review</p>
 <p class="stop-date">21 Sep 2026</p>          </div>
         </div>
       </li>
@@ -333,8 +374,16 @@
         <span class="stop-dot" aria-hidden="true"><svg class="icon " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>
         <div class="stop-body">
           <div class="stop-head">
+            <p class="stop-title">In review</p>
+<p class="stop-date">22 Sep 2026</p>          </div>
+        </div>
+      </li>
+      <li class="stop is-done">
+        <span class="stop-dot" aria-hidden="true"><svg class="icon " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>
+        <div class="stop-body">
+          <div class="stop-head">
             <p class="stop-title">Interview</p>
-<p class="stop-date">24 Sep 2026</p>          </div>
+<p class="stop-date">25 Sep 2026</p>          </div>
         </div>
       </li>
       <li class="stop is-done">
@@ -342,7 +391,7 @@
         <div class="stop-body">
           <div class="stop-head">
             <p class="stop-title">Offer</p>
-<p class="stop-date">28 Sep 2026</p>          </div>
+<p class="stop-date">29 Sep 2026</p>          </div>
         </div>
       </li>
       <li class="stop is-current" aria-current="step">
@@ -350,7 +399,7 @@
         <div class="stop-body">
           <div class="stop-head">
             <p class="stop-title">Contract signed</p>
-<p class="stop-date">2 Oct 2026</p>          </div>
+<p class="stop-date">3 Oct 2026</p>          </div>
         </div>
       </li>
       <li class="stop is-todo">

@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="static/css/app.css">
   <link rel="stylesheet" href="static/css/preview.css">
   <script src="static/js/preview.js" defer></script>
+  <script src="static/js/app.js" defer></script>
 </head>
 <body class="" data-locale="bs">
   <a class="skip-link" href="#main">Preskoči na sadržaj</a>
@@ -110,99 +111,110 @@
         <ul class="trade-grid trade-grid-compact">
 <li><a class="trade" href="jobs.html"><span>Dostava i kuriri</span><b>1</b></a></li><li><a class="trade" href="jobs.html"><span>Elektro</span><b>1</b></a></li><li><a class="trade" href="jobs.html"><span>Logistika i skladište</span><b>1</b></a></li><li><a class="trade" href="jobs.html"><span>Vodoinstalacije i grijanje</span><b>1</b></a></li><li><a class="trade" href="jobs.html"><span>Zaštitari i obezbjeđenje</span><b>1</b></a></li>        </ul>
       <h2 class="h3">Otvoreni oglasi – Ujedinjeni Arapski Emirati</h2>
-        <ul class="job-list">  <li class="job-row">
-    <a class="job-link" href="job-4.html">
-      <span class="job-code"><span class="flaps flaps-sm" aria-hidden="true"><span class="flap">D</span><span class="flap">X</span><span class="flap">B</span></span></span>
-      <span class="job-main">
-        <span class="job-title">Radnik u skladištu (Jebel Ali)</span>
-        <span class="job-meta">
-          <span class="job-agency">Saffron Route Recruitment LLC<span class="verified-dot" title="Workify je provjerio upis u registar i licencu"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12.1 2.2 2.2 4.3-4.5"/></svg></span></span>
-          <span class="job-place"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-5.8-6.5-11a6.5 6.5 0 0 1 13 0c0 5.2-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Dubai, Ujedinjeni Arapski Emirati</span>
-        </span>
-        <span class="job-tags">
-          <span class="tag">Puno radno vrijeme</span>
-<span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19V6.5"/><path d="M3 15h18v4"/><path d="M21 15v-2.5a3 3 0 0 0-3-3h-7.5V15"/><circle cx="6.8" cy="11.5" r="1.8"/></svg>Smještaj obezbijeđen</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 10h6M12 7c-1 .9-1.5 1.9-1.5 3s.5 2.1 1.5 3c1-.9 1.5-1.9 1.5-3s-.5-2.1-1.5-3z"/><path d="M9 17h6"/></svg>Pomoć oko vize</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12c0-.8-.7-1.5-1.5-1.5H15L10 3.5H8l2.5 7H6L4.5 8.5H3l1 3.5-1 3.5h1.5L6 13.5h4.5L8 20.5h2l5-7h4.5c.8 0 1.5-.7 1.5-1.5z"/></svg>Avionska karta</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 3.5v17M4.5 3.5v5a2.5 2.5 0 0 0 5 0v-5"/><path d="M17 20.5V3.5c-2 1.5-3.2 4-3.2 7v3H17"/></svg>Hrana</span><span class="tag tag-ghost"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 5.5h9M8 3.5v2M5.5 5.5c.8 3.6 3.4 6.4 6.5 7.5M10.5 5.5c-.8 3.6-3.4 6.4-6.5 7.5"/><path d="m12.5 20.5 4-9 4 9M14 17h5"/></svg>Prevedeno</span>        </span>
-      </span>
-      <span class="job-side">
-        <span class="job-pay">1.800–2.200 AED</span>
-        <span class="job-period">bruto mjesečno</span>
-      </span>
+        <ul class="job-list">  <li class="job-card">
+    <div class="jc-media">
+        <div class="jc-track" data-carousel tabindex="-1">
+            <a class="jc-slide" href="job-4.html" tabindex="-1"><img src="media/2e2280031e5eeaf84364ecd826af1ddf-sm.jpg" alt="Mjesto rada: Radnik u skladištu (Jebel Ali)" width="640" height="400" loading="lazy" decoding="async"></a>
+            <a class="jc-slide" href="job-4.html" tabindex="-1" aria-hidden="true"><img src="media/a89cd31bd35c1a7c1924e338a7fd5b29-sm.jpg" alt="" width="640" height="400" loading="lazy" decoding="async"></a>
+            <a class="jc-slide" href="job-4.html" tabindex="-1" aria-hidden="true"><img src="media/5d6151bfdc48ee491311b90cd8de66cb-sm.jpg" alt="" width="640" height="400" loading="lazy" decoding="async"></a>
+        </div>
+          <button class="jc-nav jc-prev" type="button" data-carousel-prev aria-label="Prethodna slika" hidden><svg class="icon icon-dir icon-dir" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m14.5 6-6 6 6 6"/></svg></button>
+          <button class="jc-nav jc-next" type="button" data-carousel-next aria-label="Sljedeća slika" hidden><svg class="icon icon-dir icon-dir" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9.5 6 6 6-6 6"/></svg></button>
+          <span class="jc-dots" aria-hidden="true"><i class="is-on"></i><i></i><i></i></span>
+      <span class="jc-badges">
+<span class="jc-badge"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8.5a2 2 0 0 1 2-2h2l1.5-2h5L16 6.5h2a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg>3</span>      </span>
+    </div>
+    <a class="jc-body" href="job-4.html">
+      <span class="jc-pay">1.800–2.200 AED<small>neto mjesečno</small></span>
+      <span class="jc-title">Radnik u skladištu (Jebel Ali)</span>
+      <span class="jc-place"><img class="flag" src="static/img/flags/ae.png" width="18" height="14" alt="" loading="lazy" decoding="async"><span><strong>Dubai</strong>, Ujedinjeni Arapski Emirati</span></span>
+      <span class="jc-agency">Saffron Route Recruitment LLC<span class="verified-dot" title="Workify je provjerio upis u registar i licencu"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12.1 2.2 2.2 4.3-4.5"/></svg></span></span>
+      <span class="jc-tags">
+<span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19V6.5"/><path d="M3 15h18v4"/><path d="M21 15v-2.5a3 3 0 0 0-3-3h-7.5V15"/><circle cx="6.8" cy="11.5" r="1.8"/></svg>Smještaj obezbijeđen</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 10h6M12 7c-1 .9-1.5 1.9-1.5 3s.5 2.1 1.5 3c1-.9 1.5-1.9 1.5-3s-.5-2.1-1.5-3z"/><path d="M9 17h6"/></svg>Pomoć oko vize</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12c0-.8-.7-1.5-1.5-1.5H15L10 3.5H8l2.5 7H6L4.5 8.5H3l1 3.5-1 3.5h1.5L6 13.5h4.5L8 20.5h2l5-7h4.5c.8 0 1.5-.7 1.5-1.5z"/></svg>Avionska karta</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 3.5v17M4.5 3.5v5a2.5 2.5 0 0 0 5 0v-5"/><path d="M17 20.5V3.5c-2 1.5-3.2 4-3.2 7v3H17"/></svg>Hrana</span><span class="tag tag-ghost"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 5.5h9M8 3.5v2M5.5 5.5c.8 3.6 3.4 6.4 6.5 7.5M10.5 5.5c-.8 3.6-3.4 6.4-6.5 7.5"/><path d="m12.5 20.5 4-9 4 9M14 17h5"/></svg>Prevedeno</span>      </span>
     </a>
   </li>
-  <li class="job-row">
-    <a class="job-link" href="job-3.html">
-      <span class="job-code"><span class="flaps flaps-sm" aria-hidden="true"><span class="flap">D</span><span class="flap">X</span><span class="flap">B</span></span></span>
-      <span class="job-main">
-        <span class="job-title">Dostavljač na motociklu</span>
-        <span class="job-meta">
-          <span class="job-agency">Saffron Route Recruitment LLC<span class="verified-dot" title="Workify je provjerio upis u registar i licencu"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12.1 2.2 2.2 4.3-4.5"/></svg></span></span>
-          <span class="job-place"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-5.8-6.5-11a6.5 6.5 0 0 1 13 0c0 5.2-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Dubai, Ujedinjeni Arapski Emirati</span>
-        </span>
-        <span class="job-tags">
-          <span class="tag">Puno radno vrijeme</span>
-<span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19V6.5"/><path d="M3 15h18v4"/><path d="M21 15v-2.5a3 3 0 0 0-3-3h-7.5V15"/><circle cx="6.8" cy="11.5" r="1.8"/></svg>Pomoć oko smještaja</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 10h6M12 7c-1 .9-1.5 1.9-1.5 3s.5 2.1 1.5 3c1-.9 1.5-1.9 1.5-3s-.5-2.1-1.5-3z"/><path d="M9 17h6"/></svg>Pomoć oko vize</span><span class="tag tag-ghost"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 5.5h9M8 3.5v2M5.5 5.5c.8 3.6 3.4 6.4 6.5 7.5M10.5 5.5c-.8 3.6-3.4 6.4-6.5 7.5"/><path d="m12.5 20.5 4-9 4 9M14 17h5"/></svg>Prevedeno</span>        </span>
+  <li class="job-card">
+    <div class="jc-media">
+        <div class="jc-track" data-carousel tabindex="-1">
+            <a class="jc-slide" href="job-3.html" tabindex="-1"><img src="media/c7398a6912abbdffd84ca9dfe9a24b79-sm.jpg" alt="Mjesto rada: Dostavljač na motociklu" width="640" height="400" loading="lazy" decoding="async"></a>
+        </div>
+      <span class="jc-badges">
       </span>
-      <span class="job-side">
-        <span class="job-pay">2.600–3.400 AED</span>
-        <span class="job-period">bruto mjesečno</span>
-      </span>
+    </div>
+    <a class="jc-body" href="job-3.html">
+      <span class="jc-pay">2.600–3.400 AED<small>neto mjesečno</small></span>
+      <span class="jc-title">Dostavljač na motociklu</span>
+      <span class="jc-place"><img class="flag" src="static/img/flags/ae.png" width="18" height="14" alt="" loading="lazy" decoding="async"><span><strong>Dubai</strong>, Ujedinjeni Arapski Emirati</span></span>
+      <span class="jc-agency">Saffron Route Recruitment LLC<span class="verified-dot" title="Workify je provjerio upis u registar i licencu"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12.1 2.2 2.2 4.3-4.5"/></svg></span></span>
+      <span class="jc-tags">
+<span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19V6.5"/><path d="M3 15h18v4"/><path d="M21 15v-2.5a3 3 0 0 0-3-3h-7.5V15"/><circle cx="6.8" cy="11.5" r="1.8"/></svg>Pomoć oko smještaja</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 10h6M12 7c-1 .9-1.5 1.9-1.5 3s.5 2.1 1.5 3c1-.9 1.5-1.9 1.5-3s-.5-2.1-1.5-3z"/><path d="M9 17h6"/></svg>Pomoć oko vize</span><span class="tag tag-ghost"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 5.5h9M8 3.5v2M5.5 5.5c.8 3.6 3.4 6.4 6.5 7.5M10.5 5.5c-.8 3.6-3.4 6.4-6.5 7.5"/><path d="m12.5 20.5 4-9 4 9M14 17h5"/></svg>Prevedeno</span>      </span>
     </a>
   </li>
-  <li class="job-row">
-    <a class="job-link" href="job-5.html">
-      <span class="job-code"><span class="flaps flaps-sm" aria-hidden="true"><span class="flap">A</span><span class="flap">U</span><span class="flap">H</span></span></span>
-      <span class="job-main">
-        <span class="job-title">Zaštitar (poslovne i stambene zgrade)</span>
-        <span class="job-meta">
-          <span class="job-agency">Saffron Route Recruitment LLC<span class="verified-dot" title="Workify je provjerio upis u registar i licencu"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12.1 2.2 2.2 4.3-4.5"/></svg></span></span>
-          <span class="job-place"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-5.8-6.5-11a6.5 6.5 0 0 1 13 0c0 5.2-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Abu Dhabi, Ujedinjeni Arapski Emirati</span>
-        </span>
-        <span class="job-tags">
-          <span class="tag">Puno radno vrijeme</span>
-<span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19V6.5"/><path d="M3 15h18v4"/><path d="M21 15v-2.5a3 3 0 0 0-3-3h-7.5V15"/><circle cx="6.8" cy="11.5" r="1.8"/></svg>Smještaj obezbijeđen</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 10h6M12 7c-1 .9-1.5 1.9-1.5 3s.5 2.1 1.5 3c1-.9 1.5-1.9 1.5-3s-.5-2.1-1.5-3z"/><path d="M9 17h6"/></svg>Pomoć oko vize</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12c0-.8-.7-1.5-1.5-1.5H15L10 3.5H8l2.5 7H6L4.5 8.5H3l1 3.5-1 3.5h1.5L6 13.5h4.5L8 20.5h2l5-7h4.5c.8 0 1.5-.7 1.5-1.5z"/></svg>Avionska karta</span><span class="tag tag-ghost"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 5.5h9M8 3.5v2M5.5 5.5c.8 3.6 3.4 6.4 6.5 7.5M10.5 5.5c-.8 3.6-3.4 6.4-6.5 7.5"/><path d="m12.5 20.5 4-9 4 9M14 17h5"/></svg>Prevedeno</span>        </span>
-      </span>
-      <span class="job-side">
-        <span class="job-pay">2.200–2.600 AED</span>
-        <span class="job-period">bruto mjesečno</span>
-      </span>
+  <li class="job-card">
+    <div class="jc-media">
+        <div class="jc-track" data-carousel tabindex="-1">
+            <a class="jc-slide" href="job-5.html" tabindex="-1"><img src="media/cd7bf520b5b70cb5e9f00cac31b20d26-sm.jpg" alt="Mjesto rada: Zaštitar (poslovne i stambene zgrade)" width="640" height="400" loading="lazy" decoding="async"></a>
+            <a class="jc-slide" href="job-5.html" tabindex="-1" aria-hidden="true"><img src="media/46f4ea390af0a879126d8e250c1f34fd-sm.jpg" alt="" width="640" height="400" loading="lazy" decoding="async"></a>
+        </div>
+          <button class="jc-nav jc-prev" type="button" data-carousel-prev aria-label="Prethodna slika" hidden><svg class="icon icon-dir icon-dir" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m14.5 6-6 6 6 6"/></svg></button>
+          <button class="jc-nav jc-next" type="button" data-carousel-next aria-label="Sljedeća slika" hidden><svg class="icon icon-dir icon-dir" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9.5 6 6 6-6 6"/></svg></button>
+          <span class="jc-dots" aria-hidden="true"><i class="is-on"></i><i></i></span>
+      <span class="jc-badges">
+<span class="jc-badge"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8.5a2 2 0 0 1 2-2h2l1.5-2h5L16 6.5h2a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg>2</span>      </span>
+    </div>
+    <a class="jc-body" href="job-5.html">
+      <span class="jc-pay">2.200–2.600 AED<small>neto mjesečno</small></span>
+      <span class="jc-title">Zaštitar (poslovne i stambene zgrade)</span>
+      <span class="jc-place"><img class="flag" src="static/img/flags/ae.png" width="18" height="14" alt="" loading="lazy" decoding="async"><span><strong>Abu Dhabi</strong>, Ujedinjeni Arapski Emirati</span></span>
+      <span class="jc-agency">Saffron Route Recruitment LLC<span class="verified-dot" title="Workify je provjerio upis u registar i licencu"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12.1 2.2 2.2 4.3-4.5"/></svg></span></span>
+      <span class="jc-tags">
+<span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19V6.5"/><path d="M3 15h18v4"/><path d="M21 15v-2.5a3 3 0 0 0-3-3h-7.5V15"/><circle cx="6.8" cy="11.5" r="1.8"/></svg>Smještaj obezbijeđen</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 10h6M12 7c-1 .9-1.5 1.9-1.5 3s.5 2.1 1.5 3c1-.9 1.5-1.9 1.5-3s-.5-2.1-1.5-3z"/><path d="M9 17h6"/></svg>Pomoć oko vize</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12c0-.8-.7-1.5-1.5-1.5H15L10 3.5H8l2.5 7H6L4.5 8.5H3l1 3.5-1 3.5h1.5L6 13.5h4.5L8 20.5h2l5-7h4.5c.8 0 1.5-.7 1.5-1.5z"/></svg>Avionska karta</span><span class="tag tag-ghost"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 5.5h9M8 3.5v2M5.5 5.5c.8 3.6 3.4 6.4 6.5 7.5M10.5 5.5c-.8 3.6-3.4 6.4-6.5 7.5"/><path d="m12.5 20.5 4-9 4 9M14 17h5"/></svg>Prevedeno</span>      </span>
     </a>
   </li>
-  <li class="job-row">
-    <a class="job-link" href="job-2.html">
-      <span class="job-code"><span class="flaps flaps-sm" aria-hidden="true"><span class="flap">A</span><span class="flap">U</span><span class="flap">H</span></span></span>
-      <span class="job-main">
-        <span class="job-title">HVAC tehničar (čileri i split uređaji)</span>
-        <span class="job-meta">
-          <span class="job-agency">Saffron Route Recruitment LLC<span class="verified-dot" title="Workify je provjerio upis u registar i licencu"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12.1 2.2 2.2 4.3-4.5"/></svg></span></span>
-          <span class="job-place"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-5.8-6.5-11a6.5 6.5 0 0 1 13 0c0 5.2-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Abu Dhabi, Ujedinjeni Arapski Emirati</span>
-        </span>
-        <span class="job-tags">
-          <span class="tag">Puno radno vrijeme</span>
-<span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19V6.5"/><path d="M3 15h18v4"/><path d="M21 15v-2.5a3 3 0 0 0-3-3h-7.5V15"/><circle cx="6.8" cy="11.5" r="1.8"/></svg>Smještaj obezbijeđen</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 10h6M12 7c-1 .9-1.5 1.9-1.5 3s.5 2.1 1.5 3c1-.9 1.5-1.9 1.5-3s-.5-2.1-1.5-3z"/><path d="M9 17h6"/></svg>Pomoć oko vize</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12c0-.8-.7-1.5-1.5-1.5H15L10 3.5H8l2.5 7H6L4.5 8.5H3l1 3.5-1 3.5h1.5L6 13.5h4.5L8 20.5h2l5-7h4.5c.8 0 1.5-.7 1.5-1.5z"/></svg>Avionska karta</span><span class="tag tag-ghost"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 5.5h9M8 3.5v2M5.5 5.5c.8 3.6 3.4 6.4 6.5 7.5M10.5 5.5c-.8 3.6-3.4 6.4-6.5 7.5"/><path d="m12.5 20.5 4-9 4 9M14 17h5"/></svg>Prevedeno</span>        </span>
-      </span>
-      <span class="job-side">
-        <span class="job-pay">3.200–3.800 AED</span>
-        <span class="job-period">bruto mjesečno</span>
-      </span>
+  <li class="job-card">
+    <div class="jc-media">
+        <div class="jc-track" data-carousel tabindex="-1">
+            <a class="jc-slide" href="job-2.html" tabindex="-1"><img src="media/1ba7bbe08951e72f12096df3f4c9697b-sm.jpg" alt="Mjesto rada: HVAC tehničar (čileri i split uređaji)" width="640" height="400" loading="lazy" decoding="async"></a>
+            <a class="jc-slide" href="job-2.html" tabindex="-1" aria-hidden="true"><img src="media/1a232f26734100199f87124c912790b0-sm.jpg" alt="" width="640" height="400" loading="lazy" decoding="async"></a>
+            <a class="jc-slide" href="job-2.html" tabindex="-1" aria-hidden="true"><img src="media/58465b222f2f7153e86e636a606aafec-sm.jpg" alt="" width="640" height="400" loading="lazy" decoding="async"></a>
+            <a class="jc-slide" href="job-2.html" tabindex="-1" aria-hidden="true"><img src="media/01580a8b496fc1e08d0094187c75ec09-sm.jpg" alt="" width="640" height="400" loading="lazy" decoding="async"></a>
+        </div>
+          <button class="jc-nav jc-prev" type="button" data-carousel-prev aria-label="Prethodna slika" hidden><svg class="icon icon-dir icon-dir" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m14.5 6-6 6 6 6"/></svg></button>
+          <button class="jc-nav jc-next" type="button" data-carousel-next aria-label="Sljedeća slika" hidden><svg class="icon icon-dir icon-dir" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9.5 6 6 6-6 6"/></svg></button>
+          <span class="jc-dots" aria-hidden="true"><i class="is-on"></i><i></i><i></i><i></i></span>
+      <span class="jc-badges">
+<span class="jc-badge"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8.5a2 2 0 0 1 2-2h2l1.5-2h5L16 6.5h2a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg>4</span>      </span>
+    </div>
+    <a class="jc-body" href="job-2.html">
+      <span class="jc-pay">3.200–3.800 AED<small>neto mjesečno</small></span>
+      <span class="jc-title">HVAC tehničar (čileri i split uređaji)</span>
+      <span class="jc-place"><img class="flag" src="static/img/flags/ae.png" width="18" height="14" alt="" loading="lazy" decoding="async"><span><strong>Abu Dhabi</strong>, Ujedinjeni Arapski Emirati</span></span>
+      <span class="jc-agency">Saffron Route Recruitment LLC<span class="verified-dot" title="Workify je provjerio upis u registar i licencu"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12.1 2.2 2.2 4.3-4.5"/></svg></span></span>
+      <span class="jc-tags">
+<span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19V6.5"/><path d="M3 15h18v4"/><path d="M21 15v-2.5a3 3 0 0 0-3-3h-7.5V15"/><circle cx="6.8" cy="11.5" r="1.8"/></svg>Smještaj obezbijeđen</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 10h6M12 7c-1 .9-1.5 1.9-1.5 3s.5 2.1 1.5 3c1-.9 1.5-1.9 1.5-3s-.5-2.1-1.5-3z"/><path d="M9 17h6"/></svg>Pomoć oko vize</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12c0-.8-.7-1.5-1.5-1.5H15L10 3.5H8l2.5 7H6L4.5 8.5H3l1 3.5-1 3.5h1.5L6 13.5h4.5L8 20.5h2l5-7h4.5c.8 0 1.5-.7 1.5-1.5z"/></svg>Avionska karta</span><span class="tag tag-ghost"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 5.5h9M8 3.5v2M5.5 5.5c.8 3.6 3.4 6.4 6.5 7.5M10.5 5.5c-.8 3.6-3.4 6.4-6.5 7.5"/><path d="m12.5 20.5 4-9 4 9M14 17h5"/></svg>Prevedeno</span>      </span>
     </a>
   </li>
-  <li class="job-row">
-    <a class="job-link" href="job-1.html">
-      <span class="job-code"><span class="flaps flaps-sm" aria-hidden="true"><span class="flap">D</span><span class="flap">X</span><span class="flap">B</span></span></span>
-      <span class="job-main">
-        <span class="job-title">Električar za održavanje zgrada</span>
-        <span class="job-meta">
-          <span class="job-agency">Saffron Route Recruitment LLC<span class="verified-dot" title="Workify je provjerio upis u registar i licencu"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12.1 2.2 2.2 4.3-4.5"/></svg></span></span>
-          <span class="job-place"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-5.8-6.5-11a6.5 6.5 0 0 1 13 0c0 5.2-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Dubai, Ujedinjeni Arapski Emirati</span>
-        </span>
-        <span class="job-tags">
-          <span class="tag">Puno radno vrijeme</span>
-<span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19V6.5"/><path d="M3 15h18v4"/><path d="M21 15v-2.5a3 3 0 0 0-3-3h-7.5V15"/><circle cx="6.8" cy="11.5" r="1.8"/></svg>Smještaj obezbijeđen</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 10h6M12 7c-1 .9-1.5 1.9-1.5 3s.5 2.1 1.5 3c1-.9 1.5-1.9 1.5-3s-.5-2.1-1.5-3z"/><path d="M9 17h6"/></svg>Pomoć oko vize</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12c0-.8-.7-1.5-1.5-1.5H15L10 3.5H8l2.5 7H6L4.5 8.5H3l1 3.5-1 3.5h1.5L6 13.5h4.5L8 20.5h2l5-7h4.5c.8 0 1.5-.7 1.5-1.5z"/></svg>Avionska karta</span><span class="tag tag-ghost"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 5.5h9M8 3.5v2M5.5 5.5c.8 3.6 3.4 6.4 6.5 7.5M10.5 5.5c-.8 3.6-3.4 6.4-6.5 7.5"/><path d="m12.5 20.5 4-9 4 9M14 17h5"/></svg>Prevedeno</span>        </span>
-      </span>
-      <span class="job-side">
-        <span class="job-pay">2.400–3.000 AED</span>
-        <span class="job-period">bruto mjesečno</span>
-      </span>
+  <li class="job-card">
+    <div class="jc-media">
+        <div class="jc-track" data-carousel tabindex="-1">
+            <a class="jc-slide" href="job-1.html" tabindex="-1"><img src="media/61ab033fe880b1f8ae3152a7336fcd23-sm.jpg" alt="Mjesto rada: Električar za održavanje zgrada" width="640" height="400" loading="lazy" decoding="async"></a>
+            <a class="jc-slide" href="job-1.html" tabindex="-1" aria-hidden="true"><img src="media/b09c02187774113f0430e62953ffe899-sm.jpg" alt="" width="640" height="400" loading="lazy" decoding="async"></a>
+            <a class="jc-slide" href="job-1.html" tabindex="-1" aria-hidden="true"><img src="media/38dd03845fc4dedd14ea16919fd93eec-sm.jpg" alt="" width="640" height="400" loading="lazy" decoding="async"></a>
+            <a class="jc-slide" href="job-1.html" tabindex="-1" aria-hidden="true"><img src="media/7dc8402452f5d736e02cab53f9c91e79-sm.jpg" alt="" width="640" height="400" loading="lazy" decoding="async"></a>
+        </div>
+          <button class="jc-nav jc-prev" type="button" data-carousel-prev aria-label="Prethodna slika" hidden><svg class="icon icon-dir icon-dir" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m14.5 6-6 6 6 6"/></svg></button>
+          <button class="jc-nav jc-next" type="button" data-carousel-next aria-label="Sljedeća slika" hidden><svg class="icon icon-dir icon-dir" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9.5 6 6 6-6 6"/></svg></button>
+          <span class="jc-dots" aria-hidden="true"><i class="is-on"></i><i></i><i></i><i></i></span>
+      <span class="jc-badges">
+<span class="jc-badge"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10.5 5-3v9l-5-3"/></svg>Video</span><span class="jc-badge"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8.5a2 2 0 0 1 2-2h2l1.5-2h5L16 6.5h2a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg>4</span>      </span>
+    </div>
+    <a class="jc-body" href="job-1.html">
+      <span class="jc-pay">2.400–3.000 AED<small>neto mjesečno</small></span>
+      <span class="jc-title">Električar za održavanje zgrada</span>
+      <span class="jc-place"><img class="flag" src="static/img/flags/ae.png" width="18" height="14" alt="" loading="lazy" decoding="async"><span><strong>Dubai</strong>, Ujedinjeni Arapski Emirati</span></span>
+      <span class="jc-agency">Saffron Route Recruitment LLC<span class="verified-dot" title="Workify je provjerio upis u registar i licencu"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12.1 2.2 2.2 4.3-4.5"/></svg></span></span>
+      <span class="jc-tags">
+<span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19V6.5"/><path d="M3 15h18v4"/><path d="M21 15v-2.5a3 3 0 0 0-3-3h-7.5V15"/><circle cx="6.8" cy="11.5" r="1.8"/></svg>Smještaj obezbijeđen</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 10h6M12 7c-1 .9-1.5 1.9-1.5 3s.5 2.1 1.5 3c1-.9 1.5-1.9 1.5-3s-.5-2.1-1.5-3z"/><path d="M9 17h6"/></svg>Pomoć oko vize</span><span class="tag tag-perk"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12c0-.8-.7-1.5-1.5-1.5H15L10 3.5H8l2.5 7H6L4.5 8.5H3l1 3.5-1 3.5h1.5L6 13.5h4.5L8 20.5h2l5-7h4.5c.8 0 1.5-.7 1.5-1.5z"/></svg>Avionska karta</span><span class="tag tag-ghost"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 5.5h9M8 3.5v2M5.5 5.5c.8 3.6 3.4 6.4 6.5 7.5M10.5 5.5c-.8 3.6-3.4 6.4-6.5 7.5"/><path d="m12.5 20.5 4-9 4 9M14 17h5"/></svg>Prevedeno</span>      </span>
     </a>
   </li>
 </ul>
@@ -247,19 +259,25 @@
         <a href="jobs.html">Evropa</a>
         <a href="jobs.html">Zapadni Balkan</a>
         <a href="destinations.html">Destinacije</a>
+        <a href="jobs-map.html">Gdje su poslovi</a>
+        <a href="waitlist.html">Lista čekanja</a>
       </nav>
       <nav class="footer-col" aria-label="Pomoć">
         <h2>Pomoć</h2>
+        <a href="how-it-works.html">Kako radi (video)</a>
         <a href="guides.html">Vodiči</a>
         <a href="guide-fake-job-offers.html">Kako prepoznati lažnu ponudu za posao</a>
         <a href="index.html#faq">Česta pitanja radnika</a>
+        <a href="stories.html">Priče radnika</a>
         <a href="#" data-pv-off>Kontakt</a>
       </nav>
       <nav class="footer-col" aria-label="Workify">
         <h2>Workify</h2>
         <a href="employers.html">Za poslodavce</a>
+        <a href="pricing.html">Cijene za firme</a>
         <a href="privacy.html">Privatnost</a>
         <a href="terms.html">Uslovi korištenja</a>
+        <a href="terms-business.html">Uslovi za firme</a>
         <a href="imprint.html">Impressum</a>
       </nav>
     </div>
@@ -268,5 +286,32 @@
       <p class="footer-copy">© 2026 Workify</p>
     </div>
   </div>
-</footer></body>
+</footer><div class="assist" data-assistant data-faq-url="assistant-faq.json" data-ask-url="#" data-ai="0" data-csrf="gE_sUhD0PTzFsXyX5XLRiTr4my2d3YxX0ZNfh_IAs9k" data-speech-lang="bs" data-label-wait="Tražim odgovor…" data-label-read="Pročitaj naglas" data-error="Odgovor se nije mogao učitati. Provjeri internet i pokušaj ponovo." data-ai-note="Odgovor AI-ja može biti pogrešan. Za svoj slučaj pitaj agenciju u chatu.">
+  <button class="assist-fab" type="button" data-assist-open aria-expanded="false" aria-controls="assist-panel">
+    <span class="assist-fab-icon"><svg class="icon " width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/><path d="m12 7.8 1 2.3 2.3 1-2.3 1-1 2.3-1-2.3-2.3-1 2.3-1z"/></svg></span><span class="assist-fab-label">Pitaj</span>
+  </button>
+  <section class="assist-panel daylight" id="assist-panel" role="dialog" aria-labelledby="assist-title" hidden>
+    <header class="assist-head">
+      <span class="assist-avatar" aria-hidden="true"><svg class="logo-mark" width="24" height="14.1" viewBox="0 0 170.3 100" aria-hidden="true"><defs><linearGradient id="asa" x1="0" y1="0" x2="0.55" y2="1"><stop offset="0" stop-color="#2F6BFF"/><stop offset="1" stop-color="#1A4FE0"/></linearGradient><linearGradient id="asb" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#4D9BFF"/><stop offset="0.55" stop-color="#2F78FF"/><stop offset="1" stop-color="#2463F2"/></linearGradient><filter id="ass" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="-1.6" dy="0.4" stdDeviation="1.1" flood-color="#0a1f66" flood-opacity="0.5"/></filter><clipPath id="asc"><rect x="0" y="0" width="170.3" height="120.0"/></clipPath></defs><g fill="none" stroke="url(#asa)" stroke-width="27.0" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#asc)"><path d="M8.45 -14.00L54.45 86.50L72.45 60.00"/></g><g fill="none" stroke="url(#asb)" stroke-width="27.0" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#asc)" filter="url(#ass)"><path d="M89.45 13.50L108.45 86.50L162.45 -14.00"/></g></svg></span>
+      <div class="assist-head-text">
+        <h2 id="assist-title">Workify pomoć</h2>
+        <p>Odgovori iz pitanja koja radnici postavljaju</p>
+      </div>
+      <button class="icon-btn" type="button" data-assist-close aria-label="Zatvori"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></button>
+    </header>
+    <div class="assist-log" data-assist-log aria-live="polite">
+      <div class="assist-msg bot"><p>Zdravo! Pitaj o poslovima, plati, troškovima, vizi ili dokumentima. Možeš i dodirnuti mikrofon i govoriti.</p></div>
+    </div>
+    <div class="assist-chips" data-assist-chips>
+<button type="button" class="assist-chip" data-assist-ask>Moram li išta platiti da ovdje nađem posao?</button><button type="button" class="assist-chip" data-assist-ask>U kojim državama mogu raditi?</button><button type="button" class="assist-chip" data-assist-ask>Kako to funkcioniše, korak po korak?</button><button type="button" class="assist-chip" data-assist-ask>Još nema posla za mene. Šta mogu uraditi?</button>    </div>
+    <form class="assist-form" data-assist-form>
+      <label class="sr-only" for="assist-input">Napiši pitanje…</label>
+      <input id="assist-input" type="text" maxlength="800" autocomplete="off" enterkeyhint="send" placeholder="Napiši pitanje…" data-assist-input>
+      <button class="icon-btn assist-mic" type="button" data-assist-mic hidden aria-label="Izgovori pitanje"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3.5" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0"/><path d="M12 18v2.5"/></svg></button>
+      <button class="assist-send" type="submit" aria-label="Pošalji"><svg class="icon icon-dir" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 3.5 10 14"/><path d="M20.5 3.5 14 20.5l-4-6.5-6.5-4z"/></svg></button>
+    </form>
+    <p class="assist-foot">Odgovori iz Workify čestih pitanja. Workify od tebe nikad ne traži novac.</p>
+    <span hidden data-assist-volume><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 9.5h3l4.5-4v13l-4.5-4h-3z"/><path d="M15.5 9a4 4 0 0 1 0 6"/><path d="M18 6.5a7.5 7.5 0 0 1 0 11"/></svg></span>
+  </section>
+</div></body>
 </html>

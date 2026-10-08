@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="static/css/app.css">
   <link rel="stylesheet" href="static/css/preview.css">
   <script src="static/js/preview.js" defer></script>
+  <script src="static/js/app.js" defer></script>
 </head>
 <body class=" has-tabbar" data-locale="bs">
   <a class="skip-link" href="#main">Preskoči na sadržaj</a>
@@ -78,6 +79,7 @@
       <a href="w-documents.html"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 7a2 2 0 0 1 2-2h4l2 2.5h7a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/></svg><span>Dokumenti</span></a>
       <a href="w-saved.html"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/></svg><span>Sačuvano</span></a>
       <a href="w-alerts.html"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9.5a6 6 0 0 1 12 0c0 5.5 2 7 2 7H4s2-1.5 2-7z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg><span>Obavještenja o oglasima</span></a>
+      <a href="w-waitlist.html"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h11M6.5 20.5h11"/><path d="M7.5 3.5c0 4.5 4.5 5.5 4.5 8.5s-4.5 4-4.5 8.5M16.5 3.5c0 4.5-4.5 5.5-4.5 8.5s4.5 4 4.5 8.5"/></svg><span>Lista čekanja</span></a>
     <a href="w-account.html"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h9.5M17.5 7H20M4 17h3.5M11.5 17H20"/><circle cx="15.5" cy="7" r="2"/><circle cx="9.5" cy="17" r="2"/></svg><span>Postavke</span></a>
     <form method="post" action="#">
       <input type="hidden" name="csrf_token" value="">
@@ -98,7 +100,7 @@
             <a href="agency-1.html">Saffron Route Recruitment LLC</a>
             <span><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-5.8-6.5-11a6.5 6.5 0 0 1 13 0c0 5.2-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Dubai, Ujedinjeni Arapski Emirati</span>
             <span><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v.01M18 14.5v.01"/></svg>2.400–3.000 AED / mjesečno</span>
-          </p>
+<span><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4.5" y="3" width="15" height="18" rx="1.5"/><path d="M9.5 21v-3.5h5V21"/><path d="M8.5 7h1.5M14 7h1.5M8.5 10.5h1.5M14 10.5h1.5M8.5 14h1.5M14 14h1.5"/></svg>Poslodavac: Al Noor Facilities Management LLC</span>          </p>
         </div>
       </header>
       <div class="track-card">  <div class="track">
@@ -118,22 +120,15 @@
 
 
   <div class="app-grid">
-    <section class="card journey-card">
-      <h2 class="card-title"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></svg>Tok prijave</h2>
-        <ol class="journey">
+    <div class="app-main">
+      <section class="card journey-card">
+        <h2 class="card-title"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></svg>Tok prijave</h2>
+          <ol class="journey">
       <li class="stop is-done">
         <span class="stop-dot" aria-hidden="true"><svg class="icon " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>
         <div class="stop-body">
           <div class="stop-head">
             <p class="stop-title">Prijava poslana</p>
-<p class="stop-date">10.09.2026.</p>          </div>
-        </div>
-      </li>
-      <li class="stop is-done">
-        <span class="stop-dot" aria-hidden="true"><svg class="icon " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>
-        <div class="stop-body">
-          <div class="stop-head">
-            <p class="stop-title">U razmatranju</p>
 <p class="stop-date">11.09.2026.</p>          </div>
         </div>
       </li>
@@ -141,8 +136,16 @@
         <span class="stop-dot" aria-hidden="true"><svg class="icon " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>
         <div class="stop-body">
           <div class="stop-head">
+            <p class="stop-title">U razmatranju</p>
+<p class="stop-date">12.09.2026.</p>          </div>
+        </div>
+      </li>
+      <li class="stop is-done">
+        <span class="stop-dot" aria-hidden="true"><svg class="icon " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>
+        <div class="stop-body">
+          <div class="stop-head">
             <p class="stop-title">Intervju</p>
-<p class="stop-date">15.09.2026.</p>          </div>
+<p class="stop-date">16.09.2026.</p>          </div>
 <p class="stop-note">Video interview with the site supervisor. The link is in the messages.</p>        </div>
       </li>
       <li class="stop is-done">
@@ -150,7 +153,7 @@
         <div class="stop-body">
           <div class="stop-head">
             <p class="stop-title">Ponuda</p>
-<p class="stop-date">19.09.2026.</p>          </div>
+<p class="stop-date">20.09.2026.</p>          </div>
 <p class="stop-note">Offer: AED 2,900 basic per month, accommodation and transport provided. Details in the chat.</p>        </div>
       </li>
       <li class="stop is-done">
@@ -158,7 +161,7 @@
         <div class="stop-body">
           <div class="stop-head">
             <p class="stop-title">Ugovor potpisan</p>
-<p class="stop-date">22.09.2026.</p>          </div>
+<p class="stop-date">23.09.2026.</p>          </div>
 <p class="stop-note">Contract signed electronically. Your copy was sent by e-mail.</p>        </div>
       </li>
       <li class="stop is-current" aria-current="step">
@@ -166,7 +169,7 @@
         <div class="stop-body">
           <div class="stop-head">
             <p class="stop-title">Radna dozvola u obradi</p>
-<p class="stop-date">28.09.2026.</p>          </div>
+<p class="stop-date">29.09.2026.</p>          </div>
 <p class="stop-note">Entry permit application submitted to the UAE authorities.</p><p class="stop-hint">Rok obrade zavisi od ambasade i nadležnih organa. Agencija ažurira ovaj korak.</p>        </div>
       </li>
       <li class="stop is-todo">
@@ -187,7 +190,51 @@
       </li>
   </ol>
 
-    </section>
+      </section>
+        <section class="card timeline-card">
+          <h2 class="card-title"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h11M6.5 20.5h11"/><path d="M7.5 3.5c0 4.5 4.5 5.5 4.5 8.5s-4.5 4-4.5 8.5M16.5 3.5c0 4.5-4.5 5.5-4.5 8.5s4.5 4 4.5 8.5"/></svg>Od prijave do prve plate</h2>
+          <p class="small muted">Procjene od dana prijave (11.09.2026.). Agencija ti u chatu javlja kada se datum promijeni.</p>
+            <ol class="tl">
+      <li class="tl-step">
+        <span class="tl-dot" aria-hidden="true"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10.5 5-3v9l-5-3"/></svg></span>
+        <span class="tl-body">
+          <span class="tl-title">Prvi intervju</span>
+          <span class="tl-when">za oko 7 dana · <time datetime="2026-09-18">≈ 18.09.2026.</time></span>
+        </span>
+      </li>
+      <li class="tl-step">
+        <span class="tl-dot" aria-hidden="true"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 10h6M12 7c-1 .9-1.5 1.9-1.5 3s.5 2.1 1.5 3c1-.9 1.5-1.9 1.5-3s-.5-2.1-1.5-3z"/><path d="M9 17h6"/></svg></span>
+        <span class="tl-body">
+          <span class="tl-title">Poziv u ambasadu i viza</span>
+          <span class="tl-when">za oko 35 dana · <time datetime="2026-10-16">≈ 16.10.2026.</time></span>
+        </span>
+      </li>
+      <li class="tl-step">
+        <span class="tl-dot" aria-hidden="true"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12c0-.8-.7-1.5-1.5-1.5H15L10 3.5H8l2.5 7H6L4.5 8.5H3l1 3.5-1 3.5h1.5L6 13.5h4.5L8 20.5h2l5-7h4.5c.8 0 1.5-.7 1.5-1.5z"/></svg></span>
+        <span class="tl-body">
+          <span class="tl-title">Putovanje</span>
+          <span class="tl-when">za oko 50 dana · <time datetime="2026-10-31">≈ 31.10.2026.</time></span>
+        </span>
+      </li>
+      <li class="tl-step">
+        <span class="tl-dot" aria-hidden="true"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8.5 7V5.5a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2V7"/><path d="M3 12.5h18"/></svg></span>
+        <span class="tl-body">
+          <span class="tl-title">Prvi radni dan</span>
+          <span class="tl-when">za oko 52 dana · <time datetime="2026-11-02">≈ 02.11.2026.</time></span>
+        </span>
+      </li>
+      <li class="tl-step">
+        <span class="tl-dot" aria-hidden="true"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v.01M18 14.5v.01"/></svg></span>
+        <span class="tl-body">
+          <span class="tl-title">Prva plata</span>
+          <span class="tl-when">za oko 82 dana · <time datetime="2026-12-02">≈ 02.12.2026.</time></span>
+        </span>
+      </li>
+  </ol>
+
+          <p class="tl-note"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8v.01"/></svg>Ovo su procjene. Ambasade i dokumenti mogu pomjeriti datume; agencija ti javlja u poruci.</p>
+        </section>
+    </div>
 
     <div class="app-side">
 <section class="card interview-card" id="interview">
@@ -196,7 +243,7 @@
     <p class="muted small">Intervju još nije zakazan.</p>
 
     <ul class="iv-past">
-<li><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Raniji intervju: uto, 15.09.2026. u 10:00 (Dubai)</li>    </ul>
+<li><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Raniji intervju: sri, 16.09.2026. u 10:00 (Dubai)</li>    </ul>
 
 
 </section>        <section class="card checklist-card" id="checklist">
@@ -310,6 +357,38 @@
           <p class="small"><a href="guide-before-you-fly.html">Pročitaj vodič: Prije leta</a></p>
         </section>
 
+        <section class="card contract-card" id="contract">
+          <h2 class="card-title"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h8l3.5 3.5v13.5h-11.5z"/><path d="M14.5 3.5V7H18"/><path d="M9 10.5h6M9 13.5h4"/><path d="M8.8 17.6c.9-1.3 1.6-1.4 2.1-.3s1.2 1.1 2-.1c.5-.7 1-.8 1.6-.3"/></svg>Ugovor</h2>
+            <ul class="doc-list compact">
+                <li class="doc-row">
+                  <span class="doc-icon"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h8l3.5 3.5v13.5h-11.5z"/><path d="M14.5 3.5V7H18"/><path d="M9 10.5h6M9 13.5h4"/><path d="M8.8 17.6c.9-1.3 1.6-1.4 2.1-.3s1.2 1.1 2-.1c.5-.7 1-.8 1.6-.3"/></svg></span>
+                  <span class="doc-main">
+                    <a class="doc-name" href="#" data-pv-off target="_blank" rel="noopener">Ugovor o radu</a>
+                    <span class="doc-meta">Employment_contract_Jasur_Rakhimov.pdf · 23.09.2026.</span>
+                  </span>
+                </li>
+                <li class="doc-row">
+                  <span class="doc-icon"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h8l3.5 3.5v13.5h-11.5z"/><path d="M14.5 3.5V7H18"/><path d="M9 10.5h6M9 13.5h4"/><path d="M8.8 17.6c.9-1.3 1.6-1.4 2.1-.3s1.2 1.1 2-.1c.5-.7 1-.8 1.6-.3"/></svg></span>
+                  <span class="doc-main">
+                    <a class="doc-name" href="#" data-pv-off target="_blank" rel="noopener">Ponuda za posao</a>
+                    <span class="doc-meta">Offer_letter_Jasur_Rakhimov.pdf · 20.09.2026.</span>
+                  </span>
+                </li>
+            </ul>
+          <details class="contract-compare" open>
+            <summary>Uporedi s oglasom</summary>
+            <p class="small muted">Ovo su uslovi iz oglasa. Tvoj ugovor treba da kaže isto.</p>
+            <ul class="compare-list" id="contract-check">
+              <li><span>Plata</span><strong>2.400–3.000 AED neto mjesečno</strong></li>
+<li><span>Sati sedmično</span><strong>48</strong></li><li><span>Trajanje ugovora (mjeseci)</span><strong>24</strong></li>              <li><span>Smještaj</span><strong>Smještaj obezbijeđen · Besplatno, plaća poslodavac</strong></li>
+<li><span>Plaća poslodavac</span><strong>Troškovi vize i radne dozvole, Avionska karta do mjesta rada, Karta za povratak kući, Medicinski pregled, Zdravstveno osiguranje, Prijevoz do posla</strong></li>              <li><span>Viza i radna dozvola organizovani</span><strong>Da</strong></li>
+              <li class="compare-warn"><span><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M3.5 3.5l17 17"/></svg>Nikome ne plaćaš naknadu – ni za posao, ni za vizu, ni za kartu.</span></li>
+            </ul>
+            <button class="btn btn-ghost btn-sm speak-btn" type="button" data-speak="#contract-check" data-label-stop="Zaustavi" hidden><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 9.5h3l4.5-4v13l-4.5-4h-3z"/><path d="M15.5 9a4 4 0 0 1 0 6"/><path d="M18 6.5a7.5 7.5 0 0 1 0 11"/></svg><span>Pročitaj naglas</span></button>
+          </details>
+          <p class="small muted">Ne potpisuj ništa što ne razumiješ i nikome ne daj pasoš na čuvanje. <a href="guide-contract-checklist.html">Šta ugovor mora sadržavati</a></p>
+        </section>
+
         <section class="card chat" id="chat" data-chat
     data-poll-url="/api/applications/1/messages"
     data-last-id="8">
@@ -319,35 +398,35 @@
     <div class="chat-log" data-chat-log aria-live="polite">
         <div class="bubble" data-id="1">
 <span class="bubble-sender">Omar Haddad</span>          <p class="bubble-body">Hello Jasur, thank you for applying. Can you do a video interview on Wednesday at 10:00 Dubai time?</p>
-          <time class="bubble-time" datetime="2026-09-11T09:17:00Z" data-local>11.09.2026. 09:17</time>
+          <time class="bubble-time" datetime="2026-09-12T09:17:00Z" data-local>12.09.2026. 09:17</time>
         </div>
         <div class="bubble mine" data-id="2">
           <p class="bubble-body">Hello, yes, Wednesday 10:00 is fine. Thank you!</p>
-          <time class="bubble-time" datetime="2026-09-11T15:17:00Z" data-local>11.09.2026. 15:17</time>
+          <time class="bubble-time" datetime="2026-09-12T15:17:00Z" data-local>12.09.2026. 15:17</time>
         </div>
         <div class="bubble" data-id="3">
 <span class="bubble-sender">Omar Haddad</span>          <p class="bubble-body">Good news: the employer offers AED 2,900 basic salary, with accommodation, transport and health insurance. The offer letter is attached to your e-mail.</p>
-          <time class="bubble-time" datetime="2026-09-19T11:21:00Z" data-local>19.09.2026. 11:21</time>
+          <time class="bubble-time" datetime="2026-09-20T11:21:00Z" data-local>20.09.2026. 11:21</time>
         </div>
         <div class="bubble mine" data-id="4">
           <p class="bubble-body">Thank you, I accept. Do I need to pay anything for the visa or the medical test?</p>
-          <time class="bubble-time" datetime="2026-09-19T19:21:00Z" data-local>19.09.2026. 19:21</time>
+          <time class="bubble-time" datetime="2026-09-20T19:21:00Z" data-local>20.09.2026. 19:21</time>
         </div>
         <div class="bubble" data-id="5">
 <span class="bubble-sender">Omar Haddad</span>          <p class="bubble-body">No. The employer pays the visa, the medical test in the UAE and your flight. If anyone asks you for money, tell us and report it here.</p>
-          <time class="bubble-time" datetime="2026-09-20T09:34:00Z" data-local>20.09.2026. 09:34</time>
+          <time class="bubble-time" datetime="2026-09-21T09:34:00Z" data-local>21.09.2026. 09:34</time>
         </div>
         <div class="bubble" data-id="6">
 <span class="bubble-sender">Omar Haddad</span>          <p class="bubble-body">Your entry permit application is submitted. It usually takes one to two weeks.</p>
-          <time class="bubble-time" datetime="2026-09-28T14:38:00Z" data-local>28.09.2026. 14:38</time>
+          <time class="bubble-time" datetime="2026-09-29T14:38:00Z" data-local>29.09.2026. 14:38</time>
         </div>
         <div class="bubble mine" data-id="7">
           <p class="bubble-body">Is there any news about the permit?</p>
-          <time class="bubble-time" datetime="2026-10-05T20:29:00Z" data-local>05.10.2026. 20:29</time>
+          <time class="bubble-time" datetime="2026-10-06T20:29:00Z" data-local>06.10.2026. 20:29</time>
         </div>
         <div class="bubble" data-id="8">
 <span class="bubble-sender">Omar Haddad</span>          <p class="bubble-body">Not yet, the application is still in process. I will write as soon as it is approved.</p>
-          <time class="bubble-time" datetime="2026-10-06T10:42:00Z" data-local>06.10.2026. 10:42</time>
+          <time class="bubble-time" datetime="2026-10-07T10:42:00Z" data-local>07.10.2026. 10:42</time>
         </div>
     </div>
       <form class="chat-form" method="post" action="#" data-chat-form>
@@ -436,6 +515,7 @@
           </form>
       </section>
 
+
         <form method="post" action="#" data-confirm="Povući ovu prijavu? Agencija više neće vidjeti tvoje dokumente." class="withdraw">
           <input type="hidden" name="csrf_token" value="">
           <button class="btn btn-ghost btn-sm btn-danger-text" type="submit">Povuci prijavu</button>
@@ -459,19 +539,25 @@
         <a href="w-jobs.html">Evropa</a>
         <a href="w-jobs.html">Zapadni Balkan</a>
         <a href="destinations.html">Destinacije</a>
+        <a href="w-jobs-map.html">Gdje su poslovi</a>
+        <a href="w-waitlist.html">Lista čekanja</a>
       </nav>
       <nav class="footer-col" aria-label="Pomoć">
         <h2>Pomoć</h2>
+        <a href="w-how-it-works.html">Kako radi (video)</a>
         <a href="guides.html">Vodiči</a>
         <a href="guide-fake-job-offers.html">Kako prepoznati lažnu ponudu za posao</a>
         <a href="index.html#faq">Česta pitanja radnika</a>
+        <a href="w-stories.html">Priče radnika</a>
         <a href="#" data-pv-off>Kontakt</a>
       </nav>
       <nav class="footer-col" aria-label="Workify">
         <h2>Workify</h2>
         <a href="employers.html">Za poslodavce</a>
+        <a href="pricing.html">Cijene za firme</a>
         <a href="privacy.html">Privatnost</a>
         <a href="terms.html">Uslovi korištenja</a>
+        <a href="terms-business.html">Uslovi za firme</a>
         <a href="imprint.html">Impressum</a>
       </nav>
     </div>
@@ -480,7 +566,34 @@
       <p class="footer-copy">© 2026 Workify</p>
     </div>
   </div>
-</footer><nav class="tabbar" aria-label="Glavna navigacija">
+</footer><div class="assist" data-assistant data-faq-url="assistant-faq.json" data-ask-url="#" data-ai="0" data-csrf="-w6psFhw7B7bCSqQ2AMV_05i44rZyRG7zV1aeaDDKag" data-speech-lang="bs" data-label-wait="Tražim odgovor…" data-label-read="Pročitaj naglas" data-error="Odgovor se nije mogao učitati. Provjeri internet i pokušaj ponovo." data-ai-note="Odgovor AI-ja može biti pogrešan. Za svoj slučaj pitaj agenciju u chatu.">
+  <button class="assist-fab" type="button" data-assist-open aria-expanded="false" aria-controls="assist-panel">
+    <span class="assist-fab-icon"><svg class="icon " width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/><path d="m12 7.8 1 2.3 2.3 1-2.3 1-1 2.3-1-2.3-2.3-1 2.3-1z"/></svg></span><span class="assist-fab-label">Pitaj</span>
+  </button>
+  <section class="assist-panel daylight" id="assist-panel" role="dialog" aria-labelledby="assist-title" hidden>
+    <header class="assist-head">
+      <span class="assist-avatar" aria-hidden="true"><svg class="logo-mark" width="24" height="14.1" viewBox="0 0 170.3 100" aria-hidden="true"><defs><linearGradient id="asa" x1="0" y1="0" x2="0.55" y2="1"><stop offset="0" stop-color="#2F6BFF"/><stop offset="1" stop-color="#1A4FE0"/></linearGradient><linearGradient id="asb" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#4D9BFF"/><stop offset="0.55" stop-color="#2F78FF"/><stop offset="1" stop-color="#2463F2"/></linearGradient><filter id="ass" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="-1.6" dy="0.4" stdDeviation="1.1" flood-color="#0a1f66" flood-opacity="0.5"/></filter><clipPath id="asc"><rect x="0" y="0" width="170.3" height="120.0"/></clipPath></defs><g fill="none" stroke="url(#asa)" stroke-width="27.0" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#asc)"><path d="M8.45 -14.00L54.45 86.50L72.45 60.00"/></g><g fill="none" stroke="url(#asb)" stroke-width="27.0" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#asc)" filter="url(#ass)"><path d="M89.45 13.50L108.45 86.50L162.45 -14.00"/></g></svg></span>
+      <div class="assist-head-text">
+        <h2 id="assist-title">Workify pomoć</h2>
+        <p>Odgovori iz pitanja koja radnici postavljaju</p>
+      </div>
+      <button class="icon-btn" type="button" data-assist-close aria-label="Zatvori"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></button>
+    </header>
+    <div class="assist-log" data-assist-log aria-live="polite">
+      <div class="assist-msg bot"><p>Zdravo! Pitaj o poslovima, plati, troškovima, vizi ili dokumentima. Možeš i dodirnuti mikrofon i govoriti.</p></div>
+    </div>
+    <div class="assist-chips" data-assist-chips>
+<button type="button" class="assist-chip" data-assist-ask>Moram li išta platiti da ovdje nađem posao?</button><button type="button" class="assist-chip" data-assist-ask>U kojim državama mogu raditi?</button><button type="button" class="assist-chip" data-assist-ask>Kako to funkcioniše, korak po korak?</button><button type="button" class="assist-chip" data-assist-ask>Još nema posla za mene. Šta mogu uraditi?</button>    </div>
+    <form class="assist-form" data-assist-form>
+      <label class="sr-only" for="assist-input">Napiši pitanje…</label>
+      <input id="assist-input" type="text" maxlength="800" autocomplete="off" enterkeyhint="send" placeholder="Napiši pitanje…" data-assist-input>
+      <button class="icon-btn assist-mic" type="button" data-assist-mic hidden aria-label="Izgovori pitanje"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3.5" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0"/><path d="M12 18v2.5"/></svg></button>
+      <button class="assist-send" type="submit" aria-label="Pošalji"><svg class="icon icon-dir" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 3.5 10 14"/><path d="M20.5 3.5 14 20.5l-4-6.5-6.5-4z"/></svg></button>
+    </form>
+    <p class="assist-foot">Odgovori iz Workify čestih pitanja. Workify od tebe nikad ne traži novac.</p>
+    <span hidden data-assist-volume><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 9.5h3l4.5-4v13l-4.5-4h-3z"/><path d="M15.5 9a4 4 0 0 1 0 6"/><path d="M18 6.5a7.5 7.5 0 0 1 0 11"/></svg></span>
+  </section>
+</div><nav class="tabbar" aria-label="Glavna navigacija">
   <a href="w-home.html"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 10.5 12 3.5l8.5 7"/><path d="M5.5 9v10.5a1 1 0 0 0 1 1H10v-6h4v6h3.5a1 1 0 0 0 1-1V9"/></svg><span>Početna</span></a>
   <a href="w-jobs.html"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><span>Poslovi</span></a>
   <a href="w-applications.html" aria-current="page"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></svg><span>Prijave</span></a>

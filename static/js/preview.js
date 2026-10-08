@@ -1,4 +1,5 @@
-/* Workify design preview: menus, the console sidebar, and short notes where the real app would act. */
+/* Workify design preview: runs before app.js and keeps it from talking to a server that is not there.
+   Forms show a short note instead of sending, links to parts outside the preview explain themselves. */
 (function () {
   "use strict";
   var bs = (document.documentElement.lang || "").indexOf("bs") === 0;
@@ -30,10 +31,12 @@
     timer = window.setTimeout(function () { toastEl.hidden = true; }, 3800);
   }
 
-  /* Forms: the job search opens the job list, everything else explains itself. */
+  /* Forms: the job search opens the job list, everything else explains itself. The event is stopped
+     here, in the capture phase, so app.js never tries to send the form in the background. */
   document.addEventListener("submit", function (event) {
     var form = event.target;
     event.preventDefault();
+    event.stopPropagation();
     var go = form.getAttribute("data-pv-go");
     if (go) {
       window.location.href = go;
@@ -41,40 +44,29 @@
       toast(text.send);
     }
   }, true);
+  if (window.HTMLFormElement) {
+    HTMLFormElement.prototype.submit = function () { toast(text.send); };
+  }
 
-  function closeMenus(except) {
-    document.querySelectorAll("details.menu[open]").forEach(function (d) {
-      if (d !== except) d.removeAttribute("open");
-    });
+  /* app.js fetches the server's own addresses (chat, saved jobs…): here those fail at once, quietly.
+     Files of the preview (the help bubble's questions) are relative addresses and load normally. */
+  if (window.fetch) {
+    var realFetch = window.fetch;
+    window.fetch = function (resource, init) {
+      var url = typeof resource === "string" ? resource : (resource && resource.url) || "";
+      if (url.charAt(0) === "/" || (init && init.method && init.method.toUpperCase() !== "GET")) {
+        return Promise.reject(new Error("preview"));
+      }
+      return realFetch.apply(this, arguments);
+    };
   }
 
   document.addEventListener("click", function (event) {
     var link = event.target.closest("a[data-pv-off], a[data-pv-lang]");
     if (link) {
       event.preventDefault();
+      event.stopPropagation();
       toast(link.hasAttribute("data-pv-lang") ? text.lang : text.off);
     }
-    closeMenus(event.target.closest("details.menu"));
-  });
-
-  /* Console sidebar on small screens. */
-  var consoleEl = document.querySelector("[data-console]");
-  var toggleBtn = document.querySelector("[data-sidebar-toggle]");
-  function toggleSidebar(open) {
-    if (!consoleEl || !toggleBtn) return;
-    var next = typeof open === "boolean" ? open : !consoleEl.classList.contains("sidebar-open");
-    consoleEl.classList.toggle("sidebar-open", next);
-    toggleBtn.setAttribute("aria-expanded", String(next));
-  }
-  if (toggleBtn) toggleBtn.addEventListener("click", function () { toggleSidebar(); });
-  document.querySelectorAll("[data-sidebar-close]").forEach(function (el) {
-    el.addEventListener("click", function () { toggleSidebar(false); });
-  });
-
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") {
-      closeMenus(null);
-      toggleSidebar(false);
-    }
-  });
+  }, true);
 })();

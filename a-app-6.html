@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="static/css/app.css">
   <link rel="stylesheet" href="static/css/preview.css">
   <script src="static/js/preview.js" defer></script>
+  <script src="static/js/app.js" defer></script>
 </head>
 <body class="console-body" data-locale="bs">
   <a class="skip-link" href="#main">Preskoči na sadržaj</a>
@@ -37,9 +38,11 @@
         <a href="a-jobs.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8.5 7V5.5a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2V7"/><path d="M3 12.5h18"/></svg><span>Oglasi</span></a>
         <a href="a-candidates.html" aria-current="page"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8.5" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M15.5 5a3.5 3.5 0 0 1 0 7"/><path d="M18 14.2a6.5 6.5 0 0 1 3.5 5.8"/></svg><span>Kandidati</span></a>
         <a href="a-talent.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><span>Pretraga radnika</span></a>
+        <a href="a-shortlist.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5h17l-1.6 9a2 2 0 0 1-2 1.6H7.1a2 2 0 0 1-2-1.6z"/><path d="m8 9.5 3-5.5M16 9.5l-3-5.5"/><path d="M9 13.5v3M12 13.5v3M15 13.5v3"/></svg><span>Korpa</span></a>
         <a href="a-inbox.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/></svg><span>Poruke</span></a>
         <a href="a-team.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="3"/><path d="M6.5 20a5.5 5.5 0 0 1 11 0"/><circle cx="5" cy="10" r="2.2"/><path d="M1.8 18a3.6 3.6 0 0 1 5-3.3"/><circle cx="19" cy="10" r="2.2"/><path d="M22.2 18a3.6 3.6 0 0 0-5-3.3"/></svg><span>Tim</span></a>
         <a href="a-profile.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4.5" y="3" width="15" height="18" rx="1.5"/><path d="M9.5 21v-3.5h5V21"/><path d="M8.5 7h1.5M14 7h1.5M8.5 10.5h1.5M14 10.5h1.5M8.5 14h1.5M14 14h1.5"/></svg><span>Profil firme</span></a>
+        <a href="a-billing.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3.5h12v17l-2-1.3-2 1.3-2-1.3-2 1.3-2-1.3-2 1.3z"/><path d="M9 8h6M9 11.5h6M9 15h3.5"/></svg><span>Naplata</span></a>
       </nav>
     <nav class="side-nav side-nav-bottom">
       <a href="jobs.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><span>Javni oglasi</span></a>
@@ -110,7 +113,7 @@
         <div><dt>Godine iskustva</dt><dd>3 god.</dd></div>
         <div><dt>Mjesto boravka</dt><dd>Enugu, Nigerija</dd></div>
         <div><dt>Državljanstvo</dt><dd>Nigerija</dd></div>
-        <div><dt>Dostupnost od</dt><dd>06.11.2026.</dd></div>
+        <div><dt>Dostupnost od</dt><dd>07.11.2026.</dd></div>
         <div><dt>Očekivana mjesečna plata</dt><dd>–</dd></div>
         <div><dt>Jezici</dt><dd>Igbo (native), English C1</dd></div>
         <div class="span-2"><dt>Vještine</dt><dd>Forklift, scanners, inventory</dd></div>
@@ -224,13 +227,20 @@
       <span class="doc-title">Pasoš</span>
       <span class="doc-meta">
         <span>1 KB</span>
-<span class="doc-exp">Važi do 25.03.2029.</span>      </span>
+<span class="doc-exp">Važi do 26.03.2029.</span>      </span>
     </span>
     <span class="doc-actions">
 <a class="btn btn-ghost btn-sm" href="#" data-pv-off target="_blank" rel="noopener"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/></svg><span>Otvori</span></a>    </span>
   </li>
 </ul>
         <p class="small muted">Svako otvaranje dokumenta bilježi se u dnevniku aktivnosti.</p>
+    </section>
+
+    <section class="card contract-card" id="contract">
+      <header class="card-head">
+        <h2 class="card-title"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h8l3.5 3.5v13.5h-11.5z"/><path d="M14.5 3.5V7H18"/><path d="M9 10.5h6M9 13.5h4"/><path d="M8.8 17.6c.9-1.3 1.6-1.4 2.1-.3s1.2 1.1 2-.1c.5-.7 1-.8 1.6-.3"/></svg>Ugovor</h2>
+      </header>
+        <p class="small muted"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5v-3a4 4 0 0 1 8 0v3"/></svg> Prebacite prijavu na „Ponuda“ da biste dodali ugovor.</p>
     </section>
 
       <section class="card chat" id="chat" data-chat
@@ -295,6 +305,7 @@
       <p class="small muted">Zadužena osoba dobija obavještenja za ovog kandidata. Bez nje ih dobija cijeli tim.</p>
     </section>
 
+
   <section class="card match-card" id="match">
     <h2 class="card-title"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1 5.8-5.2-2.8-5.2 2.8 1-5.8-4.3-4.1 5.9-.8z"/></svg>Podudarnost</h2>
     <div class="match-head">
@@ -318,7 +329,7 @@
         <div class="stop-body">
           <div class="stop-head">
             <p class="stop-title">Prijava poslana</p>
-<p class="stop-date">02.10.2026.</p>          </div>
+<p class="stop-date">03.10.2026.</p>          </div>
         </div>
       </li>
       <li class="stop is-current" aria-current="step">
@@ -326,7 +337,7 @@
         <div class="stop-body">
           <div class="stop-head">
             <p class="stop-title">U razmatranju</p>
-<p class="stop-date">04.10.2026.</p>          </div>
+<p class="stop-date">05.10.2026.</p>          </div>
         </div>
       </li>
       <li class="stop is-todo">

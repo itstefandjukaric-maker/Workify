@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="static/css/app.css">
   <link rel="stylesheet" href="static/css/preview.css">
   <script src="static/js/preview.js" defer></script>
+  <script src="static/js/app.js" defer></script>
 </head>
 <body class=" has-tabbar" data-locale="bs">
   <a class="skip-link" href="#main">Preskoči na sadržaj</a>
@@ -78,6 +79,7 @@
       <a href="w-documents.html"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 7a2 2 0 0 1 2-2h4l2 2.5h7a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/></svg><span>Dokumenti</span></a>
       <a href="w-saved.html"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/></svg><span>Sačuvano</span></a>
       <a href="w-alerts.html"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9.5a6 6 0 0 1 12 0c0 5.5 2 7 2 7H4s2-1.5 2-7z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg><span>Obavještenja o oglasima</span></a>
+      <a href="w-waitlist.html"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h11M6.5 20.5h11"/><path d="M7.5 3.5c0 4.5 4.5 5.5 4.5 8.5s-4.5 4-4.5 8.5M16.5 3.5c0 4.5-4.5 5.5-4.5 8.5s4.5 4 4.5 8.5"/></svg><span>Lista čekanja</span></a>
     <a href="w-account.html"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h9.5M17.5 7H20M4 17h3.5M11.5 17H20"/><circle cx="15.5" cy="7" r="2"/><circle cx="9.5" cy="17" r="2"/></svg><span>Postavke</span></a>
     <form method="post" action="#">
       <input type="hidden" name="csrf_token" value="">
@@ -99,33 +101,45 @@
 <div class="wrap page narrow">
     <ul class="notif-list card">
         <li class="notif">
-          <span class="notif-icon"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/></svg></span>
+          <span class="notif-icon"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9.5a6 6 0 0 1 12 0c0 5.5 2 7 2 7H4s2-1.5 2-7z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></span>
           <span class="notif-main">
-<a href="w-app-1.html">Nova poruka od Saffron Route Recruitment LLC za Električar za održavanje zgrada</a>            <time class="notif-time">06.10.2026. 12:08</time>
-          </span>
-        </li>
-        <li class="notif">
-          <span class="notif-icon"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 6.5h17v11h-17z"/><path d="m3.5 7 8.5 6 8.5-6"/><path d="M17 3v4M15 5h4"/></svg></span>
-          <span class="notif-main">
-<a href="job-8.html">Pearl Coast Hospitality Group poziva na prijavu: Tehničar za bazene i održavanje objekta</a>            <time class="notif-time">06.10.2026. 12:08</time>
-          </span>
-        </li>
-        <li class="notif">
-          <span class="notif-icon"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span>
-          <span class="notif-main">
-<a href="w-app-2.html#interview">Himal Overseas Pvt. Ltd. predlaže termine intervjua za Električar (stambena gradnja). Izaberi jedan.</a>            <time class="notif-time">05.10.2026. 12:08</time>
+<a href="job-14.html">Novi posao – Njemačka: TIG zavarivač (nehrđajući čelik)</a>            <time class="notif-time">05.10.2026. 05:38</time>
           </span>
         </li>
         <li class="notif">
           <span class="notif-icon"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9.5a6 6 0 0 1 12 0c0 5.5 2 7 2 7H4s2-1.5 2-7z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></span>
           <span class="notif-main">
-<a href="job-13.html">Novi oglas za pretragu „“electrician”, Gulf countries“: Električar (stambena gradnja)</a>            <time class="notif-time">29.09.2026. 12:08</time>
+<a href="w-app-1.html#contract">Saffron Route Recruitment LLC: novi dokument u prijavi – Električar za održavanje zgrada</a>            <time class="notif-time">23.09.2026. 05:38</time>
+          </span>
+        </li>
+        <li class="notif">
+          <span class="notif-icon"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/></svg></span>
+          <span class="notif-main">
+<a href="w-app-1.html">Nova poruka od Saffron Route Recruitment LLC za Električar za održavanje zgrada</a>            <time class="notif-time">07.10.2026. 05:38</time>
+          </span>
+        </li>
+        <li class="notif">
+          <span class="notif-icon"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 6.5h17v11h-17z"/><path d="m3.5 7 8.5 6 8.5-6"/><path d="M17 3v4M15 5h4"/></svg></span>
+          <span class="notif-main">
+<a href="job-8.html">Pearl Coast Hospitality Group poziva na prijavu: Tehničar za bazene i održavanje objekta</a>            <time class="notif-time">07.10.2026. 05:38</time>
+          </span>
+        </li>
+        <li class="notif">
+          <span class="notif-icon"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span>
+          <span class="notif-main">
+<a href="w-app-2.html#interview">Himal Overseas Pvt. Ltd. predlaže termine intervjua za Električar (stambena gradnja). Izaberi jedan.</a>            <time class="notif-time">06.10.2026. 05:38</time>
+          </span>
+        </li>
+        <li class="notif">
+          <span class="notif-icon"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9.5a6 6 0 0 1 12 0c0 5.5 2 7 2 7H4s2-1.5 2-7z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></span>
+          <span class="notif-main">
+<a href="job-13.html">Novi oglas za pretragu „“electrician”, Gulf countries“: Električar (stambena gradnja)</a>            <time class="notif-time">30.09.2026. 05:38</time>
           </span>
         </li>
         <li class="notif">
           <span class="notif-icon"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></svg></span>
           <span class="notif-main">
-<a href="w-app-1.html">Električar za održavanje zgrada: Radna dozvola u obradi</a>            <time class="notif-time">28.09.2026. 12:08</time>
+<a href="w-app-1.html">Električar za održavanje zgrada: Radna dozvola u obradi</a>            <time class="notif-time">29.09.2026. 05:38</time>
           </span>
         </li>
     </ul>
@@ -146,19 +160,25 @@
         <a href="w-jobs.html">Evropa</a>
         <a href="w-jobs.html">Zapadni Balkan</a>
         <a href="destinations.html">Destinacije</a>
+        <a href="w-jobs-map.html">Gdje su poslovi</a>
+        <a href="w-waitlist.html">Lista čekanja</a>
       </nav>
       <nav class="footer-col" aria-label="Pomoć">
         <h2>Pomoć</h2>
+        <a href="w-how-it-works.html">Kako radi (video)</a>
         <a href="guides.html">Vodiči</a>
         <a href="guide-fake-job-offers.html">Kako prepoznati lažnu ponudu za posao</a>
         <a href="index.html#faq">Česta pitanja radnika</a>
+        <a href="w-stories.html">Priče radnika</a>
         <a href="#" data-pv-off>Kontakt</a>
       </nav>
       <nav class="footer-col" aria-label="Workify">
         <h2>Workify</h2>
         <a href="employers.html">Za poslodavce</a>
+        <a href="pricing.html">Cijene za firme</a>
         <a href="privacy.html">Privatnost</a>
         <a href="terms.html">Uslovi korištenja</a>
+        <a href="terms-business.html">Uslovi za firme</a>
         <a href="imprint.html">Impressum</a>
       </nav>
     </div>
@@ -167,7 +187,34 @@
       <p class="footer-copy">© 2026 Workify</p>
     </div>
   </div>
-</footer><nav class="tabbar" aria-label="Glavna navigacija">
+</footer><div class="assist" data-assistant data-faq-url="assistant-faq.json" data-ask-url="#" data-ai="0" data-csrf="-w6psFhw7B7bCSqQ2AMV_05i44rZyRG7zV1aeaDDKag" data-speech-lang="bs" data-label-wait="Tražim odgovor…" data-label-read="Pročitaj naglas" data-error="Odgovor se nije mogao učitati. Provjeri internet i pokušaj ponovo." data-ai-note="Odgovor AI-ja može biti pogrešan. Za svoj slučaj pitaj agenciju u chatu.">
+  <button class="assist-fab" type="button" data-assist-open aria-expanded="false" aria-controls="assist-panel">
+    <span class="assist-fab-icon"><svg class="icon " width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/><path d="m12 7.8 1 2.3 2.3 1-2.3 1-1 2.3-1-2.3-2.3-1 2.3-1z"/></svg></span><span class="assist-fab-label">Pitaj</span>
+  </button>
+  <section class="assist-panel daylight" id="assist-panel" role="dialog" aria-labelledby="assist-title" hidden>
+    <header class="assist-head">
+      <span class="assist-avatar" aria-hidden="true"><svg class="logo-mark" width="24" height="14.1" viewBox="0 0 170.3 100" aria-hidden="true"><defs><linearGradient id="asa" x1="0" y1="0" x2="0.55" y2="1"><stop offset="0" stop-color="#2F6BFF"/><stop offset="1" stop-color="#1A4FE0"/></linearGradient><linearGradient id="asb" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#4D9BFF"/><stop offset="0.55" stop-color="#2F78FF"/><stop offset="1" stop-color="#2463F2"/></linearGradient><filter id="ass" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="-1.6" dy="0.4" stdDeviation="1.1" flood-color="#0a1f66" flood-opacity="0.5"/></filter><clipPath id="asc"><rect x="0" y="0" width="170.3" height="120.0"/></clipPath></defs><g fill="none" stroke="url(#asa)" stroke-width="27.0" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#asc)"><path d="M8.45 -14.00L54.45 86.50L72.45 60.00"/></g><g fill="none" stroke="url(#asb)" stroke-width="27.0" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#asc)" filter="url(#ass)"><path d="M89.45 13.50L108.45 86.50L162.45 -14.00"/></g></svg></span>
+      <div class="assist-head-text">
+        <h2 id="assist-title">Workify pomoć</h2>
+        <p>Odgovori iz pitanja koja radnici postavljaju</p>
+      </div>
+      <button class="icon-btn" type="button" data-assist-close aria-label="Zatvori"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg></button>
+    </header>
+    <div class="assist-log" data-assist-log aria-live="polite">
+      <div class="assist-msg bot"><p>Zdravo! Pitaj o poslovima, plati, troškovima, vizi ili dokumentima. Možeš i dodirnuti mikrofon i govoriti.</p></div>
+    </div>
+    <div class="assist-chips" data-assist-chips>
+<button type="button" class="assist-chip" data-assist-ask>Moram li išta platiti da ovdje nađem posao?</button><button type="button" class="assist-chip" data-assist-ask>U kojim državama mogu raditi?</button><button type="button" class="assist-chip" data-assist-ask>Kako to funkcioniše, korak po korak?</button><button type="button" class="assist-chip" data-assist-ask>Još nema posla za mene. Šta mogu uraditi?</button>    </div>
+    <form class="assist-form" data-assist-form>
+      <label class="sr-only" for="assist-input">Napiši pitanje…</label>
+      <input id="assist-input" type="text" maxlength="800" autocomplete="off" enterkeyhint="send" placeholder="Napiši pitanje…" data-assist-input>
+      <button class="icon-btn assist-mic" type="button" data-assist-mic hidden aria-label="Izgovori pitanje"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3.5" width="6" height="11" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0"/><path d="M12 18v2.5"/></svg></button>
+      <button class="assist-send" type="submit" aria-label="Pošalji"><svg class="icon icon-dir" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 3.5 10 14"/><path d="M20.5 3.5 14 20.5l-4-6.5-6.5-4z"/></svg></button>
+    </form>
+    <p class="assist-foot">Odgovori iz Workify čestih pitanja. Workify od tebe nikad ne traži novac.</p>
+    <span hidden data-assist-volume><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 9.5h3l4.5-4v13l-4.5-4h-3z"/><path d="M15.5 9a4 4 0 0 1 0 6"/><path d="M18 6.5a7.5 7.5 0 0 1 0 11"/></svg></span>
+  </section>
+</div><nav class="tabbar" aria-label="Glavna navigacija">
   <a href="w-home.html"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 10.5 12 3.5l8.5 7"/><path d="M5.5 9v10.5a1 1 0 0 0 1 1H10v-6h4v6h3.5a1 1 0 0 0 1-1V9"/></svg><span>Početna</span></a>
   <a href="w-jobs.html"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg><span>Poslovi</span></a>
   <a href="w-applications.html"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></svg><span>Prijave</span></a>
