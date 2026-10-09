@@ -6,11 +6,11 @@
   var text = bs ? {
     send: "Ovo je pregled dizajna, pa se ovdje ništa ne šalje. U pravoj aplikaciji sve radi.",
     off: "Ovaj dio nije u pregledu. U pravoj aplikaciji je dostupan.",
-    lang: "Pregled je na bosanskom i engleskom. Aplikacija ima 13 jezika."
+    lang: "Pregled je na bosanskom i engleskom. Aplikacija ima 16 jezika."
   } : {
     send: "This is a design preview, so nothing is sent from here. Everything works in the real app.",
     off: "This part is not in the preview. It is available in the real app.",
-    lang: "The preview is in Bosnian and English. The app has 13 languages."
+    lang: "The preview is in Bosnian and English. The app has 16 languages."
   };
 
   var toastEl = null;
