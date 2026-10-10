@@ -2113,6 +2113,7 @@ a.stat:hover { border-color: var(--blue); }
 .night .origin-counts li { border-color: var(--night-line); color: #dbe6ff; }
 .night .origin-counts li b { color: var(--gold-bright); }
 .tone-text-green { color: var(--green); font-weight: 600; }
+.tone-text-amber { color: var(--amber-strong); font-weight: 600; }
 
 /* --- talent search and the shortlist ("korpa") --- */
 .talent-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; margin: 4px 0 0; }
@@ -2993,6 +2994,61 @@ ul.extras-grid { list-style: none; margin: 0 0 24px; padding: 0; }
 .today-text { flex: 1; min-width: 0; font-weight: 500; }
 .today-list .icon-dir { color: var(--muted); flex-shrink: 0; }
 .today-clear { display: flex; align-items: center; gap: 10px; margin: 0; color: var(--green); font-weight: 600; }
+
+/* the job poster for groups (agency/job_poster.html) */
+.poster-lead { max-width: 70ch; margin: 0 0 16px; color: var(--ink-2); }
+.lang-chips { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 18px; }
+.lang-chips-label { width: 100%; font-size: 14px; font-weight: 600; color: var(--muted); }
+.lang-chip { display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border: 1px solid var(--line-strong); border-radius: 999px; color: var(--ink); font-size: 14px; font-weight: 500; text-decoration: none; }
+.lang-chip:hover { border-color: var(--blue); }
+.lang-chip[aria-current="page"] { border-color: var(--blue); background: var(--blue-soft); color: var(--blue-strong); font-weight: 600; }
+.poster-grid { display: grid; gap: 20px; align-items: start; }
+@media (min-width: 900px) { .poster-grid { grid-template-columns: minmax(0, 420px) minmax(0, 1fr); } }
+.poster-img { display: block; width: 100%; height: auto; border-radius: 14px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35); }
+.poster-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: 16px; }
+.poster-preview-img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); margin: 12px 0 18px; }
+.poster-share-label { margin: 0 0 8px; font-weight: 600; }
+.poster-url { margin: 10px 0 0; overflow-wrap: anywhere; }
+
+/* invoices (invoices/sheet.html, admin/invoice_new.html) */
+.inv-toolbar { align-items: center; flex-wrap: wrap; gap: 12px; }
+.inv-sheet { padding: clamp(24px, 4vw, 44px); }
+.inv-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px 32px; align-items: flex-start; margin-bottom: 28px; }
+.inv-logo { display: block; margin-bottom: 12px; color: var(--ink); }
+.inv-party { margin: 0; line-height: 1.45; }
+.inv-party strong, .inv-party span { display: block; }
+.inv-meta { text-align: end; }
+.inv-kicker { margin: 0; color: var(--muted); font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+.inv-number { margin: 2px 0 10px; font-family: "Fira XC", var(--font-display); font-size: 1.9rem; font-weight: 700; line-height: 1; }
+.inv-dates { margin: 0; display: grid; gap: 4px; }
+.inv-dates div { display: flex; justify-content: flex-end; gap: 10px; }
+.inv-dates dt { color: var(--muted); }
+.inv-dates dd { margin: 0; font-variant-numeric: tabular-nums; }
+.inv-stamp { display: inline-block; margin: 12px 0 0; padding: 4px 12px; border: 2px solid var(--green); border-radius: 8px; color: var(--green); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.inv-stamp-cancelled, .inv-stamp-refunded { border-color: var(--red); color: var(--red); }
+.inv-label { margin: 0 0 4px; color: var(--muted); font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+.inv-buyer { margin-bottom: 28px; }
+.inv-table { width: 100%; margin-bottom: 8px; }
+.inv-table .num { text-align: end; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.inv-table tfoot td { border-top: 0; padding-top: 6px; padding-bottom: 6px; }
+.inv-table tfoot td:first-child { text-align: end; color: var(--muted); }
+.inv-table .inv-total td { border-top: 2px solid var(--ink); font-weight: 700; font-size: 1.1rem; color: var(--ink); }
+.inv-vat-note { margin: 0 0 20px; }
+.inv-pay { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
+.inv-pay p { margin: 0 0 8px; }
+.inv-note { margin: 16px 0 0; padding: 12px 14px; border-radius: 10px; background: var(--surface-2); }
+.inv-foot { margin: 24px 0 0; }
+.inv-parties { display: grid; gap: 16px; margin-bottom: 16px; }
+@media (min-width: 720px) { .inv-parties { grid-template-columns: 1fr 1fr; } }
+.inv-sum { margin: 0 0 18px; display: grid; gap: 4px; max-width: 360px; }
+.inv-sum div { display: flex; justify-content: space-between; gap: 16px; }
+.inv-sum dt { color: var(--muted); }
+.inv-sum dd { margin: 0; font-variant-numeric: tabular-nums; }
+.inv-sum-total { padding-top: 6px; border-top: 1px solid var(--line); font-weight: 700; }
+.badge.inv-issued { background: var(--blue-soft); color: var(--blue-strong); }
+.badge.inv-paid { background: var(--green-soft); color: var(--green); }
+.badge.inv-cancelled, .badge.inv-refunded { background: var(--red-soft); color: var(--red); }
+@media print { .inv-toolbar { display: none !important; } .inv-sheet { padding: 0; border: 0; box-shadow: none; } }
 
 /* exchange rates (admin/fx.html) */
 .fx-form .field { margin: 0; }
