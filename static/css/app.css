@@ -2753,3 +2753,104 @@ a.stat:hover { border-color: var(--blue); }
 :lang(ur) * { letter-spacing: 0 !important; }
 :lang(ur) .hero-title { font-size: clamp(2.1rem, 5vw, 3.6rem); max-width: 22ch; line-height: 1.2; }
 :lang(ur) .ex-title { text-transform: none; }
+
+/* ------------------------------------------------------------------------------------------------
+   Version 6 – what companies pay for visibility (featured ads), the worker's free availability signal
+   ------------------------------------------------------------------------------------------------ */
+.tone-gold { background: var(--gold-soft); color: var(--gold); }
+.jl-featured { display: inline-flex; align-items: center; gap: 3px; vertical-align: 2px; margin-inline-end: 2px; padding: 1px 7px 1px 5px; border-radius: 99px; background: var(--gold-soft); color: var(--gold); font-size: 11px; font-weight: 800; letter-spacing: .01em; text-transform: uppercase; }
+.job-line.is-featured { border-color: color-mix(in srgb, var(--gold-bright) 55%, var(--line)); }
+.job-line.is-featured:hover { border-color: var(--gold-bright); }
+.detail-featured { display: inline-flex; align-items: center; gap: 6px; margin: -4px 0 10px; padding: 4px 10px; border-radius: 99px; background: rgba(245, 196, 81, 0.16); color: var(--gold-bright); font-size: 13px; font-weight: 700; }
+.price-addon { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-bottom: 18px; }
+.price-addon > .icon { flex-shrink: 0; color: var(--gold); }
+.price-addon-text { flex: 1 1 260px; min-width: 0; }
+.price-addon-text .card-title { margin-bottom: 4px; }
+.price-addon-text p { margin: 0; }
+.price-addon-amount { margin: 0; font-size: 1.5rem; font-weight: 800; letter-spacing: -.01em; color: var(--ink); white-space: nowrap; }
+.price-addon-amount small { display: block; font-size: 12.5px; font-weight: 500; color: var(--muted); letter-spacing: 0; }
+.avail-card.is-on { border-color: color-mix(in srgb, var(--green) 45%, var(--line)); }
+.avail-card .card-head { flex-wrap: wrap; align-items: flex-start; gap: 6px 10px; }
+.avail-card .badge { display: inline-flex; align-items: center; gap: 7px; }
+.avail-card .badge .live-dot, .avail-chip .live-dot, .toggle-chip .live-dot { width: 9px; height: 9px; --lamp: var(--green); box-shadow: 0 0 8px var(--green); }
+.avail-card .badge .live-dot::after, .avail-chip .live-dot::after, .toggle-chip .live-dot::after { inset: -4px; }
+.avail-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.avail-note { margin-top: 10px; }
+.avail-chip { display: inline-flex; align-items: center; gap: 6px; margin-inline-start: 6px; padding: 2px 9px 2px 7px; border-radius: 99px; background: var(--green-soft); color: var(--green); font-size: 12px; font-weight: 700; vertical-align: 2px; }
+.hero-side-stack { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+.count-free { background: var(--green-soft); color: var(--green); }
+.cand-cv-link { margin-inline-start: auto; }
+
+/* The CV sheet: a document on the screen, a printable page on paper. */
+.cv-wrap { max-width: 900px; }
+.cv-sheet { background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: var(--r-lg, 22px); box-shadow: var(--shadow-card); padding: clamp(20px, 4vw, 40px); }
+.cv-head { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 22px; padding-bottom: 20px; border-bottom: 2px solid var(--ink); }
+.cv-head-text { flex: 1 1 280px; min-width: 0; }
+.cv-name { margin: 0; font-family: var(--font-display); font-size: clamp(1.7rem, 3.4vw, 2.4rem); line-height: 1.05; letter-spacing: .01em; text-transform: uppercase; }
+.cv-headline { margin: 6px 0 10px; font-size: 1.05rem; font-weight: 600; color: var(--ink-2); }
+.cv-contact { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; color: var(--ink-2); }
+.cv-contact li { display: inline-flex; align-items: center; gap: 6px; }
+.cv-contact .icon { color: var(--muted); }
+.cv-body { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px 36px; padding-top: 8px; }
+@media (min-width: 720px) { .cv-body { grid-template-columns: minmax(0, 1fr) 240px; } }
+.cv-section { padding: 16px 0; border-bottom: 1px solid var(--line); }
+.cv-main .cv-section:last-child, .cv-side .cv-section:last-child { border-bottom: 0; }
+.cv-h { margin: 0 0 8px; font-size: 12.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.cv-section p { margin: 0; line-height: 1.55; }
+.cv-skills { margin-top: 8px !important; }
+.cv-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px 20px; margin: 0; }
+.cv-facts-col { grid-template-columns: minmax(0, 1fr); }
+.cv-facts dt { font-size: 13px; color: var(--muted); }
+.cv-facts dd { margin: 2px 0 0; font-weight: 600; }
+.cv-docs { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.cv-docs li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; }
+.cv-docs .icon { color: var(--muted); }
+.cv-foot { margin-top: 18px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 12.5px; color: var(--muted); }
+.cv-page .privacy-note { margin-top: 16px; }
+.theme-dark .cv-wrap.daylight .cv-sheet { background: #fff; color: #0a1633; border-color: #e1e7f2; }
+.theme-dark .cv-wrap.daylight { --ink: #0a1633; --ink-2: #33415f; --muted: #5d6b88; --line: #e1e7f2; --surface: #fff; }
+@media print {
+  .cv-page .page-hero, .cv-page .privacy-note, .cv-page .assist, .cv-page .sidebar, .cv-page .console-top, .cv-page .tabbar,
+  .cv-page .toolbar, .cv-page .flash-stack, .cv-page .verify-banner-wrap { display: none !important; }
+  .cv-page .main, .cv-page .console, .cv-page .console-main, .cv-page .console-content { padding: 0 !important; margin: 0 !important; display: block !important; min-height: 0 !important; }
+  .cv-page .cv-wrap { max-width: none; padding: 0; margin: 0; }
+  .cv-sheet { border: 0; box-shadow: none; border-radius: 0; padding: 0; background: #fff; color: #0a1633; }
+  .cv-page { --ink: #0a1633; --ink-2: #33415f; --muted: #5d6b88; --line: #e1e7f2; --surface: #fff; background: #fff; }
+  .cv-body { grid-template-columns: minmax(0, 1fr) 200px; }
+  .cv-section { break-inside: avoid; }
+  @page { margin: 16mm 14mm; }
+}
+
+/* --- worker extras (extras.py): sold only in enabled markets, always labelled --- */
+ul.extras-grid { list-style: none; margin: 0 0 24px; padding: 0; }
+.extras-card { display: flex; flex-direction: column; gap: 10px; }
+.extras-card p { margin: 0; }
+.extras-head { display: flex; align-items: flex-start; gap: 14px; }
+.extras-head .card-title { margin-bottom: 2px; }
+.extras-icon { display: grid; place-items: center; flex-shrink: 0; width: 46px; height: 46px; border-radius: 14px; background: var(--gold-soft); color: var(--gold); }
+.extras-price { margin: 0; font-size: 1.35rem; font-weight: 800; letter-spacing: -.01em; }
+.extras-price small { margin-inline-start: 6px; font-size: 12.5px; font-weight: 500; color: var(--muted); letter-spacing: 0; }
+.extras-state { margin: 2px 0 0; }
+.extras-state .badge { display: inline-flex; align-items: center; gap: 7px; }
+.extras-state .live-dot { width: 9px; height: 9px; --lamp: var(--green); box-shadow: 0 0 8px var(--green); }
+.extras-run { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.ai-label.small { display: inline-flex; align-items: center; gap: 5px; margin: 0; color: var(--muted); }
+.order-list { list-style: none; margin: 0 0 10px; padding: 0; display: grid; gap: 10px; }
+.order-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 12px 16px; }
+.order-main { flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.order-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.order-open { background: var(--amber-soft); color: var(--amber-strong); }
+.order-paid { background: var(--green-soft); color: var(--green); }
+.order-refunded { background: var(--blue-soft); color: var(--blue-strong); }
+.order-void { background: var(--grey-soft); color: var(--muted); text-decoration: line-through; }
+.priority-chip { display: inline-flex; align-items: center; gap: 4px; margin-inline-start: 6px; padding: 2px 8px 2px 6px; border-radius: 99px; background: var(--gold-soft); color: var(--gold); font-size: 11.5px; font-weight: 800; letter-spacing: .01em; text-transform: uppercase; vertical-align: 2px; }
+.cand-top .priority-chip { margin-inline-start: 4px; }
+.extras-teaser .card-head { flex-wrap: wrap; gap: 6px 10px; }
+.extras-teaser p { margin: 0 0 10px; }
+.price-extras { margin-bottom: 18px; }
+.price-extras-list { display: flex; flex-wrap: wrap; gap: 10px 14px; margin: 12px 0; }
+.price-extras-list div { display: flex; align-items: baseline; gap: 10px; padding: 10px 14px; border-radius: 12px; background: var(--gold-soft); }
+.price-extras-list dt { font-size: 14px; color: var(--ink-2); }
+.price-extras-list dd { margin: 0; font-weight: 800; color: var(--gold); }
+.price-extras-list dd small { font-weight: 500; color: var(--muted); }
+.price-extras p { margin: 0; }

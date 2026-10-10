@@ -239,6 +239,10 @@
     });
   });
 
+  document.querySelectorAll("[data-print]").forEach(function (button) {
+    button.addEventListener("click", function () { window.print(); });
+  });
+
   document.querySelectorAll("[data-back]").forEach(function (link) {
     link.addEventListener("click", function (event) {
       if (window.history.length > 1) { event.preventDefault(); window.history.back(); }

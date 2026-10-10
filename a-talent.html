@@ -135,6 +135,7 @@
         <option value="">Lista čekanja: sve zemlje</option>
 <option value="AE">Čekaju posao – Ujedinjeni Arapski Emirati: 7</option><option value="AT">Čekaju posao – Austrija: 1</option><option value="BH">Čekaju posao – Bahrein: 1</option><option value="DE">Čekaju posao – Njemačka: 3</option><option value="ES">Čekaju posao – Španija: 1</option><option value="HR">Čekaju posao – Hrvatska: 1</option><option value="IT">Čekaju posao – Italija: 1</option><option value="ME">Čekaju posao – Crna Gora: 1</option><option value="NL">Čekaju posao – Holandija: 1</option><option value="PL">Čekaju posao – Poljska: 1</option><option value="QA">Čekaju posao – Katar: 4</option><option value="SA">Čekaju posao – Saudijska Arabija: 3</option>      </select><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg>
     </div>
+    <label class="toggle-chip"><input type="checkbox" name="available" value="1"><span class="live-dot" aria-hidden="true"></span><span>Samo dostupni sada</span></label>
     <div class="field-inline field-narrow">
       <label class="sr-only" for="min_exp">Minimalno iskustvo (godina)</label>
       <input id="min_exp" type="number" min="0" max="40" name="min_exp" value="" placeholder="Min. godina" inputmode="numeric">
@@ -143,11 +144,221 @@
   </form>
 
   <div class="talent-bar">
-    <p class="small muted">Profila: 13</p>
+    <p class="small muted">Profila: 14</p>
     <a class="btn btn-outline btn-sm" href="a-shortlist.html"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5h17l-1.6 9a2 2 0 0 1-2 1.6H7.1a2 2 0 0 1-2-1.6z"/><path d="m8 9.5 3-5.5M16 9.5l-3-5.5"/><path d="M9 13.5v3M12 13.5v3M15 13.5v3"/></svg>Korpa <span class="count" data-shortlist-count>3</span></a>
   </div>
 
     <ul class="talent-list">
+  <li class="card talent-card">
+    <div class="talent-head">
+      <span class="avatar avatar-md" aria-hidden="true">KM</span>
+      <div class="talent-name">
+        <strong>Kwame M. <img class="flag" src="static/img/flags/gh.png" width="16" height="12" alt="" loading="lazy" decoding="async"> <span class="avail-chip" title="Radnik je označio da je dostupan do 13.10.2026."><span class="live-dot" aria-hidden="true"></span>Dostupan sada</span></strong>
+        <span class="muted small">Security officer</span>
+      </div>
+      <form class="shortlist-form" method="post" action="#" data-shortlist>
+        <input type="hidden" name="csrf_token" value=""><input type="hidden" name="next" value="/agency/talent?">
+        <button type="submit" class="shortlist-btn" aria-pressed="false" title="Dodaj u korpu" data-label-on="Ukloni iz korpe" data-label-off="Dodaj u korpu"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5h17l-1.6 9a2 2 0 0 1-2 1.6H7.1a2 2 0 0 1-2-1.6z"/><path d="m8 9.5 3-5.5M16 9.5l-3-5.5"/><path d="M9 13.5v3M12 13.5v3M15 13.5v3"/></svg><span>Dodaj u korpu</span></button>
+      </form>
+    </div>
+<p class="talent-waiting"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h11M6.5 20.5h11"/><path d="M7.5 3.5c0 4.5 4.5 5.5 4.5 8.5s-4.5 4-4.5 8.5M16.5 3.5c0 4.5-4.5 5.5-4.5 8.5s4.5 4 4.5 8.5"/></svg>Čeka posao u <span class="wait-chip"><img class="flag" src="static/img/flags/ae.png" width="14" height="10" alt="" loading="lazy" decoding="async">Ujedinjeni Arapski Emirati</span><span class="wait-chip"><img class="flag" src="static/img/flags/qa.png" width="14" height="10" alt="" loading="lazy" decoding="async">Katar</span></p>    <dl class="talent-facts">
+      <div><dt>Oblast</dt><dd>Zaštitari i obezbjeđenje</dd></div>
+      <div><dt>Godine iskustva</dt><dd>5 god.</dd></div>
+      <div><dt>Država boravka</dt><dd>Gana</dd></div>
+      <div><dt>Državljanstvo</dt><dd>Gana</dd></div>
+      <div class="span-2"><dt>Jezici</dt><dd>Twi (native), English C1</dd></div>
+      <div class="span-2"><dt>Željene države</dt><dd>Ujedinjeni Arapski Emirati, Katar</dd></div>
+      <div><dt>Dostupnost od</dt><dd>10.10.2026.</dd></div>
+      <div><dt>Očekivana mjesečna plata</dt><dd>–</dd></div>
+    </dl>
+<p class="small talent-skills">Access control, CCTV, patrols, first aid</p>    <div class="talent-actions">
+        <details class="invite-box">
+          <summary class="btn btn-outline btn-sm"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 6.5h17v11h-17z"/><path d="m3.5 7 8.5 6 8.5-6"/><path d="M17 3v4M15 5h4"/></svg>Pozovi na prijavu</summary>
+          <form method="post" action="#" class="stack">
+            <input type="hidden" name="csrf_token" value="">            <div class="field">
+              <label for="inv-job-21">Za oglas</label>
+              <div class="select">
+                <select id="inv-job-21" name="job_id">
+<option value="4">Warehouse associate (Jebel Ali) – Dubai</option><option value="3">Delivery rider (motorbike) – Dubai</option><option value="5">Security guard (offices and residential buildings) – Abu Dhabi</option><option value="2">HVAC technician (chillers and split units) – Abu Dhabi</option><option value="1">Building maintenance electrician – Dubai</option>                </select><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="field">
+              <label for="inv-msg-21">Poruka <span class="optional">(neobavezno)</span></label>
+              <textarea id="inv-msg-21" name="message" rows="3" maxlength="600" placeholder="Zašto bi ovaj posao mogao odgovarati kandidatu"></textarea>
+            </div>
+            <button class="btn btn-primary btn-sm" type="submit"><svg class="icon icon-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 3.5 10 14"/><path d="M20.5 3.5 14 20.5l-4-6.5-6.5-4z"/></svg>Pošalji poziv</button>
+          </form>
+        </details>
+    </div>
+  </li>
+  <li class="card talent-card is-chosen">
+    <div class="talent-head">
+      <span class="avatar avatar-md" aria-hidden="true">FN</span>
+      <div class="talent-name">
+        <strong>Firdavs N. <img class="flag" src="static/img/flags/tj.png" width="16" height="12" alt="" loading="lazy" decoding="async"> <span class="avail-chip" title="Radnik je označio da je dostupan do 19.10.2026."><span class="live-dot" aria-hidden="true"></span>Dostupan sada</span></strong>
+        <span class="muted small">Pipe welder 6G</span>
+      </div>
+      <form class="shortlist-form" method="post" action="#" data-shortlist>
+        <input type="hidden" name="csrf_token" value=""><input type="hidden" name="next" value="/agency/talent?">
+        <button type="submit" class="shortlist-btn is-on" aria-pressed="true" title="Ukloni iz korpe" data-label-on="Ukloni iz korpe" data-label-off="Dodaj u korpu"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5h17l-1.6 9a2 2 0 0 1-2 1.6H7.1a2 2 0 0 1-2-1.6z"/><path d="m8 9.5 3-5.5M16 9.5l-3-5.5"/><path d="M9 13.5v3M12 13.5v3M15 13.5v3"/></svg><span>Ukloni iz korpe</span></button>
+      </form>
+    </div>
+<p class="talent-waiting"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h11M6.5 20.5h11"/><path d="M7.5 3.5c0 4.5 4.5 5.5 4.5 8.5s-4.5 4-4.5 8.5M16.5 3.5c0 4.5-4.5 5.5-4.5 8.5s4.5 4 4.5 8.5"/></svg>Čeka posao u <span class="wait-chip"><img class="flag" src="static/img/flags/sa.png" width="14" height="10" alt="" loading="lazy" decoding="async">Saudijska Arabija</span><span class="wait-chip"><img class="flag" src="static/img/flags/de.png" width="14" height="10" alt="" loading="lazy" decoding="async">Njemačka</span></p>    <dl class="talent-facts">
+      <div><dt>Oblast</dt><dd>Metal i zavarivanje</dd></div>
+      <div><dt>Godine iskustva</dt><dd>9 god.</dd></div>
+      <div><dt>Država boravka</dt><dd>Tadžikistan</dd></div>
+      <div><dt>Državljanstvo</dt><dd>Tadžikistan</dd></div>
+      <div class="span-2"><dt>Jezici</dt><dd>Tajik (native), Russian C1, English A2</dd></div>
+      <div class="span-2"><dt>Željene države</dt><dd>Saudijska Arabija, Ujedinjeni Arapski Emirati, Njemačka</dd></div>
+      <div><dt>Dostupnost od</dt><dd>10.10.2026.</dd></div>
+      <div><dt>Očekivana mjesečna plata</dt><dd>3.200 SAR</dd></div>
+    </dl>
+<p class="small talent-skills">TIG, MIG/MAG, 6G pipe welding, reading isometrics</p>    <div class="talent-actions">
+        <details class="invite-box">
+          <summary class="btn btn-outline btn-sm"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 6.5h17v11h-17z"/><path d="m3.5 7 8.5 6 8.5-6"/><path d="M17 3v4M15 5h4"/></svg>Pozovi na prijavu</summary>
+          <form method="post" action="#" class="stack">
+            <input type="hidden" name="csrf_token" value="">            <div class="field">
+              <label for="inv-job-13">Za oglas</label>
+              <div class="select">
+                <select id="inv-job-13" name="job_id">
+<option value="4">Warehouse associate (Jebel Ali) – Dubai</option><option value="3">Delivery rider (motorbike) – Dubai</option><option value="5">Security guard (offices and residential buildings) – Abu Dhabi</option><option value="2">HVAC technician (chillers and split units) – Abu Dhabi</option><option value="1">Building maintenance electrician – Dubai</option>                </select><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="field">
+              <label for="inv-msg-13">Poruka <span class="optional">(neobavezno)</span></label>
+              <textarea id="inv-msg-13" name="message" rows="3" maxlength="600" placeholder="Zašto bi ovaj posao mogao odgovarati kandidatu"></textarea>
+            </div>
+            <button class="btn btn-primary btn-sm" type="submit"><svg class="icon icon-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 3.5 10 14"/><path d="M20.5 3.5 14 20.5l-4-6.5-6.5-4z"/></svg>Pošalji poziv</button>
+          </form>
+        </details>
+    </div>
+  </li>
+  <li class="card talent-card">
+    <div class="talent-head">
+      <span class="avatar avatar-md" aria-hidden="true">GW</span>
+      <div class="talent-name">
+        <strong>Grace W. <img class="flag" src="static/img/flags/ke.png" width="16" height="12" alt="" loading="lazy" decoding="async"> <span class="avail-chip" title="Radnik je označio da je dostupan do 25.10.2026."><span class="live-dot" aria-hidden="true"></span>Dostupan sada</span></strong>
+        <span class="muted small">Caregiver</span>
+      </div>
+      <form class="shortlist-form" method="post" action="#" data-shortlist>
+        <input type="hidden" name="csrf_token" value=""><input type="hidden" name="next" value="/agency/talent?">
+        <button type="submit" class="shortlist-btn" aria-pressed="false" title="Dodaj u korpu" data-label-on="Ukloni iz korpe" data-label-off="Dodaj u korpu"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5h17l-1.6 9a2 2 0 0 1-2 1.6H7.1a2 2 0 0 1-2-1.6z"/><path d="m8 9.5 3-5.5M16 9.5l-3-5.5"/><path d="M9 13.5v3M12 13.5v3M15 13.5v3"/></svg><span>Dodaj u korpu</span></button>
+      </form>
+    </div>
+<p class="talent-waiting"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h11M6.5 20.5h11"/><path d="M7.5 3.5c0 4.5 4.5 5.5 4.5 8.5s-4.5 4-4.5 8.5M16.5 3.5c0 4.5-4.5 5.5-4.5 8.5s4.5 4 4.5 8.5"/></svg>Čeka posao u <span class="wait-chip"><img class="flag" src="static/img/flags/de.png" width="14" height="10" alt="" loading="lazy" decoding="async">Njemačka</span><span class="wait-chip"><img class="flag" src="static/img/flags/at.png" width="14" height="10" alt="" loading="lazy" decoding="async">Austrija</span><span class="wait-chip"><img class="flag" src="static/img/flags/nl.png" width="14" height="10" alt="" loading="lazy" decoding="async">Holandija</span></p>    <dl class="talent-facts">
+      <div><dt>Oblast</dt><dd>Njega i zdravstvo</dd></div>
+      <div><dt>Godine iskustva</dt><dd>4 god.</dd></div>
+      <div><dt>Država boravka</dt><dd>Kenija</dd></div>
+      <div><dt>Državljanstvo</dt><dd>Kenija</dd></div>
+      <div class="span-2"><dt>Jezici</dt><dd>Swahili (native), English C1, German A2</dd></div>
+      <div class="span-2"><dt>Željene države</dt><dd>Njemačka, Austrija</dd></div>
+      <div><dt>Dostupnost od</dt><dd>10.10.2026.</dd></div>
+      <div><dt>Očekivana mjesečna plata</dt><dd>2.600 €</dd></div>
+    </dl>
+<p class="small talent-skills">Elderly care, first aid, dementia care</p>    <div class="talent-actions">
+        <details class="invite-box">
+          <summary class="btn btn-outline btn-sm"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 6.5h17v11h-17z"/><path d="m3.5 7 8.5 6 8.5-6"/><path d="M17 3v4M15 5h4"/></svg>Pozovi na prijavu</summary>
+          <form method="post" action="#" class="stack">
+            <input type="hidden" name="csrf_token" value="">            <div class="field">
+              <label for="inv-job-20">Za oglas</label>
+              <div class="select">
+                <select id="inv-job-20" name="job_id">
+<option value="4">Warehouse associate (Jebel Ali) – Dubai</option><option value="3">Delivery rider (motorbike) – Dubai</option><option value="5">Security guard (offices and residential buildings) – Abu Dhabi</option><option value="2">HVAC technician (chillers and split units) – Abu Dhabi</option><option value="1">Building maintenance electrician – Dubai</option>                </select><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="field">
+              <label for="inv-msg-20">Poruka <span class="optional">(neobavezno)</span></label>
+              <textarea id="inv-msg-20" name="message" rows="3" maxlength="600" placeholder="Zašto bi ovaj posao mogao odgovarati kandidatu"></textarea>
+            </div>
+            <button class="btn btn-primary btn-sm" type="submit"><svg class="icon icon-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 3.5 10 14"/><path d="M20.5 3.5 14 20.5l-4-6.5-6.5-4z"/></svg>Pošalji poziv</button>
+          </form>
+        </details>
+    </div>
+  </li>
+  <li class="card talent-card">
+    <div class="talent-head">
+      <span class="avatar avatar-md" aria-hidden="true">AK</span>
+      <div class="talent-name">
+        <strong>Anil K. <img class="flag" src="static/img/flags/in.png" width="16" height="12" alt="" loading="lazy" decoding="async"> <span class="avail-chip" title="Radnik je označio da je dostupan do 06.11.2026."><span class="live-dot" aria-hidden="true"></span>Dostupan sada</span></strong>
+        <span class="muted small">Electrician</span>
+      </div>
+      <form class="shortlist-form" method="post" action="#" data-shortlist>
+        <input type="hidden" name="csrf_token" value=""><input type="hidden" name="next" value="/agency/talent?">
+        <button type="submit" class="shortlist-btn" aria-pressed="false" title="Dodaj u korpu" data-label-on="Ukloni iz korpe" data-label-off="Dodaj u korpu"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5h17l-1.6 9a2 2 0 0 1-2 1.6H7.1a2 2 0 0 1-2-1.6z"/><path d="m8 9.5 3-5.5M16 9.5l-3-5.5"/><path d="M9 13.5v3M12 13.5v3M15 13.5v3"/></svg><span>Dodaj u korpu</span></button>
+      </form>
+    </div>
+<p class="talent-waiting"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h11M6.5 20.5h11"/><path d="M7.5 3.5c0 4.5 4.5 5.5 4.5 8.5s-4.5 4-4.5 8.5M16.5 3.5c0 4.5-4.5 5.5-4.5 8.5s4.5 4 4.5 8.5"/></svg>Čeka posao u <span class="wait-chip"><img class="flag" src="static/img/flags/ae.png" width="14" height="10" alt="" loading="lazy" decoding="async">Ujedinjeni Arapski Emirati</span><span class="wait-chip"><img class="flag" src="static/img/flags/bh.png" width="14" height="10" alt="" loading="lazy" decoding="async">Bahrein</span></p>    <dl class="talent-facts">
+      <div><dt>Oblast</dt><dd>Elektro</dd></div>
+      <div><dt>Godine iskustva</dt><dd>5 god.</dd></div>
+      <div><dt>Država boravka</dt><dd>Indija</dd></div>
+      <div><dt>Državljanstvo</dt><dd>Indija</dd></div>
+      <div class="span-2"><dt>Jezici</dt><dd>Malayalam (native), Hindi B1, English B1</dd></div>
+      <div class="span-2"><dt>Željene države</dt><dd>Ujedinjeni Arapski Emirati, Bahrein, Katar</dd></div>
+      <div><dt>Dostupnost od</dt><dd>10.10.2026.</dd></div>
+      <div><dt>Očekivana mjesečna plata</dt><dd>–</dd></div>
+    </dl>
+<p class="small talent-skills">Building wiring, conduits, LV panels</p>    <div class="talent-actions">
+        <details class="invite-box">
+          <summary class="btn btn-outline btn-sm"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 6.5h17v11h-17z"/><path d="m3.5 7 8.5 6 8.5-6"/><path d="M17 3v4M15 5h4"/></svg>Pozovi na prijavu</summary>
+          <form method="post" action="#" class="stack">
+            <input type="hidden" name="csrf_token" value="">            <div class="field">
+              <label for="inv-job-18">Za oglas</label>
+              <div class="select">
+                <select id="inv-job-18" name="job_id">
+<option value="4">Warehouse associate (Jebel Ali) – Dubai</option><option value="3">Delivery rider (motorbike) – Dubai</option><option value="5">Security guard (offices and residential buildings) – Abu Dhabi</option><option value="2">HVAC technician (chillers and split units) – Abu Dhabi</option><option value="1">Building maintenance electrician – Dubai</option>                </select><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="field">
+              <label for="inv-msg-18">Poruka <span class="optional">(neobavezno)</span></label>
+              <textarea id="inv-msg-18" name="message" rows="3" maxlength="600" placeholder="Zašto bi ovaj posao mogao odgovarati kandidatu"></textarea>
+            </div>
+            <button class="btn btn-primary btn-sm" type="submit"><svg class="icon icon-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 3.5 10 14"/><path d="M20.5 3.5 14 20.5l-4-6.5-6.5-4z"/></svg>Pošalji poziv</button>
+          </form>
+        </details>
+    </div>
+  </li>
+  <li class="card talent-card">
+    <div class="talent-head">
+      <span class="avatar avatar-md" aria-hidden="true">JR</span>
+      <div class="talent-name">
+        <strong>Jasur R. <img class="flag" src="static/img/flags/uz.png" width="16" height="12" alt="" loading="lazy" decoding="async"> <span class="avail-chip" title="Radnik je označio da je dostupan do 01.11.2026."><span class="live-dot" aria-hidden="true"></span>Dostupan sada</span></strong>
+        <span class="muted small">Industrial and building electrician</span>
+      </div>
+      <form class="shortlist-form" method="post" action="#" data-shortlist>
+        <input type="hidden" name="csrf_token" value=""><input type="hidden" name="next" value="/agency/talent?">
+        <button type="submit" class="shortlist-btn" aria-pressed="false" title="Dodaj u korpu" data-label-on="Ukloni iz korpe" data-label-off="Dodaj u korpu"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5h17l-1.6 9a2 2 0 0 1-2 1.6H7.1a2 2 0 0 1-2-1.6z"/><path d="m8 9.5 3-5.5M16 9.5l-3-5.5"/><path d="M9 13.5v3M12 13.5v3M15 13.5v3"/></svg><span>Dodaj u korpu</span></button>
+      </form>
+    </div>
+<p class="talent-waiting"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h11M6.5 20.5h11"/><path d="M7.5 3.5c0 4.5 4.5 5.5 4.5 8.5s-4.5 4-4.5 8.5M16.5 3.5c0 4.5-4.5 5.5-4.5 8.5s4.5 4 4.5 8.5"/></svg>Čeka posao u <span class="wait-chip"><img class="flag" src="static/img/flags/ae.png" width="14" height="10" alt="" loading="lazy" decoding="async">Ujedinjeni Arapski Emirati</span><span class="wait-chip"><img class="flag" src="static/img/flags/de.png" width="14" height="10" alt="" loading="lazy" decoding="async">Njemačka</span></p>    <dl class="talent-facts">
+      <div><dt>Oblast</dt><dd>Elektro</dd></div>
+      <div><dt>Godine iskustva</dt><dd>7 god.</dd></div>
+      <div><dt>Država boravka</dt><dd>Uzbekistan</dd></div>
+      <div><dt>Državljanstvo</dt><dd>Uzbekistan</dd></div>
+      <div class="span-2"><dt>Jezici</dt><dd>Uzbek (native), Russian C1, English B1</dd></div>
+      <div class="span-2"><dt>Željene države</dt><dd>Ujedinjeni Arapski Emirati, Katar, Saudijska Arabija, Njemačka</dd></div>
+      <div><dt>Dostupnost od</dt><dd>10.10.2026.</dd></div>
+      <div><dt>Očekivana mjesečna plata</dt><dd>2.800 AED</dd></div>
+    </dl>
+<p class="small talent-skills">Wiring and distribution boards, fault finding, fire alarm systems, PLC basics</p>    <div class="talent-actions">
+        <details class="invite-box">
+          <summary class="btn btn-outline btn-sm"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 6.5h17v11h-17z"/><path d="m3.5 7 8.5 6 8.5-6"/><path d="M17 3v4M15 5h4"/></svg>Pozovi na prijavu</summary>
+          <form method="post" action="#" class="stack">
+            <input type="hidden" name="csrf_token" value="">            <div class="field">
+              <label for="inv-job-12">Za oglas</label>
+              <div class="select">
+                <select id="inv-job-12" name="job_id">
+<option value="4">Warehouse associate (Jebel Ali) – Dubai</option><option value="3">Delivery rider (motorbike) – Dubai</option><option value="5">Security guard (offices and residential buildings) – Abu Dhabi</option><option value="2">HVAC technician (chillers and split units) – Abu Dhabi</option><option value="1">Building maintenance electrician – Dubai</option>                </select><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="field">
+              <label for="inv-msg-12">Poruka <span class="optional">(neobavezno)</span></label>
+              <textarea id="inv-msg-12" name="message" rows="3" maxlength="600" placeholder="Zašto bi ovaj posao mogao odgovarati kandidatu"></textarea>
+            </div>
+            <button class="btn btn-primary btn-sm" type="submit"><svg class="icon icon-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 3.5 10 14"/><path d="M20.5 3.5 14 20.5l-4-6.5-6.5-4z"/></svg>Pošalji poziv</button>
+          </form>
+        </details>
+    </div>
+  </li>
   <li class="card talent-card">
     <div class="talent-head">
       <span class="avatar avatar-md" aria-hidden="true">AK</span>
@@ -276,48 +487,6 @@
   </li>
   <li class="card talent-card">
     <div class="talent-head">
-      <span class="avatar avatar-md" aria-hidden="true">KM</span>
-      <div class="talent-name">
-        <strong>Kwame M. <img class="flag" src="static/img/flags/gh.png" width="16" height="12" alt="" loading="lazy" decoding="async"></strong>
-        <span class="muted small">Security officer</span>
-      </div>
-      <form class="shortlist-form" method="post" action="#" data-shortlist>
-        <input type="hidden" name="csrf_token" value=""><input type="hidden" name="next" value="/agency/talent?">
-        <button type="submit" class="shortlist-btn" aria-pressed="false" title="Dodaj u korpu" data-label-on="Ukloni iz korpe" data-label-off="Dodaj u korpu"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5h17l-1.6 9a2 2 0 0 1-2 1.6H7.1a2 2 0 0 1-2-1.6z"/><path d="m8 9.5 3-5.5M16 9.5l-3-5.5"/><path d="M9 13.5v3M12 13.5v3M15 13.5v3"/></svg><span>Dodaj u korpu</span></button>
-      </form>
-    </div>
-<p class="talent-waiting"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h11M6.5 20.5h11"/><path d="M7.5 3.5c0 4.5 4.5 5.5 4.5 8.5s-4.5 4-4.5 8.5M16.5 3.5c0 4.5-4.5 5.5-4.5 8.5s4.5 4 4.5 8.5"/></svg>Čeka posao u <span class="wait-chip"><img class="flag" src="static/img/flags/ae.png" width="14" height="10" alt="" loading="lazy" decoding="async">Ujedinjeni Arapski Emirati</span><span class="wait-chip"><img class="flag" src="static/img/flags/qa.png" width="14" height="10" alt="" loading="lazy" decoding="async">Katar</span></p>    <dl class="talent-facts">
-      <div><dt>Oblast</dt><dd>Zaštitari i obezbjeđenje</dd></div>
-      <div><dt>Godine iskustva</dt><dd>5 god.</dd></div>
-      <div><dt>Država boravka</dt><dd>Gana</dd></div>
-      <div><dt>Državljanstvo</dt><dd>Gana</dd></div>
-      <div class="span-2"><dt>Jezici</dt><dd>Twi (native), English C1</dd></div>
-      <div class="span-2"><dt>Željene države</dt><dd>Ujedinjeni Arapski Emirati, Katar</dd></div>
-      <div><dt>Dostupnost od</dt><dd>09.11.2026.</dd></div>
-      <div><dt>Očekivana mjesečna plata</dt><dd>–</dd></div>
-    </dl>
-<p class="small talent-skills">Access control, CCTV, patrols, first aid</p>    <div class="talent-actions">
-        <details class="invite-box">
-          <summary class="btn btn-outline btn-sm"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 6.5h17v11h-17z"/><path d="m3.5 7 8.5 6 8.5-6"/><path d="M17 3v4M15 5h4"/></svg>Pozovi na prijavu</summary>
-          <form method="post" action="#" class="stack">
-            <input type="hidden" name="csrf_token" value="">            <div class="field">
-              <label for="inv-job-21">Za oglas</label>
-              <div class="select">
-                <select id="inv-job-21" name="job_id">
-<option value="4">Warehouse associate (Jebel Ali) – Dubai</option><option value="3">Delivery rider (motorbike) – Dubai</option><option value="5">Security guard (offices and residential buildings) – Abu Dhabi</option><option value="2">HVAC technician (chillers and split units) – Abu Dhabi</option><option value="1">Building maintenance electrician – Dubai</option>                </select><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg>
-              </div>
-            </div>
-            <div class="field">
-              <label for="inv-msg-21">Poruka <span class="optional">(neobavezno)</span></label>
-              <textarea id="inv-msg-21" name="message" rows="3" maxlength="600" placeholder="Zašto bi ovaj posao mogao odgovarati kandidatu"></textarea>
-            </div>
-            <button class="btn btn-primary btn-sm" type="submit"><svg class="icon icon-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 3.5 10 14"/><path d="M20.5 3.5 14 20.5l-4-6.5-6.5-4z"/></svg>Pošalji poziv</button>
-          </form>
-        </details>
-    </div>
-  </li>
-  <li class="card talent-card">
-    <div class="talent-head">
       <span class="avatar avatar-md" aria-hidden="true">YE</span>
       <div class="talent-name">
         <strong>Youssef A. <img class="flag" src="static/img/flags/ma.png" width="16" height="12" alt="" loading="lazy" decoding="async"></strong>
@@ -400,132 +569,6 @@
         </details>
     </div>
   </li>
-  <li class="card talent-card is-chosen">
-    <div class="talent-head">
-      <span class="avatar avatar-md" aria-hidden="true">FN</span>
-      <div class="talent-name">
-        <strong>Firdavs N. <img class="flag" src="static/img/flags/tj.png" width="16" height="12" alt="" loading="lazy" decoding="async"></strong>
-        <span class="muted small">Pipe welder 6G</span>
-      </div>
-      <form class="shortlist-form" method="post" action="#" data-shortlist>
-        <input type="hidden" name="csrf_token" value=""><input type="hidden" name="next" value="/agency/talent?">
-        <button type="submit" class="shortlist-btn is-on" aria-pressed="true" title="Ukloni iz korpe" data-label-on="Ukloni iz korpe" data-label-off="Dodaj u korpu"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5h17l-1.6 9a2 2 0 0 1-2 1.6H7.1a2 2 0 0 1-2-1.6z"/><path d="m8 9.5 3-5.5M16 9.5l-3-5.5"/><path d="M9 13.5v3M12 13.5v3M15 13.5v3"/></svg><span>Ukloni iz korpe</span></button>
-      </form>
-    </div>
-<p class="talent-waiting"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h11M6.5 20.5h11"/><path d="M7.5 3.5c0 4.5 4.5 5.5 4.5 8.5s-4.5 4-4.5 8.5M16.5 3.5c0 4.5-4.5 5.5-4.5 8.5s4.5 4 4.5 8.5"/></svg>Čeka posao u <span class="wait-chip"><img class="flag" src="static/img/flags/sa.png" width="14" height="10" alt="" loading="lazy" decoding="async">Saudijska Arabija</span><span class="wait-chip"><img class="flag" src="static/img/flags/de.png" width="14" height="10" alt="" loading="lazy" decoding="async">Njemačka</span></p>    <dl class="talent-facts">
-      <div><dt>Oblast</dt><dd>Metal i zavarivanje</dd></div>
-      <div><dt>Godine iskustva</dt><dd>9 god.</dd></div>
-      <div><dt>Država boravka</dt><dd>Tadžikistan</dd></div>
-      <div><dt>Državljanstvo</dt><dd>Tadžikistan</dd></div>
-      <div class="span-2"><dt>Jezici</dt><dd>Tajik (native), Russian C1, English A2</dd></div>
-      <div class="span-2"><dt>Željene države</dt><dd>Saudijska Arabija, Ujedinjeni Arapski Emirati, Njemačka</dd></div>
-      <div><dt>Dostupnost od</dt><dd>09.11.2026.</dd></div>
-      <div><dt>Očekivana mjesečna plata</dt><dd>3.200 SAR</dd></div>
-    </dl>
-<p class="small talent-skills">TIG, MIG/MAG, 6G pipe welding, reading isometrics</p>    <div class="talent-actions">
-        <details class="invite-box">
-          <summary class="btn btn-outline btn-sm"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 6.5h17v11h-17z"/><path d="m3.5 7 8.5 6 8.5-6"/><path d="M17 3v4M15 5h4"/></svg>Pozovi na prijavu</summary>
-          <form method="post" action="#" class="stack">
-            <input type="hidden" name="csrf_token" value="">            <div class="field">
-              <label for="inv-job-13">Za oglas</label>
-              <div class="select">
-                <select id="inv-job-13" name="job_id">
-<option value="4">Warehouse associate (Jebel Ali) – Dubai</option><option value="3">Delivery rider (motorbike) – Dubai</option><option value="5">Security guard (offices and residential buildings) – Abu Dhabi</option><option value="2">HVAC technician (chillers and split units) – Abu Dhabi</option><option value="1">Building maintenance electrician – Dubai</option>                </select><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg>
-              </div>
-            </div>
-            <div class="field">
-              <label for="inv-msg-13">Poruka <span class="optional">(neobavezno)</span></label>
-              <textarea id="inv-msg-13" name="message" rows="3" maxlength="600" placeholder="Zašto bi ovaj posao mogao odgovarati kandidatu"></textarea>
-            </div>
-            <button class="btn btn-primary btn-sm" type="submit"><svg class="icon icon-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 3.5 10 14"/><path d="M20.5 3.5 14 20.5l-4-6.5-6.5-4z"/></svg>Pošalji poziv</button>
-          </form>
-        </details>
-    </div>
-  </li>
-  <li class="card talent-card">
-    <div class="talent-head">
-      <span class="avatar avatar-md" aria-hidden="true">GW</span>
-      <div class="talent-name">
-        <strong>Grace W. <img class="flag" src="static/img/flags/ke.png" width="16" height="12" alt="" loading="lazy" decoding="async"></strong>
-        <span class="muted small">Caregiver</span>
-      </div>
-      <form class="shortlist-form" method="post" action="#" data-shortlist>
-        <input type="hidden" name="csrf_token" value=""><input type="hidden" name="next" value="/agency/talent?">
-        <button type="submit" class="shortlist-btn" aria-pressed="false" title="Dodaj u korpu" data-label-on="Ukloni iz korpe" data-label-off="Dodaj u korpu"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5h17l-1.6 9a2 2 0 0 1-2 1.6H7.1a2 2 0 0 1-2-1.6z"/><path d="m8 9.5 3-5.5M16 9.5l-3-5.5"/><path d="M9 13.5v3M12 13.5v3M15 13.5v3"/></svg><span>Dodaj u korpu</span></button>
-      </form>
-    </div>
-<p class="talent-waiting"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h11M6.5 20.5h11"/><path d="M7.5 3.5c0 4.5 4.5 5.5 4.5 8.5s-4.5 4-4.5 8.5M16.5 3.5c0 4.5-4.5 5.5-4.5 8.5s4.5 4 4.5 8.5"/></svg>Čeka posao u <span class="wait-chip"><img class="flag" src="static/img/flags/de.png" width="14" height="10" alt="" loading="lazy" decoding="async">Njemačka</span><span class="wait-chip"><img class="flag" src="static/img/flags/at.png" width="14" height="10" alt="" loading="lazy" decoding="async">Austrija</span><span class="wait-chip"><img class="flag" src="static/img/flags/nl.png" width="14" height="10" alt="" loading="lazy" decoding="async">Holandija</span></p>    <dl class="talent-facts">
-      <div><dt>Oblast</dt><dd>Njega i zdravstvo</dd></div>
-      <div><dt>Godine iskustva</dt><dd>4 god.</dd></div>
-      <div><dt>Država boravka</dt><dd>Kenija</dd></div>
-      <div><dt>Državljanstvo</dt><dd>Kenija</dd></div>
-      <div class="span-2"><dt>Jezici</dt><dd>Swahili (native), English C1, German A2</dd></div>
-      <div class="span-2"><dt>Željene države</dt><dd>Njemačka, Austrija</dd></div>
-      <div><dt>Dostupnost od</dt><dd>09.11.2026.</dd></div>
-      <div><dt>Očekivana mjesečna plata</dt><dd>2.600 €</dd></div>
-    </dl>
-<p class="small talent-skills">Elderly care, first aid, dementia care</p>    <div class="talent-actions">
-        <details class="invite-box">
-          <summary class="btn btn-outline btn-sm"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 6.5h17v11h-17z"/><path d="m3.5 7 8.5 6 8.5-6"/><path d="M17 3v4M15 5h4"/></svg>Pozovi na prijavu</summary>
-          <form method="post" action="#" class="stack">
-            <input type="hidden" name="csrf_token" value="">            <div class="field">
-              <label for="inv-job-20">Za oglas</label>
-              <div class="select">
-                <select id="inv-job-20" name="job_id">
-<option value="4">Warehouse associate (Jebel Ali) – Dubai</option><option value="3">Delivery rider (motorbike) – Dubai</option><option value="5">Security guard (offices and residential buildings) – Abu Dhabi</option><option value="2">HVAC technician (chillers and split units) – Abu Dhabi</option><option value="1">Building maintenance electrician – Dubai</option>                </select><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg>
-              </div>
-            </div>
-            <div class="field">
-              <label for="inv-msg-20">Poruka <span class="optional">(neobavezno)</span></label>
-              <textarea id="inv-msg-20" name="message" rows="3" maxlength="600" placeholder="Zašto bi ovaj posao mogao odgovarati kandidatu"></textarea>
-            </div>
-            <button class="btn btn-primary btn-sm" type="submit"><svg class="icon icon-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 3.5 10 14"/><path d="M20.5 3.5 14 20.5l-4-6.5-6.5-4z"/></svg>Pošalji poziv</button>
-          </form>
-        </details>
-    </div>
-  </li>
-  <li class="card talent-card">
-    <div class="talent-head">
-      <span class="avatar avatar-md" aria-hidden="true">AK</span>
-      <div class="talent-name">
-        <strong>Anil K. <img class="flag" src="static/img/flags/in.png" width="16" height="12" alt="" loading="lazy" decoding="async"></strong>
-        <span class="muted small">Electrician</span>
-      </div>
-      <form class="shortlist-form" method="post" action="#" data-shortlist>
-        <input type="hidden" name="csrf_token" value=""><input type="hidden" name="next" value="/agency/talent?">
-        <button type="submit" class="shortlist-btn" aria-pressed="false" title="Dodaj u korpu" data-label-on="Ukloni iz korpe" data-label-off="Dodaj u korpu"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5h17l-1.6 9a2 2 0 0 1-2 1.6H7.1a2 2 0 0 1-2-1.6z"/><path d="m8 9.5 3-5.5M16 9.5l-3-5.5"/><path d="M9 13.5v3M12 13.5v3M15 13.5v3"/></svg><span>Dodaj u korpu</span></button>
-      </form>
-    </div>
-<p class="talent-waiting"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h11M6.5 20.5h11"/><path d="M7.5 3.5c0 4.5 4.5 5.5 4.5 8.5s-4.5 4-4.5 8.5M16.5 3.5c0 4.5-4.5 5.5-4.5 8.5s4.5 4 4.5 8.5"/></svg>Čeka posao u <span class="wait-chip"><img class="flag" src="static/img/flags/ae.png" width="14" height="10" alt="" loading="lazy" decoding="async">Ujedinjeni Arapski Emirati</span><span class="wait-chip"><img class="flag" src="static/img/flags/bh.png" width="14" height="10" alt="" loading="lazy" decoding="async">Bahrein</span></p>    <dl class="talent-facts">
-      <div><dt>Oblast</dt><dd>Elektro</dd></div>
-      <div><dt>Godine iskustva</dt><dd>5 god.</dd></div>
-      <div><dt>Država boravka</dt><dd>Indija</dd></div>
-      <div><dt>Državljanstvo</dt><dd>Indija</dd></div>
-      <div class="span-2"><dt>Jezici</dt><dd>Malayalam (native), Hindi B1, English B1</dd></div>
-      <div class="span-2"><dt>Željene države</dt><dd>Ujedinjeni Arapski Emirati, Bahrein, Katar</dd></div>
-      <div><dt>Dostupnost od</dt><dd>09.11.2026.</dd></div>
-      <div><dt>Očekivana mjesečna plata</dt><dd>–</dd></div>
-    </dl>
-<p class="small talent-skills">Building wiring, conduits, LV panels</p>    <div class="talent-actions">
-        <details class="invite-box">
-          <summary class="btn btn-outline btn-sm"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 6.5h17v11h-17z"/><path d="m3.5 7 8.5 6 8.5-6"/><path d="M17 3v4M15 5h4"/></svg>Pozovi na prijavu</summary>
-          <form method="post" action="#" class="stack">
-            <input type="hidden" name="csrf_token" value="">            <div class="field">
-              <label for="inv-job-18">Za oglas</label>
-              <div class="select">
-                <select id="inv-job-18" name="job_id">
-<option value="4">Warehouse associate (Jebel Ali) – Dubai</option><option value="3">Delivery rider (motorbike) – Dubai</option><option value="5">Security guard (offices and residential buildings) – Abu Dhabi</option><option value="2">HVAC technician (chillers and split units) – Abu Dhabi</option><option value="1">Building maintenance electrician – Dubai</option>                </select><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg>
-              </div>
-            </div>
-            <div class="field">
-              <label for="inv-msg-18">Poruka <span class="optional">(neobavezno)</span></label>
-              <textarea id="inv-msg-18" name="message" rows="3" maxlength="600" placeholder="Zašto bi ovaj posao mogao odgovarati kandidatu"></textarea>
-            </div>
-            <button class="btn btn-primary btn-sm" type="submit"><svg class="icon icon-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 3.5 10 14"/><path d="M20.5 3.5 14 20.5l-4-6.5-6.5-4z"/></svg>Pošalji poziv</button>
-          </form>
-        </details>
-    </div>
-  </li>
   <li class="card talent-card">
     <div class="talent-head">
       <span class="avatar avatar-md" aria-hidden="true">SG</span>
@@ -562,48 +605,6 @@
             <div class="field">
               <label for="inv-msg-15">Poruka <span class="optional">(neobavezno)</span></label>
               <textarea id="inv-msg-15" name="message" rows="3" maxlength="600" placeholder="Zašto bi ovaj posao mogao odgovarati kandidatu"></textarea>
-            </div>
-            <button class="btn btn-primary btn-sm" type="submit"><svg class="icon icon-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 3.5 10 14"/><path d="M20.5 3.5 14 20.5l-4-6.5-6.5-4z"/></svg>Pošalji poziv</button>
-          </form>
-        </details>
-    </div>
-  </li>
-  <li class="card talent-card">
-    <div class="talent-head">
-      <span class="avatar avatar-md" aria-hidden="true">JR</span>
-      <div class="talent-name">
-        <strong>Jasur R. <img class="flag" src="static/img/flags/uz.png" width="16" height="12" alt="" loading="lazy" decoding="async"></strong>
-        <span class="muted small">Industrial and building electrician</span>
-      </div>
-      <form class="shortlist-form" method="post" action="#" data-shortlist>
-        <input type="hidden" name="csrf_token" value=""><input type="hidden" name="next" value="/agency/talent?">
-        <button type="submit" class="shortlist-btn" aria-pressed="false" title="Dodaj u korpu" data-label-on="Ukloni iz korpe" data-label-off="Dodaj u korpu"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5h17l-1.6 9a2 2 0 0 1-2 1.6H7.1a2 2 0 0 1-2-1.6z"/><path d="m8 9.5 3-5.5M16 9.5l-3-5.5"/><path d="M9 13.5v3M12 13.5v3M15 13.5v3"/></svg><span>Dodaj u korpu</span></button>
-      </form>
-    </div>
-<p class="talent-waiting"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.5 3.5h11M6.5 20.5h11"/><path d="M7.5 3.5c0 4.5 4.5 5.5 4.5 8.5s-4.5 4-4.5 8.5M16.5 3.5c0 4.5-4.5 5.5-4.5 8.5s4.5 4 4.5 8.5"/></svg>Čeka posao u <span class="wait-chip"><img class="flag" src="static/img/flags/ae.png" width="14" height="10" alt="" loading="lazy" decoding="async">Ujedinjeni Arapski Emirati</span><span class="wait-chip"><img class="flag" src="static/img/flags/de.png" width="14" height="10" alt="" loading="lazy" decoding="async">Njemačka</span></p>    <dl class="talent-facts">
-      <div><dt>Oblast</dt><dd>Elektro</dd></div>
-      <div><dt>Godine iskustva</dt><dd>7 god.</dd></div>
-      <div><dt>Država boravka</dt><dd>Uzbekistan</dd></div>
-      <div><dt>Državljanstvo</dt><dd>Uzbekistan</dd></div>
-      <div class="span-2"><dt>Jezici</dt><dd>Uzbek (native), Russian C1, English B1</dd></div>
-      <div class="span-2"><dt>Željene države</dt><dd>Ujedinjeni Arapski Emirati, Katar, Saudijska Arabija, Njemačka</dd></div>
-      <div><dt>Dostupnost od</dt><dd>09.11.2026.</dd></div>
-      <div><dt>Očekivana mjesečna plata</dt><dd>2.800 AED</dd></div>
-    </dl>
-<p class="small talent-skills">Wiring and distribution boards, fault finding, fire alarm systems, PLC basics</p>    <div class="talent-actions">
-        <details class="invite-box">
-          <summary class="btn btn-outline btn-sm"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 6.5h17v11h-17z"/><path d="m3.5 7 8.5 6 8.5-6"/><path d="M17 3v4M15 5h4"/></svg>Pozovi na prijavu</summary>
-          <form method="post" action="#" class="stack">
-            <input type="hidden" name="csrf_token" value="">            <div class="field">
-              <label for="inv-job-12">Za oglas</label>
-              <div class="select">
-                <select id="inv-job-12" name="job_id">
-<option value="4">Warehouse associate (Jebel Ali) – Dubai</option><option value="3">Delivery rider (motorbike) – Dubai</option><option value="5">Security guard (offices and residential buildings) – Abu Dhabi</option><option value="2">HVAC technician (chillers and split units) – Abu Dhabi</option><option value="1">Building maintenance electrician – Dubai</option>                </select><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg>
-              </div>
-            </div>
-            <div class="field">
-              <label for="inv-msg-12">Poruka <span class="optional">(neobavezno)</span></label>
-              <textarea id="inv-msg-12" name="message" rows="3" maxlength="600" placeholder="Zašto bi ovaj posao mogao odgovarati kandidatu"></textarea>
             </div>
             <button class="btn btn-primary btn-sm" type="submit"><svg class="icon icon-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 3.5 10 14"/><path d="M20.5 3.5 14 20.5l-4-6.5-6.5-4z"/></svg>Pošalji poziv</button>
           </form>
@@ -688,6 +689,48 @@
             <div class="field">
               <label for="inv-msg-16">Poruka <span class="optional">(neobavezno)</span></label>
               <textarea id="inv-msg-16" name="message" rows="3" maxlength="600" placeholder="Zašto bi ovaj posao mogao odgovarati kandidatu"></textarea>
+            </div>
+            <button class="btn btn-primary btn-sm" type="submit"><svg class="icon icon-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 3.5 10 14"/><path d="M20.5 3.5 14 20.5l-4-6.5-6.5-4z"/></svg>Pošalji poziv</button>
+          </form>
+        </details>
+    </div>
+  </li>
+  <li class="card talent-card">
+    <div class="talent-head">
+      <span class="avatar avatar-md" aria-hidden="true">GB</span>
+      <div class="talent-name">
+        <strong>Giorgi B. <img class="flag" src="static/img/flags/ge.png" width="16" height="12" alt="" loading="lazy" decoding="async"></strong>
+        <span class="muted small">Truck driver C+E</span>
+      </div>
+      <form class="shortlist-form" method="post" action="#" data-shortlist>
+        <input type="hidden" name="csrf_token" value=""><input type="hidden" name="next" value="/agency/talent?">
+        <button type="submit" class="shortlist-btn" aria-pressed="false" title="Dodaj u korpu" data-label-on="Ukloni iz korpe" data-label-off="Dodaj u korpu"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5h17l-1.6 9a2 2 0 0 1-2 1.6H7.1a2 2 0 0 1-2-1.6z"/><path d="m8 9.5 3-5.5M16 9.5l-3-5.5"/><path d="M9 13.5v3M12 13.5v3M15 13.5v3"/></svg><span>Dodaj u korpu</span></button>
+      </form>
+    </div>
+    <dl class="talent-facts">
+      <div><dt>Oblast</dt><dd>Vozači i transport</dd></div>
+      <div><dt>Godine iskustva</dt><dd>11 god.</dd></div>
+      <div><dt>Država boravka</dt><dd>Gruzija</dd></div>
+      <div><dt>Državljanstvo</dt><dd>Gruzija</dd></div>
+      <div class="span-2"><dt>Jezici</dt><dd>Georgian (native), Russian B2, English B1</dd></div>
+      <div class="span-2"><dt>Željene države</dt><dd>Poljska, Njemačka, Austrija</dd></div>
+      <div><dt>Dostupnost od</dt><dd>09.11.2026.</dd></div>
+      <div><dt>Očekivana mjesečna plata</dt><dd>2.800 €</dd></div>
+    </dl>
+<p class="small talent-skills">International routes, ADR, digital tachograph</p>    <div class="talent-actions">
+        <details class="invite-box">
+          <summary class="btn btn-outline btn-sm"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 6.5h17v11h-17z"/><path d="m3.5 7 8.5 6 8.5-6"/><path d="M17 3v4M15 5h4"/></svg>Pozovi na prijavu</summary>
+          <form method="post" action="#" class="stack">
+            <input type="hidden" name="csrf_token" value="">            <div class="field">
+              <label for="inv-job-14">Za oglas</label>
+              <div class="select">
+                <select id="inv-job-14" name="job_id">
+<option value="4">Warehouse associate (Jebel Ali) – Dubai</option><option value="3">Delivery rider (motorbike) – Dubai</option><option value="5">Security guard (offices and residential buildings) – Abu Dhabi</option><option value="2">HVAC technician (chillers and split units) – Abu Dhabi</option><option value="1">Building maintenance electrician – Dubai</option>                </select><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="field">
+              <label for="inv-msg-14">Poruka <span class="optional">(neobavezno)</span></label>
+              <textarea id="inv-msg-14" name="message" rows="3" maxlength="600" placeholder="Zašto bi ovaj posao mogao odgovarati kandidatu"></textarea>
             </div>
             <button class="btn btn-primary btn-sm" type="submit"><svg class="icon icon-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 3.5 10 14"/><path d="M20.5 3.5 14 20.5l-4-6.5-6.5-4z"/></svg>Pošalji poziv</button>
           </form>
