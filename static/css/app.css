@@ -965,6 +965,20 @@ body.has-tabbar { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
   color: #cfe0ff; text-decoration: none;
 }
 .jc-cover-icon { display: grid; place-items: center; width: 54px; height: 54px; border-radius: 16px; background: rgba(120, 165, 255, 0.12); color: #9fc4ff; box-shadow: inset 0 0 0 1px rgba(120, 165, 255, 0.2); }
+/* An ad without pictures shows its destination city (a photo, with the code on top) instead of the drawn card. */
+.jc-cover-photo { justify-content: flex-end; align-items: flex-start; gap: 6px; padding: 12px 14px; }
+.jc-cover-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.jc-cover-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5, 11, 26, 0) 35%, rgba(5, 11, 26, 0.8)); }
+.jc-cover-photo .jc-cover-icon { display: none; }
+.jc-cover-photo .flaps, .jc-cover-photo .jc-cover-city { position: relative; z-index: 1; }
+.jl-cover-photo { position: relative; justify-content: flex-end; align-items: flex-start; padding: 6px; }
+.jl-cover-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.jl-cover-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5, 11, 26, 0) 40%, rgba(5, 11, 26, 0.75)); }
+.jl-cover-photo .icon { display: none; }
+.jl-cover-photo .flaps { position: relative; z-index: 1; }
+/* Where the landmark sits in a city photo (tools/photos/manifest.json `focus`), kept in view by every crop. */
+.focus-25 { object-position: center 25%; } .focus-35 { object-position: center 35%; } .focus-45 { object-position: center 45%; }
+.focus-55 { object-position: center 55%; } .focus-65 { object-position: center 65%; }
 .jc-cover-city { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; letter-spacing: 0.06em; text-transform: uppercase; color: #eaf1ff; }
 .flaps-md .flap { width: 26px; height: 36px; font-size: 1.4rem; }
 .jc-badges { position: absolute; top: 10px; inset-inline-start: 10px; z-index: 2; display: flex; gap: 6px; }
@@ -1113,8 +1127,30 @@ a.jc-body:hover .jc-title { color: var(--link); }
 .country-count { grid-area: count; color: var(--green); font-size: 13px; font-weight: 600; }
 .country-tile.is-empty .country-count { color: var(--muted); font-weight: 500; }
 .country-tile.is-empty .country-code { background: var(--grey-soft); color: var(--muted); }
+.country-tile.has-photo .country-code { position: relative; overflow: hidden; width: 66px; height: 44px; border-radius: 10px; text-shadow: none; }
+.country-tile.has-photo .country-code img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.country-tile.has-photo .country-code b { position: relative; padding: 1px 6px; border-radius: 6px; background: rgba(5, 11, 26, 0.72); color: #fff; font-size: 12px; letter-spacing: .04em; }
 .dest-hero { background: radial-gradient(800px 400px at 80% 0%, rgba(31, 95, 255, 0.3), transparent 65%), linear-gradient(180deg, #050b1a, #081736); color: #fff; padding: 28px 0 34px; border-bottom: 3px solid var(--region-eu); }
 .dest-gulf { border-bottom-color: var(--region-gulf); }
+/* A city photo behind the destination hero. The navy fades only where the text is (the top on
+   phones, the left column on wide screens); the facts sit on frosted glass, so the city shows. */
+.dest-hero { position: relative; overflow: hidden; isolation: isolate; }
+.dest-photo { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; }
+.dest-hero.has-photo::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(5, 11, 26, 0.84) 0%, rgba(5, 11, 26, 0.62) 40%, rgba(5, 11, 26, 0.22) 75%, rgba(5, 11, 26, 0.3) 100%); }
+.dest-hero.has-photo .dest-lead { color: #dbe3f2; text-shadow: 0 1px 2px rgba(5, 11, 26, 0.6); }
+.dest-hero.has-photo .dest-facts { background: rgba(5, 11, 26, 0.36); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 16px; padding: 14px 16px; border-color: rgba(255, 255, 255, 0.14); }
+.dest-hero.has-photo .dest-facts > div { background: rgba(8, 19, 44, 0.62); }
+.dest-hero.has-photo .dest-facts { grid-template-columns: repeat(auto-fit, minmax(98px, 1fr)); }
+.dest-hero.has-photo .dest-facts-note { color: #e3e9f5; text-shadow: 0 1px 2px rgba(5, 11, 26, 0.7); }
+.dest-hero.has-photo .dest-photo-note { color: inherit; }
+@media (min-width: 980px) {
+  .dest-hero.has-photo { padding: 40px 0 44px; }
+  .dest-hero.has-photo::before { background: linear-gradient(90deg, rgba(5, 11, 26, 0.88) 0%, rgba(5, 11, 26, 0.74) 36%, rgba(5, 11, 26, 0.2) 60%, rgba(5, 11, 26, 0.12) 100%), linear-gradient(180deg, rgba(5, 11, 26, 0.3), transparent 35%, transparent 70%, rgba(5, 11, 26, 0.3)); }
+}
+.dest-photo-note { color: var(--night-muted); }
+.credit-list { columns: 2; column-gap: 24px; padding-inline-start: 18px; }
+.credit-list li { break-inside: avoid; margin-bottom: 4px; }
+.credit-list .flag { display: inline-block; vertical-align: -2px; border-radius: 2px; margin-inline-end: 2px; box-shadow: 0 0 0 1px rgba(10, 22, 51, 0.1); }
 .dest-balkans { border-bottom-color: var(--region-balkans); }
 .dest-hero-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; align-items: end; }
 @media (min-width: 980px) { .dest-hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); } }

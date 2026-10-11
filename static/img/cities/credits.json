@@ -1,0 +1,130 @@
+{
+  "AE": {
+    "author": "Fabien BELLANGER",
+    "author_url": "https://unsplash.com/@fabbel78",
+    "city": "Dubai",
+    "focus": 40,
+    "photo_url": "https://unsplash.com/photos/burj-khalifa-skyline-in-dubai-WyfXOHgI49s",
+    "source": "Unsplash"
+  },
+  "AT": {
+    "author": "Jacek Dylag",
+    "author_url": "https://unsplash.com/@dylu",
+    "city": "Wien",
+    "focus": 30,
+    "photo_url": "https://unsplash.com/photos/st-stephens-cathedral-skyline-in-vienna-5SjAaqqCCmY",
+    "source": "Unsplash"
+  },
+  "BA": {
+    "author": "Hongbin",
+    "author_url": "https://unsplash.com/@hbsun2013",
+    "city": "Sarajevo",
+    "focus": 45,
+    "photo_url": "https://unsplash.com/photos/a-group-of-people-walking-around-a-town-square-OT8bxxMA3j0",
+    "source": "Unsplash"
+  },
+  "BH": {
+    "author": "Ondrej Bocek",
+    "author_url": "https://unsplash.com/@ondrejbocek",
+    "city": "Manama",
+    "focus": 30,
+    "photo_url": "https://unsplash.com/photos/the-bahrain-world-trade-center-at-sunrise-wOlMEpBzwHs",
+    "source": "Unsplash"
+  },
+  "CZ": {
+    "author": "Ouael Ben Salah",
+    "author_url": "https://unsplash.com/@benwksi",
+    "city": "Praha",
+    "focus": 40,
+    "photo_url": "https://unsplash.com/photos/white-and-brown-boat-on-river-near-brown-concrete-building-during-daytime-S2Wek5-5oEc",
+    "source": "Unsplash"
+  },
+  "DE": {
+    "author": "Stephan Widua",
+    "author_url": "https://unsplash.com/@stewi",
+    "city": "Berlin",
+    "focus": 35,
+    "photo_url": "https://unsplash.com/photos/time-lapse-photography-of-vehicle-at-the-road-in-between-the-building-at-nighttime-aerial-photography-iPOZf3tQfHA",
+    "source": "Unsplash"
+  },
+  "ES": {
+    "author": "P C",
+    "author_url": "https://unsplash.com/@pc_pc",
+    "city": "Barcelona",
+    "focus": 45,
+    "photo_url": "https://unsplash.com/photos/barcelona-cityscape-with-sagrada-familia-cathedral-k_iXXNHZjRY",
+    "source": "Unsplash"
+  },
+  "HR": {
+    "author": "Lukas",
+    "author_url": "https://unsplash.com/@zg_aerials",
+    "city": "Zagreb",
+    "focus": 45,
+    "photo_url": "https://unsplash.com/photos/an-aerial-view-of-a-city-with-red-roofs-XErcvgcD6EQ",
+    "source": "Unsplash"
+  },
+  "KW": {
+    "author": "Shashi Ghosh",
+    "author_url": "https://unsplash.com/@shashishankarghosh",
+    "city": "Kuwait City",
+    "focus": 45,
+    "photo_url": "https://unsplash.com/photos/city-skyline-illuminated-at-night-with-water-reflections-4nVP4WLheEU",
+    "source": "Unsplash"
+  },
+  "ME": {
+    "author": "olga brajnovic",
+    "author_url": "https://unsplash.com/@olgabrajnovic",
+    "city": "Kotor",
+    "focus": 45,
+    "photo_url": "https://unsplash.com/photos/aerial-view-of-city-near-body-of-water-during-daytime-_nupO8tu6sg",
+    "source": "Unsplash"
+  },
+  "NL": {
+    "author": "Azhar J",
+    "author_url": "https://unsplash.com/@azhrjl",
+    "city": "Amsterdam",
+    "focus": 45,
+    "photo_url": "https://unsplash.com/photos/amsterdam-canal-with-historic-buildings-t2hgHV1R7_g",
+    "source": "Unsplash"
+  },
+  "OM": {
+    "author": "Anfal Shamsudeen",
+    "author_url": "https://unsplash.com/@anfalshams",
+    "city": "Muscat",
+    "focus": 55,
+    "photo_url": "https://unsplash.com/photos/aerial-view-of-white-concrete-buildings-near-rock-cliffs-du1iIMhW5Eg",
+    "source": "Unsplash"
+  },
+  "PL": {
+    "author": "Kamil Gliwiński",
+    "author_url": "https://unsplash.com/@gliwik",
+    "city": "Warszawa",
+    "focus": 35,
+    "photo_url": "https://unsplash.com/photos/high-rise-buildings-during-night-time-xcPw1-5OHTk",
+    "source": "Unsplash"
+  },
+  "QA": {
+    "author": "Dean Zhang",
+    "author_url": "https://unsplash.com/@startdig",
+    "city": "Doha",
+    "focus": 45,
+    "photo_url": "https://unsplash.com/photos/traditional-boats-in-harbor-with-city-skyline-background-7TpOb8YTc-Y",
+    "source": "Unsplash"
+  },
+  "RS": {
+    "author": "Alexander Mils",
+    "author_url": "https://unsplash.com/@alexandermils",
+    "city": "Beograd",
+    "focus": 50,
+    "photo_url": "https://unsplash.com/photos/a-body-of-water-with-a-city-in-the-background-lRGKt5n2CFk",
+    "source": "Unsplash"
+  },
+  "SA": {
+    "author": "Ibrahim Abdullah",
+    "author_url": "https://unsplash.com/@ibra1997",
+    "city": "Riyadh",
+    "focus": 25,
+    "photo_url": "https://unsplash.com/photos/kingdom-centre-skyscraper-in-riyadh-_UxsPARhtOg",
+    "source": "Unsplash"
+  }
+}
