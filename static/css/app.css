@@ -230,7 +230,7 @@ code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-si
 
 .demo-banner {
   display: flex; align-items: center; justify-content: center; gap: 6px; padding: 6px 14px;
-  background: var(--amber-soft); color: var(--amber-strong); font-size: 13px; font-weight: 500; text-align: center;
+  background: var(--grey-soft); color: var(--ink-2); font-size: 13px; font-weight: 500; text-align: center;
 }
 @media (max-width: 640px) { .demo-banner { padding: 4px 12px; font-size: 12px; line-height: 1.25; } .demo-banner .icon { flex: 0 0 auto; } }
 
@@ -300,7 +300,7 @@ a, button, .btn, .toggle-chip, .tabbar a, .job-line, .job-card { -webkit-tap-hig
   display: inline-grid; place-items: center; min-width: 20px; height: 20px; padding: 0 6px; border-radius: 99px;
   background: var(--btn); color: #fff; font-size: 11.5px; font-weight: 700; line-height: 1;
 }
-.count-amber { background: var(--amber); color: #0b1730; }
+.count-amber { background: var(--blue-soft); color: var(--blue-strong); }
 .count-red { background: var(--red-solid); color: #fff; }
 .count-soft { background: var(--grey-soft); color: var(--ink-2); }
 
@@ -1832,6 +1832,7 @@ a.stat:hover { border-color: var(--blue); }
     radial-gradient(520px 240px at -5% 130%, rgba(92, 200, 255, 0.14), transparent 70%),
     linear-gradient(180deg, #050b1a, #071533);
 }
+@media (max-width: 640px) { .page-hero { padding: 18px 0 22px; } .detail-head h1 { margin-bottom: 8px; } .detail-dest { margin-bottom: 8px; } }
 [dir="rtl"] .page-hero {
   background:
     radial-gradient(720px 300px at 12% -20%, rgba(31, 95, 255, 0.42), transparent 70%),
@@ -2000,7 +2001,7 @@ a.stat:hover { border-color: var(--blue); }
 .job-save { margin: 0; }
 
 /* --- photos and video on the job page --- */
-.gallery-band { padding: 0 0 26px; margin-top: -6px; }
+.gallery-band { padding: 16px 0 4px; background: var(--paper); }
 .gallery { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; padding-bottom: 6px; overscroll-behavior-x: contain; }
 .gallery:focus-visible { outline-offset: 4px; }
 .gallery-item { position: relative; flex: 0 0 min(86%, 560px); margin: 0; scroll-snap-align: start; border-radius: var(--r-md); overflow: hidden; background: var(--navy-2); box-shadow: 0 0 0 1px rgba(120, 165, 255, 0.16), 0 18px 40px rgba(0, 0, 0, 0.35); }
@@ -2314,7 +2315,7 @@ a.stat:hover { border-color: var(--blue); }
 .hello-photo { position: relative; display: inline-flex; flex-shrink: 0; text-decoration: none; }
 .hello-photo .avatar { width: 68px; height: 68px; font-size: 22px; box-shadow: 0 0 0 3px rgba(120, 165, 255, 0.35), 0 0 30px rgba(31, 95, 255, 0.35); }
 .hello-photo.is-empty .avatar { background: rgba(31, 95, 255, 0.25); color: #cfe0ff; }
-.hello-photo-add { position: absolute; bottom: -2px; inset-inline-end: -2px; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--gold-bright); color: #1b1300; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); }
+.hello-photo-add { position: absolute; bottom: -2px; inset-inline-end: -2px; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--blue); color: #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); }
 .photo-card { margin-bottom: 16px; }
 .photo-row { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px; }
 .photo-frame { display: inline-flex; flex-shrink: 0; border-radius: 50%; box-shadow: 0 0 0 4px var(--blue-soft); }
@@ -2780,7 +2781,7 @@ a.stat:hover { border-color: var(--blue); }
 .hero-signup { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin: 14px 0 0; color: var(--night-ink); font-size: 14.5px; }
 .hero-signup .muted { color: var(--night-muted); }
 .hero-signup a { color: #fff; }
-.hero-signup .link-strong { color: #ffd166; }
+.hero-signup .link-strong { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
 .trust-row-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 22px; }
 @media (max-width: 520px) { .trust-row-3 { grid-template-columns: minmax(0, 1fr); gap: 8px; } .trust-row-3 .ring { width: 36px; height: 36px; } }
 .dep-counts { margin: 6px 0 0; color: var(--night-muted); font-size: 13.5px; }
