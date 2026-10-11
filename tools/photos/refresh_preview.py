@@ -49,6 +49,10 @@ def main():
             text = re.sub(rf'(?<![\w/])/?media/{token}(-sm|-xs)?\.jpg(?:\?[^\s,"<>]*)?',
                           lambda m: f'static/img/photos/{photo}{m.group(1) or ""}.jpg', text)
         text = re.sub(r'<figure class="gallery-item gallery-video">.*?</figure>', '', text, flags=re.S)
+        if '<video' in text:
+            text = re.sub(r'<li class="media-item">(?:(?!</li>).)*?<video.*?</li>', '', text, flags=re.S)
+            text = text.replace('>1 od 1</span>', '>0 od 1</span>').replace('>1 of 1</span>', '>0 of 1</span>')
+            text = re.sub(r'<ul class="media-grid">\s*</ul>', '', text)
         text = re.sub(r'<span class="jc-badge">(?:(?!</span>).)*?\bVideo</span>', '', text, flags=re.S)
         if 'jc-photo-note' not in text:
             text = text.replace('<div class="jc-media">', f'<div class="jc-media"><span class="jc-photo-note">{label}</span>')
@@ -59,7 +63,7 @@ def main():
         text = text.replace('static/img/pictures/error.png', 'static/img/pictures/error.jpg')
         # A release query refreshes existing marketing image paths and the stylesheet.
         text = re.sub(r'(static/img/pictures/[\w-]+\.jpg)(?:\?[^\s,"<>]*)?', r'\1?v=real-photos-14', text)
-        text = text.replace('href="static/css/app.css"', 'href="static/css/app.css?v=real-photos-14"')
+
         if text != before:
             path.write_text(text)
             count += 1
