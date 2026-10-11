@@ -2809,23 +2809,6 @@ a.stat:hover { border-color: var(--blue); }
 .fee-list-compact li { flex-direction: column; gap: 10px; padding: 16px; }
 .fee-list-compact span:not(.ring) { font-size: 14px; }
 @media (max-width: 520px) { .fee-list-compact { grid-template-columns: minmax(0, 1fr); } }
-/* The workers picture behind the rule band (public/index.html, cityphotos.picture): the people stand
-   on the right, the text keeps a navy left; on phones the picture is a strip above the text. */
-.fee-band.has-people { --strip: min(68vw, 460px); position: relative; overflow: hidden; isolation: isolate; }
-.band-photo { position: absolute; inset: 0; bottom: auto; z-index: -2; width: 100%; height: var(--strip); object-fit: cover; object-position: 82% 35%; }
-.fee-band.has-people::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;   /* the strip fades into the navy where the text starts */
-  background: linear-gradient(180deg, rgba(5, 11, 26, 0) 0%, rgba(5, 11, 26, 0) calc(var(--strip) - 150px), rgba(5, 11, 26, 0.97) var(--strip), #050b1a 100%); }
-.landing .fee-band.has-people { padding-top: calc(var(--strip) - 56px); }
-[dir="rtl"] .band-photo { transform: scaleX(-1); }           /* the people stay beside the text, not under it */
-.band-photo-note { position: absolute; z-index: 1; top: 10px; inset-inline-end: 12px; padding: 3px 9px; border-radius: 8px; background: rgba(5, 11, 26, 0.55); color: #c3cde0; font-size: 11.5px; letter-spacing: .02em; }
-@media (min-width: 920px) {                                  /* the people stand on the right of the text */
-  .landing .fee-band.has-people { padding-top: 64px; min-height: 520px; }
-  .band-photo { height: 100%; bottom: 0; object-position: 90% 18%; }
-  .fee-band.has-people .fee-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr); }
-  .fee-band.has-people .fee-list-compact { grid-column: 1; }
-  .fee-band.has-people::before { background: linear-gradient(90deg, rgba(5, 11, 26, 0.97) 0%, rgba(5, 11, 26, 0.92) 40%, rgba(5, 11, 26, 0.45) 58%, rgba(5, 11, 26, 0.12) 78%, rgba(5, 11, 26, 0.25) 100%), linear-gradient(180deg, rgba(5, 11, 26, 0.3), transparent 25%, transparent 75%, rgba(5, 11, 26, 0.35)); }
-  [dir="rtl"] .fee-band.has-people::before { background: linear-gradient(270deg, rgba(5, 11, 26, 0.97) 0%, rgba(5, 11, 26, 0.92) 40%, rgba(5, 11, 26, 0.45) 58%, rgba(5, 11, 26, 0.12) 78%, rgba(5, 11, 26, 0.25) 100%), linear-gradient(180deg, rgba(5, 11, 26, 0.3), transparent 25%, transparent 75%, rgba(5, 11, 26, 0.35)); }
-}
 .landing .fee-band { padding: 56px 0; }
 .landing .fee-title { font-size: clamp(1.8rem, 3.6vw, 2.6rem); }
 
@@ -3253,3 +3236,62 @@ ul.extras-grid { list-style: none; margin: 0 0 24px; padding: 0; }
 .btn-link:hover { color: var(--blue); }
 .phone-login-link { margin-top: 12px; }
 form.auth-switch { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 6px; }
+
+/* A picture behind a dark band (cityphotos.picture, the AI illustrations – labelled): a strip above the
+   text on phones, beside the text on wide screens, where the navy fades only behind the copy. The
+   people stand on the end side of the picture, so Arabic mirrors it. Fixed colours: the band is
+   always night. */
+.photo-band { --strip: min(68vw, 460px); position: relative; overflow: hidden; isolation: isolate; }
+.photo-band > .band-photo { position: absolute; inset: 0; bottom: auto; z-index: -2; width: 100%; height: var(--strip); object-fit: cover; object-position: 82% 35%; }
+.photo-band > .band-photo.focus-25 { object-position: 82% 25%; } .photo-band > .band-photo.focus-45 { object-position: 82% 45%; }
+.photo-band > .band-photo.focus-55 { object-position: 82% 55%; } .photo-band > .band-photo.focus-65 { object-position: 82% 65%; }
+.photo-band::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 1; background-size: auto; -webkit-mask-image: none; mask-image: none;
+  background: linear-gradient(180deg, rgba(5, 11, 26, 0) 0%, rgba(5, 11, 26, 0) calc(var(--strip) - 150px), rgba(5, 11, 26, 0.97) var(--strip), #050b1a 100%); }
+.photo-band.photo-band { padding-top: calc(var(--strip) - 56px); }
+[dir="rtl"] .photo-band > .band-photo { transform: scaleX(-1); }
+.band-photo-note { position: absolute; z-index: 1; top: 10px; inset-inline-end: 12px; padding: 3px 9px; border-radius: 8px; background: rgba(5, 11, 26, 0.8); color: #dbe3f2; font-size: 11.5px; letter-spacing: .02em; }
+@media (min-width: 920px) {
+  .photo-band.photo-band { padding-top: 64px; min-height: 520px; }
+  .photo-band > .band-photo { height: 100%; bottom: 0; object-position: 90% 25%; }
+  .photo-band > .band-photo.focus-35 { object-position: 90% 35%; } .photo-band > .band-photo.focus-45 { object-position: 90% 45%; }
+  .photo-band > .band-photo.focus-55 { object-position: 90% 55%; } .photo-band > .band-photo.focus-65 { object-position: 90% 65%; }
+  .photo-band::before { background: linear-gradient(90deg, rgba(5, 11, 26, 0.97) 0%, rgba(5, 11, 26, 0.92) 40%, rgba(5, 11, 26, 0.45) 58%, rgba(5, 11, 26, 0.12) 78%, rgba(5, 11, 26, 0.25) 100%), linear-gradient(180deg, rgba(5, 11, 26, 0.3), transparent 25%, transparent 75%, rgba(5, 11, 26, 0.35)); }
+  [dir="rtl"] .photo-band::before { background: linear-gradient(270deg, rgba(5, 11, 26, 0.97) 0%, rgba(5, 11, 26, 0.92) 40%, rgba(5, 11, 26, 0.45) 58%, rgba(5, 11, 26, 0.12) 78%, rgba(5, 11, 26, 0.25) 100%), linear-gradient(180deg, rgba(5, 11, 26, 0.3), transparent 25%, transparent 75%, rgba(5, 11, 26, 0.35)); }
+  .photo-band .fee-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr); }
+  .photo-band .fee-list-compact { grid-column: 1; }
+  .photo-band .emp-hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr); }
+  .photo-band .emp-stats { grid-column: 1; max-width: 520px; }
+}
+/* The same band as a page hero: shorter, the title on the text side. */
+.page-hero.photo-band { --strip: min(56vw, 380px); }
+@media (min-width: 920px) { .page-hero.photo-band.photo-band { padding-top: 34px; min-height: 330px; display: flex; align-items: flex-end; } .page-hero.photo-band > .wrap { width: 100%; } }
+/* Guide cards with their picture on top (the guides page). */
+.guide-card-photo { padding-top: 0; overflow: hidden; }
+.guide-cover { display: block; margin: 0 -22px 14px; aspect-ratio: 16 / 9; overflow: hidden; background: var(--surface-2); }
+.guide-cover img { width: 100%; height: 100%; object-fit: cover; object-position: 80% 40%; transition: transform .4s ease; }
+.guide-card:hover .guide-cover img { transform: scale(1.03); }
+@media (prefers-reduced-motion: reduce) { .guide-cover img { transition: none; } .guide-card:hover .guide-cover img { transform: none; } }
+/* Sign-in and sign-up on the picture: the card sits on the text side, the person stays visible. */
+.auth-photo.photo-band.photo-band { padding-top: calc(var(--strip) - 40px); padding-bottom: 56px; }
+.auth-photo::before { background: linear-gradient(180deg, rgba(5, 11, 26, 0) 0%, rgba(5, 11, 26, 0) calc(var(--strip) - 150px), rgba(5, 11, 26, 0.97) var(--strip), #050b1a 100%); }
+@media (min-width: 920px) {
+  .auth-photo.photo-band.photo-band { padding-top: 56px; padding-bottom: 72px; min-height: 640px; }
+  .auth-photo .auth-shell { margin-inline-start: max(16px, calc((100% - 1200px) / 2 + 20px)); margin-inline-end: 0; }
+  .auth-photo .auth-shell.auth-wide { margin-inline: auto; }
+}
+/* The illustration on the error and offline pages (static/img/pictures/error.png). */
+.error-art { width: min(44vw, 200px); height: auto; margin: 0 auto 6px; filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.45)); }
+.error-page .error-art + .error-code { font-size: clamp(4rem, 12vw, 6rem); }
+.offline-box .error-art { margin-top: 12px; }
+/* How it works: four moments of the journey as pictures under the explainer. */
+.moments { margin-top: 44px; }
+.moments-row { display: grid; gap: 18px 16px; margin: 0; padding: 0; list-style: none; counter-reset: none; }
+@media (min-width: 560px) { .moments-row { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 920px) { .moments-row { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.moment { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.moment-pic { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 16px; background: var(--surface-2); box-shadow: 0 10px 30px rgba(10, 22, 51, 0.12); }
+.moment-pic img { width: 100%; height: 100%; object-fit: cover; object-position: 75% 35%; }
+.moment-n { position: absolute; top: 10px; inset-inline-start: 10px; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--blue); color: #fff; font-family: var(--font-display); font-weight: 800; font-size: 15px; box-shadow: 0 4px 14px rgba(31, 95, 255, 0.45); }
+.moment-pic .band-photo-note { top: auto; bottom: 8px; inset-inline-end: 8px; font-size: 10.5px; padding: 2px 7px; }
+.moment-title { margin: 10px 0 0; font-size: 1.02rem; line-height: 1.3; }
+.moment-text { margin: 0; color: var(--ink-2); font-size: 14.5px; }
