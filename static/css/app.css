@@ -3494,3 +3494,10 @@ a.small:not(.btn) { padding-block: 11px; margin-block: -11px; }
 @media print {
   .apply-bar, .mobile-filter-dock { display: none !important; }
 }
+
+/* Real photographs: keep their illustrative role clear on fictional demo ads. */
+.jc-photo-note { position: absolute; inset-inline-end: .75rem; inset-block-end: .75rem; z-index: 2; padding: .2rem .5rem; border-radius: .35rem; color: #fff; background: #131d32; font-size: .68rem; line-height: 1.4; pointer-events: none; }
+.gallery-photo-note { margin-block: 1rem .25rem; }
+.how-static { margin-block: 0 3rem; max-inline-size: 54rem; }
+.how-static h2 { margin-block: 0 .25rem; }
+.how-static p { margin: 0; }
