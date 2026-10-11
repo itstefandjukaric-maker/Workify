@@ -589,6 +589,32 @@ body.has-tabbar { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
 .stat-strip dd { order: 1; margin: 0 0 4px; font-family: var(--font-display); font-weight: 800; font-size: clamp(2rem, 3.6vw, 2.7rem); line-height: 1; font-variant-numeric: tabular-nums;
   background: linear-gradient(180deg, #ffffff 30%, #9ccfff); -webkit-background-clip: text; background-clip: text; color: transparent; }
 
+/* The city photo of the busiest destination behind the landing hero (public.index::_hero_photo). The navy
+   fades only where the text is; the corner tag names the city and links to it. Without a photo the
+   corridor map below shows instead. */
+.hero.hero-photo::before, .hero.hero-photo .hero-sky { display: none; }
+.hero-photo-img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; }
+.hero.hero-photo::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(180deg, rgba(5, 11, 26, 0.86) 0%, rgba(5, 11, 26, 0.7) 45%, rgba(5, 11, 26, 0.45) 80%, rgba(5, 11, 26, 0.6) 100%); }
+@media (min-width: 1040px) {
+  .hero.hero-photo::after { background: linear-gradient(90deg, rgba(5, 11, 26, 0.9) 0%, rgba(5, 11, 26, 0.82) 42%, rgba(5, 11, 26, 0.3) 68%, rgba(5, 11, 26, 0.2) 100%), linear-gradient(180deg, rgba(5, 11, 26, 0.35), transparent 30%, transparent 70%, rgba(5, 11, 26, 0.5)); }
+}
+.hero.hero-photo .hero-lead { color: #dbe3f2; }
+.hero-photo-tag { position: absolute; z-index: 2; bottom: 12px; inset-inline-start: max(20px, calc((100% - 1200px) / 2 + 20px)); display: inline-flex; align-items: center; gap: 8px; padding: 5px 12px 5px 6px; border-radius: 12px;
+  background: rgba(5, 11, 26, 0.55); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.16); color: #e6edf9; font-size: 13px; line-height: 1.2; text-decoration: none; }
+.hero-photo-tag b { color: #fff; }
+.hero-photo-tag:hover, .hero-photo-tag:focus-visible { background: rgba(5, 11, 26, 0.75); color: #fff; }
+.hero.hero-photo .hero-copy { padding-bottom: 40px; }      /* room for the tag under the centred copy */
+@media (max-width: 759px) {                                 /* a stamp in the corner above the headline */
+  .hero.hero-photo { padding-top: 62px; }
+  .hero.hero-photo .hero-copy { padding-bottom: 0; }
+  .hero-photo-tag { top: 12px; bottom: auto; inset-inline-start: auto; inset-inline-end: 16px; }
+}
+[dir="rtl"] .hero.hero-photo::after { background: linear-gradient(180deg, rgba(5, 11, 26, 0.86) 0%, rgba(5, 11, 26, 0.7) 45%, rgba(5, 11, 26, 0.45) 80%, rgba(5, 11, 26, 0.6) 100%); }
+@media (min-width: 1040px) {
+  [dir="rtl"] .hero.hero-photo::after { background: linear-gradient(270deg, rgba(5, 11, 26, 0.9) 0%, rgba(5, 11, 26, 0.82) 42%, rgba(5, 11, 26, 0.3) 68%, rgba(5, 11, 26, 0.2) 100%), linear-gradient(180deg, rgba(5, 11, 26, 0.35), transparent 30%, transparent 70%, rgba(5, 11, 26, 0.5)); }
+}
+
 /* corridor map behind the hero: dots (static image) + arcs and pins (inline, animated once) */
 .cmap-arc { fill: none; stroke-width: 1.9; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 0; filter: drop-shadow(0 0 3px rgba(92, 200, 255, 0.55)); }
 .cmap-origins circle { fill: #9fdcff; filter: drop-shadow(0 0 4px rgba(92, 200, 255, 0.9)); }
