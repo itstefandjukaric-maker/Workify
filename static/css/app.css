@@ -3501,3 +3501,34 @@ a.small:not(.btn) { padding-block: 11px; margin-block: -11px; }
 .how-static { margin-block: 0 3rem; max-inline-size: 54rem; }
 .how-static h2 { margin-block: 0 .25rem; }
 .how-static p { margin: 0; }
+
+/* Europe: daylight photography, clear typography and direct destination links. */
+.landing .hero-people .hero-title { font-family: var(--font); font-weight: 700; font-size: clamp(2.05rem, 4vw, 3.35rem); line-height: 1.12; letter-spacing: -.045em; max-inline-size: 21ch; }
+.landing .hero-people > .band-photo { width: 100%; inset-inline: 0; object-position: center 42%; }
+[dir="rtl"] .landing .hero-people > .band-photo { transform: none; }
+.landing .section-title { font-family: var(--font); font-weight: 700; font-size: clamp(1.65rem, 2.7vw, 2.2rem); line-height: 1.2; letter-spacing: -.035em; }
+.europe-destinations { padding-block: 30px 34px; background: var(--surface); border-block-end: 1px solid var(--line); }
+.europe-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-block-end: 18px; }
+.europe-heading h2 { margin: 0; font-family: var(--font); font-size: 1.4rem; font-weight: 700; letter-spacing: -.03em; }
+.europe-heading p { margin: 4px 0 0; font-size: .85rem; color: var(--muted); }
+.europe-heading > a { display: inline-flex; align-items: center; gap: 8px; flex-shrink: 0; padding-block: 8px; font-size: .9rem; }
+.europe-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 16px; list-style: none; margin: 0; padding: 0; }
+.europe-card { display: block; overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--ink); text-decoration: none; }
+.europe-card > img { display: block; inline-size: 100%; block-size: 128px; object-fit: cover; object-position: center 48%; }
+.europe-card > span { display: flex; align-items: center; gap: 9px; padding: 13px 14px; font-size: .95rem; }
+.europe-card > span > .icon { margin-inline-start: auto; color: var(--link); flex-shrink: 0; }
+.europe-card:hover { border-color: var(--blue); text-decoration: none; }
+.europe-card:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+@media (min-width: 920px) {
+  .landing .hero-people.photo-band::before { background: linear-gradient(90deg, #0b172beF 0%, #0b172bdE 35%, #0b172b70 56%, #0b172b0a 80%), linear-gradient(0deg,#0b172b50,transparent 50%); }
+  [dir="rtl"] .landing .hero-people.photo-band::before { background: linear-gradient(270deg, #0b172beF 0%, #0b172bdE 35%, #0b172b70 56%, #0b172b0a 80%), linear-gradient(0deg,#0b172b50,transparent 50%); }
+  .landing .hero-people .hero-copy { max-inline-size: 650px; }
+}
+@media (max-width: 700px) {
+  .europe-destinations { padding-block: 24px; }
+  .europe-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+  .europe-card > img { block-size: 112px; }
+  .europe-card > span { font-size: .85rem; padding: 11px; gap: 7px; }
+  .europe-heading { align-items: flex-start; }
+  .europe-heading p { max-inline-size: 24ch; }
+}
