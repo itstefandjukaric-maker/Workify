@@ -235,7 +235,7 @@
   /* Filter forms submit on change. */
   document.querySelectorAll("form[data-autosubmit]").forEach(function (form) {
     form.addEventListener("change", function (event) {
-      if (event.target.matches("select, input[type=checkbox]")) form.submit();
+      if (event.target.matches("select[name], input[type=checkbox][name]")) form.submit();
     });
   });
 
@@ -961,24 +961,62 @@
     });
   });
 
-  /* Job page on phones: the apply bar shows while the hero's pay and the real "Apply" button are both off-screen. */
+  /* Keep the mobile application action available even while only the hero's salary is visible. */
   var applyBar = document.querySelector("[data-apply-bar]");
-  if (applyBar && "IntersectionObserver" in window) {
-    var marks = [document.querySelector("[data-apply-top]"), document.querySelector("[data-apply-target]")].filter(Boolean);
-    var seen = new Map();
-    var update = function () {
-      var anyVisible = false;
-      seen.forEach(function (v) { if (v) anyVisible = true; });
-      var show = !anyVisible && window.innerWidth < 980;
+  if (applyBar) {
+    document.body.classList.add("has-apply-bar");
+    var applyTarget = document.querySelector("[data-apply-target]");
+    var applyTargetVisible = false;
+    var updateApplyBar = function () {
+      var show = !applyTargetVisible && window.innerWidth < 980;
       applyBar.hidden = !show;
       document.body.classList.toggle("apply-bar-on", show);
     };
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) { seen.set(e.target, e.isIntersecting); });
-      update();
-    }, { rootMargin: "0px 0px -56px 0px" });
-    marks.forEach(function (el) { seen.set(el, true); io.observe(el); });
-    window.addEventListener("resize", update);
+    if (applyTarget && "IntersectionObserver" in window) {
+      var applyObserver = new IntersectionObserver(function (entries) {
+        applyTargetVisible = entries[0].isIntersecting && entries[0].intersectionRatio >= 1;
+        updateApplyBar();
+      }, { rootMargin: document.body.classList.contains("has-tabbar") ? "-100px 0px -180px 0px" : "-100px 0px -100px 0px", threshold: 1 });
+      applyObserver.observe(applyTarget);
+    }
+    updateApplyBar();
+    window.addEventListener("resize", updateApplyBar);
+  }
+
+  /* Reuse the server-translated filter label, including its active count. The form still works without JS. */
+  var filtersToggle = document.querySelector(".jobs-hero #filters-more");
+  if (filtersToggle) {
+    var filtersForm = filtersToggle.closest("form");
+    var filtersLabel = filtersForm.querySelector("label[for='filters-more']");
+    if (filtersLabel && "IntersectionObserver" in window) {
+      if (filtersLabel.querySelector(".count")) filtersToggle.checked = true;
+      filtersForm.id = "jobs-filters";
+      var filterDock = document.createElement("button");
+      filterDock.type = "button";
+      filterDock.className = "btn btn-primary mobile-filter-dock";
+      filterDock.hidden = true;
+      filterDock.setAttribute("aria-controls", filtersForm.id);
+      Array.from(filtersLabel.childNodes).forEach(function (node) { filterDock.appendChild(node.cloneNode(true)); });
+      document.body.appendChild(filterDock);
+      filterDock.addEventListener("click", function () {
+        filtersToggle.checked = true;
+        filtersForm.scrollIntoView({ block: "start", behavior: "auto" });
+        var firstFilter = filtersForm.querySelector("select");
+        if (firstFilter) firstFilter.focus({ preventScroll: true });
+      });
+      var filtersOffscreen = false;
+      var updateFilterDock = function () {
+        var show = filtersOffscreen && window.innerWidth <= 640;
+        filterDock.hidden = !show;
+        document.body.classList.toggle("filter-dock-on", show);
+      };
+      var filterObserver = new IntersectionObserver(function (entries) {
+        filtersOffscreen = !entries[0].isIntersecting && entries[0].boundingClientRect.bottom < 100;
+        updateFilterDock();
+      }, { rootMargin: "-100px 0px 0px 0px" });
+      filterObserver.observe(filtersForm);
+      window.addEventListener("resize", updateFilterDock);
+    }
   }
 
   localizeTimes();
