@@ -1,0 +1,440 @@
+{
+  "license": "https://www.pexels.com/license/",
+  "notice": "Licensed stock photographs used as examples, not photographs of the fictional employers, their housing, or Workify customers. No endorsement implied.",
+  "photos": {
+    "truck": {
+      "id": 5410923,
+      "subject": "European articulated truck with trailer",
+      "page": "https://www.pexels.com/photo/a-trailer-truck-on-the-road-5410923/",
+      "url": "https://images.pexels.com/photos/5410923/pexels-photo-5410923.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "courier": {
+      "id": 15854356,
+      "subject": "Motorcycle delivery rider",
+      "page": "https://www.pexels.com/photo/pizza-delivery-man-on-scooter-on-street-15854356/",
+      "url": "https://images.pexels.com/photos/15854356/pexels-photo-15854356.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "electrical": {
+      "id": 34054475,
+      "subject": "Electrician at electrical panel",
+      "page": "https://www.pexels.com/photo/electrician-inspecting-a-circuit-panel-indoors-34054475/",
+      "url": "https://images.pexels.com/photos/34054475/pexels-photo-34054475.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "hvac": {
+      "id": 5463582,
+      "subject": "Air conditioning technician",
+      "page": "https://www.pexels.com/photo/technician-fixing-an-aircon-5463582/",
+      "url": "https://images.pexels.com/photos/5463582/pexels-photo-5463582.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "warehouse": {
+      "id": 4483774,
+      "subject": "Warehouse worker handling a box",
+      "page": "https://www.pexels.com/photo/man-standing-in-an-aisle-of-a-warehouse-carrying-a-box-4483774/",
+      "url": "https://images.pexels.com/photos/4483774/pexels-photo-4483774.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "security": {
+      "id": 11738910,
+      "subject": "Security guard in uniform",
+      "page": "https://www.pexels.com/photo/man-wearing-a-black-vest-over-a-uniform-11738910/",
+      "url": "https://images.pexels.com/photos/11738910/pexels-photo-11738910.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "chef": {
+      "id": 2544829,
+      "subject": "Chef in a professional kitchen",
+      "page": "https://www.pexels.com/photo/chef-cooking-in-the-kitchen-2544829/",
+      "url": "https://images.pexels.com/photos/2544829/pexels-photo-2544829.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "housekeeping": {
+      "id": 9462743,
+      "subject": "Housekeeper making a bed",
+      "page": "https://www.pexels.com/photo/housekeeper-changing-bedding-in-hotel-room-9462743/",
+      "url": "https://images.pexels.com/photos/9462743/pexels-photo-9462743.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "pool": {
+      "id": 30546817,
+      "subject": "Pool maintenance worker",
+      "page": "https://www.pexels.com/photo/monochrome-scene-of-pool-maintenance-worker-30546817/",
+      "url": "https://images.pexels.com/photos/30546817/pexels-photo-30546817.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "construction": {
+      "id": 32141074,
+      "subject": "Workers installing reinforcement bars",
+      "page": "https://www.pexels.com/photo/construction-workers-installing-reinforcement-bars-at-site-32141074/",
+      "url": "https://images.pexels.com/photos/32141074/pexels-photo-32141074.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "welding": {
+      "id": 4007300,
+      "subject": "Welder in protective gear",
+      "page": "https://www.pexels.com/photo/photo-of-a-welder-at-work-4007300/",
+      "url": "https://images.pexels.com/photos/4007300/pexels-photo-4007300.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "cleaning": {
+      "id": 6195110,
+      "subject": "Cleaner with cleaning equipment",
+      "page": "https://www.pexels.com/photo/a-bearded-man-posing-with-a-cleaning-tool-6195110/",
+      "url": "https://images.pexels.com/photos/6195110/pexels-photo-6195110.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "care": {
+      "id": 29372727,
+      "subject": "Caregiver assisting an older person",
+      "page": "https://www.pexels.com/photo/elderly-caregiver-assisting-senior-woman-at-home-29372727/",
+      "url": "https://images.pexels.com/photos/29372727/pexels-photo-29372727.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "furniture": {
+      "id": 32357249,
+      "subject": "Carpenter operating woodworking machinery",
+      "page": "https://www.pexels.com/photo/carpenter-working-with-wood-in-workshop-32357249/",
+      "url": "https://images.pexels.com/photos/32357249/pexels-photo-32357249.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "factory": {
+      "id": 19233057,
+      "subject": "Industrial assembly machines",
+      "page": "https://www.pexels.com/photo/assembling-machines-in-factory-19233057/",
+      "url": "https://images.pexels.com/photos/19233057/pexels-photo-19233057.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "greenhouse": {
+      "id": 29319112,
+      "subject": "Worker tending seedlings in a greenhouse",
+      "page": "https://www.pexels.com/photo/agricultural-seedling-nursery-with-worker-in-greenhouse-29319112/",
+      "url": "https://images.pexels.com/photos/29319112/pexels-photo-29319112.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "room_shared": {
+      "id": 5137980,
+      "subject": "Shared room with bunk beds",
+      "page": "https://www.pexels.com/photo/a-room-in-a-hostel-5137980/",
+      "url": "https://images.pexels.com/photos/5137980/pexels-photo-5137980.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "room_private": {
+      "id": 16197244,
+      "subject": "Bedroom interior",
+      "page": "https://www.pexels.com/photo/interior-design-of-hotel-bedroom-16197244/",
+      "url": "https://images.pexels.com/photos/16197244/pexels-photo-16197244.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "kitchen_home": {
+      "id": 6032225,
+      "subject": "Compact shared kitchen",
+      "page": "https://www.pexels.com/photo/interior-of-compact-kitchen-in-apartment-6032225/",
+      "url": "https://images.pexels.com/photos/6032225/pexels-photo-6032225.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "bathroom": {
+      "id": 8583820,
+      "subject": "Shower and bathroom interior",
+      "page": "https://www.pexels.com/photo/shower-in-white-bathroom-8583820/",
+      "url": "https://images.pexels.com/photos/8583820/pexels-photo-8583820.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "team": {
+      "id": 17797264,
+      "subject": "Two construction workers reviewing plans",
+      "page": "https://www.pexels.com/photo/construction-workers-in-helmets-and-reflective-vests-17797264/",
+      "url": "https://images.pexels.com/photos/17797264/pexels-photo-17797264.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "interview": {
+      "id": 36733328,
+      "subject": "Job interview in an office",
+      "page": "https://www.pexels.com/photo/professional-job-interview-in-modern-office-setting-36733328/",
+      "url": "https://images.pexels.com/photos/36733328/pexels-photo-36733328.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "contract": {
+      "id": 8815849,
+      "subject": "Signing a document",
+      "page": "https://www.pexels.com/photo/a-person-signing-a-contract-8815849/",
+      "url": "https://images.pexels.com/photos/8815849/pexels-photo-8815849.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "travel": {
+      "id": 32176403,
+      "subject": "Traveller at an airport",
+      "page": "https://www.pexels.com/photo/traveler-with-luggage-at-airport-terminal-32176403/",
+      "url": "https://images.pexels.com/photos/32176403/pexels-photo-32176403.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    }
+  },
+  "marketing": {
+    "workers": "team",
+    "employers": "interview",
+    "register": "interview",
+    "how-1-interview": "interview",
+    "how-2-contract": "contract",
+    "how-3-airport": "travel",
+    "how-4-firstday": "team",
+    "waitlist": "warehouse",
+    "guide-fake-job-offers": "contract",
+    "guide-contract-checklist": "contract",
+    "guide-before-you-fly": "travel",
+    "guide-rights-in-the-gulf": "team",
+    "guide-working-in-europe": "truck",
+    "error": "warehouse"
+  },
+  "jobs": {
+    "dxb_electrician": {
+      "workplace": [
+        "electrical",
+        "construction"
+      ],
+      "housing": [
+        "room_shared",
+        "kitchen_home"
+      ]
+    },
+    "auh_hvac": {
+      "workplace": [
+        "hvac",
+        "electrical"
+      ],
+      "housing": [
+        "room_shared",
+        "bathroom"
+      ]
+    },
+    "dxb_rider": {
+      "workplace": [
+        "courier"
+      ],
+      "housing": []
+    },
+    "dxb_warehouse": {
+      "workplace": [
+        "warehouse"
+      ],
+      "housing": [
+        "room_shared",
+        "kitchen_home"
+      ]
+    },
+    "auh_security": {
+      "workplace": [
+        "security"
+      ],
+      "housing": [
+        "room_shared"
+      ]
+    },
+    "doh_commis": {
+      "workplace": [
+        "chef"
+      ],
+      "housing": [
+        "room_shared",
+        "kitchen_home"
+      ]
+    },
+    "doh_attendant": {
+      "workplace": [
+        "housekeeping"
+      ],
+      "housing": [
+        "room_shared",
+        "bathroom"
+      ]
+    },
+    "lusail_facility": {
+      "workplace": [
+        "pool"
+      ],
+      "housing": [
+        "room_shared"
+      ]
+    },
+    "ruh_steelfixer": {
+      "workplace": [
+        "construction"
+      ],
+      "housing": [
+        "room_shared",
+        "kitchen_home"
+      ]
+    },
+    "dmm_welder": {
+      "workplace": [
+        "welding"
+      ],
+      "housing": [
+        "room_shared",
+        "bathroom"
+      ]
+    },
+    "mct_driver": {
+      "workplace": [
+        "truck"
+      ],
+      "housing": [
+        "room_shared"
+      ]
+    },
+    "kwi_cleaner": {
+      "workplace": [
+        "cleaning"
+      ],
+      "housing": [
+        "room_shared"
+      ]
+    },
+    "bah_electrician": {
+      "workplace": [
+        "electrical",
+        "construction"
+      ],
+      "housing": [
+        "room_shared"
+      ]
+    },
+    "muc_welder": {
+      "workplace": [
+        "welding",
+        "factory"
+      ],
+      "housing": [
+        "room_private",
+        "kitchen_home"
+      ]
+    },
+    "str_care": {
+      "workplace": [
+        "care"
+      ],
+      "housing": [
+        "room_private"
+      ]
+    },
+    "poz_truck": {
+      "workplace": [
+        "truck"
+      ],
+      "housing": [
+        "room_shared",
+        "kitchen_home"
+      ]
+    },
+    "wro_production": {
+      "workplace": [
+        "furniture"
+      ],
+      "housing": [
+        "room_shared",
+        "bathroom"
+      ]
+    },
+    "lei_greenhouse": {
+      "workplace": [
+        "greenhouse"
+      ],
+      "housing": [
+        "room_shared",
+        "kitchen_home"
+      ]
+    },
+    "rovinj_cook": {
+      "workplace": [
+        "chef"
+      ],
+      "housing": [
+        "room_shared"
+      ]
+    },
+    "zag_rebar": {
+      "workplace": [
+        "construction"
+      ],
+      "housing": [
+        "room_shared",
+        "kitchen_home"
+      ]
+    },
+    "budva_housekeeping": {
+      "workplace": [
+        "housekeeping"
+      ],
+      "housing": [
+        "room_shared",
+        "bathroom"
+      ]
+    },
+    "kg_operator": {
+      "workplace": [
+        "factory"
+      ],
+      "housing": [
+        "room_shared"
+      ]
+    }
+  },
+  "preview_media": {
+    "bf816eb5da9b7c89e84c3e3df19d9a71": "electrical",
+    "5f111b7e3dd0a580220d0733fcbea931": "construction",
+    "6600dc76ef21b3f20daa6506c7807bb8": "room_shared",
+    "b603586a5c0d28ad000358b54f015492": "kitchen_home",
+    "25f6398b716566cd837fbe20ba4d78f7": "hvac",
+    "a6d06588d82781378f53e3d96bf9ef76": "room_shared",
+    "c437dbb189e68d5caa73895386ff083e": "bathroom",
+    "90fdea59a651298daf66e6cf0c3f3fac": "courier",
+    "cf59875a758481558a4dde1cd240291c": "warehouse",
+    "9e5d9854bd0c88dd20d6f8a0375ffe3a": "room_shared",
+    "00febe4de4698cbef4ce69aab310ce1c": "kitchen_home",
+    "0e773fc7162ead41283a896d1ac3c282": "security",
+    "50751f1c567a38b1019086987bf85e4b": "room_shared",
+    "cfb9414e102d0488e5a570000b151e09": "chef",
+    "11208389381af8efcb4bb2c427027de1": "room_shared",
+    "028e1f5b2e1577fcb9283f5cdf1edbbd": "kitchen_home",
+    "ecbcbd726f120cf41c567875343e737b": "housekeeping",
+    "b65020a028185eac0f8e271156f26087": "room_shared",
+    "3e088d6b2436dc1ff12d38e3df0a0a8a": "pool",
+    "a70f1994578b6402743cd27654b8eaa0": "room_shared",
+    "dc91e2d39a9f358d286275b35ec89ac2": "construction",
+    "8bf0ea08c71bd194bf76093e3c561d0c": "room_shared",
+    "85ddfe0d2b2ec76c02c729ec447604dc": "kitchen_home",
+    "23e6454b01bc9a2e00cc372134729d2f": "welding",
+    "ea52141a3f54b991ee9cc7be1938ebb3": "room_shared",
+    "06ac6f11f7d0ff1f7c0973ac76861cdc": "truck",
+    "2af9a680adf79f30c9bd63c54650aa19": "room_shared",
+    "b75418b4041400188b4abdffb871b5f2": "cleaning",
+    "51252c92ab43ff00fe95554e046e8851": "room_shared",
+    "361d6e09af1846653fe102eea3676750": "construction",
+    "1c7d101aa26dcd50e8d5e4d9be47403b": "room_shared",
+    "cc87e48f33a4ea048b073df074b1a682": "welding",
+    "6d65e8ea6a12a740a28d6d5576861790": "factory",
+    "07c5e83c19e4a9910da49fa6d286412c": "room_private",
+    "d45589e26cd70d35fce4b67621dda55d": "kitchen_home",
+    "ecac7c11ee1adb01f17c825245bda39e": "care",
+    "1ec806499fe8189ab8b43b4e736a2365": "room_private",
+    "2e537b39ba94ae73ddbebbfc4f5c279b": "truck",
+    "cc4e4942bdd0f959218600ce94e8a00a": "room_shared",
+    "e8a7407238203e36da54d6177c056572": "kitchen_home",
+    "ccff900d1cdc3c7236e75b18e9a06733": "furniture",
+    "0ecae203980650e53c1b3b93acc8c5bd": "room_shared",
+    "fa9b824ec79074d49099fbad34dfd545": "greenhouse",
+    "394f9d575865750ffaf32142d3d46524": "room_shared",
+    "8881b47201944c0078659dd714f7a461": "kitchen_home",
+    "20affcf41ffc0dc3308c84b49ea51404": "room_shared",
+    "5736032adedd187f504dc1dcf567df04": "construction",
+    "9d198a59925e7e73a0c7dc98a36a8bba": "room_shared",
+    "1581e0d0b8bb2c6f973eafd054fb76a1": "kitchen_home",
+    "04b1aa84a6c0e1c6e98a6ba36ae61dec": "housekeeping",
+    "35768e3cf20dac8306ee1c45d1a16c40": "room_shared",
+    "4f7ee235332edd3381c251bd8c5fa7d3": "factory",
+    "d8dddbd6454ff35d87cd7e79fad735ff": "room_shared"
+  },
+  "copy": {
+    "bhs": {
+      "Pravi radnik.": "Više prilika.",
+      "Pravi posao.": "Jasni uslovi.",
+      "Tvoj sljedeći posao je preko granice.": "Bolji posao počinje jasnim uslovima.",
+      "Trenutno otvoreni poslovi": "Pronađi posao koji ti odgovara.",
+      "Ilustracija": "Primjer fotografije",
+      "Pogledaj kako radi": "Pogledaj korake do zaposlenja",
+      "1 minuta, na tvom jeziku, s glasom": "Od prijave do prvog radnog dana.",
+      "Tri cjeline, a sve vidiš u svom nalogu – agencija ažurira svaku, a pitanja možeš postaviti u porukama kad god hoćeš.": "Pronađi posao, dogovori uslove i prati prijavu — sve na jednom mjestu."
+    },
+    "en": {
+      "The right worker.": "More opportunities.",
+      "The right job.": "Clear terms.",
+      "Your next job is across the border.": "A better job starts with clear terms.",
+      "Open jobs right now": "Find a job that fits you.",
+      "Illustration": "Stock photo",
+      "Watch how it works": "See the steps to employment",
+      "1 minute, in your language, with voice": "From your application to your first day.",
+      "Three stages, all visible in your account – the agency updates each one and you can ask in the chat at any time.": "Find a job, agree on the terms and track your application — all in one place."
+    }
+  },
+  "demo_notes": {
+    "bhs": "Fotografije su ilustrativni primjeri. Nisu snimljene kod poslodavaca iz ovih demo oglasa.",
+    "en": "These photographs are illustrative examples, not images of the employers or accommodation in these demo listings."
+  }
+}
