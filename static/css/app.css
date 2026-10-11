@@ -232,6 +232,20 @@ code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-si
   display: flex; align-items: center; justify-content: center; gap: 6px; padding: 6px 14px;
   background: var(--amber-soft); color: var(--amber-strong); font-size: 13px; font-weight: 500; text-align: center;
 }
+@media (max-width: 640px) { .demo-banner { padding: 4px 12px; font-size: 12px; line-height: 1.25; } .demo-banner .icon { flex: 0 0 auto; } }
+
+/* ---------- moving between pages: the bars stay, the page fades and settles (native-app feel) ---------- */
+@view-transition { navigation: auto; }
+.topbar { view-transition-name: topbar; }
+.tabbar { view-transition-name: tabbar; }
+.assist { view-transition-name: assist; }
+::view-transition-old(root) { animation: 120ms ease-out both vt-out; }
+::view-transition-new(root) { animation: 220ms cubic-bezier(.2, .7, .2, 1) both vt-in; }
+@keyframes vt-out { to { opacity: 0; } }
+@keyframes vt-in { from { opacity: 0; transform: translateY(8px); } }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+}
 
 /* ---------- buttons ---------- */
 .btn {
@@ -241,6 +255,13 @@ code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-si
   background: transparent; color: var(--ink); white-space: nowrap; transition: background-color .15s, border-color .15s, color .15s;
 }
 .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+/* Touch feedback: a press is visible at once, with no blue tap flash on Android. */
+a, button, .btn, .toggle-chip, .tabbar a, .job-line, .job-card { -webkit-tap-highlight-color: transparent; }
+@media (prefers-reduced-motion: no-preference) {
+  .btn:not(:disabled):active { transform: translateY(1px) scale(.985); transition-duration: .05s; }
+  .job-line:active, .job-card:active { transform: scale(.992); transition: transform .08s; }
+  .tabbar a:active { transform: scale(.92); transition: transform .08s; }
+}
 .btn-sm { min-height: 36px; padding: 0 12px; font-size: 14px; border-radius: 9px; }
 .btn-lg { min-height: 52px; padding: 0 24px; font-size: 16.5px; }
 .btn-block { width: 100%; white-space: normal; text-align: center; padding-top: 10px; padding-bottom: 10px; }
@@ -986,6 +1007,13 @@ a.jc-body:hover .jc-title { color: var(--link); }
 .detail-agency { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 0; font-weight: 600; }
 .detail-agency a { color: var(--ink); text-decoration: none; }
 .detail-agency a:hover { color: var(--link); text-decoration: underline; }
+.detail-strip { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 16px 0 0; padding: 0; list-style: none; }
+.detail-strip li { display: inline-flex; align-items: center; gap: 7px; min-height: 36px; padding: 6px 13px; border-radius: 99px; background: rgba(120, 165, 255, 0.12); border: 1px solid rgba(120, 165, 255, 0.24); color: #eaf1ff; font-size: 14px; font-weight: 600; line-height: 1.2; }
+.detail-strip li .icon { color: #8fc0ff; flex: 0 0 auto; }
+/* A white chip on the night hero: the night tokens flip --ink, so its colours come from --navy. */
+.detail-strip .ds-pay { gap: 8px; padding-inline-start: 14px; background: #fff; border-color: #fff; color: var(--navy); }
+.detail-strip .ds-pay b { color: var(--navy); font-family: var(--font-display); font-weight: 800; font-size: 1.25rem; line-height: 1; letter-spacing: .01em; font-variant-numeric: tabular-nums; }
+.detail-strip .ds-pay span { color: color-mix(in srgb, var(--navy) 62%, #fff); font-weight: 500; font-size: 12.5px; }
 .rating-link { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 500; color: var(--ink-2) !important; }
 .facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; margin: 22px 0 20px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; }
 @media (min-width: 760px) { .facts { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
@@ -1446,12 +1474,28 @@ a.stat:hover { border-color: var(--blue); }
 .table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
 .table th { padding: 10px 14px; background: var(--surface-2); border-bottom: 1px solid var(--line); color: var(--muted); font-size: 12.5px; font-weight: 600; text-align: start; white-space: nowrap; }
 .table td { padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+.table small.block, .table .badge + small.block { margin-bottom: 0; }
 .table tr:last-child td { border-bottom: 0; }
 .table tr.is-muted td { opacity: 0.6; }
 .card > .table-wrap { margin: 0 -20px -20px; }
 .card > .table-wrap .table th:first-child, .card > .table-wrap .table td:first-child { padding-inline-start: 20px; }
 .card > .table-wrap .table th:last-child, .card > .table-wrap .table td:last-child { padding-inline-end: 20px; }
 .table-card > .table-wrap { margin: 0; }
+/* .table-stack: on a phone every row becomes a card – the title across the top, the numbers as
+   labelled pairs (data-label), the actions underneath. Wider screens keep the table. */
+@media (max-width: 639px) {
+  .table-stack, .table-stack tbody, .table-stack tr, .table-stack td { display: block; }
+  .table-stack thead { display: none; }
+  .table-stack tr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px 10px; padding: 14px 16px; border-bottom: 1px solid var(--line); }
+  .table-stack td { padding: 0; border: 0; }
+  .table-stack td[data-label] { font-size: 14px; }
+  .table-stack td[data-label]::before { content: attr(data-label); display: block; margin-bottom: 1px; color: var(--muted); font-size: 11.5px; font-weight: 600; }
+  .table-stack .ts-title, .table-stack .ts-status, .table-stack .ts-actions { grid-column: 1 / -1; }
+  .table-stack .ts-status { margin-bottom: 2px; }
+  .table-stack .ts-actions { margin-top: 6px; text-align: start; }
+  .table-stack .ts-actions .row-actions { justify-content: flex-start; }
+  .card > .table-wrap .table-stack td:first-child, .card > .table-wrap .table-stack td:last-child { padding: 0; }
+}
 .table-card > .card-head { margin: 0; padding: 16px 20px; }
 .table-dense td { padding: 8px 12px; font-size: 13.5px; }
 .details-cell { max-width: 360px; }
@@ -1579,6 +1623,12 @@ a.stat:hover { border-color: var(--blue); }
 .verify-banner { align-items: center; flex-wrap: wrap; margin-bottom: 0; }
 .verify-banner p { flex: 1 1 260px; }
 .verify-banner form { margin: 0; }
+@media (max-width: 640px) {
+  .verify-banner { padding: 8px 12px; gap: 8px 10px; font-size: 13.5px; border-radius: 10px; }
+  .verify-banner > .icon { width: 18px; height: 18px; margin-top: 0; }
+  .verify-banner p { flex: 1 1 160px; line-height: 1.35; }
+  .verify-banner .btn { min-height: 32px; padding: 0 10px; font-size: 13px; }
+}
 .label-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
 .label-row label { font-weight: 600; font-size: 14.5px; }
 .email-line { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
@@ -1704,7 +1754,7 @@ a.stat:hover { border-color: var(--blue); }
 .need-list dd { margin: 3px 0 0; font-weight: 600; }
 
 /* ---------- AI help ---------- */
-.translate-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 16px 0 0; padding: 10px 14px; border-radius: 12px; background: var(--blue-soft); color: var(--ink-2); font-size: 14px; }
+.translate-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin: 14px 0 0; padding: 0 2px; color: var(--muted); font-size: 13px; }
 .translate-bar > .icon, .translate-bar p .icon { color: var(--blue); }
 .translate-bar p { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin: 0; flex: 1 1 220px; }
 .translate-bar form { margin: 0; }
@@ -2052,10 +2102,15 @@ a.stat:hover { border-color: var(--blue); }
 .view-toggle a { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 10px; color: #c3d0ec; font-weight: 600; font-size: 14.5px; text-decoration: none; }
 .view-toggle a:hover { color: #fff; }
 .view-toggle a[aria-current] { background: #fff; color: #0a1633; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); }
-@media (max-width: 759px) { .view-toggle { display: none; } }
-.view-fab { position: fixed; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); left: 50%; transform: translateX(-50%); z-index: 40; display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 99px; background: #0a1633; color: #fff; font-weight: 650; text-decoration: none; box-shadow: 0 10px 30px rgba(5, 11, 26, 0.45), 0 0 0 1px rgba(120, 165, 255, 0.25); }
-.has-tabbar .view-fab { bottom: calc(84px + env(safe-area-inset-bottom, 0px)); }
-@media (min-width: 760px) { .view-fab { display: none; } }
+/* On a phone the toggle sits beside the title (no floating button over the list). */
+@media (max-width: 759px) {
+  .jobs-hero .page-hero-row { flex-wrap: nowrap; align-items: center; gap: 12px; }
+  .jobs-hero .page-hero-text { min-width: 0; flex: 1 1 auto; }
+  .view-toggle { flex: 0 0 auto; align-self: center; padding: 3px; border-radius: 12px; }
+  .view-toggle a { padding: 7px 10px; font-size: 13.5px; border-radius: 9px; }
+  .view-toggle a span { display: none; }
+  .view-toggle a[aria-current] span { display: inline; }
+}
 .job-map { margin: 0 0 24px; padding: 16px; border-radius: var(--r-lg); background: url("../img/ornament.svg") 0 0 / 120px, var(--board); box-shadow: var(--shadow-card); }
 .job-map-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; margin-bottom: 12px; }
 .job-map-title { display: flex; align-items: center; gap: 8px; margin: 0; font-family: var(--font); font-size: 1.05rem; font-weight: 650; letter-spacing: 0; color: #fff; }
@@ -2562,7 +2617,7 @@ a.stat:hover { border-color: var(--blue); }
 .assist-send:hover { background: var(--btn-hover); }
 .assist-foot { margin: 0; padding: 0 16px 10px; background: var(--surface); color: var(--muted); font-size: 11.5px; text-align: center; }
 @media (max-width: 600px) { .assist-panel { width: calc(100vw - 32px); } }
-@media print { .assist, .view-fab { display: none; } }
+@media print { .assist { display: none; } }
 
 /* ======================================================================
    Version 5 – clarity: compact job lines, list + map side by side, a short landing page
@@ -2570,33 +2625,43 @@ a.stat:hover { border-color: var(--blue); }
 
 /* --- job lines (the job board, similar jobs, worker home) --- */
 .job-lines { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-.job-line { position: relative; display: grid; grid-template-columns: 96px minmax(0, 1fr); grid-template-areas: "media body" "media pay"; gap: 4px 14px; align-items: start; padding: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); box-shadow: var(--shadow-card); transition: border-color .15s, box-shadow .15s; }
+/* On a phone the pay comes first, the title is one line, the place one line and the perks one row of
+   chips – every card the same height, three to a screen. From 640px the row is media | body | pay. */
+.job-line { position: relative; display: grid; grid-template-columns: 84px minmax(0, 1fr); grid-template-areas: "media pay" "media title" "media place" "perks perks"; gap: 2px 12px; align-items: start; padding: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); box-shadow: var(--shadow-card); transition: border-color .15s, box-shadow .15s; }
 .job-line:hover { border-color: color-mix(in srgb, var(--blue) 40%, var(--line)); box-shadow: 0 1px 2px rgba(10, 22, 51, 0.05), 0 14px 30px rgba(31, 95, 255, 0.12); }
 .jl-media { grid-area: media; position: relative; display: block; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: var(--navy-2); }
 .jl-media img { width: 100%; height: 100%; object-fit: cover; }
 .jl-cover { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; height: 100%; color: #9fc4ff; background: radial-gradient(120px 80px at 50% 0%, rgba(31, 95, 255, 0.35), transparent 70%), var(--navy-2); }
-.flaps-xs .flap { width: 16px; height: 22px; font-size: 0.85rem; border-radius: 3px; }
+.jl-cover .flaps-xs { transform: scale(.9); }
 .jl-badge { position: absolute; top: 6px; inset-inline-start: 6px; display: inline-flex; align-items: center; gap: 3px; padding: 2px 6px; border-radius: 99px; background: rgba(5, 11, 26, 0.7); color: #fff; font-size: 11px; font-weight: 700; }
-.jl-body { grid-area: body; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
-.jl-title { display: block; color: var(--ink); font-weight: 650; font-size: 1.02rem; line-height: 1.3; text-decoration: none; }
+.jl-body { display: contents; }
+.jl-title { grid-area: title; display: block; min-width: 0; color: var(--ink); font-weight: 650; font-size: 1rem; line-height: 1.3; text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .jl-title::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
 .jl-title:hover { color: var(--link); }
-.jl-place { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; margin: 0; color: var(--ink-2); font-size: 14px; }
-.jl-place .flag { border-radius: 2px; box-shadow: 0 0 0 1px rgba(10, 22, 51, 0.1); }
-.jl-sep { color: var(--line-strong); }
-.jl-agency { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); }
-.jl-perks { display: flex; flex-wrap: wrap; gap: 4px 10px; margin: 2px 0 0; padding: 0; list-style: none; color: var(--muted); font-size: 13px; }
-.jl-perks li { display: inline-flex; align-items: center; gap: 4px; }
+.jl-place { grid-area: place; display: block; min-width: 0; margin: 0; color: var(--ink-2); font-size: 13.5px; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.jl-place .flag { border-radius: 2px; box-shadow: 0 0 0 1px rgba(10, 22, 51, 0.1); vertical-align: -3px; margin-inline-end: 5px; }
+.jl-sep { color: var(--line-strong); margin: 0 5px; }
+.jl-agency { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); vertical-align: top; }
+.jl-perks { grid-area: perks; display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 0; padding: 0 40px 0 0; list-style: none; max-height: 26px; overflow: hidden; color: var(--ink-2); font-size: 12.5px; }
+.jl-perks li { display: inline-flex; align-items: center; gap: 4px; padding: 3px 9px 3px 7px; border-radius: 99px; background: var(--surface-2); line-height: 1.2; white-space: nowrap; }
 .jl-perks .icon { color: var(--blue); }
-.jl-perks .jl-applied { color: var(--green); font-weight: 600; }
+.jl-perks .jl-applied { color: var(--green); font-weight: 600; background: var(--green-soft); }
 .jl-perks .jl-applied .icon { color: var(--green); }
-.jl-pay { grid-area: pay; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; margin: 2px 0 0; font-family: var(--font-display); font-weight: 800; font-size: 1.22rem; line-height: 1.1; color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.jl-pay small { font-family: var(--font); font-weight: 500; font-size: 12.5px; color: var(--muted); white-space: normal; }
-.jl-save { position: absolute; top: 10px; inset-inline-end: 10px; z-index: 2; }
+.jl-pay { grid-area: pay; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 7px; margin: 0; font-family: var(--font-display); font-weight: 800; font-size: 1.18rem; line-height: 1.1; color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.jl-pay small { font-family: var(--font); font-weight: 500; font-size: 12px; color: var(--muted); white-space: normal; }
+.jl-save { position: absolute; bottom: 8px; inset-inline-end: 8px; z-index: 2; }
 .jl-save .save-btn { width: 36px; height: 36px; }
 .job-line.is-applied { border-color: color-mix(in srgb, var(--green) 45%, var(--line)); }
+@media (max-width: 639px) {
+  .jl-featured-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .jl-featured { padding: 1px 4px; }
+}
 @media (min-width: 640px) {
   .job-line { grid-template-columns: 136px minmax(0, 1fr) auto; grid-template-areas: "media body pay"; gap: 14px 16px; align-items: center; padding: 12px 14px; }
+  .jl-body { display: flex; grid-area: body; min-width: 0; flex-direction: column; gap: 4px; }
+  .jl-title { font-size: 1.02rem; white-space: normal; }
+  .jl-place { white-space: normal; font-size: 14px; }
+  .jl-perks { margin-top: 4px; padding: 0; max-height: none; }
   .jl-pay { flex-direction: column; align-items: flex-end; gap: 2px; margin: 0; padding-inline-end: 0; text-align: end; font-size: 1.3rem; }
   .jl-save { position: static; }
   .job-line:has(.jl-save) { grid-template-columns: 136px minmax(0, 1fr) auto auto; grid-template-areas: "media body pay save"; }
@@ -2614,7 +2679,7 @@ a.stat:hover { border-color: var(--blue); }
   .jobs-split.is-map .jobs-side { order: 0; }
   .jobs-side { position: sticky; top: 84px; }
   .jobs-side .job-map-frame { aspect-ratio: auto; height: min(62vh, 620px); }
-  .view-toggle, .view-fab { display: none; }
+  .view-toggle { display: none; }
 }
 .list-heading .link-reset { display: inline-flex; align-items: center; gap: 4px; margin-inline-start: 6px; font-size: 13.5px; }
 
@@ -2971,6 +3036,16 @@ ul.extras-grid { list-style: none; margin: 0 0 24px; padding: 0; }
 .start-checks li.is-done .icon { color: var(--green); }
 .doc-list-compact { margin-bottom: 18px; }
 .start-card { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; border-color: color-mix(in srgb, var(--blue) 45%, var(--line)); background: linear-gradient(135deg, var(--blue-soft), var(--surface)); }
+/* The one thing to do now, on top of the worker's home: icon, a short line, one button. */
+.next-card { display: grid; grid-template-columns: auto minmax(0, 1fr); grid-template-areas: "icon body" "btn btn"; align-items: start; gap: 12px 14px; border-color: color-mix(in srgb, var(--blue) 45%, var(--line)); background: linear-gradient(135deg, var(--blue-soft), var(--surface)); }
+.next-icon { grid-area: icon; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 14px; background: var(--blue); color: #fff; box-shadow: 0 8px 20px rgba(31, 95, 255, 0.3); }
+.next-body { grid-area: body; min-width: 0; }
+.next-kicker { margin: 0 0 3px; font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--blue-strong); }
+.next-text { margin: 0; font-size: 16.5px; font-weight: 600; line-height: 1.4; color: var(--ink); text-wrap: pretty; }
+.next-btn { grid-area: btn; justify-self: start; }
+@media (min-width: 640px) { .next-card { grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "icon body btn"; align-items: center; } }
+.alert-slim { padding: 8px 12px; font-size: 14px; border-radius: 10px; }
+.alert-slim .icon { width: 18px; height: 18px; margin-top: 1px; }
 .start-card-copy { flex: 1 1 280px; min-width: 0; }
 .start-card-copy p { margin: 0; color: var(--ink-2); }
 .start-card .card-title { margin-bottom: 6px; }
