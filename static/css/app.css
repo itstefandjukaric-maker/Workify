@@ -1504,7 +1504,7 @@ a.jc-body:hover .jc-title { color: var(--link); }
 .heading-stack .console-h1 { font-size: 1.25rem; }
 .crumb { display: inline-flex; align-items: center; gap: 2px; color: var(--muted); font-size: 12.5px; font-weight: 500; text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .crumb:hover { color: var(--ink); }
-.console-content { width: 100%; max-width: 1320px; padding: 22px 16px 56px; }
+.console-content { width: 100%; max-width: 1320px; min-width: 0; padding: 22px 16px 56px; }
 @media (min-width: 1024px) { .console-content { padding: 28px 28px 64px; } }
 .console-content > .alert { margin-bottom: 18px; }
 
@@ -2742,7 +2742,7 @@ a.stat:hover { border-color: var(--blue); }
   .jobs-split.is-map .jobs-side { order: 0; }
   .jobs-side { position: sticky; top: 84px; }
   .jobs-side .job-map-frame { aspect-ratio: auto; height: min(62vh, 620px); }
-  .view-toggle { display: none; }
+  .page-hero .view-toggle { display: none; }      /* the jobs page shows list and map side by side here */
 }
 .list-heading .link-reset { display: inline-flex; align-items: center; gap: 4px; margin-inline-start: 6px; font-size: 13.5px; }
 
@@ -3325,3 +3325,25 @@ body.has-tabbar.apply-bar-on .assist { bottom: calc(150px + env(safe-area-inset-
   .landing .story-grid-home .story-card { flex: 0 0 min(84vw, 360px); scroll-snap-align: start; }
   .landing .faq-section .faq-item:nth-child(n+4) { display: none; }
 }
+/* The candidates board: drag a card into a column; the column lights up, the card fades while it moves. */
+.cand-card[draggable="true"] { cursor: grab; }
+.cand-card.is-dragging { opacity: 0.45; cursor: grabbing; }
+.cand-card.is-moving { opacity: 0.6; pointer-events: none; }
+.board-col[data-drop].is-over { border-color: var(--blue); background: color-mix(in srgb, var(--blue) 12%, var(--surface-2)); box-shadow: 0 0 0 2px color-mix(in srgb, var(--blue) 45%, transparent) inset; }
+.board-col-closed { border-top-color: var(--line); }
+.board-col-closed .board-head h2 { color: var(--muted); }
+.cand-job { display: flex; align-items: center; gap: 6px; color: var(--ink-2); font-size: 13px; min-width: 0; white-space: nowrap; }
+.cand-job > small, .cand-job > .icon { flex-shrink: 0; color: var(--muted); }
+.cand-job::before { content: attr(data-title); flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.board .cand-name, .board .cand-sub { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.board .cand-top { min-width: 0; }
+.board { grid-auto-columns: minmax(236px, 1fr); max-width: 100%; }
+.board-hint { display: flex; align-items: center; gap: 6px; margin: 10px 0 0; }
+.filters-console .view-toggle-console { margin-inline-start: auto; align-self: center; }
+@media (max-width: 640px) { .filters-console .view-toggle-console { margin-inline-start: 0; } }
+/* The agency's "Today" items in two tidy columns, and the sparkline in a stat tile. */
+@media (min-width: 760px) { .today-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.stat-spark { display: block; width: 100%; height: 28px; margin-top: 6px; overflow: visible; }
+.stat-spark .spark-line { fill: none; stroke: color-mix(in srgb, var(--blue) 55%, var(--muted)); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+.stat-spark .spark-area { fill: color-mix(in srgb, var(--blue) 14%, transparent); }
+.stat-spark .spark-now { fill: var(--blue); stroke: var(--surface-2); stroke-width: 2; vector-effect: non-scaling-stroke; }

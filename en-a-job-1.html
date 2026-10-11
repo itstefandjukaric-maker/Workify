@@ -139,64 +139,69 @@
   </div>
 </div>
 
-  <div class="board">
+    <div class="board" data-board data-csrf="ALNX0aOBmaqQ-3cAIcFPaQWmF9WYvE2YukpQOCeyvrc" data-move-failed="The status was not changed." data-confirm-reject="Reject the application of {name}? The worker is told.">
       <section class="board-col col-new" aria-label="New">
-        <header class="board-head"><h2>New</h2><span class="board-count">0</span></header>
-        <ul class="board-cards">
+        <header class="board-head"><h2>New</h2><span class="board-count" data-count>0</span></header>
+        <ul class="board-cards" data-cards>
             <li class="board-empty">No candidates</li>
         </ul>
       </section>
-      <section class="board-col col-screening" aria-label="Screening and interview">
-        <header class="board-head"><h2>Screening and interview</h2><span class="board-count">0</span></header>
-        <ul class="board-cards">
+      <section class="board-col col-screening" aria-label="Screening and interview" data-drop="reviewing">
+        <header class="board-head"><h2>Screening and interview</h2><span class="board-count" data-count>0</span></header>
+        <ul class="board-cards" data-cards>
             <li class="board-empty">No candidates</li>
         </ul>
       </section>
-      <section class="board-col col-offer" aria-label="Offer and contract">
-        <header class="board-head"><h2>Offer and contract</h2><span class="board-count">1</span></header>
-        <ul class="board-cards">
-            <li>    <a class="cand-card" href="en-a-app-4.html">
-      <span class="cand-top"><span class="avatar avatar-sm" aria-hidden="true">AK</span><span class="cand-name">Anil Kumar</span></span>
-      <span class="cand-sub">Electrician</span>
-      <span class="cand-meta">
-          <span class="badge tone-amber">Offer</span>
-
-        <span class="match-badge tone-green" title="Match">93%</span>
-<span>India</span>      </span>
-      <span class="cand-foot">
-        <span><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3.5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-10z"/><path d="M14 3.5v5h5"/><path d="M9 13h6M9 16.5h4"/></svg>2</span>
-        <span class="muted">4 Oct 2026</span>
-      </span>
-    </a>
+      <section class="board-col col-offer" aria-label="Offer and contract" data-drop="offer">
+        <header class="board-head"><h2>Offer and contract</h2><span class="board-count" data-count>1</span></header>
+        <ul class="board-cards" data-cards>
+            <li>  <a class="cand-card" href="en-a-app-4.html" draggable="true" data-card="4" data-status="offer" data-name="Anil Kumar">
+    <span class="cand-top"><span class="avatar avatar-sm" aria-hidden="true">AK</span><span class="cand-name">Anil Kumar</span></span>
+    <span class="cand-sub">Electrician</span>
+    <span class="cand-meta">
+      <span data-card-badge>  <span class="badge tone-amber">Offer</span>
+</span>
+      <span class="match-badge tone-green" title="Match">93%</span>
+<span><img class="flag" src="static/img/flags/in.png" width="14" height="10" alt="" loading="lazy" decoding="async"> India</span>    </span>
+    <span class="cand-foot">
+<span><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3.5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-10z"/><path d="M14 3.5v5h5"/><path d="M9 13h6M9 16.5h4"/></svg>2</span><span><svg class="icon " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5a7.5 7.5 0 0 1 15 0"/></svg>Priya Nair</span>      <span class="muted">4 Oct 2026</span>
+    </span>
+  </a>
 </li>
         </ul>
       </section>
-      <section class="board-col col-permit" aria-label="Work permit">
-        <header class="board-head"><h2>Work permit</h2><span class="board-count">1</span></header>
-        <ul class="board-cards">
-            <li>    <a class="cand-card" href="en-a-app-1.html">
-      <span class="cand-top"><span class="avatar avatar-sm" aria-hidden="true">JR</span><span class="cand-name">Jasur Rakhimov</span></span>
-      <span class="cand-sub">Industrial and building electrician</span>
-      <span class="cand-meta">
-          <span class="badge tone-amber">Work permit in progress</span>
-
-        <span class="match-badge tone-green" title="Match">100%</span>
-<span>Uzbekistan</span>      </span>
-      <span class="cand-foot">
-        <span><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3.5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-10z"/><path d="M14 3.5v5h5"/><path d="M9 13h6M9 16.5h4"/></svg>3</span>
-        <span class="muted">1 Oct 2026</span>
-      </span>
-    </a>
+      <section class="board-col col-permit" aria-label="Work permit" data-drop="permit_processing">
+        <header class="board-head"><h2>Work permit</h2><span class="board-count" data-count>1</span></header>
+        <ul class="board-cards" data-cards>
+            <li>  <a class="cand-card" href="en-a-app-1.html" draggable="true" data-card="1" data-status="permit_processing" data-name="Jasur Rakhimov">
+    <span class="cand-top"><span class="avatar avatar-sm" aria-hidden="true">JR</span><span class="cand-name">Jasur Rakhimov</span></span>
+    <span class="cand-sub">Industrial and building electrician</span>
+    <span class="cand-meta">
+      <span data-card-badge>  <span class="badge tone-amber">Work permit in progress</span>
+</span>
+      <span class="match-badge tone-green" title="Match">100%</span>
+<span><img class="flag" src="static/img/flags/uz.png" width="14" height="10" alt="" loading="lazy" decoding="async"> Uzbekistan</span>    </span>
+    <span class="cand-foot">
+<span><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3.5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-10z"/><path d="M14 3.5v5h5"/><path d="M9 13h6M9 16.5h4"/></svg>3</span><span><svg class="icon " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5a7.5 7.5 0 0 1 15 0"/></svg>Omar Haddad</span>      <span class="muted">1 Oct 2026</span>
+    </span>
+  </a>
 </li>
         </ul>
       </section>
-      <section class="board-col col-started" aria-label="Started">
-        <header class="board-head"><h2>Started</h2><span class="board-count">0</span></header>
-        <ul class="board-cards">
+      <section class="board-col col-started" aria-label="Started" data-drop="started">
+        <header class="board-head"><h2>Started</h2><span class="board-count" data-count>0</span></header>
+        <ul class="board-cards" data-cards>
             <li class="board-empty">No candidates</li>
         </ul>
       </section>
+    <section class="board-col board-col-closed col-closed" aria-label="Closed" data-drop="rejected" data-reject>
+      <header class="board-head"><h2>Closed</h2><span class="board-count" data-count>0</span></header>
+      <ul class="board-cards" data-cards>
+      </ul>
+    </section>
   </div>
+  <p class="small muted board-hint"><svg class="icon " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3.5" y="4" width="17" height="16" rx="2"/><path d="M9.2 4v16M14.8 4v16"/></svg>Drag a candidate into another column to change the status; the worker is told, as with the form.</p>
+
     </main>
   </div>
 </div>

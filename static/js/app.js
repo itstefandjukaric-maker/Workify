@@ -890,6 +890,77 @@
     }
   }
 
+  /* Candidates board: drag a card into another column to change the status (POST …/status, JSON). */
+  document.querySelectorAll("[data-board]").forEach(function (board) {
+    var csrf = board.getAttribute("data-csrf") || "";
+    var dragging = null;
+    board.addEventListener("dragstart", function (event) {
+      var card = event.target.closest && event.target.closest("[data-card]");
+      if (!card || card.getAttribute("draggable") === "false") return;
+      dragging = card;
+      card.classList.add("is-dragging");
+      event.dataTransfer.effectAllowed = "move";
+      try { event.dataTransfer.setData("text/plain", card.getAttribute("data-card")); } catch (e) { /* old browsers */ }
+    });
+    board.addEventListener("dragend", function () {
+      if (dragging) dragging.classList.remove("is-dragging");
+      dragging = null;
+      board.querySelectorAll(".is-over").forEach(function (c) { c.classList.remove("is-over"); });
+    });
+    board.querySelectorAll("[data-drop]").forEach(function (col) {
+      col.addEventListener("dragover", function (event) {
+        if (!dragging) return;
+        event.preventDefault();
+        event.dataTransfer.dropEffect = "move";
+        col.classList.add("is-over");
+      });
+      col.addEventListener("dragleave", function (event) {
+        if (!col.contains(event.relatedTarget)) col.classList.remove("is-over");
+      });
+      col.addEventListener("drop", function (event) {
+        event.preventDefault();
+        col.classList.remove("is-over");
+        var card = dragging; dragging = null;
+        if (!card) return;
+        card.classList.remove("is-dragging");
+        var status = col.getAttribute("data-drop");
+        if (card.getAttribute("data-status") === status || card.closest("[data-drop]") === col) return;
+        if (col.hasAttribute("data-reject")) {
+          var question = (board.getAttribute("data-confirm-reject") || "").replace("{name}", card.getAttribute("data-name") || "");
+          if (!window.confirm(question)) return;
+        }
+        var from = card.closest(".board-col");
+        var body = new FormData();
+        body.append("status", status);
+        body.append("csrf_token", csrf);
+        card.classList.add("is-moving");
+        fetch(card.getAttribute("href") + "/status", { method: "POST", body: body, credentials: "same-origin",
+                                                       headers: { Accept: "application/json", "X-CSRF-Token": csrf } })
+          .then(function (r) { return r.json().then(function (data) { return { ok: r.ok, data: data }; }); })
+          .then(function (res) {
+            card.classList.remove("is-moving");
+            if (!res.ok || !res.data.ok) throw new Error(res.data && res.data.error);
+            var li = card.closest("li");
+            var list = col.querySelector("[data-cards]");
+            var empty = list.querySelector(".board-empty");
+            if (empty) empty.remove();
+            list.insertBefore(li, list.firstChild);
+            card.setAttribute("data-status", res.data.status);
+            var badge = card.querySelector("[data-card-badge] .badge");
+            if (badge) { badge.className = "badge tone-" + (res.data.tone || "grey"); badge.textContent = res.data.label; }
+            [from, col].forEach(function (c) {
+              var n = c.querySelector("[data-count]");
+              if (n) n.textContent = c.querySelectorAll("[data-card]").length;
+            });
+          })
+          .catch(function (err) {
+            card.classList.remove("is-moving");
+            window.alert((err && err.message) || board.getAttribute("data-move-failed"));
+          });
+      });
+    });
+  });
+
   /* Job page on phones: the apply bar shows while the hero's pay and the real "Apply" button are both off-screen. */
   var applyBar = document.querySelector("[data-apply-bar]");
   if (applyBar && "IntersectionObserver" in window) {
