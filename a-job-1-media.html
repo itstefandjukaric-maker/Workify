@@ -215,20 +215,10 @@
     <section class="card form-card media-section" id="video">
       <header class="card-head">
         <h2 class="card-title"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10.5 5-3v9l-5-3"/></svg>Video</h2>
-        <span class="muted small">1 od 1</span>
+        <span class="muted small">0 od 1</span>
       </header>
       <p class="small muted">Jedan kratak video (do 2 minute) koji objašnjava posao i mjesto. Novi video zamjenjuje stari.</p>
-        <ul class="media-grid">
-            <li class="media-item">
-                <video controls preload="metadata" playsinline><source src="media/e417f1f6b0761783ca88ec55394be4a4.mp4" type="video/mp4"></video>
-              <div class="media-actions">
-                <form method="post" action="#" data-confirm="Obrisati ovaj fajl?">
-                  <input type="hidden" name="csrf_token" value=""><input type="hidden" name="action" value="delete">
-                  <button class="btn btn-ghost btn-sm btn-danger-text" type="submit"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 7h15"/><path d="M10 11v5.5M14 11v5.5"/><path d="M6.5 7l.8 11.6a2 2 0 0 0 2 1.9h5.4a2 2 0 0 0 2-1.9L17.5 7"/><path d="M9.5 7V4.5h5V7"/></svg>Obriši</button>
-                </form>
-              </div>
-            </li>
-        </ul>
+        
         <form method="post" action="#" enctype="multipart/form-data" class="media-upload">
           <input type="hidden" name="csrf_token" value="">
           <input type="hidden" name="kind" value="video">
