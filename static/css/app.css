@@ -3295,3 +3295,33 @@ form.auth-switch { display: flex; flex-wrap: wrap; justify-content: center; gap:
 .moment-pic .band-photo-note { top: auto; bottom: 8px; inset-inline-end: 8px; font-size: 10.5px; padding: 2px 7px; }
 .moment-title { margin: 10px 0 0; font-size: 1.02rem; line-height: 1.3; }
 .moment-text { margin: 0; color: var(--ink-2); font-size: 14.5px; }
+/* The job page on phones: the pay and "Apply" fixed at the bottom while the page's own button is
+   off-screen (app.js shows it between the hero and the apply card). Above the tab bar when there is one. */
+.apply-bar { position: fixed; inset-inline: 0; bottom: 0; z-index: 45; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); background: rgba(6, 13, 32, 0.94); color: #fff; border-top: 1px solid rgba(120, 165, 255, 0.22);
+  -webkit-backdrop-filter: saturate(160%) blur(18px); backdrop-filter: saturate(160%) blur(18px); box-shadow: 0 -12px 30px rgba(5, 11, 26, 0.35);
+  transform: translateY(0); transition: transform .25s ease, visibility .25s; }
+.apply-bar[hidden] { display: flex; visibility: hidden; transform: translateY(110%); }
+.apply-bar-pay { display: flex; flex-direction: column; gap: 1px; margin: 0; min-width: 0; }
+.apply-bar-pay b { font-family: var(--font-display); font-weight: 800; font-size: 1.25rem; line-height: 1.05; letter-spacing: 0.01em; }
+.apply-bar-pay span { color: var(--night-muted); font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.apply-bar .btn { flex-shrink: 0; min-height: 48px; padding-inline: 22px; }
+.has-tabbar .apply-bar { bottom: calc(80px + env(safe-area-inset-bottom, 0px)); padding-bottom: 10px; border-bottom: 1px solid rgba(120, 165, 255, 0.12); }
+body.apply-bar-on .assist { bottom: calc(86px + env(safe-area-inset-bottom, 0px)); }
+body.has-tabbar.apply-bar-on .assist { bottom: calc(150px + env(safe-area-inset-bottom, 0px)); }
+@media (prefers-reduced-motion: reduce) { .apply-bar { transition: none; } }
+@media (min-width: 980px) { .apply-bar { display: none !important; } }
+/* The slim footer of the worker app (signed-in workers): one row of links, one line of copyright. */
+.footer-slim { margin-top: 32px; padding: 22px 0 calc(22px + env(safe-area-inset-bottom)); }
+.footer-slim-row { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.footer-slim-row a { display: inline-flex; align-items: center; gap: 5px; font-size: 13.5px; }
+.footer-slim .footer-copy { margin-top: 12px; font-size: 12.5px; }
+/* The landing page on phones says the same things in less scrolling: four ads on the board (the header
+   links to all of them), the stories as a row to swipe, three questions (the FAQ page has them all). */
+@media (max-width: 759px) {
+  .landing .dep-table tbody tr.dep-row:nth-child(n+5) { display: none; }
+  .landing .story-grid-home { display: flex; gap: 12px; margin-inline: -20px; padding: 4px 20px 10px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .landing .story-grid-home::-webkit-scrollbar { display: none; }
+  .landing .story-grid-home .story-card { flex: 0 0 min(84vw, 360px); scroll-snap-align: start; }
+  .landing .faq-section .faq-item:nth-child(n+4) { display: none; }
+}

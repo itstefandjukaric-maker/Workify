@@ -890,5 +890,25 @@
     }
   }
 
+  /* Job page on phones: the apply bar shows while the hero's pay and the real "Apply" button are both off-screen. */
+  var applyBar = document.querySelector("[data-apply-bar]");
+  if (applyBar && "IntersectionObserver" in window) {
+    var marks = [document.querySelector("[data-apply-top]"), document.querySelector("[data-apply-target]")].filter(Boolean);
+    var seen = new Map();
+    var update = function () {
+      var anyVisible = false;
+      seen.forEach(function (v) { if (v) anyVisible = true; });
+      var show = !anyVisible && window.innerWidth < 980;
+      applyBar.hidden = !show;
+      document.body.classList.toggle("apply-bar-on", show);
+    };
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { seen.set(e.target, e.isIntersecting); });
+      update();
+    }, { rootMargin: "0px 0px -56px 0px" });
+    marks.forEach(function (el) { seen.set(el, true); io.observe(el); });
+    window.addEventListener("resize", update);
+  }
+
   localizeTimes();
 })();
