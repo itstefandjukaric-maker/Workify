@@ -2677,7 +2677,7 @@ a.stat:hover { border-color: var(--blue); }
 .jl-place .flag { border-radius: 2px; box-shadow: 0 0 0 1px rgba(11, 19, 38, 0.1); vertical-align: -3px; margin-inline-end: 5px; }
 .jl-sep { color: var(--line-strong); margin: 0 5px; }
 .jl-agency { display: inline-flex; align-items: center; gap: 4px; color: var(--muted); vertical-align: top; }
-.jl-perks { grid-area: perks; display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 0; padding: 0; padding-inline-end: 46px; list-style: none; max-height: 26px; overflow: hidden; color: var(--ink-2); font-size: 12.5px; }
+.jl-perks { grid-area: perks; display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 0; padding: 0; padding-inline-end: 46px; list-style: none; color: var(--ink-2); font-size: 12.5px; }
 .jl-perks li { display: inline-flex; align-items: center; gap: 4px; padding: 3px 9px 3px 7px; border-radius: 99px; background: var(--surface-2); line-height: 1.2; white-space: nowrap; }
 .jl-perks .icon { color: var(--blue); }
 .jl-perks .jl-applied { color: var(--green); font-weight: 600; background: var(--green-soft); }
@@ -3444,4 +3444,53 @@ a.small:not(.btn) { padding-block: 11px; margin-block: -11px; }
   .console-top { height: auto; min-height: 64px; padding-block: 8px; }
   .console-h1 { white-space: normal; overflow: visible; text-overflow: clip; font-size: 1.15rem; line-height: 1.25; }
   .heading-stack .console-h1 { font-size: 1.1rem; }
+}
+
+/* Worker essentials: pay, housing, and a clear next step. */
+.jc-pay { padding: 11px 12px; margin-bottom: 5px; border-radius: 10px; background: var(--blue-soft); color: var(--blue-strong); font-size: 1.55rem; }
+.jc-pay small { display: block; flex-basis: 100%; color: var(--ink-2); line-height: 1.4; }
+.jc-title { font-size: 1.1rem; }
+.jc-body:focus-visible { outline: 3px solid var(--blue); outline-offset: -3px; border-radius: 0 0 var(--r-md) var(--r-md); }
+.jl-pay { color: var(--blue-strong); font-size: 1.3rem; white-space: normal; }
+.jl-pay b { overflow-wrap: anywhere; }
+.jl-pay small { line-height: 1.4; }
+.jl-perks li { white-space: normal; }
+.jl-perks .is-free { font-weight: 650; }
+.jl-title:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; border-radius: 4px; }
+.profile-checklist { padding: 22px; margin-bottom: 20px; }
+.profile-checklist progress { width: 100%; margin-block: 10px 14px; }
+.profile-checklist .meter-head { gap: 12px; }
+.profile-checklist .card-title { margin: 0; }
+.profile-tasks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 0; margin: 12px 0 0; list-style: none; }
+.profile-tasks a { display: flex; align-items: center; gap: 9px; min-height: 48px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface-2); color: var(--ink); text-decoration: none; font-size: .9rem; }
+.profile-tasks a:hover { border-color: var(--blue); background: var(--blue-soft); }
+.profile-tasks a > span { flex: 1; overflow-wrap: anywhere; }
+.profile-tasks .icon { color: var(--blue-strong); flex-shrink: 0; }
+.profile-complete { display: flex; align-items: center; gap: 8px; color: var(--green); margin-bottom: 0; }
+.form-sections [id], .jobs-hero .filters { scroll-margin-top: 110px; }
+.form-sections .field:has(:target), #f-desired_countries:target { outline: 2px solid var(--blue); outline-offset: 6px; border-radius: 8px; }
+.mobile-filter-dock { position: fixed; inset-inline-start: 16px; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 44; min-height: 50px; border-radius: 999px; box-shadow: var(--shadow-card); gap: 8px; }
+.mobile-filter-dock[hidden] { display: none; }
+.has-tabbar .mobile-filter-dock { bottom: calc(96px + env(safe-area-inset-bottom, 0px)); }
+.mobile-filter-dock .count { background: var(--surface); color: var(--ink); }
+@media (max-width: 979px) {
+  body.has-apply-bar { padding-bottom: calc(110px + env(safe-area-inset-bottom, 0px)); }
+  body.has-tabbar.has-apply-bar { padding-bottom: calc(194px + env(safe-area-inset-bottom, 0px)); }
+  .apply-bar { gap: 10px; }
+  .apply-bar .btn { max-width: 58%; padding-inline: 14px; white-space: normal; text-align: center; }
+  .apply-bar-pay b { overflow-wrap: anywhere; }
+  .apply-bar-pay span { white-space: normal; line-height: 1.35; }
+  body.apply-bar-on .assist { bottom: calc(115px + env(safe-area-inset-bottom, 0px)); }
+  body.has-tabbar.apply-bar-on .assist { bottom: calc(195px + env(safe-area-inset-bottom, 0px)); }
+}
+@media (max-width: 640px) {
+  .profile-tasks { grid-template-columns: minmax(0, 1fr); }
+  .profile-checklist { padding: 18px; }
+  .jl-pay { font-size: 1.2rem; }
+  .jl-pay small { flex-basis: 100%; }
+  .jl-perks { padding-inline-end: 40px; row-gap: 8px; }
+  .filter-dock-on .jobs-page { padding-bottom: 85px; }
+}
+@media print {
+  .apply-bar, .mobile-filter-dock { display: none !important; }
 }
