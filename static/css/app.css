@@ -3521,8 +3521,8 @@ a.small:not(.btn) { padding-block: 11px; margin-block: -11px; }
 .europe-card:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
 @media (min-width: 920px) {
   .landing .hero-people > .band-photo { width: 72%; inset-inline-start: auto; inset-inline-end: 0; }
-  .landing .hero-people.photo-band::before { background: linear-gradient(90deg, #0b172beF 0%, #0b172bdE 35%, #0b172b70 56%, #0b172b0a 80%), linear-gradient(0deg,#0b172b50,transparent 50%); }
-  [dir="rtl"] .landing .hero-people.photo-band::before { background: linear-gradient(270deg, #0b172beF 0%, #0b172bdE 35%, #0b172b70 56%, #0b172b0a 80%), linear-gradient(0deg,#0b172b50,transparent 50%); }
+  .landing .hero-people.photo-band::before { background: linear-gradient(90deg, #0b172b 0%, #0b172b 30%, #0b172bde 40%, #0b172b70 56%, #0b172b0a 80%), linear-gradient(0deg,#0b172b50,transparent 50%); }
+  [dir="rtl"] .landing .hero-people.photo-band::before { background: linear-gradient(270deg, #0b172b 0%, #0b172b 30%, #0b172bde 40%, #0b172b70 56%, #0b172b0a 80%), linear-gradient(0deg,#0b172b50,transparent 50%); }
   .landing .hero-people .hero-copy { max-inline-size: 650px; }
 }
 @media (max-width: 700px) {
