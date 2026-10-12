@@ -235,7 +235,7 @@
   /* Filter forms submit on change. */
   document.querySelectorAll("form[data-autosubmit]").forEach(function (form) {
     form.addEventListener("change", function (event) {
-      if (event.target.matches("select[name], input[type=checkbox][name]")) form.submit();
+      if (!event.target.closest(".advanced-search") && event.target.matches("select[name], input[type=checkbox][name]")) form.submit();
     });
   });
 
@@ -1020,4 +1020,111 @@
   }
 
   localizeTimes();
+})();
+
+/* Public job comparison: three offers, original currencies, no personal data. */
+(function () {
+  "use strict";
+  var buttons = Array.from(document.querySelectorAll("[data-compare]"));
+  if (!buttons.length || !window.HTMLDialogElement) return;
+  var labels = JSON.parse(buttons[0].getAttribute("data-compare-ui"));
+  var storageKey = "workify-compare-v1-" + document.documentElement.lang;
+  var chosen = [], lastTrigger = null;
+  try {
+    var stored = JSON.parse(sessionStorage.getItem(storageKey) || "null");
+    if (stored && Date.now() - stored.time < 86400000 && Array.isArray(stored.jobs)) {
+      chosen = stored.jobs.filter(function (j) { return j && Number.isInteger(j.id) && Array.isArray(j.rows) && typeof j.title === "string"; }).slice(0, 3);
+    }
+  } catch (_) { /* Storage may be unavailable in private browsing. */ }
+  function el(tag, cls, text) {
+    var node = document.createElement(tag); if (cls) node.className = cls;
+    if (text !== undefined) node.textContent = text; return node;
+  }
+  function safeLink(value) {
+    try { var u = new URL(value, location.href); return u.origin === location.origin && /^https?:$/.test(u.protocol) ? u.href : "#"; }
+    catch (_) { return "#"; }
+  }
+  function button(text, cls, handler) { var b = el("button", cls, text); b.type = "button"; b.addEventListener("click", handler); return b; }
+  var tray = el("section", "comparison-tray"); tray.setAttribute("aria-label", labels.title); tray.hidden = true;
+  var trayCopy = el("div", "comparison-tray-copy"), count = el("strong"), names = el("span", "comparison-names");
+  count.setAttribute("role", "status"); trayCopy.append(count, names);
+  var trayActions = el("div", "comparison-actions");
+  var open = button(labels.title, "btn btn-primary", function () { drawTable(); lastTrigger = open; dialog.showModal(); });
+  var clear = button(labels.clear, "btn btn-outline", function () { chosen = []; sync(); });
+  trayActions.append(clear, open); tray.append(trayCopy, trayActions); document.body.appendChild(tray);
+  var status = el("p", "comparison-status"); status.setAttribute("role", "status"); status.hidden = true; document.body.appendChild(status);
+  var statusTimer;
+  function announce(text) { status.textContent = text; status.hidden = false; clearTimeout(statusTimer); statusTimer = setTimeout(function () { status.hidden = true; }, 4200); }
+  var dialog = el("dialog", "comparison-dialog"); dialog.setAttribute("aria-labelledby", "comparison-title"); dialog.setAttribute("aria-describedby", "comparison-hint");
+  var head = el("header", "comparison-head"), title = el("h2", "", labels.title); title.id = "comparison-title";
+  head.append(title, button(labels.close, "btn btn-outline btn-sm", function () { dialog.close(); }));
+  var hint = el("p", "muted", labels.hint); hint.id = "comparison-hint";
+  var scroll = el("div", "comparison-scroll"); scroll.tabIndex = 0; scroll.setAttribute("role", "region"); scroll.setAttribute("aria-label", labels.title);
+  dialog.append(head, hint, scroll); document.body.appendChild(dialog);
+  dialog.addEventListener("close", function () { if (lastTrigger && lastTrigger.isConnected && !tray.hidden) lastTrigger.focus(); });
+  function drawTable() {
+    scroll.replaceChildren(); var table = el("table", "comparison-table"), thead = el("thead"), header = el("tr");
+    var field = el("th", "", labels.view); field.scope = "col"; header.appendChild(field);
+    chosen.forEach(function (job) {
+      var th = el("th"); th.scope = "col";
+      var link = el("a", "comparison-job-title", job.title); link.href = safeLink(job.url);
+      var remove = button(labels.remove, "btn btn-ghost btn-sm", function () { chosen = chosen.filter(function (j) { return j.id !== job.id; }); sync(); if (chosen.length < 2) dialog.close(); else drawTable(); });
+      remove.setAttribute("aria-label", labels.remove + ": " + job.title);
+      th.append(link, el("span", "comparison-agency", job.agency), remove); header.appendChild(th);
+    });
+    thead.appendChild(header); table.appendChild(thead); var body = el("tbody");
+    (chosen[0] ? chosen[0].rows : []).forEach(function (row, i) {
+      var tr = el("tr"), label = el("th", "", row[0]); label.scope = "row"; tr.appendChild(label);
+      chosen.forEach(function (job) { tr.appendChild(el("td", "", job.rows[i] ? job.rows[i][1] : "—")); }); body.appendChild(tr);
+    });
+    table.appendChild(body); scroll.appendChild(table);
+  }
+  function sync() {
+    tray.hidden = chosen.length === 0; document.body.classList.toggle("has-comparison", chosen.length > 0);
+    count.textContent = labels.count.replace("{count}", String(chosen.length)); names.textContent = chosen.map(function (j) { return j.title; }).join(" · ");
+    open.disabled = chosen.length < 2;
+    buttons.forEach(function (b) { var id = Number(b.getAttribute("data-compare-id")); b.setAttribute("aria-pressed", String(chosen.some(function (j) { return j.id === id; }))); });
+    try { sessionStorage.setItem(storageKey, JSON.stringify({time:Date.now(),jobs:chosen})); } catch (_) {}
+  }
+  buttons.forEach(function (b) {
+    var job = JSON.parse(b.getAttribute("data-compare")); var card = b.closest(".job-card,.job-line");
+    var link = card && card.querySelector(".jc-body,.jl-title"); job.url = link ? link.href : location.href;
+    b.hidden = false; b.setAttribute("data-compare-id", job.id); b.setAttribute("aria-label", labels.add + ": " + job.title);
+    chosen = chosen.map(function (old) { return old.id === job.id ? job : old; });
+    b.addEventListener("click", function () {
+      if (chosen.some(function (j) { return j.id === job.id; })) chosen = chosen.filter(function (j) { return j.id !== job.id; });
+      else if (chosen.length < 3) chosen.push(job);
+      else { announce(labels.limit); return; }
+      sync();
+    });
+  });
+  sync();
+})();
+
+/* Two short registration steps; without JS the original complete form remains usable. */
+(function () {
+  "use strict";
+  var form = document.querySelector("[data-register-steps]"); if (!form) return;
+  var steps = Array.from(form.querySelectorAll("[data-signup-step]"));
+  var progress = document.querySelector(".signup-progress"), next = form.querySelector("[data-signup-next]"), back = form.querySelector("[data-signup-back]"), submit = form.querySelector('[type="submit"]');
+  function show(number, focus) {
+    form.dataset.step = String(number);
+    steps.forEach(function (s) { s.hidden = s.dataset.signupStep !== String(number); });
+    progress.hidden = false; next.hidden = number !== 1; back.hidden = number !== 2; submit.hidden = number !== 2;
+    progress.querySelectorAll("[data-signup-marker]").forEach(function (marker) {
+      if (marker.dataset.signupMarker === String(number)) marker.setAttribute("aria-current", "step"); else marker.removeAttribute("aria-current");
+    });
+    if (focus) { var input = steps[number - 1].querySelector("input:not([type=hidden]),select"); if (input) input.focus(); }
+  }
+  function valid(step) {
+    var inputs = Array.from(steps[step - 1].querySelectorAll("input,select"));
+    return inputs.every(function (input) { return input.reportValidity(); });
+  }
+  next.addEventListener("click", function () { if (valid(1)) show(2, true); });
+  back.addEventListener("click", function () { show(1, true); });
+  form.addEventListener("submit", function (event) {
+    if (form.dataset.step === "1") { event.preventDefault(); if (valid(1)) show(2, true); }
+    else if (!valid(2)) event.preventDefault();
+  });
+  var error = form.querySelector(".has-error"); show(error && error.closest('[data-signup-step="2"]') ? 2 : 1, false);
 })();
