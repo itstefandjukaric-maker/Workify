@@ -3504,7 +3504,7 @@ a.small:not(.btn) { padding-block: 11px; margin-block: -11px; }
 
 /* Europe: daylight photography, clear typography and direct destination links. */
 .landing .hero-people .hero-title { font-family: var(--font); font-weight: 700; font-size: clamp(2.05rem, 4vw, 3.35rem); line-height: 1.12; letter-spacing: -.045em; max-inline-size: 21ch; }
-.landing .hero-people > .band-photo { width: 100%; inset-inline: 0; object-position: center 42%; }
+.landing .hero-people > .band-photo { width: 100%; inset-inline: 0; object-position: center 30%; }
 [dir="rtl"] .landing .hero-people > .band-photo { transform: none; }
 .landing .section-title { font-family: var(--font); font-weight: 700; font-size: clamp(1.65rem, 2.7vw, 2.2rem); line-height: 1.2; letter-spacing: -.035em; }
 .europe-destinations { padding-block: 30px 34px; background: var(--surface); border-block-end: 1px solid var(--line); }
@@ -3520,6 +3520,7 @@ a.small:not(.btn) { padding-block: 11px; margin-block: -11px; }
 .europe-card:hover { border-color: var(--blue); text-decoration: none; }
 .europe-card:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
 @media (min-width: 920px) {
+  .landing .hero-people > .band-photo { width: 72%; inset-inline-start: auto; inset-inline-end: 0; }
   .landing .hero-people.photo-band::before { background: linear-gradient(90deg, #0b172beF 0%, #0b172bdE 35%, #0b172b70 56%, #0b172b0a 80%), linear-gradient(0deg,#0b172b50,transparent 50%); }
   [dir="rtl"] .landing .hero-people.photo-band::before { background: linear-gradient(270deg, #0b172beF 0%, #0b172bdE 35%, #0b172b70 56%, #0b172b0a 80%), linear-gradient(0deg,#0b172b50,transparent 50%); }
   .landing .hero-people .hero-copy { max-inline-size: 650px; }
@@ -3531,4 +3532,39 @@ a.small:not(.btn) { padding-block: 11px; margin-block: -11px; }
   .europe-card > span { font-size: .85rem; padding: 11px; gap: 7px; }
   .europe-heading { align-items: flex-start; }
   .europe-heading p { max-inline-size: 24ch; }
+}
+
+/* An accurate, static regional map and a complete set of destination flags. */
+.region-atlas { padding-block: 36px 8px; background: var(--surface); }
+.atlas-panel { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; overflow: hidden; border: 1px solid var(--line); border-radius: 22px; background: #f3f7fc; }
+.atlas-copy { position: relative; z-index: 1; padding: 28px; }
+.atlas-copy h2 { margin: 0; font-family: var(--font); font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 700; letter-spacing: -.035em; color: #14243b; }
+.atlas-lead { margin: 6px 0 20px; color: #516278; font-size: .9rem; }
+.atlas-region { display: block; padding: 16px 18px; border: 1px solid #dbe4f0; border-inline-start: 4px solid #356adb; border-radius: 12px; background: #fff; color: #14243b; text-decoration: none; }
+.atlas-region + .atlas-region { margin-block-start: 12px; }
+.atlas-gulf { border-inline-start-color: #ba842a; }
+.atlas-region:hover { border-color: #356adb; text-decoration: none; }
+.atlas-gulf:hover { border-color: #ba842a; }
+.atlas-region:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.atlas-region-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.atlas-region-head strong { font-size: 1.08rem; }
+.atlas-region-head .icon { flex-shrink: 0; }
+.atlas-abbr { margin-inline-start: 5px; font-size: .75rem; color: #755018; }
+.atlas-description { display: block; margin-block-start: 4px; font-size: .8rem; line-height: 1.5; color: #516278; }
+.atlas-flags { display: flex; flex-wrap: wrap; gap: 10px; margin-block-start: 12px; }
+.atlas-flags .flag { width: 28px; height: 21px; border-radius: 3px; object-fit: contain; }
+.atlas-map { position: relative; direction: ltr; align-self: stretch; min-block-size: 390px; }
+.atlas-map > img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.atlas-label { position: absolute; padding: 5px 10px; border: 1px solid #d5e1f2; border-radius: 7px; background: #ffffffed; color: #244d9b; font-size: .8rem; font-weight: 700; }
+.atlas-label-europe { inset-inline-start: 20%; top: 25%; }
+.atlas-label-gulf { inset-inline-end: 4%; bottom: 21%; color: #76501a; border-color: #e5d5b8; }
+.country-tile .country-flag-tile { width: 64px; height: 46px; border-radius: 10px; background: #f1f4f9; }
+.country-tile .country-flag-tile .flag { position: static; width: 40px; height: 30px; object-fit: contain; border-radius: 3px; box-shadow: 0 1px 3px #14243b1c; }
+@media (max-width: 700px) {
+  .region-atlas { padding-block: 24px 0; }
+  .atlas-panel { grid-template-columns: minmax(0, 1fr); border-radius: 18px; }
+  .atlas-copy { padding: 22px 20px 0; }
+  .atlas-map { min-block-size: 0; aspect-ratio: 600 / 510; margin: -4px 12px 4px; }
+  .atlas-region { padding: 14px; }
+  .atlas-flags { gap: 9px; }
 }
