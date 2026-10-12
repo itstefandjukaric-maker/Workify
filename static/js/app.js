@@ -1060,10 +1060,14 @@
   head.append(title, button(labels.close, "btn btn-outline btn-sm", function () { dialog.close(); }));
   var hint = el("p", "muted", labels.hint); hint.id = "comparison-hint";
   var scroll = el("div", "comparison-scroll"); scroll.tabIndex = 0; scroll.setAttribute("role", "region"); scroll.setAttribute("aria-label", labels.title);
-  dialog.append(head, hint, scroll); document.body.appendChild(dialog);
+  var controls = el("label", "comparison-filter"); var differenceOnly = document.createElement("input");
+  differenceOnly.type = "checkbox"; differenceOnly.addEventListener("change", drawTable);
+  controls.append(differenceOnly, el("span", "", labels.differences));
+  var same = el("p", "comparison-same", labels.same); same.hidden = true;
+  dialog.append(head, hint, controls, scroll, same); document.body.appendChild(dialog);
   dialog.addEventListener("close", function () { if (lastTrigger && lastTrigger.isConnected && !tray.hidden) lastTrigger.focus(); });
   function drawTable() {
-    scroll.replaceChildren(); var table = el("table", "comparison-table"), thead = el("thead"), header = el("tr");
+    scroll.replaceChildren(); var differences = 0; var table = el("table", "comparison-table" + (chosen.length === 3 ? " comparison-three" : "")), thead = el("thead"), header = el("tr");
     var field = el("th", "", labels.view); field.scope = "col"; header.appendChild(field);
     chosen.forEach(function (job) {
       var th = el("th"); th.scope = "col";
@@ -1074,10 +1078,14 @@
     });
     thead.appendChild(header); table.appendChild(thead); var body = el("tbody");
     (chosen[0] ? chosen[0].rows : []).forEach(function (row, i) {
-      var tr = el("tr"), label = el("th", "", row[0]); label.scope = "row"; tr.appendChild(label);
+      var values = chosen.map(function (job) { return job.rows[i] ? job.rows[i][1] : "—"; });
+      var different = new Set(values).size > 1; if (different) differences++;
+      var tr = el("tr", different ? "comparison-different" : ""); tr.hidden = differenceOnly.checked && !different;
+      var label = el("th", "", row[0]); label.scope = "row";
+      if (different) label.appendChild(el("span", "sr-only", " · " + labels.different)); tr.appendChild(label);
       chosen.forEach(function (job) { tr.appendChild(el("td", "", job.rows[i] ? job.rows[i][1] : "—")); }); body.appendChild(tr);
     });
-    table.appendChild(body); scroll.appendChild(table);
+    table.appendChild(body); scroll.appendChild(table); same.hidden = !differenceOnly.checked || differences > 0;
   }
   function sync() {
     tray.hidden = chosen.length === 0; document.body.classList.toggle("has-comparison", chosen.length > 0);
@@ -1127,4 +1135,42 @@
     else if (!valid(2)) event.preventDefault();
   });
   var error = form.querySelector(".has-error"); show(error && error.closest('[data-signup-step="2"]') ? 2 : 1, false);
+})();
+
+/* Galleries have distinct workplace/housing panels; all remain available without JavaScript. */
+(function () {
+  "use strict";
+  var gallery = document.querySelector('[data-job-gallery]'); if (!gallery) return;
+  var nav = gallery.querySelector('[data-gallery-tabs]');
+  var tabs = Array.from(nav.querySelectorAll('[data-gallery-target]'));
+  var panels = Array.from(gallery.querySelectorAll('[data-gallery-panel]'));
+  if (!tabs.length) return;
+  nav.hidden = false; nav.setAttribute('role', 'tablist');
+  function activate(id, focus) {
+    tabs.forEach(function (tab) { var active = tab.dataset.galleryTarget === id;
+      tab.setAttribute('aria-selected', String(active)); tab.tabIndex = active ? 0 : -1;
+      if (active && focus) tab.focus();
+    });
+    panels.forEach(function (panel) { panel.hidden = panel.id !== id;
+      if (panel.hidden) panel.querySelectorAll('video').forEach(function (v) { v.pause(); });
+    });
+  }
+  tabs.forEach(function (tab, i) {
+    tab.setAttribute('role','tab'); tab.setAttribute('aria-controls', tab.dataset.galleryTarget);
+    var panel = document.getElementById(tab.dataset.galleryTarget); panel.setAttribute('role','tabpanel'); panel.setAttribute('aria-labelledby', tab.id);
+    tab.addEventListener('click', function () { activate(tab.dataset.galleryTarget, false); });
+    tab.addEventListener('keydown', function (event) {
+      var next = i, rtl = document.documentElement.dir === 'rtl';
+      if (event.key === 'ArrowRight') next += rtl ? -1 : 1;
+      else if (event.key === 'ArrowLeft') next += rtl ? 1 : -1;
+      else if (event.key === 'Home') next = 0;
+      else if (event.key === 'End') next = tabs.length - 1;
+      else return;
+      event.preventDefault(); next = (next + tabs.length) % tabs.length; activate(tabs[next].dataset.galleryTarget, true);
+    });
+  });
+  function fromHash() { var id = location.hash.slice(1); if (panels.some(function (p) { return p.id === id; })) activate(id, false); }
+  activate(tabs[0].dataset.galleryTarget, false); fromHash();
+  window.addEventListener('hashchange', fromHash);
+  document.querySelectorAll('a[href^="#gallery-"]').forEach(function (link) { link.addEventListener('click', function () { activate(link.getAttribute('href').slice(1), false); }); });
 })();
