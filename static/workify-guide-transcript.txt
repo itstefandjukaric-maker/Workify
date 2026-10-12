@@ -1,29 +1,26 @@
-Workify · Video vodič za radnike
-Demo prikaz · BHS naracija i titlovi
+Workify — od profila do prve plate
+Glas u pozadini · stvarni demo ekrani · ilustrativne AI scene radnika
 
-Dobro došli u Workify
-Bolji posao počinje jasnim uslovima. U ovom vodiču prolazimo put od otvaranja profila do prvog radnog dana i prve plate. Gledate demo verziju Workify aplikacije. Prikazane osobe, firme, oglasi i datumi služe za primjer. Krenimo redom.
+Tražiš posao u Evropi ili Zaljevu? Hajde da zajedno prođemo kroz Workify, od otvaranja naloga do prvog radnog dana. Ovo je demo prikaz. Firme, profili i oglasi su izmišljeni, a prijave se ne šalju.
 
-1. Napravi nalog
-Na početnoj stranici izaberi besplatan nalog za radnika. Unesi svoje podatke i kontakt kojem imaš pristup, pa prati uputstva za potvrdu naloga. Koristi lozinku koju ne dijeliš s drugima. U javnom prikazu koji gledamo registracija se ne šalje. Ovaj ekran pokazuje kako je postupak zamišljen.
+Na početnoj stranici izaberi besplatan nalog za radnika. Upiši svoje ime i kontakt koji redovno koristiš. Postavi sigurnu lozinku i prati uputstva za potvrdu naloga. U ovom vodiču obrazac samo pokazujemo. Ne otvaramo pravi nalog.
 
-2. Uredi profil i dokumente
-U svom profilu navedi zanimanje, iskustvo, jezike i zemlje u kojima želiš raditi. Tačni podaci pomažu firmi da procijeni odgovara li ti posao. Zatim otvori Dokumente. Dodaj čitljiv životopis, a ostale dokumente samo kada su potrebni. Provjeri rok važenja i naziv svakog fajla. Postavljanje dokumenta na profil nije isto što i njegovo dijeljenje uz prijavu.
+Zatim uredi profil. Napiši čime se baviš, koliko iskustva imaš i koje jezike govoriš. Dodaj zemlje u kojima želiš raditi. Budi konkretan. Ako si električar, napiši koje poslove znaš samostalno raditi.
 
-3. Pronađi i uporedi posao
-Otvori oglase i suzi pretragu prema zanimanju, državi i drugim uslovima koji su ti važni. Možeš istražiti i mapu Evrope i Zaljeva. Sačuvaj zanimljive oglase ili ih uporedi. Nemoj gledati samo najveći iznos plate. Uporedi radno vrijeme, smještaj i troškove da bi razumio šta pojedina ponuda stvarno uključuje.
+U Dokumentima dodaj čitljiv životopis. Ostale dokumente priloži kada su potrebni i provjeri jesu li još važeći. Dokument sačuvan na profilu ne šalje se automatski svakoj firmi. Uz prijavu ti biraš šta dijeliš.
 
-4. Provjeri uslove i firmu
-Na stranici oglasa prvo pročitaj uslove. Da li je plata bruto ili neto? Koliko sati se radi i kako se plaća prekovremeni rad? Pogledaj šta pokriva poslodavac, a šta plaća radnik. Otvori fotografije radnog mjesta i smještaja, pa profil firme. Oznaka provjere nije garancija zaposlenja. Pročitaj šta je provjereno i kada.
+Sada otvori Poslove. Suzi pretragu prema zanimanju i državi. Na mapi možeš pogledati ponude u Evropi i Zaljevu. Zanimljive oglase sačuvaj ili uporedi. Pored plate, gledaj radno vrijeme, smještaj i troškove. Tako lakše vidiš koja ti ponuda odgovara.
 
-5. Pošalji prijavu
-Kada pronađeš odgovarajući oglas, otvori prijavu. Označi dokumente koje želiš podijeliti baš s tom firmom. Dodaj kratku poruku o svom iskustvu i provjeri saglasnost za dijeljenje. Prije slanja još jednom pročitaj oglas i svoj izbor dokumenata. U aktivnoj aplikaciji poslana prijava pojavljuje se među tvojim prijavama. U ovom demo prikazu ništa ne šaljemo.
+Otvori oglas i provjeri uslove. Je li plata bruto ili neto? Koliko sati se radi? Ko plaća smještaj i ostale troškove? Pogledaj fotografije i profil firme. Pročitaj šta je provjereno i kada. Sama oznaka provjere ne garantuje zaposlenje.
 
-6. Poruke i intervju
-U dijelu Moje prijave prati napredak svakog razgovora. Otvori prijavu da vidiš status i naredni korak. Poruke koristi da razjasniš platu, smjene, jezik rada i smještaj. Kada dobiješ termin intervjua, provjeri datum i vremensku zonu. Ako ti termin ne odgovara, predloži drugi. Odgovor firme i trajanje postupka mogu se razlikovati od oglasa do oglasa.
+Ako ti posao odgovara, otvori prijavu. Izaberi dokumente koje želiš podijeliti s tom firmom. Dodaj kratku poruku o svom iskustvu. Zatim provjeri podatke, dokumente i saglasnost za dijeljenje. U aktivnoj aplikaciji slijedi slanje prijave. Ovdje ništa ne šaljemo jer gledamo demo.
 
-7. Ugovor i radna dozvola
-Prije prihvatanja ponude uporedi ugovor sa uslovima iz oglasa. Provjeri naziv poslodavca, platu, sate rada, trajanje ugovora i eventualne odbitke. Traži objašnjenje svega što nije jasno. Zatim prati korake za vizu ili radnu dozvolu, zavisno od države i svog statusa. Datumi u aplikaciji mogu biti procjene. Ne rezerviši put oslanjajući se samo na procijenjeni rok.
+U dijelu Moje prijave vidiš status i naredni korak. Otvori prijavu i razgovor s firmom. Pitaj sve što ti nije jasno: kakve su smjene, koji je jezik rada i šta tačno uključuje smještaj. Za primjere narednih koraka koristimo već pripremljene demo prijave.
 
-8. Put, prvi dan i plata
-Prije puta prođi kontrolnu listu: dokumenti, potvrđen smještaj, adresa dolaska i kontakt osobe koja te dočekuje. Dogovori prvi radni dan i sačuvaj kopiju ugovora. Kada počneš raditi, vodi evidenciju sati i provjeri prvu obračunatu platu. Workify je besplatan za radnike. Ako neko traži naknadu za dobijanje posla, prijavi zahtjev. Jasni uslovi, pripremljeni dokumenti i pitanja na vrijeme olakšavaju svaki sljedeći korak.
+Kada dobiješ poziv na intervju, provjeri datum, vrijeme i vremensku zonu. Ako ti termin ne odgovara, predloži drugi. Pripremi nekoliko pitanja i ukratko objasni svoje iskustvo.
+
+Prije prihvatanja ponude uporedi ugovor s oglasom. Provjeri poslodavca, platu, sate rada i moguće odbitke. Ako nešto nije jasno, traži objašnjenje prije potpisivanja. Zatim prati postupak za vizu ili radnu dozvolu. Prikazani rokovi mogu biti procjene, zato ne rezerviši put samo na osnovu njih.
+
+Pred put prođi kontrolnu listu. Provjeri dokumente, smještaj, adresu i kontakt osobe koja te dočekuje. Dogovori prvi radni dan i sačuvaj ugovor. Kada počneš raditi, bilježi sate i provjeri prvu platu.
+
+I zapamti: Workify je besplatan za radnike. Ako neko traži da platiš kako bi dobio posao, prijavi to. Kreni od svog profila, pažljivo provjeri ponudu i pitaj na vrijeme. Tvoj sljedeći korak može početi ovdje.
