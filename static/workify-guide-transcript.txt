@@ -1,7 +1,8 @@
 Workify — od prijave do prvog radnog dana
-45 sekundi · BHS naracija · ljudi i paralelni prikaz sajta
-Ljudi su AI ilustracije. Prikazi su sa stvarnog demo sajta, sa izmišljenim podacima.
-Prikazani su primjeri različitih ekrana, ne snimak jedne stvarne prijave.
+45 sekundi · BHS · Workify na računaru i telefonu
+Ilustrativne AI scene ljudi i stvarni snimci demo sajta, uklopljeni u ekrane uređaja.
+Prikazani su primjeri različitih ekrana, ne jedna stvarna prijava.
+Demo podaci su izmišljeni. Nalozi, dokumenti i prijave nisu slani.
 
 Tražiš posao? Pogledaj kako ide.
 Napravi besplatan nalog i dodaj svoje iskustvo i dokumente.
