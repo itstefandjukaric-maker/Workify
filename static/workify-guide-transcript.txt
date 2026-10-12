@@ -1,14 +1,15 @@
-Workify — tvoj sljedeći korak
-54 sekunde · BHS naracija · ilustrativne AI scene ljudi
-Ljudi i situacije su ilustracije, a ne svjedočanstva stvarnih korisnika.
+Workify — od prijave do prvog radnog dana
+45 sekundi · BHS naracija · ljudi i paralelni prikaz sajta
+Ljudi su AI ilustracije. Prikazi su sa stvarnog demo sajta, sa izmišljenim podacima.
+Prikazani su primjeri različitih ekrana, ne snimak jedne stvarne prijave.
 
-Tražiš posao u Evropi ili Zaljevu? Kreni od svog profila.
-Napravi besplatan nalog. Dodaj iskustvo, jezike i dokumente.
-Zatim pogledaj ponude. Kolika je plata? Gdje se stanuje? Ko plaća smještaj?
-Kad nađeš posao koji ti odgovara, izaberi dokumente i pošalji prijavu.
-Stigla je poruka? Tu dogovaraš razgovor i pitaš sve što te zanima.
-Prije potpisa, pročitaj ugovor. Provjeri platu, radno vrijeme i troškove. Nešto nije jasno? Pitaj.
-Kad su ugovor i potrebne dozvole spremni, dogovori put i dolazak.
-Provjeri adresu smještaja i sačuvaj kontakt osobe koja te dočekuje.
-Od prvog dana prati svoje sate i provjeri prvu platu.
-Za radnike je Workify besplatan. Tvoj posao. Tvoj sljedeći korak.
+Tražiš posao? Pogledaj kako ide.
+Napravi besplatan nalog i dodaj svoje iskustvo i dokumente.
+Pogledaj oglase. Uporedi platu, smještaj i uslove rada.
+Kad nađeš odgovarajući posao, izaberi dokumente i pošalji prijavu.
+U porukama dogovori razgovor i pitaj sve što ti nije jasno.
+Pročitaj ugovor prije potpisa. Provjeri platu, radno vrijeme i troškove.
+Kad su papiri spremni, dogovori put i dolazak.
+Sačuvaj adresu smještaja i broj osobe koja te dočekuje.
+Na poslu prati svoje sate i provjeri prvu platu.
+Workify je za radnike besplatan. Srećno na novom poslu!
