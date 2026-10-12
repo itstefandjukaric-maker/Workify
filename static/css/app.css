@@ -3568,3 +3568,80 @@ a.small:not(.btn) { padding-block: 11px; margin-block: -11px; }
   .atlas-region { padding: 14px; }
   .atlas-flags { gap: 9px; }
 }
+
+/* Consistent type and easier job discovery. */
+:root { --font-display: var(--font); }
+h1, .h1, .h2, .section-title, .page-hero-title, .fee-title, .dest-title { font-family: var(--font); font-weight: 700; letter-spacing: -.035em; line-height: 1.15; }
+.page-hero-title { font-size: clamp(1.9rem, 3.6vw, 2.65rem); }
+.section-title { font-size: clamp(1.6rem, 2.8vw, 2.15rem); }
+.jc-pay, .jl-pay { font-family: var(--font); letter-spacing: -.025em; font-weight: 750; }
+.jc-pay { font-size: clamp(1.25rem, 2vw, 1.55rem); }
+.job-card { display: flex; flex-direction: column; }
+.jc-media { aspect-ratio: 16 / 10; }
+.jc-body { flex: 1; }
+.jc-title { min-block-size: 2.6em; line-height: 1.3; }
+.jc-hours { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: .82rem; }
+.job-compare { display: flex; align-items: center; justify-content: center; gap: 7px; min-block-size: 42px; padding: 9px 14px; border: 1px solid var(--line); border-radius: 9px; background: var(--surface); color: var(--link); font: inherit; font-size: .85rem; font-weight: 650; cursor: pointer; }
+.job-card > .job-compare { margin: 0 18px 18px; }
+.job-compare:hover, .job-compare[aria-pressed="true"] { background: var(--blue-soft); border-color: var(--blue); color: var(--blue-strong); }
+.job-compare:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.job-line > .job-compare { grid-column: 1 / -1; justify-self: end; }
+.country-more { margin-block-start: 18px; }
+.country-more > summary { width: fit-content; min-block-size: 44px; padding: 10px 15px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--link); cursor: pointer; font-weight: 600; }
+.country-more[open] > summary { margin-block-end: 16px; }
+.country-follow { display: flex; align-items: center; gap: 5px; color: var(--link); font-size: .78rem; margin-block-start: 5px; }
+.advanced-search { flex-basis: 100%; width: 100%; border-block-start: 1px solid var(--line); padding-block-start: 10px; }
+.advanced-search > summary { display: flex; align-items: center; gap: 8px; min-block-size: 42px; font-size: .88rem; color: var(--link); cursor: pointer; }
+.advanced-search > summary::after { content: "+"; margin-inline-start: auto; font-size: 1.25rem; }
+.advanced-search[open] > summary::after { content: "−"; }
+.advanced-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; padding-block: 14px 8px; }
+.advanced-grid .field { margin: 0; }
+.advanced-grid label { display: block; margin-block-end: 6px; font-size: .8rem; line-height: 1.4; }
+.advanced-grid input, .advanced-grid select { width: 100%; min-inline-size: 0; min-block-size: 44px; }
+.signup-hint { padding: 10px 12px; background: var(--blue-soft); color: var(--blue-strong); border-radius: 9px; font-size: .84rem; line-height: 1.5; }
+.signup-progress { display: flex; gap: 10px; list-style: none; padding: 0; margin: 20px 0; }
+.signup-progress li { display: flex; flex: 1; align-items: center; gap: 8px; color: var(--muted); font-size: .88rem; }
+.signup-progress b { display: grid; place-items: center; width: 28px; height: 28px; flex-shrink: 0; border-radius: 50%; background: var(--grey-soft); }
+.signup-progress [aria-current="step"] { color: var(--blue-strong); font-weight: 650; }
+.signup-progress [aria-current="step"] b { background: var(--blue); color: white; }
+.signup-step { border: 0; margin: 0; padding: 0; min-inline-size: 0; display: grid; gap: 16px; }
+.comparison-tray { position: fixed; z-index: 70; inset-inline: 16px; bottom: calc(14px + env(safe-area-inset-bottom)); max-inline-size: 1100px; margin-inline: auto; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 16px 20px; border: 1px solid #cddcf8; border-radius: 16px; background: #fff; color: #12223b; box-shadow: 0 10px 45px #0b172b38; }
+.comparison-tray-copy { min-inline-size: 0; display: grid; gap: 4px; }
+.comparison-names { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .8rem; color: #526078; }
+.comparison-actions { display: flex; gap: 10px; flex-shrink: 0; }
+.has-comparison { padding-block-end: 130px; }
+.comparison-status { position: fixed; z-index: 90; inset-inline: 20px; bottom: 125px; max-inline-size: 460px; margin-inline: auto; padding: 13px 16px; border-radius: 10px; color: #fff; background: #152b4a; box-shadow: 0 8px 30px #0003; }
+.comparison-dialog { width: min(1100px, calc(100% - 24px)); max-height: 90dvh; margin: auto; padding: 24px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); color: var(--ink); box-shadow: 0 25px 90px #0005; }
+.comparison-dialog::backdrop { background: #081326bb; }
+.comparison-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-block-end: 10px; }
+.comparison-head h2 { margin: 0; font-size: 1.5rem; letter-spacing: -.025em; }
+.comparison-scroll { overflow: auto; border: 1px solid var(--line); border-radius: 12px; }
+.comparison-table { width: 100%; min-inline-size: 680px; border-collapse: collapse; font-size: .88rem; }
+.comparison-table th, .comparison-table td { padding: 15px; border-block-end: 1px solid var(--line); border-inline-end: 1px solid var(--line); vertical-align: top; text-align: start; white-space: normal; }
+.comparison-table th:first-child { width: 19%; min-inline-size: 140px; background: #f3f6fb; color: #384b66; }
+.comparison-table thead { background: var(--blue-soft); }
+.comparison-table td { min-inline-size: 210px; line-height: 1.55; }
+.comparison-table tbody tr:nth-child(2) td { color: var(--blue-strong); font-weight: 700; }
+.comparison-job-title { display: block; font-size: 1rem; line-height: 1.4; }
+.comparison-agency { display: block; margin-block: 8px; color: var(--muted); font-size: .78rem; font-weight: 500; }
+@media (max-width: 700px) {
+  .landing .hero-people.photo-band { --strip: min(58vw, 320px); }
+  .landing .hero-people .hero-title { font-size: clamp(1.85rem, 7.5vw, 2.3rem); }
+  .landing .jobs-section { padding-block: 26px; }
+  .atlas-panel { grid-template-columns: minmax(0, 1fr); }
+  .atlas-copy { padding: 20px; }
+  .atlas-region { padding: 12px 14px; }
+  .atlas-map { width: min(100%, 360px); margin: -12px auto 0; aspect-ratio: 600 / 510; }
+  .advanced-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .comparison-tray { inset-inline: 10px; padding: 12px; gap: 10px; flex-direction: column; align-items: stretch; }
+  .comparison-tray-copy { font-size: .9rem; }
+  .comparison-actions { justify-content: flex-end; }
+  .comparison-actions .btn { padding: 9px 12px; min-block-size: 42px; }
+  .comparison-dialog { padding: 16px; }
+  .comparison-head h2 { font-size: 1.22rem; }
+  .comparison-status { bottom: 150px; }
+}
+.jobs-split.preview-filtered { grid-template-columns: minmax(0,1fr); }
+.preview-reset { align-self: center; }
+.advanced-search { grid-column: 1 / -1; }
+.has-comparison .assist { bottom: calc(135px + env(safe-area-inset-bottom, 0px)); }
