@@ -2051,7 +2051,7 @@ a.stat:hover { border-color: var(--blue); }
 .detail-place { display: inline-flex; align-items: center; gap: 8px; }
 .detail-place .flag { border-radius: 3px; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.18); }
 .detail-place strong { color: #fff; }
-.fact-net, .apply-net { display: block; margin-top: 4px; color: var(--turq); font-size: 13px; font-weight: 600; }
+.fact-net, .apply-net { display: block; margin-top: 4px; color: #146b57; font-size: 13px; font-weight: 600; }
 .apply-net { margin: -4px 0 12px; }
 .fact-home, .apply-home { display: block; margin-top: 4px; color: var(--ink-2); font-size: 13px; }
 .apply-home { margin: -4px 0 12px; }
@@ -3709,3 +3709,7 @@ h1, .h1, .h2, .section-title, .page-hero-title, .fee-title, .dest-title { font-f
   .comparison-agency { font-size: .74rem; }
   .has-comparison .mobile-filter-dock { bottom: calc(150px + env(safe-area-inset-bottom, 0px)); }
 }
+
+.gallery-separated .gallery-item:only-child { flex-basis: 100%; }
+.gallery-separated .gallery-item:only-child img { aspect-ratio: 21 / 9; max-block-size: 480px; }
+@media (max-width: 640px) { .gallery-separated .gallery-item:only-child img { aspect-ratio: 16 / 10; } }
