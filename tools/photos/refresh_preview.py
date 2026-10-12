@@ -62,7 +62,7 @@ def main():
         text = re.sub(r'<section class="explainer".*?</section>', static_steps, text, flags=re.S)
         text = text.replace('static/img/pictures/error.png', 'static/img/pictures/error.jpg')
         # A release query refreshes existing marketing image paths and the stylesheet.
-        text = re.sub(r'(static/img/pictures/[\w-]+\.jpg)(?:\?[^\s,"<>]*)?', r'\1?v=real-photos-14', text)
+        text = re.sub(r'(static/img/pictures/[\w-]+\.jpg)(?:\?[^\s,"<>]*)?', r'\1?v=europe-15', text)
 
         if text != before:
             path.write_text(text)
