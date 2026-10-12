@@ -3,16 +3,16 @@
   "notice": "Licensed stock photographs used as examples, not photographs of the fictional employers, their housing, or Workify customers. No endorsement implied.",
   "photos": {
     "truck": {
-      "id": 5410923,
-      "subject": "European articulated truck with trailer",
-      "page": "https://www.pexels.com/photo/a-trailer-truck-on-the-road-5410923/",
-      "url": "https://images.pexels.com/photos/5410923/pexels-photo-5410923.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "id": 34222001,
+      "subject": "Truck driver beside a European Volvo truck",
+      "page": "https://www.pexels.com/photo/truck-driver-walking-near-volvo-truck-in-industrial-area-34222001/",
+      "url": "https://images.pexels.com/photos/34222001/pexels-photo-34222001.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     "courier": {
-      "id": 15854356,
-      "subject": "Motorcycle delivery rider",
-      "page": "https://www.pexels.com/photo/pizza-delivery-man-on-scooter-on-street-15854356/",
-      "url": "https://images.pexels.com/photos/15854356/pexels-photo-15854356.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "id": 34385575,
+      "subject": "Motorcycle courier delivering parcels in daylight",
+      "page": "https://www.pexels.com/photo/courier-on-scooter-delivering-packages-in-urban-setting-34385575/",
+      "url": "https://images.pexels.com/photos/34385575/pexels-photo-34385575.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     "electrical": {
       "id": 34054475,
@@ -45,16 +45,16 @@
       "url": "https://images.pexels.com/photos/2544829/pexels-photo-2544829.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     "housekeeping": {
-      "id": 9462743,
-      "subject": "Housekeeper making a bed",
-      "page": "https://www.pexels.com/photo/housekeeper-changing-bedding-in-hotel-room-9462743/",
-      "url": "https://images.pexels.com/photos/9462743/pexels-photo-9462743.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "id": 9462786,
+      "subject": "Hotel housekeeping team making a bed",
+      "page": "https://www.pexels.com/photo/two-women-making-the-bed-9462786/",
+      "url": "https://images.pexels.com/photos/9462786/pexels-photo-9462786.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     "pool": {
-      "id": 30546817,
-      "subject": "Pool maintenance worker",
-      "page": "https://www.pexels.com/photo/monochrome-scene-of-pool-maintenance-worker-30546817/",
-      "url": "https://images.pexels.com/photos/30546817/pexels-photo-30546817.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "id": 17650007,
+      "subject": "Bright hotel swimming pool and maintenance setting",
+      "page": "https://www.pexels.com/photo/swimming-pool-in-resort-17650007/",
+      "url": "https://images.pexels.com/photos/17650007/pexels-photo-17650007.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     "construction": {
       "id": 32141074,
@@ -81,10 +81,10 @@
       "url": "https://images.pexels.com/photos/29372727/pexels-photo-29372727.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     "furniture": {
-      "id": 32357249,
-      "subject": "Carpenter operating woodworking machinery",
-      "page": "https://www.pexels.com/photo/carpenter-working-with-wood-in-workshop-32357249/",
-      "url": "https://images.pexels.com/photos/32357249/pexels-photo-32357249.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "id": 6790977,
+      "subject": "Carpenter using woodworking tools with hearing protection",
+      "page": "https://www.pexels.com/photo/carpenter-working-on-a-piece-of-wood-6790977/",
+      "url": "https://images.pexels.com/photos/6790977/pexels-photo-6790977.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     "factory": {
       "id": 19233057,
@@ -99,16 +99,16 @@
       "url": "https://images.pexels.com/photos/29319112/pexels-photo-29319112.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     "room_shared": {
-      "id": 5137980,
-      "subject": "Shared room with bunk beds",
-      "page": "https://www.pexels.com/photo/a-room-in-a-hostel-5137980/",
-      "url": "https://images.pexels.com/photos/5137980/pexels-photo-5137980.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "id": 28054887,
+      "subject": "Bright shared bedroom with two separate beds",
+      "page": "https://www.pexels.com/photo/28054887/",
+      "url": "https://images.pexels.com/photos/28054887/pexels-photo-28054887.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     "room_private": {
-      "id": 16197244,
-      "subject": "Bedroom interior",
-      "page": "https://www.pexels.com/photo/interior-design-of-hotel-bedroom-16197244/",
-      "url": "https://images.pexels.com/photos/16197244/pexels-photo-16197244.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "id": 37184183,
+      "subject": "Bright contemporary bedroom with natural daylight",
+      "page": "https://www.pexels.com/photo/37184183/",
+      "url": "https://images.pexels.com/photos/37184183/pexels-photo-37184183.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     "kitchen_home": {
       "id": 6032225,
@@ -145,10 +145,34 @@
       "subject": "Traveller at an airport",
       "page": "https://www.pexels.com/photo/traveler-with-luggage-at-airport-terminal-32176403/",
       "url": "https://images.pexels.com/photos/32176403/pexels-photo-32176403.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "europe_berlin": {
+      "id": 37079773,
+      "subject": "Berlin skyline and Spree river in daylight",
+      "page": "https://www.pexels.com/photo/berlin-cityscape-with-tv-tower-and-spree-river-37079773/",
+      "url": "https://images.pexels.com/photos/37079773/pexels-photo-37079773.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "europe_poland": {
+      "id": 4831055,
+      "subject": "Wroclaw old town square in Poland",
+      "page": "https://www.pexels.com/photo/pastel-coloured-old-town-and-blue-sky-4831055/",
+      "url": "https://images.pexels.com/photos/4831055/pexels-photo-4831055.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "europe_netherlands": {
+      "id": 30309074,
+      "subject": "Amsterdam canal in daylight",
+      "page": "https://www.pexels.com/photo/scenic-amsterdam-canal-with-boats-on-a-sunny-day-30309074/",
+      "url": "https://images.pexels.com/photos/30309074/pexels-photo-30309074.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    "europe_croatia": {
+      "id": 33189439,
+      "subject": "Coastal town and harbour in Croatia",
+      "page": "https://www.pexels.com/photo/picturesque-rovinj-harbor-with-boats-and-village-33189439/",
+      "url": "https://images.pexels.com/photos/33189439/pexels-photo-33189439.jpeg?auto=compress&cs=tinysrgb&w=1600"
     }
   },
   "marketing": {
-    "workers": "team",
+    "workers": "europe_berlin",
     "employers": "interview",
     "register": "interview",
     "how-1-interview": "interview",
@@ -160,8 +184,12 @@
     "guide-contract-checklist": "contract",
     "guide-before-you-fly": "travel",
     "guide-rights-in-the-gulf": "team",
-    "guide-working-in-europe": "truck",
-    "error": "warehouse"
+    "guide-working-in-europe": "europe_berlin",
+    "error": "warehouse",
+    "europe-de": "europe_berlin",
+    "europe-pl": "europe_poland",
+    "europe-nl": "europe_netherlands",
+    "europe-hr": "europe_croatia"
   },
   "jobs": {
     "dxb_electrician": {
