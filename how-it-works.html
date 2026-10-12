@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="static/css/preview.css">
   <script src="static/js/preview.js" defer></script>
   <script src="static/js/app.js?v=refine-21" defer></script>
-</head>
+<link rel="stylesheet" href="static/video-guide.css"><script src="static/video-guide.js" defer></script></head>
 <body class="" data-locale="bs">
   <a class="skip-link" href="#main">Preskoči na sadržaj</a>
 <div class="demo-banner pv-bar" role="note"><span class="pv-text">Pregled dizajna. Sve firme, osobe i oglasi su izmišljeni.</span><nav class="pv-links" aria-label="Pregled"><a href="index.html">Sajt</a><a href="w-home.html">Aplikacija za radnike</a><a href="a-dashboard.html">Konzola za agencije</a><a class="pv-lang" href="en-how-it-works.html" lang="en">English</a></nav></div><header class="topbar">
@@ -103,6 +103,27 @@
     </div>
   </section>
 <div class="wrap page">
+<section class="video-guide" id="video-guide" aria-labelledby="video-guide-title">
+  <header class="video-guide-heading"><div><h2 id="video-guide-title">Video vodič za radnike</h2><p>Stvarni prikazi aplikacije, naracija i titlovi na BHS jeziku.</p></div><span class="badge">3:58 · BHS</span></header>
+  <p class="small muted">Demo verzija: sve firme, osobe i oglasi ovdje su izmišljeni.</p>
+  <video id="worker-guide-video" class="workify-tutorial" controls playsinline preload="metadata" poster="static/workify-guide-poster.jpg" aria-label="Video vodič za radnike" aria-describedby="video-guide-note" tabindex="0">
+    <source src="static/workify-guide-bhs.mp4" type="video/mp4">
+    <track kind="chapters" src="static/workify-guide-chapters.vtt" srclang="bs" label="BHS">
+    <a href="static/workify-guide-bhs.mp4">Preuzmi video</a>
+  </video>
+  <nav class="video-chapters" aria-label="Izaberi poglavlje">
+    <a href="static/workify-guide-bhs.mp4#t=21.401" data-video-time="21.401"><time>0:21</time><span>Napravi nalog</span></a>
+    <a href="static/workify-guide-bhs.mp4#t=42.186" data-video-time="42.186"><time>0:42</time><span>Moj profil</span></a>
+    <a href="static/workify-guide-bhs.mp4#t=70.066" data-video-time="70.066"><time>1:10</time><span>Pronađi pravi posao</span></a>
+    <a href="static/workify-guide-bhs.mp4#t=94.974" data-video-time="94.974"><time>1:34</time><span>Šta je provjereno</span></a>
+    <a href="static/workify-guide-bhs.mp4#t=119.116" data-video-time="119.116"><time>1:59</time><span>Prijava na oglas</span></a>
+    <a href="static/workify-guide-bhs.mp4#t=144.613" data-video-time="144.613"><time>2:24</time><span>Dopisuj se i obavi intervju</span></a>
+    <a href="static/workify-guide-bhs.mp4#t=171.986" data-video-time="171.986"><time>2:51</time><span>Viza i radna dozvola</span></a>
+    <a href="static/workify-guide-bhs.mp4#t=201.834" data-video-time="201.834"><time>3:21</time><span>Počni raditi i primi platu</span></a>
+  </nav>
+  <p id="video-guide-note" class="small muted">Broj dana za svaki korak je procjena agencije i prikazan je na svakom oglasu. Ambasade mogu trajati duže.</p>
+  <div class="video-downloads"><a href="static/workify-guide-bhs.mp4" download>Preuzmi video (MP4)</a><a href="static/workify-guide-bhs.vtt" download>Preuzmi titlove (VTT)</a><a href="static/workify-guide-transcript.txt">Pročitaj transkript</a></div>
+</section>
   <ol class="how-steps how-static">
       <li class="how-step">
         <span class="how-num" aria-hidden="true">1</span>
@@ -174,7 +195,7 @@
 <a class="card" href="prize.html"><span class="badge">Nagradna igra</span><h3>Workify welcome draw</h3><p>A new smartphone (worth about 250 EUR)</p><span>do 05.11.2026.</span></a>  <aside class="sponsor-card tail-card">
     <span class="sponsor-label"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 10v4a1 1 0 0 0 1 1h2.5l7 4V5l-7 4H5a1 1 0 0 0-1 1z"/><path d="m8 15 1.2 4.5"/><path d="M18 9.5a3 3 0 0 1 0 5"/></svg>Sponzorisano</span>
     <div class="sponsor-body">
-<img class="sponsor-logo" src="media/863de34fdbaa3dc30801b435159ef7c0-sm.jpg" alt="" width="64" height="64" loading="lazy">      <div>
+<img class="sponsor-logo" src="media/6dac5daf5bb96a965b2a4d5751337d8b-xs.jpg" alt="" width="64" height="64" loading="lazy">      <div>
         <p class="sponsor-name">HomeSend Remittance (demo)</p>
 <p class="sponsor-tagline">Send money home from the Gulf and Europe with low, clear fees.</p>      </div>
     </div>
@@ -227,7 +248,7 @@
       <p class="footer-copy">© 2026 Workify</p>
     </div>
   </div>
-</footer><div class="assist" data-assistant data-faq-url="assistant-faq.json" data-ask-url="#" data-ai="0" data-csrf="3hknKNNzr5spIE4RBr95ucWANnBd7lZCexQ7QWnHtrw" data-speech-lang="bs" data-label-wait="Tražim odgovor…" data-label-read="Pročitaj naglas" data-error="Odgovor se nije mogao učitati. Provjeri internet i pokušaj ponovo." data-ai-note="Odgovor AI-ja može biti pogrešan. Za svoj slučaj pitaj agenciju u chatu.">
+</footer><div class="assist" data-assistant data-faq-url="assistant-faq.json" data-ask-url="#" data-ai="0" data-csrf="a4fr1fYTZZnlubedzRuIv3GN7NWnvMS0uDrIDKa0tDg" data-speech-lang="bs" data-label-wait="Tražim odgovor…" data-label-read="Pročitaj naglas" data-error="Odgovor se nije mogao učitati. Provjeri internet i pokušaj ponovo." data-ai-note="Odgovor AI-ja može biti pogrešan. Za svoj slučaj pitaj agenciju u chatu.">
   <button class="assist-fab" type="button" data-assist-open aria-expanded="false" aria-controls="assist-panel">
     <span class="assist-fab-icon"><svg class="icon " width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/><path d="m12 7.8 1 2.3 2.3 1-2.3 1-1 2.3-1-2.3-2.3-1 2.3-1z"/></svg></span><span class="assist-fab-label">Pitaj</span>
   </button>
