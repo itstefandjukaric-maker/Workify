@@ -1,243 +1,96 @@
 1
-00:00:00,000 --> 00:00:02,440
+00:00:00,350 --> 00:00:02,890
 Tražiš posao u Evropi ili Zaljevu?
 
 2
-00:00:02,920 --> 00:00:07,502
-Hajde da zajedno prođemo kroz Workify, od otvaranja naloga do prvog
+00:00:03,310 --> 00:00:04,550
+Kreni od svog profila.
 
 3
-00:00:07,502 --> 00:00:08,380
-radnog dana.
+00:00:04,910 --> 00:00:06,550
+Napravi besplatan nalog.
 
 4
-00:00:08,980 --> 00:00:10,280
-Ovo je demo prikaz.
+00:00:06,910 --> 00:00:09,510
+Dodaj iskustvo, jezike i dokumente.
 
 5
-00:00:10,720 --> 00:00:14,420
-Firme, profili i oglasi su izmišljeni, a prijave se ne šalju.
+00:00:09,870 --> 00:00:11,510
+Zatim pogledaj ponude.
 
 6
-00:00:15,100 --> 00:00:18,460
-Na početnoj stranici izaberi besplatan nalog za radnika.
+00:00:11,890 --> 00:00:12,890
+Kolika je plata?
 
 7
-00:00:19,100 --> 00:00:22,100
-Upiši svoje ime i kontakt koji redovno koristiš.
+00:00:13,170 --> 00:00:14,170
+Gdje se stanuje?
 
 8
-00:00:22,620 --> 00:00:26,420
-Postavi sigurnu lozinku i prati uputstva za potvrdu naloga.
+00:00:14,530 --> 00:00:15,850
+Ko plaća smještaj?
 
 9
-00:00:26,420 --> 00:00:29,860
-U ovom vodiču obrazac samo pokazujemo.
+00:00:16,430 --> 00:00:20,230
+Kad nađeš posao koji ti odgovara, izaberi dokumente i pošalji
 
 10
-00:00:30,160 --> 00:00:31,740
-Ne otvaramo pravi nalog.
+00:00:20,230 --> 00:00:20,910
+prijavu.
 
 11
-00:00:32,360 --> 00:00:34,140
-Zatim uredi profil.
+00:00:21,190 --> 00:00:22,170
+Stigla je poruka?
 
 12
-00:00:34,700 --> 00:00:39,230
-Napiši čime se baviš, koliko iskustva imaš i koje jezike govoriš.
+00:00:22,830 --> 00:00:25,750
+Tu dogovaraš razgovor i pitaš sve što te zanima.
 
 13
-00:00:40,080 --> 00:00:42,040
-Dodaj zemlje u kojima želiš raditi.
+00:00:26,210 --> 00:00:28,330
+Prije potpisa, pročitaj ugovor.
 
 14
-00:00:42,660 --> 00:00:43,500
-Budi konkretan.
+00:00:28,590 --> 00:00:31,330
+Provjeri platu, radno vrijeme i troškove.
 
 15
-00:00:43,940 --> 00:00:47,960
-Ako si električar, napiši koje poslove znaš samostalno raditi.
+00:00:31,710 --> 00:00:32,810
+Nešto nije jasno?
 
 16
-00:00:48,640 --> 00:00:51,320
-U Dokumentima dodaj čitljiv životopis.
+00:00:32,970 --> 00:00:33,570
+Pitaj.
 
 17
-00:00:51,940 --> 00:00:56,680
-Ostale dokumente priloži kada su potrebni i provjeri jesu li još važeći.
+00:00:34,130 --> 00:00:37,810
+Kad su ugovor i potrebne dozvole spremni, dogovori put i
 
 18
-00:00:57,240 --> 00:01:01,240
-Dokument sačuvan na profilu ne šalje se automatski svakoj firmi.
+00:00:37,810 --> 00:00:38,490
+dolazak.
 
 19
-00:01:01,860 --> 00:01:03,760
-Uz prijavu ti biraš šta dijeliš.
+00:00:38,750 --> 00:00:42,310
+Provjeri adresu smještaja i sačuvaj kontakt osobe koja te
 
 20
-00:01:04,160 --> 00:01:06,060
-Sada otvori Poslove.
+00:00:42,310 --> 00:00:43,030
+dočekuje.
 
 21
-00:01:06,800 --> 00:01:09,080
-Suzi pretragu prema zanimanju i državi.
+00:00:43,450 --> 00:00:47,010
+Od prvog dana prati svoje sate i provjeri prvu platu.
 
 22
-00:01:09,700 --> 00:01:12,720
-Na mapi možeš pogledati ponude u Evropi i Zaljevu.
+00:00:47,430 --> 00:00:49,390
+Za radnike je Workify besplatan.
 
 23
-00:01:13,360 --> 00:01:16,020
-Zanimljive oglase sačuvaj ili uporedi.
+00:00:49,730 --> 00:00:50,670
+Tvoj posao.
 
 24
-00:01:16,600 --> 00:01:20,260
-Pored plate, gledaj radno vrijeme, smještaj i troškove.
+00:00:50,870 --> 00:00:52,230
+Tvoj sljedeći korak.
 
-25
-00:01:20,260 --> 00:01:23,320
-Tako lakše vidiš koja ti ponuda odgovara.
-
-26
-00:01:23,880 --> 00:01:26,040
-Otvori oglas i provjeri uslove.
-
-27
-00:01:26,640 --> 00:01:28,640
-Je li plata bruto ili neto?
-
-28
-00:01:29,280 --> 00:01:30,500
-Koliko sati se radi?
-
-29
-00:01:31,180 --> 00:01:33,580
-Ko plaća smještaj i ostale troškove?
-
-30
-00:01:34,280 --> 00:01:36,580
-Pogledaj fotografije i profil firme.
-
-31
-00:01:37,220 --> 00:01:39,180
-Pročitaj šta je provjereno i kada.
-
-32
-00:01:39,900 --> 00:01:42,740
-Sama oznaka provjere ne garantuje zaposlenje.
-
-33
-00:01:43,300 --> 00:01:46,020
-Ako ti posao odgovara, otvori prijavu.
-
-34
-00:01:46,580 --> 00:01:49,360
-Izaberi dokumente koje želiš podijeliti s tom firmom.
-
-35
-00:01:50,260 --> 00:01:52,380
-Dodaj kratku poruku o svom iskustvu.
-
-36
-00:01:53,020 --> 00:01:56,920
-Zatim provjeri podatke, dokumente i saglasnost za dijeljenje.
-
-37
-00:01:57,580 --> 00:02:00,140
-U aktivnoj aplikaciji slijedi slanje prijave.
-
-38
-00:02:00,800 --> 00:02:03,220
-Ovdje ništa ne šaljemo jer gledamo demo.
-
-39
-00:02:03,920 --> 00:02:07,100
-U dijelu Moje prijave vidiš status i naredni korak.
-
-40
-00:02:07,740 --> 00:02:09,980
-Otvori prijavu i razgovor s firmom.
-
-41
-00:02:10,620 --> 00:02:15,320
-Pitaj sve što ti nije jasno: kakve su smjene, koji je jezik rada i
-
-42
-00:02:15,320 --> 00:02:17,060
-šta tačno uključuje smještaj.
-
-43
-00:02:17,060 --> 00:02:21,440
-Za primjere narednih koraka koristimo već pripremljene demo prijave.
-
-44
-00:02:22,080 --> 00:02:26,200
-Kada dobiješ poziv na intervju, provjeri datum, vrijeme i vremensku
-
-45
-00:02:26,200 --> 00:02:26,820
-zonu.
-
-46
-00:02:27,280 --> 00:02:29,900
-Ako ti termin ne odgovara, predloži drugi.
-
-47
-00:02:30,560 --> 00:02:34,240
-Pripremi nekoliko pitanja i ukratko objasni svoje iskustvo.
-
-48
-00:02:34,820 --> 00:02:38,040
-Prije prihvatanja ponude uporedi ugovor s oglasom.
-
-49
-00:02:38,580 --> 00:02:43,100
-Provjeri poslodavca, platu, sate rada i moguće odbitke.
-
-50
-00:02:43,630 --> 00:02:47,480
-Ako nešto nije jasno, traži objašnjenje prije potpisivanja.
-
-51
-00:02:48,000 --> 00:02:51,480
-Zatim prati postupak za vizu ili radnu dozvolu.
-
-52
-00:02:52,080 --> 00:02:56,420
-Prikazani rokovi mogu biti procjene, zato ne rezerviši put samo na
-
-53
-00:02:56,420 --> 00:02:57,240
-osnovu njih.
-
-54
-00:02:57,740 --> 00:02:59,940
-Pred put prođi kontrolnu listu.
-
-55
-00:03:00,540 --> 00:03:05,660
-Provjeri dokumente, smještaj, adresu i kontakt osobe koja te dočekuje.
-
-56
-00:03:06,280 --> 00:03:08,840
-Dogovori prvi radni dan i sačuvaj ugovor.
-
-57
-00:03:08,840 --> 00:03:13,560
-Kada počneš raditi, bilježi sate i provjeri prvu platu.
-
-58
-00:03:14,140 --> 00:03:17,100
-I zapamti: Workify je besplatan za radnike.
-
-59
-00:03:17,700 --> 00:03:21,320
-Ako neko traži da platiš kako bi dobio posao, prijavi to.
-
-60
-00:03:21,960 --> 00:03:26,000
-Kreni od svog profila, pažljivo provjeri ponudu i pitaj na vrijeme.
-
-61
-00:03:26,660 --> 00:03:29,000
-Tvoj sljedeći korak može početi ovdje.
