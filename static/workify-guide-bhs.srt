@@ -1,0 +1,251 @@
+1
+00:00:00,227 --> 00:00:03,550
+Bolji posao počinje jasnim uslovima.
+
+2
+00:00:03,722 --> 00:00:09,632
+U ovom vodiču prolazimo put od otvaranja profila do prvog radnog dana
+
+3
+00:00:09,668 --> 00:00:11,016
+i prve plate.
+
+4
+00:00:11,302 --> 00:00:14,931
+Gledate demo verziju Workify aplikacije.
+
+5
+00:00:15,001 --> 00:00:20,003
+Prikazane osobe, firme, oglasi i datumi služe za primjer.
+
+6
+00:00:20,130 --> 00:00:21,274
+Krenimo redom.
+
+7
+00:00:21,401 --> 00:00:25,484
+Na početnoj stranici izaberi besplatan nalog za radnika.
+
+8
+00:00:25,645 --> 00:00:30,411
+Unesi svoje podatke i kontakt kojem imaš pristup, pa prati uputstva
+
+9
+00:00:30,411 --> 00:00:31,940
+za potvrdu naloga.
+
+10
+00:00:32,181 --> 00:00:34,971
+Koristi lozinku koju ne dijeliš s drugima.
+
+11
+00:00:35,111 --> 00:00:38,729
+U javnom prikazu koji gledamo registracija se ne šalje.
+
+12
+00:00:38,787 --> 00:00:42,017
+Ovaj ekran pokazuje kako je postupak zamišljen.
+
+13
+00:00:42,186 --> 00:00:47,724
+U svom profilu navedi zanimanje, iskustvo, jezike i zemlje u kojima
+
+14
+00:00:47,724 --> 00:00:49,050
+želiš raditi.
+
+15
+00:00:49,267 --> 00:00:53,294
+Tačni podaci pomažu firmi da procijeni odgovara li ti posao.
+
+16
+00:00:53,352 --> 00:00:55,596
+Zatim otvori Dokumente.
+
+17
+00:00:55,823 --> 00:01:00,644
+Dodaj čitljiv životopis, a ostale dokumente samo kada su potrebni.
+
+18
+00:01:00,816 --> 00:01:04,769
+Provjeri rok važenja i naziv svakog fajla.
+
+19
+00:01:04,937 --> 00:01:09,113
+Postavljanje dokumenta na profil nije isto što i njegovo dijeljenje
+
+20
+00:01:09,113 --> 00:01:10,007
+uz prijavu.
+
+21
+00:01:10,066 --> 00:01:15,603
+Otvori oglase i suzi pretragu prema zanimanju, državi i drugim uslovima
+
+22
+00:01:15,603 --> 00:01:16,898
+koji su ti važni.
+
+23
+00:01:17,084 --> 00:01:20,837
+Možeš istražiti i mapu Evrope i Zaljeva.
+
+24
+00:01:21,123 --> 00:01:24,491
+Sačuvaj zanimljive oglase ili ih uporedi.
+
+25
+00:01:24,709 --> 00:01:27,559
+Nemoj gledati samo najveći iznos plate.
+
+26
+00:01:27,849 --> 00:01:32,851
+Uporedi radno vrijeme, smještaj i troškove da bi razumio šta pojedina
+
+27
+00:01:32,887 --> 00:01:34,802
+ponuda stvarno uključuje.
+
+28
+00:01:34,974 --> 00:01:38,048
+Na stranici oglasa prvo pročitaj uslove.
+
+29
+00:01:38,288 --> 00:01:40,441
+Da li je plata bruto ili neto?
+
+30
+00:01:40,624 --> 00:01:44,741
+Koliko sati se radi i kako se plaća prekovremeni rad?
+
+31
+00:01:44,982 --> 00:01:48,646
+Pogledaj šta pokriva poslodavac, a šta plaća radnik.
+
+32
+00:01:48,659 --> 00:01:53,465
+Otvori fotografije radnog mjesta i smještaja, pa profil firme.
+
+33
+00:01:53,623 --> 00:01:56,311
+Oznaka provjere nije garancija zaposlenja.
+
+34
+00:01:56,393 --> 00:01:58,921
+Pročitaj šta je provjereno i kada.
+
+35
+00:01:59,116 --> 00:02:02,973
+Kada pronađeš odgovarajući oglas, otvori prijavu.
+
+36
+00:02:03,091 --> 00:02:06,709
+Označi dokumente koje želiš podijeliti baš s tom firmom.
+
+37
+00:02:06,904 --> 00:02:11,783
+Dodaj kratku poruku o svom iskustvu i provjeri saglasnost za dijeljenje.
+
+38
+00:02:11,923 --> 00:02:16,222
+Prije slanja još jednom pročitaj oglas i svoj izbor dokumenata.
+
+39
+00:02:16,417 --> 00:02:21,397
+U aktivnoj aplikaciji poslana prijava pojavljuje se među tvojim prijavama.
+
+40
+00:02:21,501 --> 00:02:24,451
+U ovom demo prikazu ništa ne šaljemo.
+
+41
+00:02:24,613 --> 00:02:28,526
+U dijelu Moje prijave prati napredak svakog razgovora.
+
+42
+00:02:28,653 --> 00:02:32,316
+Otvori prijavu da vidiš status i naredni korak.
+
+43
+00:02:32,466 --> 00:02:37,907
+Poruke koristi da razjasniš platu, smjene, jezik rada i smještaj.
+
+44
+00:02:38,065 --> 00:02:42,659
+Kada dobiješ termin intervjua, provjeri datum i vremensku zonu.
+
+45
+00:02:42,877 --> 00:02:46,011
+Ako ti termin ne odgovara, predloži drugi.
+
+46
+00:02:46,177 --> 00:02:51,950
+Odgovor firme i trajanje postupka mogu se razlikovati od oglasa do oglasa.
+
+47
+00:02:51,986 --> 00:02:56,526
+Prije prihvatanja ponude uporedi ugovor sa uslovima iz oglasa.
+
+48
+00:02:56,689 --> 00:03:02,780
+Provjeri naziv poslodavca, platu, sate rada, trajanje ugovora i eventualne
+
+49
+00:03:02,816 --> 00:03:03,733
+odbitke.
+
+50
+00:03:03,951 --> 00:03:06,720
+Traži objašnjenje svega što nije jasno.
+
+51
+00:03:06,884 --> 00:03:13,193
+Zatim prati korake za vizu ili radnu dozvolu, zavisno od države i svog
+
+52
+00:03:13,193 --> 00:03:14,247
+statusa.
+
+53
+00:03:14,510 --> 00:03:17,446
+Datumi u aplikaciji mogu biti procjene.
+
+54
+00:03:17,641 --> 00:03:21,631
+Ne rezerviši put oslanjajući se samo na procijenjeni rok.
+
+55
+00:03:21,834 --> 00:03:27,644
+Prije puta prođi kontrolnu listu: dokumenti, potvrđen smještaj, adresa
+
+56
+00:03:27,644 --> 00:03:30,807
+dolaska i kontakt osobe koja te dočekuje.
+
+57
+00:03:30,957 --> 00:03:34,928
+Dogovori prvi radni dan i sačuvaj kopiju ugovora.
+
+58
+00:03:35,067 --> 00:03:40,650
+Kada počneš raditi, vodi evidenciju sati i provjeri prvu obračunatu
+
+59
+00:03:40,650 --> 00:03:41,477
+platu.
+
+60
+00:03:41,739 --> 00:03:44,359
+Workify je besplatan za radnike.
+
+61
+00:03:44,463 --> 00:03:49,068
+Ako neko traži naknadu za dobijanje posla, prijavi zahtjev.
+
+62
+00:03:49,206 --> 00:03:55,071
+Jasni uslovi, pripremljeni dokumenti i pitanja na vrijeme olakšavaju
+
+63
+00:03:55,107 --> 00:03:57,109
+svaki sljedeći korak.

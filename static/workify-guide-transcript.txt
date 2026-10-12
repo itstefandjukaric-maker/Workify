@@ -1,0 +1,29 @@
+Workify · Video vodič za radnike
+Demo prikaz · BHS naracija i titlovi
+
+Dobro došli u Workify
+Bolji posao počinje jasnim uslovima. U ovom vodiču prolazimo put od otvaranja profila do prvog radnog dana i prve plate. Gledate demo verziju Workify aplikacije. Prikazane osobe, firme, oglasi i datumi služe za primjer. Krenimo redom.
+
+1. Napravi nalog
+Na početnoj stranici izaberi besplatan nalog za radnika. Unesi svoje podatke i kontakt kojem imaš pristup, pa prati uputstva za potvrdu naloga. Koristi lozinku koju ne dijeliš s drugima. U javnom prikazu koji gledamo registracija se ne šalje. Ovaj ekran pokazuje kako je postupak zamišljen.
+
+2. Uredi profil i dokumente
+U svom profilu navedi zanimanje, iskustvo, jezike i zemlje u kojima želiš raditi. Tačni podaci pomažu firmi da procijeni odgovara li ti posao. Zatim otvori Dokumente. Dodaj čitljiv životopis, a ostale dokumente samo kada su potrebni. Provjeri rok važenja i naziv svakog fajla. Postavljanje dokumenta na profil nije isto što i njegovo dijeljenje uz prijavu.
+
+3. Pronađi i uporedi posao
+Otvori oglase i suzi pretragu prema zanimanju, državi i drugim uslovima koji su ti važni. Možeš istražiti i mapu Evrope i Zaljeva. Sačuvaj zanimljive oglase ili ih uporedi. Nemoj gledati samo najveći iznos plate. Uporedi radno vrijeme, smještaj i troškove da bi razumio šta pojedina ponuda stvarno uključuje.
+
+4. Provjeri uslove i firmu
+Na stranici oglasa prvo pročitaj uslove. Da li je plata bruto ili neto? Koliko sati se radi i kako se plaća prekovremeni rad? Pogledaj šta pokriva poslodavac, a šta plaća radnik. Otvori fotografije radnog mjesta i smještaja, pa profil firme. Oznaka provjere nije garancija zaposlenja. Pročitaj šta je provjereno i kada.
+
+5. Pošalji prijavu
+Kada pronađeš odgovarajući oglas, otvori prijavu. Označi dokumente koje želiš podijeliti baš s tom firmom. Dodaj kratku poruku o svom iskustvu i provjeri saglasnost za dijeljenje. Prije slanja još jednom pročitaj oglas i svoj izbor dokumenata. U aktivnoj aplikaciji poslana prijava pojavljuje se među tvojim prijavama. U ovom demo prikazu ništa ne šaljemo.
+
+6. Poruke i intervju
+U dijelu Moje prijave prati napredak svakog razgovora. Otvori prijavu da vidiš status i naredni korak. Poruke koristi da razjasniš platu, smjene, jezik rada i smještaj. Kada dobiješ termin intervjua, provjeri datum i vremensku zonu. Ako ti termin ne odgovara, predloži drugi. Odgovor firme i trajanje postupka mogu se razlikovati od oglasa do oglasa.
+
+7. Ugovor i radna dozvola
+Prije prihvatanja ponude uporedi ugovor sa uslovima iz oglasa. Provjeri naziv poslodavca, platu, sate rada, trajanje ugovora i eventualne odbitke. Traži objašnjenje svega što nije jasno. Zatim prati korake za vizu ili radnu dozvolu, zavisno od države i svog statusa. Datumi u aplikaciji mogu biti procjene. Ne rezerviši put oslanjajući se samo na procijenjeni rok.
+
+8. Put, prvi dan i plata
+Prije puta prođi kontrolnu listu: dokumenti, potvrđen smještaj, adresa dolaska i kontakt osobe koja te dočekuje. Dogovori prvi radni dan i sačuvaj kopiju ugovora. Kada počneš raditi, vodi evidenciju sati i provjeri prvu obračunatu platu. Workify je besplatan za radnike. Ako neko traži naknadu za dobijanje posla, prijavi zahtjev. Jasni uslovi, pripremljeni dokumenti i pitanja na vrijeme olakšavaju svaki sljedeći korak.

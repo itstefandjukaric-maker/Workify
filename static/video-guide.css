@@ -1,0 +1,17 @@
+.video-guide { margin-block-end: 3rem; padding: clamp(1rem,3vw,2rem); background: #fff; border: 1px solid #dbe3ee; border-radius: 1.5rem; }
+.video-guide-heading { display: flex; align-items: start; justify-content: space-between; gap: 1rem; }
+.video-guide-heading h2 { margin: 0 0 .5rem; }
+.video-guide-heading p { margin: 0 0 1rem; color: #576781; }
+.workify-tutorial { display: block; width: 100%; height: auto; aspect-ratio: 16/9; background: #0b1326; border-radius: 1rem; }
+.video-chapters { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: .65rem; margin-block: 1.1rem; }
+.video-chapters a { display: flex; align-items: start; gap: .6rem; min-height: 4rem; padding: .8rem; border: 1px solid #dbe3ee; border-radius: .75rem; background: #f5f8fd; text-decoration: none; color: #162a4c; font-size: .88rem; line-height: 1.45; }
+.video-chapters time { color: #245add; font-variant-numeric: tabular-nums; font-weight: 700; flex-shrink: 0; }
+.video-chapters a:hover, .video-chapters a[aria-current="step"] { background: #e8efff; border-color: #2965ee; }
+.video-downloads { display: flex; flex-wrap: wrap; gap: .5rem 1.4rem; }
+.video-downloads a { display: inline-flex; align-items: center; min-height: 44px; }
+.video-home { margin: 0; min-width: 0; width: 100%; }
+.video-home figcaption { display: grid; gap: .4rem; margin-top: 1rem; }
+.video-home figcaption span { font-size: .85rem; color: #576781; }
+.how-grid.how-compact:has(.video-home) { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.2fr); gap: 2.5rem; align-items: center; }
+@media (max-width: 960px) { .video-chapters { grid-template-columns: repeat(2,minmax(0,1fr)); } .how-grid.how-compact:has(.video-home) { grid-template-columns: 1fr; } }
+@media (max-width: 420px) { .video-guide-heading { flex-wrap: wrap; } .video-chapters { grid-template-columns: 1fr; } .video-chapters a { min-height: 44px; } }
