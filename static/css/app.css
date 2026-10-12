@@ -3646,3 +3646,66 @@ h1, .h1, .h2, .section-title, .page-hero-title, .fee-title, .dest-title { font-f
 .preview-reset { align-self: center; }
 .advanced-search { grid-column: 1 / -1; }
 .has-comparison .assist { bottom: calc(135px + env(safe-area-inset-bottom, 0px)); }
+
+/* Focused landing, transparent offer costs and separate photo galleries. */
+.how-compact { display: block; }
+.how-compact .how-copy { max-inline-size: none; }
+.how-compact .how-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.how-compact .explainer-cta { max-inline-size: 520px; }
+.home-next-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.home-next-grid > a { display: flex; flex-direction: column; gap: 14px; text-decoration: none; }
+.home-next-grid strong { color: var(--ink); font-size: 1.05rem; }
+.home-next-grid span { margin-block-start: auto; font-size: .85rem; }
+.job-jump { display: flex; flex-wrap: wrap; gap: 8px; margin-block-start: 22px; }
+.job-jump a { display: inline-flex; align-items: center; min-block-size: 44px; padding: 8px 14px; color: var(--night-ink); background: var(--navy-2); border: 1px solid var(--night-line); border-radius: 10px; text-decoration: none; }
+.detail-compare { margin-block-start: 16px; }
+.detail-compare .job-compare { inline-size: fit-content; }
+.job-costs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding-block: 26px; }
+.cost-card { border: 1px solid var(--line); border-radius: var(--r-md); padding: 22px; background: var(--surface); }
+.cost-card h2 { font-size: 1rem; margin: 0 0 15px; }
+.cost-card p { margin-block: 10px; }
+.cost-card ul { padding-inline-start: 20px; margin: 0; line-height: 1.8; }
+.cost-pay { background: var(--blue-soft); }
+.cost-amount { color: var(--blue-strong); font-size: clamp(1.2rem, 2.5vw, 1.8rem); font-weight: 800; line-height: 1.25; overflow-wrap: anywhere; }
+.cost-rule { font-size: .84rem; color: var(--green); }
+.job-jump a:focus-visible, .gallery-tabs button:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.gallery-tabs { display: flex; flex-wrap: wrap; gap: 8px; padding-block: 10px 20px; }
+.gallery-tabs button { border: 1px solid var(--line); color: var(--ink); background: var(--surface); border-radius: 10px; padding: 10px 16px; min-block-size: 44px; font: inherit; cursor: pointer; }
+.gallery-tabs button[aria-selected="true"] { background: var(--blue); border-color: var(--blue); color: white; }
+.gallery-tabs button span { margin-inline-start: 6px; font-size: .85rem; }
+.gallery-panel { padding-block-end: 10px; }
+.gallery-panel > h2 { margin-block: 0 12px; }
+.gallery-separated .gallery { scroll-snap-type: inline proximity; }
+.gallery-panel video { max-inline-size: 100%; }
+#job-terms, #job-photos, #housing-title, #job-text, #apply-options, .gallery-panel { scroll-margin-block-start: 90px; }
+.verification-panel { margin-block-end: 20px; }
+.verification-panel .kv dd { overflow-wrap: anywhere; }
+.comparison-filter { display: flex; align-items: center; gap: 10px; min-block-size: 44px; margin-block: 8px 14px; cursor: pointer; }
+.comparison-filter input { inline-size: 20px; block-size: 20px; accent-color: var(--blue); }
+.comparison-scroll { max-block-size: 65dvh; overscroll-behavior: contain; }
+.comparison-table thead { position: sticky; inset-block-start: 0; z-index: 3; }
+.comparison-different > th { box-shadow: inset 4px 0 var(--blue); }
+[dir="rtl"] .comparison-different > th { box-shadow: inset -4px 0 var(--blue); }
+.comparison-different td { background: var(--blue-soft); }
+.comparison-same { padding: 14px; background: var(--surface-2); border-radius: 10px; }
+@media (max-width: 760px) {
+  .how-compact .how-steps { grid-template-columns: 1fr; gap: 12px; }
+  .home-next-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .home-next-grid > a { padding: 16px; }
+  .job-costs { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .cost-card { padding: 16px; }
+  .cost-pay { grid-column: 1 / -1; }
+  .job-jump { gap: 6px; }
+  .job-jump a { padding-inline: 11px; font-size: .85rem; }
+  .comparison-dialog { max-block-size: 94dvh; padding: 12px; }
+  .comparison-scroll { max-block-size: 62dvh; }
+  .comparison-table:not(.comparison-three) { display: block; min-inline-size: 0; }
+  .comparison-table:not(.comparison-three) thead, .comparison-table:not(.comparison-three) tbody { display: block; }
+  .comparison-table:not(.comparison-three) tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .comparison-table:not(.comparison-three) tbody th { grid-column: 1 / -1; inline-size: auto; min-inline-size: 0; padding: 10px 12px; }
+  .comparison-table:not(.comparison-three) thead th:first-child { display: none; }
+  .comparison-table:not(.comparison-three) td, .comparison-table:not(.comparison-three) thead th { min-inline-size: 0; padding: 12px; overflow-wrap: anywhere; }
+  .comparison-table:not(.comparison-three) .comparison-job-title { font-size: .9rem; }
+  .comparison-agency { font-size: .74rem; }
+  .has-comparison .mobile-filter-dock { bottom: calc(150px + env(safe-area-inset-bottom, 0px)); }
+}
