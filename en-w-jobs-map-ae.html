@@ -22,14 +22,17 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="icon" href="static/img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="static/img/icon-180.png">
-  <link rel="stylesheet" href="static/css/app.css?v=refine-21">
+  <script src="static/js/theme.js"></script>
+  <link rel="stylesheet" href="static/css/app.css">
   <link rel="stylesheet" href="static/css/preview.css">
+  <link rel="stylesheet" href="static/css/experience.css">
+  <script src="static/js/experience.js" defer></script>
   <script src="static/js/preview.js" defer></script>
-  <script src="static/js/app.js?v=refine-21" defer></script>
+  <script src="static/js/app.js" defer></script>
 </head>
 <body class=" has-tabbar" data-locale="en">
   <a class="skip-link" href="#main">Skip to content</a>
-<div class="demo-banner pv-bar" role="note"><span class="pv-text">Design preview. Every company, person and job here is fictional.</span><nav class="pv-links" aria-label="Preview"><a href="en-index.html">Website</a><a href="en-w-home.html">Worker app</a><a href="en-a-dashboard.html">Agency console</a><a class="pv-lang" href="w-jobs-map-ae.html" lang="bs">Bosanski</a></nav></div><header class="topbar">
+<div class="demo-banner pv-bar" role="note"><span class="pv-text">Design preview. Every company, person and job here is fictional.</span><nav class="pv-links" aria-label="Preview"><a href="en-index.html">Website</a><a href="en-w-home.html">Worker app</a><a href="en-e-dashboard.html">Employers</a><a href="en-a-dashboard.html">Agencies</a><a class="pv-lang" href="w-jobs-map-ae.html" lang="bs">Bosanski</a></nav></div><header class="topbar">
   <div class="wrap topbar-inner">
     <a class="brand" href="en-index.html" aria-label="Workify"><svg class="logo-lockup" width="140.3" height="30" viewBox="0 0 495.6 106" role="img" aria-label="Workify"><defs><linearGradient id="hda" x1="0" y1="0" x2="0.55" y2="1"><stop offset="0" stop-color="#2F6BFF"/><stop offset="1" stop-color="#1A4FE0"/></linearGradient><linearGradient id="hdb" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#4D9BFF"/><stop offset="0.55" stop-color="#2F78FF"/><stop offset="1" stop-color="#2463F2"/></linearGradient><filter id="hds" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="-1.6" dy="0.4" stdDeviation="1.1" flood-color="#0a1f66" flood-opacity="0.5"/></filter><clipPath id="hdc"><rect x="0" y="0" width="170.3" height="120.0"/></clipPath></defs><g fill="none" stroke="url(#hda)" stroke-width="27.0" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#hdc)"><path d="M8.45 -14.00L54.45 86.50L72.45 60.00"/></g><g fill="none" stroke="url(#hdb)" stroke-width="27.0" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#hdc)" filter="url(#hds)"><path d="M89.45 13.50L108.45 86.50L162.45 -14.00"/></g><path fill="currentColor" transform="translate(189.30 77.5) scale(0.07846)" d="M1002 -698 807 0H642L511 -497L374 0L210 1L22 -698H172L295 -156L437 -698H593L727 -159L851 -698Z M1058 -277Q1058 -362 1095.5 -427.0Q1133 -492 1198.0 -527.5Q1263 -563 1343 -563Q1423 -563 1488.0 -527.5Q1553 -492 1590.5 -427.0Q1628 -362 1628 -277Q1628 -192 1589.5 -127.0Q1551 -62 1485.5 -26.5Q1420 9 1339 9Q1259 9 1195.0 -26.5Q1131 -62 1094.5 -127.0Q1058 -192 1058 -277ZM1484 -277Q1484 -356 1442.5 -398.5Q1401 -441 1341 -441Q1281 -441 1240.5 -398.5Q1200 -356 1200 -277Q1200 -198 1239.5 -155.5Q1279 -113 1339 -113Q1377 -113 1410.5 -131.5Q1444 -150 1464.0 -187.0Q1484 -224 1484 -277Z M2041 -562V-415H2004Q1938 -415 1904.5 -384.0Q1871 -353 1871 -276V0H1731V-554H1871V-468Q1898 -512 1941.5 -537.0Q1985 -562 2041 -562Z M2463 0 2275 -236V0H2135V-740H2275V-319L2461 -554H2643L2399 -276L2645 0Z M2704 -702Q2704 -737 2728.5 -760.5Q2753 -784 2790 -784Q2827 -784 2851.5 -760.5Q2876 -737 2876 -702Q2876 -667 2851.5 -643.5Q2827 -620 2790 -620Q2753 -620 2728.5 -643.5Q2704 -667 2704 -702ZM2859 -554V0H2719V-554Z M3251 -439H3154V0H3012V-439H2949V-554H3012V-582Q3012 -684 3070.0 -732.0Q3128 -780 3245 -777V-659Q3194 -660 3174.0 -642.0Q3154 -624 3154 -577V-554H3251Z M3872 -554 3529 262H3380L3500 -14L3278 -554H3435L3578 -167L3723 -554Z"/></svg></a>
       <nav class="topnav" aria-label="Main navigation">
@@ -41,7 +44,11 @@
         <a href="en-w-profile.html">Profile</a>
       </nav>
     <div class="topbar-actions">
-<details class="menu lang-menu">
+<details class="menu theme-menu">
+  <summary class="icon-btn" aria-label="Appearance"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h9.5M17.5 7H20M4 17h3.5M11.5 17H20"/><circle cx="15.5" cy="7" r="2"/><circle cx="9.5" cy="17" r="2"/></svg></summary>
+  <div class="menu-panel"><p class="small">Appearance</p>
+<button class="btn btn-ghost" type="button" data-theme-choice="light" aria-pressed="false">Light</button><button class="btn btn-ghost" type="button" data-theme-choice="dark" aria-pressed="false">Dark</button><button class="btn btn-ghost" type="button" data-theme-choice="auto" aria-pressed="false">Use device setting</button>  </div>
+</details><details class="menu lang-menu">
   <summary class="icon-btn" aria-label="Language"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.3 2.4 3.5 5.2 3.5 8.5s-1.2 6.1-3.5 8.5c-2.3-2.4-3.5-5.2-3.5-8.5s1.2-6.1 3.5-8.5z"/></svg><span class="lang-code">EN</span></summary>
   <div class="menu-panel lang-panel">
       <a href="en-w-jobs-map-ae.html" data-pv-lang lang="ar" hreflang="ar">
@@ -175,7 +182,7 @@
         <ul class="job-lines">
   <li class="job-line is-featured" data-job-search="{&#34;category&#34;: &#34;delivery&#34;, &#34;country&#34;: &#34;AE&#34;, &#34;experience&#34;: 1, &#34;flight&#34;: false, &#34;housing&#34;: true, &#34;languages&#34;: [&#34;en&#34;], &#34;min_pay&#34;: 2600, &#34;pay_basis&#34;: &#34;net&#34;, &#34;pay_currency&#34;: &#34;AED&#34;, &#34;pay_period&#34;: &#34;month&#34;, &#34;q&#34;: &#34;Delivery rider (motorbike)  Dubai Saffron Route Recruitment LLC United Arab Emirates Delivery and couriers&#34;, &#34;region&#34;: &#34;gulf&#34;, &#34;visa&#34;: true}">
     <a class="jl-media" href="en-job-3.html" tabindex="-1" aria-hidden="true">
-        <img src="static/img/photos/courier-xs.jpg" alt="" width="256" height="160" loading="lazy" decoding="async">
+        <img src="media/cdeee599fca3af7afa32b07dcebed54b-xs.jpg" alt="" width="256" height="160" loading="lazy" decoding="async">
     </a>
     <div class="jl-body">
       <a class="jl-title" href="en-job-3.html"><span class="jl-featured" title="The company pays to show this ad at the top of the list for 30 days. It changes nothing about how applications are treated, and applying stays free."><svg class="icon " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1 5.8-5.2-2.8-5.2 2.8 1-5.8-4.3-4.1 5.9-.8z"/></svg><span class="jl-featured-text">Featured</span></span> Delivery rider (motorbike)</a>
@@ -192,7 +199,7 @@
   </li>
   <li class="job-line" data-job-search="{&#34;category&#34;: &#34;logistics&#34;, &#34;country&#34;: &#34;AE&#34;, &#34;experience&#34;: 0, &#34;flight&#34;: true, &#34;housing&#34;: true, &#34;languages&#34;: [&#34;en&#34;], &#34;min_pay&#34;: 1800, &#34;pay_basis&#34;: &#34;net&#34;, &#34;pay_currency&#34;: &#34;AED&#34;, &#34;pay_period&#34;: &#34;month&#34;, &#34;q&#34;: &#34;Warehouse associate (Jebel Ali)  Dubai Saffron Route Recruitment LLC United Arab Emirates Logistics and warehouse&#34;, &#34;region&#34;: &#34;gulf&#34;, &#34;visa&#34;: true}">
     <a class="jl-media" href="en-job-4.html" tabindex="-1" aria-hidden="true">
-        <img src="static/img/photos/warehouse-xs.jpg" alt="" width="256" height="160" loading="lazy" decoding="async">
+        <img src="media/eb0d7bd795db45a38f9b7e673f4233d6-xs.jpg" alt="" width="256" height="160" loading="lazy" decoding="async">
 <span class="jl-badge"><svg class="icon " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8.5a2 2 0 0 1 2-2h2l1.5-2h5L16 6.5h2a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg>3</span>    </a>
     <div class="jl-body">
       <a class="jl-title" href="en-job-4.html">Warehouse associate (Jebel Ali)</a>
@@ -209,7 +216,7 @@
   </li>
   <li class="job-line" data-job-search="{&#34;category&#34;: &#34;security&#34;, &#34;country&#34;: &#34;AE&#34;, &#34;experience&#34;: 1, &#34;flight&#34;: true, &#34;housing&#34;: true, &#34;languages&#34;: [&#34;en&#34;], &#34;min_pay&#34;: 2200, &#34;pay_basis&#34;: &#34;net&#34;, &#34;pay_currency&#34;: &#34;AED&#34;, &#34;pay_period&#34;: &#34;month&#34;, &#34;q&#34;: &#34;Security guard (offices and residential buildings)  Abu Dhabi Saffron Route Recruitment LLC United Arab Emirates Security&#34;, &#34;region&#34;: &#34;gulf&#34;, &#34;visa&#34;: true}">
     <a class="jl-media" href="en-job-5.html" tabindex="-1" aria-hidden="true">
-        <img src="static/img/photos/security-xs.jpg" alt="" width="256" height="160" loading="lazy" decoding="async">
+        <img src="media/d663c1de4890bc0c7227200e4f072291-xs.jpg" alt="" width="256" height="160" loading="lazy" decoding="async">
 <span class="jl-badge"><svg class="icon " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8.5a2 2 0 0 1 2-2h2l1.5-2h5L16 6.5h2a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg>2</span>    </a>
     <div class="jl-body">
       <a class="jl-title" href="en-job-5.html">Security guard (offices and residential buildings)</a>
@@ -226,7 +233,7 @@
   </li>
   <li class="job-line" data-job-search="{&#34;category&#34;: &#34;plumbing_hvac&#34;, &#34;country&#34;: &#34;AE&#34;, &#34;experience&#34;: 4, &#34;flight&#34;: true, &#34;housing&#34;: true, &#34;languages&#34;: [&#34;en&#34;], &#34;min_pay&#34;: 3200, &#34;pay_basis&#34;: &#34;net&#34;, &#34;pay_currency&#34;: &#34;AED&#34;, &#34;pay_period&#34;: &#34;month&#34;, &#34;q&#34;: &#34;HVAC technician (chillers and split units)  Abu Dhabi Saffron Route Recruitment LLC United Arab Emirates Plumbing and heating&#34;, &#34;region&#34;: &#34;gulf&#34;, &#34;visa&#34;: true}">
     <a class="jl-media" href="en-job-2.html" tabindex="-1" aria-hidden="true">
-        <img src="static/img/photos/hvac-xs.jpg" alt="" width="256" height="160" loading="lazy" decoding="async">
+        <img src="media/2856a04bb6e6a23809dd22eab2c06ad2-xs.jpg" alt="" width="256" height="160" loading="lazy" decoding="async">
 <span class="jl-badge"><svg class="icon " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8.5a2 2 0 0 1 2-2h2l1.5-2h5L16 6.5h2a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg>4</span>    </a>
     <div class="jl-body">
       <a class="jl-title" href="en-job-2.html">HVAC technician (chillers and split units)</a>
@@ -244,14 +251,14 @@
 <li class="job-list-sponsor">  <aside class="sponsor-card sponsor-card-row">
     <span class="sponsor-label"><svg class="icon " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 10v4a1 1 0 0 0 1 1h2.5l7 4V5l-7 4H5a1 1 0 0 0-1 1z"/><path d="m8 15 1.2 4.5"/><path d="M18 9.5a3 3 0 0 1 0 5"/></svg>Sponsored</span>
     <div class="sponsor-body">
-<img class="sponsor-logo" src="media/863de34fdbaa3dc30801b435159ef7c0-sm.jpg" alt="" width="64" height="64" loading="lazy">      <div>
+<img class="sponsor-logo" src="media/ba8e5b2255f535e70539e4b8822e2b27-xs.jpg" alt="" width="64" height="64" loading="lazy">      <div>
         <p class="sponsor-name">HomeSend Remittance (demo)</p>
 <p class="sponsor-tagline">Send money home from the Gulf and Europe with low, clear fees.</p>      </div>
     </div>
 <a class="sponsor-link" href="https://homesend.example" target="_blank" rel="noopener sponsored">Visit<svg class="icon icon-dir" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 4h6v6"/><path d="M20 4l-8.5 8.5"/><path d="M18 14v4.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6H10"/></svg></a>  </aside>
 </li>  <li class="job-line is-applied" data-job-search="{&#34;category&#34;: &#34;electrical&#34;, &#34;country&#34;: &#34;AE&#34;, &#34;experience&#34;: 3, &#34;flight&#34;: true, &#34;housing&#34;: true, &#34;languages&#34;: [&#34;en&#34;], &#34;min_pay&#34;: 2400, &#34;pay_basis&#34;: &#34;net&#34;, &#34;pay_currency&#34;: &#34;AED&#34;, &#34;pay_period&#34;: &#34;month&#34;, &#34;q&#34;: &#34;Building maintenance electrician  Dubai Saffron Route Recruitment LLC United Arab Emirates Electrical&#34;, &#34;region&#34;: &#34;gulf&#34;, &#34;visa&#34;: true}">
     <a class="jl-media" href="en-job-1.html" tabindex="-1" aria-hidden="true">
-        <img src="static/img/photos/electrical-xs.jpg" alt="" width="256" height="160" loading="lazy" decoding="async">
+        <img src="media/25eac50c0a1f2bd2b05184812e4f9a92-xs.jpg" alt="" width="256" height="160" loading="lazy" decoding="async">
 <span class="jl-badge"><svg class="icon " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8.5a2 2 0 0 1 2-2h2l1.5-2h5L16 6.5h2a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg>4</span>    </a>
     <div class="jl-body">
       <a class="jl-title" href="en-job-1.html">Building maintenance electrician</a>
@@ -309,7 +316,7 @@
     </nav>
     <p class="footer-copy">© 2026 Workify · Workers never pay to get a job. If anyone asks you for money, report it.</p>
   </div>
-</footer><div class="assist" data-assistant data-faq-url="en-assistant-faq.json" data-ask-url="#" data-ai="0" data-csrf="xRelVMM6Vl9jgJ4piIHIBBLXYtWduiYWys3hZDfQEJE" data-speech-lang="en" data-label-wait="Looking for the answer…" data-label-read="Read aloud" data-error="The answer could not be loaded. Check your internet connection and try again." data-ai-note="Written by AI and it can be wrong. For your own case, ask the agency in the chat.">
+</footer><div class="assist" data-assistant data-faq-url="en-assistant-faq.json" data-ask-url="#" data-ai="0" data-csrf="ZNDDQ8SGY_dV2gn53_mOMsmJo8WqmN1WqAXBd_C7BGM" data-speech-lang="en" data-label-wait="Looking for the answer…" data-label-read="Read aloud" data-error="The answer could not be loaded. Check your internet connection and try again." data-ai-note="Written by AI and it can be wrong. For your own case, ask the agency in the chat.">
   <button class="assist-fab" type="button" data-assist-open aria-expanded="false" aria-controls="assist-panel">
     <span class="assist-fab-icon"><svg class="icon " width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/><path d="m12 7.8 1 2.3 2.3 1-2.3 1-1 2.3-1-2.3-2.3-1 2.3-1z"/></svg></span><span class="assist-fab-label">Ask</span>
   </button>
