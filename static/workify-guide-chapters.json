@@ -1,0 +1,42 @@
+[
+  {
+    "start": 12.123584905660376,
+    "end": 25.44433962264151,
+    "title": "1. Nalog i profil"
+  },
+  {
+    "start": 25.44433962264151,
+    "end": 37.199056603773585,
+    "title": "2. Izaberi posao"
+  },
+  {
+    "start": 37.199056603773585,
+    "end": 49.04811320754717,
+    "title": "3. Pošalji prijavu"
+  },
+  {
+    "start": 49.04811320754717,
+    "end": 61.349999999999994,
+    "title": "4. Poruke i razgovor"
+  },
+  {
+    "start": 61.349999999999994,
+    "end": 73.23679245283019,
+    "title": "5. Pročitaj ugovor"
+  },
+  {
+    "start": 73.23679245283019,
+    "end": 84.97264150943396,
+    "title": "6. Dozvola i priprema"
+  },
+  {
+    "start": 84.97264150943396,
+    "end": 96.5198113207547,
+    "title": "7. Dolazak i prvi dan"
+  },
+  {
+    "start": 96.5198113207547,
+    "end": 110,
+    "title": "8. Sati i prva plata"
+  }
+]
