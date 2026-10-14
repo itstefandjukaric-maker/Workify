@@ -22,14 +22,17 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="icon" href="static/img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="static/img/icon-180.png">
+  <script src="static/js/theme.js"></script>
   <link rel="stylesheet" href="static/css/app.css">
   <link rel="stylesheet" href="static/css/preview.css">
+  <link rel="stylesheet" href="static/css/experience.css">
+  <script src="static/js/experience.js" defer></script>
   <script src="static/js/preview.js" defer></script>
   <script src="static/js/app.js" defer></script>
 </head>
 <body class="" data-locale="bs">
   <a class="skip-link" href="#main">Preskoči na sadržaj</a>
-<div class="demo-banner pv-bar" role="note"><span class="pv-text">Pregled dizajna. Sve firme, osobe i oglasi su izmišljeni.</span><nav class="pv-links" aria-label="Pregled"><a href="index.html">Sajt</a><a href="w-home.html">Aplikacija za radnike</a><a href="a-dashboard.html">Konzola za agencije</a><a class="pv-lang" href="en-guides.html" lang="en">English</a></nav></div><header class="topbar">
+<div class="demo-banner pv-bar" role="note"><span class="pv-text">Pregled dizajna. Sve firme, osobe i oglasi su izmišljeni.</span><nav class="pv-links" aria-label="Pregled"><a href="index.html">Sajt</a><a href="w-home.html">Aplikacija za radnike</a><a href="e-dashboard.html">Firme</a><a href="a-dashboard.html">Agencije</a><a class="pv-lang" href="en-guides.html" lang="en">English</a></nav></div><header class="topbar">
   <div class="wrap topbar-inner">
     <a class="brand" href="index.html" aria-label="Workify"><svg class="logo-lockup" width="140.3" height="30" viewBox="0 0 495.6 106" role="img" aria-label="Workify"><defs><linearGradient id="hda" x1="0" y1="0" x2="0.55" y2="1"><stop offset="0" stop-color="#2F6BFF"/><stop offset="1" stop-color="#1A4FE0"/></linearGradient><linearGradient id="hdb" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#4D9BFF"/><stop offset="0.55" stop-color="#2F78FF"/><stop offset="1" stop-color="#2463F2"/></linearGradient><filter id="hds" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="-1.6" dy="0.4" stdDeviation="1.1" flood-color="#0a1f66" flood-opacity="0.5"/></filter><clipPath id="hdc"><rect x="0" y="0" width="170.3" height="120.0"/></clipPath></defs><g fill="none" stroke="url(#hda)" stroke-width="27.0" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#hdc)"><path d="M8.45 -14.00L54.45 86.50L72.45 60.00"/></g><g fill="none" stroke="url(#hdb)" stroke-width="27.0" stroke-linecap="round" stroke-linejoin="round" clip-path="url(#hdc)" filter="url(#hds)"><path d="M89.45 13.50L108.45 86.50L162.45 -14.00"/></g><path fill="currentColor" transform="translate(189.30 77.5) scale(0.07846)" d="M1002 -698 807 0H642L511 -497L374 0L210 1L22 -698H172L295 -156L437 -698H593L727 -159L851 -698Z M1058 -277Q1058 -362 1095.5 -427.0Q1133 -492 1198.0 -527.5Q1263 -563 1343 -563Q1423 -563 1488.0 -527.5Q1553 -492 1590.5 -427.0Q1628 -362 1628 -277Q1628 -192 1589.5 -127.0Q1551 -62 1485.5 -26.5Q1420 9 1339 9Q1259 9 1195.0 -26.5Q1131 -62 1094.5 -127.0Q1058 -192 1058 -277ZM1484 -277Q1484 -356 1442.5 -398.5Q1401 -441 1341 -441Q1281 -441 1240.5 -398.5Q1200 -356 1200 -277Q1200 -198 1239.5 -155.5Q1279 -113 1339 -113Q1377 -113 1410.5 -131.5Q1444 -150 1464.0 -187.0Q1484 -224 1484 -277Z M2041 -562V-415H2004Q1938 -415 1904.5 -384.0Q1871 -353 1871 -276V0H1731V-554H1871V-468Q1898 -512 1941.5 -537.0Q1985 -562 2041 -562Z M2463 0 2275 -236V0H2135V-740H2275V-319L2461 -554H2643L2399 -276L2645 0Z M2704 -702Q2704 -737 2728.5 -760.5Q2753 -784 2790 -784Q2827 -784 2851.5 -760.5Q2876 -737 2876 -702Q2876 -667 2851.5 -643.5Q2827 -620 2790 -620Q2753 -620 2728.5 -643.5Q2704 -667 2704 -702ZM2859 -554V0H2719V-554Z M3251 -439H3154V0H3012V-439H2949V-554H3012V-582Q3012 -684 3070.0 -732.0Q3128 -780 3245 -777V-659Q3194 -660 3174.0 -642.0Q3154 -624 3154 -577V-554H3251Z M3872 -554 3529 262H3380L3500 -14L3278 -554H3435L3578 -167L3723 -554Z"/></svg></a>
 <nav class="topnav topnav-guest" aria-label="Glavna navigacija">
@@ -40,7 +43,11 @@
         <a class="topnav-employers" href="employers.html"><svg class="icon " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4.5" y="3" width="15" height="18" rx="1.5"/><path d="M9.5 21v-3.5h5V21"/><path d="M8.5 7h1.5M14 7h1.5M8.5 10.5h1.5M14 10.5h1.5M8.5 14h1.5M14 14h1.5"/></svg>Za poslodavce</a>
       </nav>
     <div class="topbar-actions">
-<details class="menu lang-menu">
+<details class="menu theme-menu">
+  <summary class="icon-btn" aria-label="Izgled"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h9.5M17.5 7H20M4 17h3.5M11.5 17H20"/><circle cx="15.5" cy="7" r="2"/><circle cx="9.5" cy="17" r="2"/></svg></summary>
+  <div class="menu-panel"><p class="small">Izgled</p>
+<button class="btn btn-ghost" type="button" data-theme-choice="light" aria-pressed="false">Svijetlo</button><button class="btn btn-ghost" type="button" data-theme-choice="dark" aria-pressed="false">Tamno</button><button class="btn btn-ghost" type="button" data-theme-choice="auto" aria-pressed="false">Prema uređaju</button>  </div>
+</details><details class="menu lang-menu">
   <summary class="icon-btn" aria-label="Jezik"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.3 2.4 3.5 5.2 3.5 8.5s-1.2 6.1-3.5 8.5c-2.3-2.4-3.5-5.2-3.5-8.5s1.2-6.1 3.5-8.5z"/></svg><span class="lang-code">BHS</span></summary>
   <div class="menu-panel lang-panel">
       <a href="guides.html" data-pv-lang lang="ar" hreflang="ar">
@@ -86,6 +93,8 @@
             <a href="destinations.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.3 2.4 3.5 5.2 3.5 8.5s-1.2 6.1-3.5 8.5c-2.3-2.4-3.5-5.2-3.5-8.5s1.2-6.1 3.5-8.5z"/></svg><span>Destinacije</span></a>
             <a href="guides.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5.5a2 2 0 0 1 2-2h13.5v14H6a2 2 0 0 0-2 2z"/><path d="M4 19.5a2 2 0 0 0 2 2h13.5v-4"/></svg><span>Vodiči</span></a>
             <a href="jobs-map.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 4.5 3.5 6.5v13l5.5-2 6 2 5.5-2v-13l-5.5 2z"/><path d="M9 4.5v13M15 6.5v13"/></svg><span>Mapa</span></a>
+            <a href="offline.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4.5V15"/><path d="m7.5 10.5 4.5 4.5 4.5-4.5"/><path d="M4.5 15v3.5a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V15"/></svg><span>Sačuvano na ovom uređaju</span></a>
+            <a href="for-agencies.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8.5" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M15.5 5a3.5 3.5 0 0 1 0 7"/><path d="M18 14.2a6.5 6.5 0 0 1 3.5 5.8"/></svg><span>Za agencije</span></a>
             <a class="menu-sep" href="employers.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4.5" y="3" width="15" height="18" rx="1.5"/><path d="M9.5 21v-3.5h5V21"/><path d="M8.5 7h1.5M14 7h1.5M8.5 10.5h1.5M14 10.5h1.5M8.5 14h1.5M14 14h1.5"/></svg><span>Za poslodavce</span></a>
             <a class="menu-primary" href="register.html"><svg class="icon " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5a7.5 7.5 0 0 1 15 0"/></svg><span>Napravi nalog</span></a>
           </div>
@@ -106,7 +115,7 @@
   <ul class="guide-grid guide-grid-full">
       <li>
         <a class="guide-card guide-card-photo" href="guide-fake-job-offers.html">
-<span class="guide-cover"><img src="static/img/pictures/guide-fake-job-offers-sm.jpg?v=real-photos-14" alt="" width="800" height="450" loading="lazy" decoding="async"></span>          <span class="guide-icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 4.2 2.9 17.5A2 2 0 0 0 4.6 20.5h14.8a2 2 0 0 0 1.7-3L13.7 4.2a2 2 0 0 0-3.4 0z"/><path d="M12 9.5v4M12 17v.01"/></svg></span>
+<span class="guide-cover"><img src="static/img/pictures/guide-fake-job-offers-sm.jpg" alt="" width="800" height="450" loading="lazy" decoding="async"></span>          <span class="guide-icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 4.2 2.9 17.5A2 2 0 0 0 4.6 20.5h14.8a2 2 0 0 0 1.7-3L13.7 4.2a2 2 0 0 0-3.4 0z"/><path d="M12 9.5v4M12 17v.01"/></svg></span>
           <span class="guide-name">Kako prepoznati lažnu ponudu za posao</span>
           <span class="guide-lead">Većina prevara s poslovima ide po istom obrascu. Ovo su znakovi na koje treba paziti i ono što treba provjeriti prije nego što bilo šta platiš ili nekome daš pasoš.</span>
           <span class="guide-more">Pročitaj vodič</span>
@@ -114,7 +123,7 @@
       </li>
       <li>
         <a class="guide-card guide-card-photo" href="guide-contract-checklist.html">
-<span class="guide-cover"><img src="static/img/pictures/guide-contract-checklist-sm.jpg?v=real-photos-14" alt="" width="800" height="450" loading="lazy" decoding="async"></span>          <span class="guide-icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3.5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-10z"/><path d="M14 3.5v5h5"/><path d="M9 13h6M9 16.5h4"/></svg></span>
+<span class="guide-cover"><img src="static/img/pictures/guide-contract-checklist-sm.jpg" alt="" width="800" height="450" loading="lazy" decoding="async"></span>          <span class="guide-icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 3.5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-10z"/><path d="M14 3.5v5h5"/><path d="M9 13h6M9 16.5h4"/></svg></span>
           <span class="guide-name">Tvoj ugovor: šta u njemu mora pisati</span>
           <span class="guide-lead">Pročitaj cijeli ugovor prije nego što ga potpišeš, i to na jeziku koji razumiješ. Sve ovo bi trebalo biti napisano u ugovoru, a ne samo obećano telefonom.</span>
           <span class="guide-more">Pročitaj vodič</span>
@@ -122,7 +131,7 @@
       </li>
       <li>
         <a class="guide-card guide-card-photo" href="guide-before-you-fly.html">
-<span class="guide-cover"><img src="static/img/pictures/guide-before-you-fly-sm.jpg?v=real-photos-14" alt="" width="800" height="450" loading="lazy" decoding="async"></span>          <span class="guide-icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5.5" y="7" width="13" height="12.5" rx="2"/><path d="M9.5 7V4.5h5V7M9 19.5V21M15 19.5V21M9.5 10.5V16M14.5 10.5V16"/></svg></span>
+<span class="guide-cover"><img src="static/img/pictures/guide-before-you-fly-sm.jpg" alt="" width="800" height="450" loading="lazy" decoding="async"></span>          <span class="guide-icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5.5" y="7" width="13" height="12.5" rx="2"/><path d="M9.5 7V4.5h5V7M9 19.5V21M15 19.5V21M9.5 10.5V16M14.5 10.5V16"/></svg></span>
           <span class="guide-name">Prije leta: kontrolna lista</span>
           <span class="guide-lead">Koristi ovu listu u sedmicama prije puta. Ista lista, sa stavkama koje možeš označiti, nalazi se i na stranici tvoje prijave.</span>
           <span class="guide-more">Pročitaj vodič</span>
@@ -130,7 +139,7 @@
       </li>
       <li>
         <a class="guide-card guide-card-photo" href="guide-rights-in-the-gulf.html">
-<span class="guide-cover"><img src="static/img/pictures/guide-rights-in-the-gulf-sm.jpg?v=real-photos-14" alt="" width="800" height="450" loading="lazy" decoding="async"></span>          <span class="guide-icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12.1 2.2 2.2 4.3-4.5"/></svg></span>
+<span class="guide-cover"><img src="static/img/pictures/guide-rights-in-the-gulf-sm.jpg" alt="" width="800" height="450" loading="lazy" decoding="async"></span>          <span class="guide-icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12.1 2.2 2.2 4.3-4.5"/></svg></span>
           <span class="guide-name">Rad u zaljevskim zemljama: tvoja osnovna prava</span>
           <span class="guide-lead">Svaka zaljevska zemlja ima svoj zakon o radu, a nekoliko tih zakona se posljednjih godina promijenilo. Ovo su osnove koje je dobro znati prije odlaska. Detalje provjeri u službenim izvorima.</span>
           <span class="guide-more">Pročitaj vodič</span>
@@ -138,7 +147,7 @@
       </li>
       <li>
         <a class="guide-card guide-card-photo" href="guide-working-in-europe.html">
-<span class="guide-cover"><img src="static/img/pictures/guide-working-in-europe-sm.jpg?v=real-photos-14" alt="" width="800" height="450" loading="lazy" decoding="async"></span>          <span class="guide-icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 4.5 3.5 6.5v13l5.5-2 6 2 5.5-2v-13l-5.5 2z"/><path d="M9 4.5v13M15 6.5v13"/></svg></span>
+<span class="guide-cover"><img src="static/img/pictures/guide-working-in-europe-sm.jpg" alt="" width="800" height="450" loading="lazy" decoding="async"></span>          <span class="guide-icon"><svg class="icon " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 4.5 3.5 6.5v13l5.5-2 6 2 5.5-2v-13l-5.5 2z"/><path d="M9 4.5v13M15 6.5v13"/></svg></span>
           <span class="guide-name">Rad u Evropi: sve o dozvolama</span>
           <span class="guide-lead">Svaka evropska država ima svoja pravila za radnike iz zemalja izvan EU, ali put je obično isti: prvo ponuda za posao, zatim zahtjev poslodavca, pa tvoja viza.</span>
           <span class="guide-more">Pročitaj vodič</span>
@@ -197,7 +206,7 @@
       <p class="footer-copy">© 2026 Workify</p>
     </div>
   </div>
-</footer><div class="assist" data-assistant data-faq-url="assistant-faq.json" data-ask-url="#" data-ai="0" data-csrf="" data-speech-lang="bs" data-label-wait="Tražim odgovor…" data-label-read="Pročitaj naglas" data-error="Odgovor se nije mogao učitati. Provjeri internet i pokušaj ponovo." data-ai-note="Odgovor AI-ja može biti pogrešan. Za svoj slučaj pitaj agenciju u chatu.">
+</footer><div class="assist" data-assistant data-faq-url="assistant-faq.json" data-ask-url="#" data-ai="0" data-csrf="x5DWoat8f00SA5Txrv-cQJhJMDX-YlNos0ONQ8GsCMA" data-speech-lang="bs" data-label-wait="Tražim odgovor…" data-label-read="Pročitaj naglas" data-error="Odgovor se nije mogao učitati. Provjeri internet i pokušaj ponovo." data-ai-note="Odgovor AI-ja može biti pogrešan. Za svoj slučaj pitaj agenciju u chatu.">
   <button class="assist-fab" type="button" data-assist-open aria-expanded="false" aria-controls="assist-panel">
     <span class="assist-fab-icon"><svg class="icon " width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/><path d="m12 7.8 1 2.3 2.3 1-2.3 1-1 2.3-1-2.3-2.3-1 2.3-1z"/></svg></span><span class="assist-fab-label">Pitaj</span>
   </button>
