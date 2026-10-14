@@ -122,3 +122,8 @@
     }
   }, true);
 })();
+
+// The static demo supports offline snapshots of public ads; no form submissions are queued.
+if ('serviceWorker' in navigator && window.isSecureContext) {
+  window.addEventListener('load', function () { navigator.serviceWorker.register(new URL('sw.js', document.baseURI)).catch(function () {}); });
+}
