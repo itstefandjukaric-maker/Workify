@@ -1,8 +1,6 @@
 Workify — The worker journey
 2:40 · English
 
-Product demonstration with fictional people, companies and job listings. People are illustrative AI scenes. Different example applications appear in the walkthrough.
-
 WORKIFY / HOW IT WORKS
 A new job. A new place. A clearer way forward. With Workify, follow your next opportunity from the first search to your first day.
 
