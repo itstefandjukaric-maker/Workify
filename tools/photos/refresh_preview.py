@@ -41,7 +41,6 @@ def main():
         before = path.read_text()
         text = before
         lang = "en" if path.name.startswith("en-") else "bhs"
-        label = "Stock photo" if lang == "en" else "Primjer fotografije"
         for old, new in MANIFEST["copy"][lang].items():
             text = text.replace(html.escape(old), html.escape(new)).replace(old, new)
         # Avoid stale cached art and broken absolute /media/ srcset URLs on GitHub Pages.
@@ -54,11 +53,6 @@ def main():
             text = text.replace('>1 od 1</span>', '>0 od 1</span>').replace('>1 of 1</span>', '>0 of 1</span>')
             text = re.sub(r'<ul class="media-grid">\s*</ul>', '', text)
         text = re.sub(r'<span class="jc-badge">(?:(?!</span>).)*?\bVideo</span>', '', text, flags=re.S)
-        if 'jc-photo-note' not in text:
-            text = text.replace('<div class="jc-media">', f'<div class="jc-media"><span class="jc-photo-note">{label}</span>')
-        if 'gallery-band' in text and 'gallery-photo-note' not in text:
-            text = text.replace('<div class="gallery-controls">',
-                                f'<p class="small muted gallery-photo-note">{MANIFEST["demo_notes"][lang]}</p><div class="gallery-controls">')
         text = re.sub(r'<section class="explainer".*?</section>', static_steps, text, flags=re.S)
         text = text.replace('static/img/pictures/error.png', 'static/img/pictures/error.jpg')
         # A release query refreshes existing marketing image paths and the stylesheet.
