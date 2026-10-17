@@ -120,3 +120,17 @@ html[data-theme="dark"],html[data-theme="dark"] .daylight {
 @media(prefers-reduced-motion:reduce){.choice-tile span {transition:none}}
 
 @media(max-width:440px){.topbar .brand .logo-lockup{width:112px;height:auto}.theme-menu summary{width:44px}.topbar-actions .btn{font-size:12px;padding-inline:6px}}
+
+/* Public language menus and long translations. */
+.lang-panel a { text-align: start; }
+.lang-panel a[aria-current="true"]::after { content: "✓"; color: #73a1ff; margin-inline-start: auto; grid-column: 2; grid-row: 1 / span 2; }
+.lang-panel a > svg { display: none; }
+.lang-native { unicode-bidi: isolate; }
+.lang-code { min-width: 2ch; }
+html[lang="ar"] .hero-title, html[lang="ur"] .hero-title, html[lang="bn"] .hero-title, html[lang="hi"] .hero-title, html[lang="ne"] .hero-title { line-height: 1.25; letter-spacing: 0; }
+html[lang="ka"] .hero-title { line-height: 1.1; }
+[dir="rtl"] .lang-panel { text-align: right; }
+[dir="rtl"] .lang-name { direction: ltr; text-align: start; }
+.btn, .choice-tile b, .card-title, .section-title, .page-title { overflow-wrap: anywhere; }
+#workify-language-notice button { border: 0; background: transparent; color: inherit; font: inherit; font-size: 1.5em; cursor: pointer; padding-inline: 10px; }
+@media (max-width: 700px) { .lang-panel { max-height: min(70dvh, 620px); overflow-y: auto; overscroll-behavior: contain; } .topbar-actions { min-width: 0; } .hero-title { overflow-wrap: anywhere; } }
