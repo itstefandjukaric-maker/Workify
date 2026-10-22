@@ -54,6 +54,9 @@ test('Role-specific calls to action keep the correct page and selected language'
     const prefix=lang==='bs'?'':'en-';const {document}=await render(prefix+'for-'+role+'.html',{lang});
     const link=document.querySelector('main a[href*="register-'+target+'.html"]');assert.ok(link,role);
     assert.equal(assertLocal(link.href,lang).pathname,'/Workify/'+prefix+'register-'+target+'.html');
+    const signIns=document.querySelectorAll('header a.btn-ghost, main a.btn-outline');
+    assert.equal(signIns.length,2,role+' has header and hero login links');
+    for(const signIn of signIns)assert.equal(assertLocal(signIn.href,lang).pathname,'/Workify/'+prefix+'login.html',role+' login must open the login screen');
   }
   const {document}=await render('register.html');
   assert.ok(document.querySelector('main a[href*="register-worker.html"]'));
