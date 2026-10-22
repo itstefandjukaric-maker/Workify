@@ -53,7 +53,7 @@ for(const locale of locales) {
       assert.equal(target.pathname.split('/').pop().replace(/^en-/,''),enFile.replace(/^en-/,''));
       assert.equal(link.hasAttribute('data-pv-lang'),false);
     }
-    for(const link of document.querySelectorAll('a[data-workify-app]'))assert.equal(new URL(link.href).searchParams.get('lang'),locale);
+    for(const link of document.querySelectorAll('a[data-workify-local]:not([data-workify-language])')){const target=new URL(link.href);assert.equal(target.origin,'https://itstefandjukaric-maker.github.io');assert.equal(target.searchParams.get('lang'),locale);}
     if(catalog) {
       const original=parseHTML(read(file)).document;
       const oldTitle=original.querySelector('title').textContent.trim();

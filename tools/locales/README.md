@@ -2,7 +2,7 @@
 
 The original BHS and English HTML pages remain the base layouts. `static/js/preview.js`
 loads the matching public catalog for the other 14 languages, retains the current
-public page and selected language, and passes that language to application links.
+public page and selected language, across login, registration, worker and business preview links on GitHub Pages.
 Arabic and Urdu use RTL. Text inside the existing video is not dubbed or replaced.
 
 - `static/locales/site-source.json`: stable IDs and original English strings.
@@ -19,7 +19,7 @@ Optional language arguments build only those catalogs.
 The runtime test uses Node and `linkedom`. Install `linkedom` in a separate npm tools
 directory, set `WORKIFY_TEST_TOOLS` to that directory, and run
 `node tools/locales/test-runtime.mjs`. Optional language arguments limit the run.
-It checks every public page's language choices, page retention, application links,
+It checks every public page's language choices, page retention, local preview links,
 titles, RTL, remembered settings, dynamically inserted help text and user-text isolation.
 It is a DOM test, not a visual browser test.
 

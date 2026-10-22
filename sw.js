@@ -1,5 +1,5 @@
-const CACHE='workify-public-languages-20261017';
-const ASSETS=['offline.html','en-offline.html','static/css/app.css','static/css/experience.css?v=public-languages-20261017','static/js/app.js','static/js/experience.js','static/js/preview.js?v=public-languages-20261017','static/css/preview.css'];
+const CACHE='workify-public-people-20261022';
+const ASSETS=['static/css/people.css?v=people-20261022','offline.html','en-offline.html','static/css/app.css','static/css/experience.css?v=public-languages-20261017','static/js/app.js','static/js/experience.js','static/js/preview.js?v=github-navigation-20261021','static/css/preview.css?v=github-navigation-20261021'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>Promise.all(ASSETS.map(path=>c.add(new Request(new URL(path,self.registration.scope),{cache:'reload'}))))).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.startsWith('workify-public-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{
