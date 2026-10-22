@@ -1,0 +1,18 @@
+{
+  "tool": "built-in imagegen",
+  "date": "2026-10-22",
+  "prompts": [
+    {
+      "asset": "home-workers",
+      "prompt": "Use case: photorealistic-natural. Asset type: photograph for the right column of Workify job-search homepage. A premium, authentic editorial photograph of three skilled adult construction and maintenance professionals at a clean modern construction project, two men (one Balkan/European, one South Asian) and a woman engineer, all wearing appropriate navy workwear, yellow or white hard hats, some subtle orange high-visibility details. Friendly confident expressions, natural relaxed interaction while reviewing a simple tablet held by one worker; real skin and fabric texture, not glossy advertising models. Medium three-quarter group portrait, all three faces fully visible, composed closely in the central 80 percent; vertical 4:5 frame with modest headroom and room below elbows. Soft bright daylight, architectural background softly blurred, warm human tones and restrained blue colors. Image only, no text, logos, captions, watermark, collage or UI. These are illustrative fictional people, not actual customers."
+    },
+    {
+      "asset": "employer-team",
+      "prompt": "Use case: photorealistic-natural. Asset type: wide editorial photo for Workify employer landing page. A female operations manager in a cream shirt and navy trousers meeting two industrial team members in clean navy workwear in a bright modern manufacturing facility. One worker is explaining a technical drawing on a waist-high workbench, all three attentive and engaged, faces clearly visible, authentic natural skin and clothing texture. Wider candid three-quarter view, central subjects comfortably framed with no cut-off heads, 4:3 landscape composition. Warm soft daylight from factory windows, elegant blue-gray tones, no hard hats needed in this safe planning area away from machinery. Polished photographic quality, credible everyday workplace, no staged handshake, no text, no logos, no watermark, no UI. Distinct people and location from a construction site."
+    },
+    {
+      "asset": "agency-candidates",
+      "prompt": "Use case: photorealistic-natural. Asset type: wide editorial photo for Workify recruitment agency landing page. A welcoming recruitment consultation in a beautiful bright contemporary European office: a friendly middle-aged male recruitment consultant in a light blue shirt, a woman colleague in a muted lilac blouse, and an adult male candidate in casual smart navy clothing seated around a light oak table, discussing documents and a laptop. All three faces visible in three-quarter view, candid natural expressions and subtle smiles, not looking at camera. Airy windows, a green plant, warm off-white interior, excellent natural photography, true skin texture, refined navy and warm neutrals. Landscape 4:3 composition with subjects centered and comfortable crop margins. No legible text on documents or screens, no logo, no watermark, no UI, no staged handshake. Completely different subjects and setting from an industrial manager photograph."
+    }
+  ]
+}
