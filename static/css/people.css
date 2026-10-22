@@ -1,0 +1,65 @@
+/* Workify photography refresh. Decorative images do not introduce untranslated copy. */
+.landing .hero.home-people {
+  padding: 48px 0 52px;
+  background: radial-gradient(ellipse at 90% 25%, #203c55 0, transparent 52%), #0b172b;
+}
+.home-people-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+  grid-template-areas: "intro visual" "search visual";
+  column-gap: clamp(28px, 4vw, 56px);
+  align-items: start;
+}
+.home-people .hero-intro { grid-area: intro; min-width: 0; }
+.home-people .hero-copy { grid-area: search; min-width: 0; }
+.landing .home-people .hero-title { margin-top: 12px; font-size: clamp(36px, 3.7vw, 52px); }
+.home-people .visual-search { margin: 24px 0 20px; }
+.hero-visual {
+  grid-area: visual;
+  align-self: start;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  min-width: 0;
+}
+.hero-visual figure { margin: 0; overflow: hidden; border-radius: 20px; background: #21364d; }
+.hero-visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.hero-visual .hero-photo-main {
+  grid-column: 1 / -1;
+  aspect-ratio: 4 / 5;
+  border-radius: 30px;
+  box-shadow: 0 20px 60px #0003;
+}
+.hero-photo-main img { object-position: 50% 35%; }
+.hero-photo-detail { aspect-ratio: 1.6; }
+.hero-photo-detail:last-child img { object-position: 50% 43%; }
+.audience-hero.audience-people {
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  align-items: center;
+  gap: clamp(28px, 4vw, 52px);
+  padding: 36px;
+  border-radius: 26px;
+}
+.audience-people > div { min-width: 0; padding: 8px 0; }
+.audience-people h1 { font-size: clamp(32px, 3.5vw, 50px); line-height: 1.1; text-wrap: balance; }
+.audience-people .section-lead { margin-bottom: 26px; }
+.audience-people .btn { margin-block: 4px; }
+.audience-people figure { width: 100%; min-width: 0; aspect-ratio: 4 / 3; }
+.audience-hero.audience-people img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 20px; }
+@media (max-width: 979px) {
+  .landing .hero.home-people { padding: 28px 0 36px; }
+  .home-people-grid { grid-template-columns: minmax(0, 1fr); grid-template-areas: "intro" "visual" "search"; }
+  .hero-visual { margin-top: 24px; }
+  .hero-visual .hero-photo-main { aspect-ratio: auto; height: clamp(250px, 46vw, 380px); border-radius: 24px; }
+  .hero-photo-main img { object-position: 50% 28%; }
+  .hero-photo-detail { display: none; }
+  .audience-hero.audience-people { padding: 26px; gap: 28px; }
+}
+@media (max-width: 700px) {
+  .topbar-inner .brand .logo-lockup { width: clamp(96px, 29vw, 112px); height: 24px; }
+  .topbar-actions > .btn { white-space: nowrap; }
+  .landing .home-people .hero-title { font-size: clamp(30px, 7.5vw, 40px); }
+  .audience-hero.audience-people { grid-template-columns: minmax(0, 1fr); padding: 22px; gap: 22px; border-radius: 22px; }
+  .audience-people h1 { font-size: clamp(30px, 8vw, 40px); }
+  .audience-people figure { aspect-ratio: 4 / 3; }
+}
