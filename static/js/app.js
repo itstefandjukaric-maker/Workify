@@ -33,7 +33,14 @@
     closeMenus(menu);
   });
   document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") { closeMenus(null); toggleSidebar(false); }
+    if (event.key === "Escape") {
+      var focused = document.activeElement;
+      var menu = focused && focused.closest("details.menu[open]");
+      var trigger = menu && menu.querySelector("summary");
+      closeMenus(null);
+      if (trigger) trigger.focus();
+      toggleSidebar(false);
+    }
   });
 
   /* Console sidebar on small screens. */
@@ -94,7 +101,8 @@
     var next = box.querySelector("[data-carousel-next]");
     var dots = box.querySelectorAll(".jc-dots i");
     var go = function (dir) {
-      track.scrollBy({ left: dir * track.clientWidth * 0.9 * (rtl ? -1 : 1), behavior: "smooth" });
+      var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      track.scrollBy({ left: dir * track.clientWidth * 0.9 * (rtl ? -1 : 1), behavior: reduce ? "auto" : "smooth" });
     };
     var sync = function () {
       var max = track.scrollWidth - track.clientWidth;
@@ -235,7 +243,8 @@
   /* Filter forms submit on change. */
   document.querySelectorAll("form[data-autosubmit]").forEach(function (form) {
     form.addEventListener("change", function (event) {
-      if (!event.target.closest(".advanced-search") && event.target.matches("select[name], input[type=checkbox][name]")) form.submit();
+      // Preserve validation and submit listeners, including public-preview search routing.
+      if (!event.target.closest(".advanced-search") && event.target.matches("select[name], input[type=checkbox][name]")) form.requestSubmit();
     });
   });
 
@@ -520,10 +529,22 @@
   var offlinePage = document.body.classList.contains("offline-page");
   if (!offlinePage) store.set("workify-locale", lang);
   if (offlinePage) {
-    var wanted = store.get("workify-locale");
-    var blocks = document.querySelectorAll("[data-offline-lang]");
-    var match = wanted && document.querySelector('[data-offline-lang="' + wanted + '"]');
-    if (match) blocks.forEach(function (b) { b.hidden = b !== match; });
+    var requested;
+    try { requested = new URL(window.location.href).searchParams.get("lang"); } catch (e) { /* keep the page language */ }
+    var blocks = Array.from(document.querySelectorAll("[data-offline-lang]"));
+    var match;
+    [requested, store.get("workify-site-language"), store.get("workify-locale"), lang].some(function (wanted) {
+      match = blocks.find(function (b) { return b.getAttribute("data-offline-lang") === wanted; });
+      return !!match;
+    });
+    if (match) {
+      lang = match.getAttribute("data-offline-lang");
+      intlLang = lang === "bs" ? "hr" : lang;
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === "ar" || lang === "ur" ? "rtl" : "ltr";
+      document.body.setAttribute("data-locale", lang);
+      blocks.forEach(function (b) { b.hidden = b !== match; });
+    }
     document.querySelectorAll("[data-reload]").forEach(function (b) {
       b.addEventListener("click", function () { window.location.reload(); });
     });
