@@ -107,14 +107,15 @@
   <div class="auth-card card daylight">
     <h1 class="h2">Prijavi se telefonom</h1>
     <p class="muted">Šaljemo ti šestocifreni kod SMS-om. Bez lozinke, bez e-maila.</p>
-    <form method="post" action="#" class="stack" novalidate>
-      <input type="hidden" name="csrf_token" value="">
+    <p class="pv-auth-notice" id="auth-availability-notice" role="status">Prijava i registracija još nisu omogućene. Ne unosite lične podatke.</p>
+    <form aria-describedby="auth-availability-notice" method="post" action="#" class="stack" novalidate>
+      <input type="hidden" name="csrf_token" value="" disabled>
       <div class="field">
         <label for="f-phone">Telefon</label>
-        <input id="f-phone" name="phone" type="tel" value="" autocomplete="tel" inputmode="tel" placeholder="+971 50 123 4567" required autofocus>
+        <input id="f-phone" name="phone" type="tel" value="" autocomplete="tel" inputmode="tel" placeholder="+971 50 123 4567" required disabled>
         <small class="hint">S pozivnim brojem zemlje, npr. +387 61 123 456</small>
       </div>
-      <button class="btn btn-primary btn-block btn-lg" type="submit"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/></svg>Pošalji kod</button>
+      <button class="btn btn-primary btn-block btn-lg" type="submit" disabled><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/></svg>Pošalji kod</button>
     </form>
     <p class="small muted">Prvi put ovdje? Poslije koda te pitamo za ime i zemlju i tvoj besplatni nalog je spreman.</p>
     <p class="auth-switch">Radije e-mailom? <a href="login.html">Prijava e-mailom</a></p>

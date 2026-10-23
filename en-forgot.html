@@ -107,13 +107,14 @@
   <div class="auth-card card daylight">
     <h1 class="h2">Reset your password</h1>
       <p class="muted">Enter the e-mail address of your account. We will send you a link to choose a new password.</p>
-      <form method="post" class="stack" novalidate>
-        <input type="hidden" name="csrf_token" value="">
+      <p class="pv-auth-notice" id="auth-availability-notice" role="status">Login and registration are not enabled yet. Do not enter personal information.</p>
+      <form aria-describedby="auth-availability-notice" method="post" class="stack" novalidate>
+        <input type="hidden" name="csrf_token" value="" disabled>
         <div class="field">
           <label for="f-email">E-mail</label>
-          <input id="f-email" name="email" type="email" value="" autocomplete="email" required autofocus>
+          <input id="f-email" name="email" type="email" value="" autocomplete="email" required disabled>
         </div>
-        <button class="btn btn-primary btn-block btn-lg" type="submit">Send link</button>
+        <button class="btn btn-primary btn-block btn-lg" type="submit" disabled>Send link</button>
       </form>
       <p class="auth-switch"><a href="en-login.html">Back to log in</a></p>
   </div>

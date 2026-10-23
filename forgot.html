@@ -107,13 +107,14 @@
   <div class="auth-card card daylight">
     <h1 class="h2">Promjena lozinke</h1>
       <p class="muted">Unesi e-mail adresu svog naloga. Poslat ćemo ti link za novu lozinku.</p>
-      <form method="post" class="stack" novalidate>
-        <input type="hidden" name="csrf_token" value="">
+      <p class="pv-auth-notice" id="auth-availability-notice" role="status">Prijava i registracija još nisu omogućene. Ne unosite lične podatke.</p>
+      <form aria-describedby="auth-availability-notice" method="post" class="stack" novalidate>
+        <input type="hidden" name="csrf_token" value="" disabled>
         <div class="field">
           <label for="f-email">E-mail</label>
-          <input id="f-email" name="email" type="email" value="" autocomplete="email" required autofocus>
+          <input id="f-email" name="email" type="email" value="" autocomplete="email" required disabled>
         </div>
-        <button class="btn btn-primary btn-block btn-lg" type="submit">Pošalji link</button>
+        <button class="btn btn-primary btn-block btn-lg" type="submit" disabled>Pošalji link</button>
       </form>
       <p class="auth-switch"><a href="login.html">Nazad na prijavu</a></p>
   </div>
