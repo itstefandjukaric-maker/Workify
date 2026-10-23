@@ -32,3 +32,9 @@ License: https://www.pexels.com/license/
 - europe_poland: https://www.pexels.com/photo/pastel-coloured-old-town-and-blue-sky-4831055/
 - europe_netherlands: https://www.pexels.com/photo/scenic-amsterdam-canal-with-boats-on-a-sunny-day-30309074/
 - europe_croatia: https://www.pexels.com/photo/picturesque-rovinj-harbor-with-boats-and-village-33189439/
+
+## Distinct guide photography — 2026-10-23
+
+`guide-offer-verification-v2.webp` and its `-sm` variant are AI-generated editorial illustrations made with the built-in Imagegen tool, not Pexels stock or photos of a real Workify customer. They replace the duplicated contract photo on the fake-job-offer guide and its cards in both base-language pages. The other four guide themes retain their distinct existing photographs. Versioned asset names prevent stale cached contract thumbnails.
+
+Prompt: Photorealistic wide 16:9 editorial photograph of a thoughtful young adult job seeker in a navy casual shirt checking a job opportunity on his smartphone beside an open laptop in a bright European apartment. Natural candid three-quarter composition, daylight, authentic skin and anatomy; face, hands and phone readable at thumbnail size. No signing gesture, contract sheets, logos, readable screen text or warning graphics. Generated source was resized/compressed to 1600×900 and 800×450 WebP for delivery.
