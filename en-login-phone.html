@@ -107,14 +107,15 @@
   <div class="auth-card card daylight">
     <h1 class="h2">Sign in with your phone</h1>
     <p class="muted">We send a six-digit code by SMS. No password, no e-mail needed.</p>
-    <form method="post" action="#" class="stack" novalidate>
-      <input type="hidden" name="csrf_token" value="">
+    <p class="pv-auth-notice" id="auth-availability-notice" role="status">Login and registration are not enabled yet. Do not enter personal information.</p>
+    <form aria-describedby="auth-availability-notice" method="post" action="#" class="stack" novalidate>
+      <input type="hidden" name="csrf_token" value="" disabled>
       <div class="field">
         <label for="f-phone">Phone</label>
-        <input id="f-phone" name="phone" type="tel" value="" autocomplete="tel" inputmode="tel" placeholder="+971 50 123 4567" required autofocus>
+        <input id="f-phone" name="phone" type="tel" value="" autocomplete="tel" inputmode="tel" placeholder="+971 50 123 4567" required disabled>
         <small class="hint">With the country code, e.g. +971 50 123 4567</small>
       </div>
-      <button class="btn btn-primary btn-block btn-lg" type="submit"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/></svg>Send the code</button>
+      <button class="btn btn-primary btn-block btn-lg" type="submit" disabled><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/></svg>Send the code</button>
     </form>
     <p class="small muted">New here? After the code we ask for your name and country, and your free account is ready.</p>
     <p class="auth-switch">Prefer e-mail? <a href="en-login.html">Sign in with e-mail</a></p>

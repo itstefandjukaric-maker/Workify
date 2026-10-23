@@ -10,6 +10,71 @@
   if (supported.indexOf(language) === -1) language = 'bs';
   var bs = language === 'bs';
   var publicPages = ["404.html","a-account.html","a-app-1-cv.html","a-app-1.html","a-app-19-cv.html","a-app-19.html","a-app-4-cv.html","a-app-4.html","a-app-5-cv.html","a-app-5.html","a-app-6-cv.html","a-app-6.html","a-app-7-cv.html","a-app-7.html","a-app-8-cv.html","a-app-8.html","a-billing.html","a-candidates-board.html","a-candidates.html","a-dashboard.html","a-inbox.html","a-interview-1.html","a-interview-19.html","a-interview-4.html","a-interview-5.html","a-interview-6.html","a-interview-7.html","a-interview-8.html","a-invoice-1.html","a-invoice-2.html","a-job-1-media.html","a-job-1-poster.html","a-job-1.html","a-job-2-media.html","a-job-2-poster.html","a-job-2.html","a-job-23-media.html","a-job-23.html","a-job-3-media.html","a-job-3-poster.html","a-job-3.html","a-job-4-media.html","a-job-4-poster.html","a-job-4.html","a-job-5-media.html","a-job-5-poster.html","a-job-5.html","a-job-new.html","a-jobs-import.html","a-jobs.html","a-notifications.html","a-profile.html","a-reports.html","a-shortlist.html","a-talent.html","a-team.html","agency-1.html","agency-2.html","agency-3.html","agency-4.html","agency-5.html","agency-6.html","agency-7.html","agency-8.html","capture-apply-1.html","capture-mobile.html","dest-ae.html","dest-bh.html","dest-de.html","dest-es.html","dest-hr.html","dest-kw.html","dest-me.html","dest-nl.html","dest-om.html","dest-pl.html","dest-qa.html","dest-rs.html","dest-sa.html","destinations.html","e-account.html","e-app-10-cv.html","e-app-10.html","e-app-21-cv.html","e-app-21.html","e-app-9-cv.html","e-app-9.html","e-billing.html","e-candidates-board.html","e-candidates.html","e-dashboard.html","e-inbox.html","e-interview-10.html","e-interview-21.html","e-interview-9.html","e-job-6-media.html","e-job-6-poster.html","e-job-6.html","e-job-7-media.html","e-job-7-poster.html","e-job-7.html","e-job-8-media.html","e-job-8-poster.html","e-job-8.html","e-job-new.html","e-jobs-import.html","e-jobs.html","e-notifications.html","e-profile.html","e-reports.html","e-shortlist.html","e-talent.html","e-team.html","employers.html","faq.html","for-agencies.html","for-employers.html","for-workers.html","forgot.html","guide-before-you-fly.html","guide-contract-checklist.html","guide-fake-job-offers.html","guide-rights-in-the-gulf.html","guide-working-in-europe.html","guides.html","how-it-works.html","imprint.html","index.html","job-1.html","job-10.html","job-11.html","job-12.html","job-13.html","job-14.html","job-15.html","job-16.html","job-17.html","job-18.html","job-19.html","job-2.html","job-20.html","job-21.html","job-22.html","job-3.html","job-4.html","job-5.html","job-6.html","job-7.html","job-8.html","job-9.html","jobs-map-ae.html","jobs-map-almeria.html","jobs-map-balkans.html","jobs-map-budva.html","jobs-map-dammam.html","jobs-map-de.html","jobs-map-es.html","jobs-map-gulf.html","jobs-map-hr.html","jobs-map-kragujevac.html","jobs-map-kuwait-city.html","jobs-map-kw.html","jobs-map-muscat.html","jobs-map-om.html","jobs-map-pl.html","jobs-map-riyadh.html","jobs-map-sa.html","jobs-map-z-balkans.html","jobs-map-z-eu.html","jobs-map-z-gulf.html","jobs-map.html","jobs-p2.html","jobs.html","login-phone.html","login.html","offline.html","pricing.html","privacy.html","prize.html","register-agency.html","register-employer.html","register-worker.html","register.html","stories.html","terms-business.html","terms.html","w-account.html","w-alerts.html","w-app-1.html","w-app-2.html","w-app-3.html","w-applications.html","w-apply-16.html","w-cv.html","w-documents.html","w-extras.html","w-home.html","w-how-it-works.html","w-inbox.html","w-interview-1.html","w-interview-2.html","w-interview-prep.html","w-jobs-map-ae.html","w-jobs-map-almeria.html","w-jobs-map-balkans.html","w-jobs-map-budva.html","w-jobs-map-dammam.html","w-jobs-map-de.html","w-jobs-map-es.html","w-jobs-map-gulf.html","w-jobs-map-hr.html","w-jobs-map-kragujevac.html","w-jobs-map-kuwait-city.html","w-jobs-map-kw.html","w-jobs-map-muscat.html","w-jobs-map-om.html","w-jobs-map-pl.html","w-jobs-map-riyadh.html","w-jobs-map-sa.html","w-jobs-map-z-balkans.html","w-jobs-map-z-eu.html","w-jobs-map-z-gulf.html","w-jobs-map.html","w-jobs-p2.html","w-jobs.html","w-notifications.html","w-prize.html","w-profile.html","w-saved.html","w-waitlist.html","waitlist.html"];
+  // Search state is display-only on the public preview. Keep its URL contract
+  // explicit so language/view changes cannot drop filters or copy private fields.
+  var searchKeys=['q','country','category','housing','region','visa','flight','min_pay','pay_currency','pay_period','pay_basis','experience','language'];
+  var searchChoices={
+    country:'AE AL AT BA BE BG BH CH CY CZ DE DK EE ES FI FR GR HR HU IE IT KW LT LU LV ME MK MT NL NO OM PL PT QA RO RS SA SE SI SK XK'.split(' '),
+    category:'agriculture care carpentry cleaning construction delivery electrical facility hospitality logistics manufacturing metal other plumbing_hvac security transport'.split(' '),
+    region:['balkans','eu','gulf'],
+    pay_currency:'AED ALL BAM BHD CHF CZK DKK EUR HUF KWD MKD NOK OMR PLN QAR RON RSD SAR SEK USD'.split(' '),
+    pay_period:['hour','month'],pay_basis:['gross','net'],
+    language:'ar bhs bn de en fr hi ka ne none ru sw tg tl ur uz'.split(' '),view:['list','map']
+  };
+  function searchValue(key,values){
+    if(values.length!==1||typeof values[0]!=='string')return null;
+    var value=values[0].trim();if(!value)return null;
+    if(key==='q')return value.length<=200?value:null;
+    if(['housing','visa','flight'].indexOf(key)!==-1)return value==='1'?'1':null;
+    if(key==='min_pay')return /^(?:0|[1-9]\d*)(?:\.\d{1,2})?$/.test(value)&&Number(value)<=10000000?String(Number(value)):null;
+    if(key==='experience')return /^(?:0|[1-9]\d*)$/.test(value)&&Number(value)<=50?String(Number(value)):null;
+    return searchChoices[key]&&searchChoices[key].indexOf(value)!==-1?value:null;
+  }
+  function checked(input){return typeof input.checked==='boolean'?input.checked:input.hasAttribute('checked');}
+  function formSearchState(form){
+    var state={};
+    searchKeys.concat('view').forEach(function(key){
+      var values=[];
+      form.querySelectorAll('[name="'+key+'"]').forEach(function(input){
+        if(input.disabled||input.hasAttribute('disabled')||input.closest('fieldset[disabled]'))return;
+        if(['checkbox','radio'].indexOf(input.type)!==-1&&!checked(input))return;
+        if(typeof input.value==='string')values.push(input.value);
+      });
+      var value=searchValue(key,values);if(value!==null)state[key]=value;
+    });
+    return state;
+  }
+  function querySearchState(query){
+    var state={};searchKeys.concat('view').forEach(function(key){var value=searchValue(key,query.getAll(key));if(value!==null)state[key]=value;});return state;
+  }
+  function writeSearchState(url,state){
+    searchKeys.concat('view').forEach(function(key){url.searchParams.delete(key);if(state[key]!==undefined)url.searchParams.set(key,state[key]);});return url;
+  }
+  var searchForm=document.querySelector('form[data-pv-search]');
+  if(searchForm){
+    var restored=querySearchState(params);
+    searchKeys.forEach(function(key){
+      if(!params.has(key))return;
+      searchForm.querySelectorAll('[name="'+key+'"]').forEach(function(input){
+        var value=restored[key]||'';
+        if(['checkbox','radio'].indexOf(input.type)!==-1)input.checked=input.value===value;
+        else if(input.tagName==='SELECT'){
+          var options=Array.from(input.querySelectorAll('option'));
+          // Invalid enum values never become a different filter silently.
+          options.forEach(function(option){option.selected=false;});
+          var selected=options.find(function(option){return option.value===value;});
+          if(selected)selected.selected=true;else input.selectedIndex=-1;
+        }else input.value=value;
+      });
+    });
+  }
+  function currentSearchState(){
+    var state=searchForm?formSearchState(searchForm):querySearchState(new URLSearchParams(location.search));
+    if(isSearchPage(basePage(location.pathname)))state.view=basePage(location.pathname).indexOf('jobs-map')!==-1?'map':'list';
+    return state;
+  }
+  function basePage(pathname){return pathname.split('/').pop().replace(/^en-/,'')||'index.html';}
+  function isSearchPage(base){return /^(?:w-)?jobs(?:-map(?:-[a-z-]+)?|-p2)?\.html$/.test(base);}
   function pageUrl(url,locale) {
     var next=new URL(url,document.baseURI);
     if(next.origin!==location.origin)return null;
@@ -17,6 +82,7 @@
     if(publicPages.indexOf(base)===-1)return null;
     next.pathname=next.pathname.slice(0,next.pathname.lastIndexOf('/')+1)+(locale==='bs'||['404.html','capture-apply-1.html','capture-mobile.html'].indexOf(base)!==-1?'':'en-')+base;
     next.searchParams.set('lang',locale);
+    if(isSearchPage(base))writeSearchState(next,querySearchState(next.searchParams));
     if(/^register-(agency|employer)\.html$/.test(base)){
       var chosen=Array.from(document.querySelectorAll('input[name=kind]')).find(function(input){return input.checked;});
       if(chosen&&new URL(url,document.baseURI).pathname===location.pathname)next.searchParams.set('kind',chosen.value);
@@ -44,14 +110,22 @@
       link.removeAttribute('data-pv-lang');
       link.setAttribute('data-workify-language',chosen);
       if(chosen===language)link.setAttribute('aria-current','true');else link.removeAttribute('aria-current');
-      return pageUrl(location.href,chosen);
+      var localized=new URL(pageUrl(location.href,chosen));
+      if(searchForm){localized.search='';localized.searchParams.set('lang',chosen);writeSearchState(localized,currentSearchState());}
+      return localized.href;
+    }
+    if(link.closest('.view-toggle')&&isSearchPage(basePage(url.pathname))){
+      var viewUrl=new URL(pageUrl(url.href,language)),state=currentSearchState();
+      state.view=basePage(viewUrl.pathname).indexOf('jobs-map')!==-1?'map':'list';
+      viewUrl.search='';viewUrl.searchParams.set('lang',language);return writeSearchState(viewUrl,state).href;
     }
     return pageUrl(url.href,language);
   }
   function connect(link) {
     var target = targetFor(link);
     if (!target) return;
-    link.href = target;
+    // SVG anchors expose href as a read-only SVGAnimatedString.
+    link.setAttribute('href', target);
     link.removeAttribute('data-pv-lang');
     link.removeAttribute('data-pv-off');
     link.removeAttribute('data-back');
@@ -129,9 +203,12 @@
   }
   loadLanguage();
   function search(form) {
-    var url=new URL(pageUrl('jobs.html',language)),source=new FormData(form);
-    ['q','country','category','housing','region'].forEach(function(key){var value=source.get(key);if(typeof value==='string'&&value)url.searchParams.set(key,value.slice(0,200));});
-    location.href=url.href;
+    var state=formSearchState(form),target=basePage(form.getAttribute('data-pv-search')||'jobs.html');
+    var worker=target==='w-jobs.html';state.view=state.view||'list';
+    // Only the known public list/map pages may be submission destinations.
+    target=(worker?'w-':'')+(state.view==='map'?'jobs-map.html':'jobs.html');
+    var url=new URL(pageUrl(target,language));
+    location.href=writeSearchState(url,state).href;
   }
   var toastEl, timer;
   function unavailable() {
@@ -159,13 +236,22 @@
   document.addEventListener('click',function(event){var link=event.target.closest&&event.target.closest('a[data-pv-off]');if(link){event.preventDefault();event.stopImmediatePropagation();unavailable();}},true);
   // Keep direct login, registration and dashboard bookmarks on GitHub Pages.
   // A role is a visual form choice, never an authenticated permission.
+  function refreshSearchLinks(event){
+    if(event.target.closest&&event.target.closest('form[data-pv-search]'))document.querySelectorAll('.lang-menu a[lang],.footer-langs a[lang],.view-toggle a').forEach(connect);
+  }
+  document.addEventListener('input',refreshSearchLinks);
   document.addEventListener('change',function(event){
     if(event.target.matches&&event.target.matches('input[name=kind]'))document.querySelectorAll('.lang-menu a[lang],.footer-langs a[lang]').forEach(connect);
+    refreshSearchLinks(event);
   });
   if(/^(?:en-)?(?:login(?:-phone)?|forgot|register-(?:worker|employer|agency))\.html$/.test(location.pathname.split('/').pop())){
     var notices={"bs":"Prijava i registracija još nisu omogućene. Ne unosite lične podatke.","en":"Login and registration are not enabled yet. Do not enter personal information.","ar":"تسجيل الدخول وإنشاء الحساب غير متاحين بعد. لا تدخل معلومات شخصية.","bn":"লগইন ও নিবন্ধন এখনও চালু হয়নি। ব্যক্তিগত তথ্য লিখবেন না।","fil":"Hindi pa available ang pag-login at pagpaparehistro. Huwag maglagay ng personal na impormasyon.","fr":"La connexion et l’inscription ne sont pas encore disponibles. Ne saisissez pas de données personnelles.","ka":"შესვლა და რეგისტრაცია ჯერ არ არის ხელმისაწვდომი. არ შეიყვანოთ პირადი ინფორმაცია.","de":"Anmeldung und Registrierung sind noch nicht verfügbar. Bitte keine persönlichen Daten eingeben.","hi":"लॉगिन और पंजीकरण अभी उपलब्ध नहीं हैं। व्यक्तिगत जानकारी दर्ज न करें।","ky":"Кирүү жана катталуу азырынча жеткиликтүү эмес. Жеке маалыматтарды киргизбеңиз.","ne":"लगइन र दर्ता अझै उपलब्ध छैनन्। व्यक्तिगत जानकारी प्रविष्ट नगर्नुहोस्।","ru":"Вход и регистрация пока недоступны. Не вводите личные данные.","sw":"Kuingia na kujisajili bado hakupatikani. Usiingize taarifa binafsi.","tg":"Воридшавӣ ва бақайдгирӣ ҳоло дастрас нестанд. Маълумоти шахсиро ворид накунед.","ur":"لاگ ان اور رجسٹریشن ابھی دستیاب نہیں ہیں۔ ذاتی معلومات درج نہ کریں۔","uz":"Kirish va roʻyxatdan oʻtish hali yoqilmagan. Shaxsiy maʼlumotlarni kiritmang."};
     var form=document.querySelector('main form');
-    if(form){var notice=document.createElement('p');notice.className='pv-auth-notice';notice.setAttribute('role','status');notice.textContent=notices[language];form.before(notice);}
+    if(form){
+      var notice=document.querySelector('#auth-availability-notice')||document.querySelector('main .pv-auth-notice');
+      if(!notice){notice=document.createElement('p');notice.className='pv-auth-notice';notice.setAttribute('role','status');form.before(notice);}
+      notice.textContent=notices[language];
+    }
   }
 })();
 if ('serviceWorker' in navigator && window.isSecureContext) {

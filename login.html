@@ -106,20 +106,21 @@
 <img class="band-photo focus-25" src="static/img/pictures/register.jpg" srcset="static/img/pictures/register-sm.jpg 800w, static/img/pictures/register.jpg 1600w" sizes="100vw" width="1600" height="900" alt="" decoding="async" fetchpriority="high"><div class="auth-shell">
   <div class="auth-card card daylight">
     <h1 class="h2">Prijava</h1>
-    <form method="post" action="#" class="stack" novalidate>
-      <input type="hidden" name="csrf_token" value="">
+    <p class="pv-auth-notice" id="auth-availability-notice" role="status">Prijava i registracija još nisu omogućene. Ne unosite lične podatke.</p>
+    <form aria-describedby="auth-availability-notice" method="post" action="#" class="stack" novalidate>
+      <input type="hidden" name="csrf_token" value="" disabled>
       <div class="field">
         <label for="f-email">E-mail</label>
-        <input id="f-email" name="email" type="email" value="" autocomplete="email" required autofocus>
+        <input id="f-email" name="email" type="email" value="" autocomplete="email" required disabled>
       </div>
       <div class="field">
         <div class="label-row">
           <label for="f-password">Lozinka</label>
           <a class="small" href="forgot.html">Zaboravljena lozinka?</a>
         </div>
-        <input id="f-password" name="password" type="password" autocomplete="current-password" required>
+        <input id="f-password" name="password" type="password" autocomplete="current-password" required disabled>
       </div>
-      <button class="btn btn-primary btn-block btn-lg" type="submit">Prijavi se</button>
+      <button class="btn btn-primary btn-block btn-lg" type="submit" disabled>Prijavi se</button>
     </form>
 <a class="btn btn-outline btn-block phone-login-link" href="login-phone.html"><svg class="icon " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4.5h3l1.5 4-2 1.3a10.5 10.5 0 0 0 6.7 6.7l1.3-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 3 6.7 2 2 0 0 1 5 4.5z"/></svg>Prijava brojem telefona</a>    <p class="auth-switch">Nemaš nalog? <a href="register-worker.html">Napravi besplatan nalog</a></p>
     <p class="auth-switch small muted">Agencija ili poslodavac? <a href="register-agency.html">Registrujte firmu</a></p>
